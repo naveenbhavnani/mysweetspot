@@ -1,0 +1,27 @@
+---
+interface Props {
+  score: number; // 0–10
+  size?: "sm" | "md" | "lg";
+}
+const { score, size = "md" } = Astro.props;
+
+const clampedScore = Math.min(10, Math.max(0, score));
+
+const colorClass =
+  clampedScore >= 9 ? "bg-green-600 text-white" :
+  clampedScore >= 7.5 ? "bg-green-500 text-white" :
+  clampedScore >= 6 ? "bg-yellow-500 text-white" :
+  "bg-red-500 text-white";
+
+const sizeClass =
+  size === "lg" ? "text-3xl px-4 py-2 rounded-xl min-w-[72px]" :
+  size === "sm" ? "text-sm px-2 py-0.5 rounded-md min-w-[40px]" :
+  "text-xl px-3 py-1.5 rounded-lg min-w-[56px]";
+---
+
+<span
+  class={`font-[Barlow_Condensed] font-bold inline-flex items-center justify-center tabular-nums ${colorClass} ${sizeClass}`}
+  aria-label={`Rating: ${clampedScore.toFixed(1)} out of 10`}
+>
+  {clampedScore.toFixed(1)}
+</span>

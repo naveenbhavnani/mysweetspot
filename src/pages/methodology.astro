@@ -1,0 +1,52 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+<BaseLayout title="How We Test" description="SmashHit's testing methodology — how we select, test, and rate rackets for our independent reviews.">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <nav class="text-xs text-slate-500 mb-6" aria-label="Breadcrumb"><a href="/" class="hover:text-slate-800">Home</a> › <span class="text-slate-700 font-medium">How We Test</span></nav>
+    <h1 class="font-[Barlow_Condensed] text-4xl sm:text-5xl font-bold text-slate-900 mb-6">How We Test Rackets</h1>
+
+    <div class="prose prose-slate max-w-none space-y-8">
+
+      <section>
+        <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 mb-3">Our Principles</h2>
+        <p class="text-slate-600 text-sm leading-relaxed">SmashHit accepts no free products, sponsorships, or payments from manufacturers. Every racket we review is purchased independently or borrowed from club players. Our ratings reflect genuine on-court experience — not spec-sheet comparisons or manufacturer claims.</p>
+      </section>
+
+      <section>
+        <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 mb-3">How We Select Rackets</h2>
+        <p class="text-slate-600 text-sm leading-relaxed">We focus on rackets available in India via Amazon.in, Flipkart, or authorised dealers. We prioritise models with sufficient search volume and buyer interest, and we retire reviews when products are discontinued or unavailable for more than 3 months.</p>
+      </section>
+
+      <section>
+        <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 mb-3">Testing Process</h2>
+        <ul class="text-slate-600 text-sm leading-relaxed space-y-2 list-none pl-0">
+          {[
+            "Minimum 6 hours of on-court testing per racket across multiple sessions",
+            "Tested by players matching the target skill level of each review",
+            "All rackets tested with the same shuttle type and string tension where possible",
+            "Specs verified against manufacturer documentation and physical measurement",
+            "Pricing checked weekly against Amazon.in and updated as needed",
+          ].map(item => (
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              {item}
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 mb-3">Rating System</h2>
+        <p class="text-slate-600 text-sm leading-relaxed mb-3">All rackets are rated on a 10-point scale. Each review specifies its own rating criteria and weights — because the right criteria for a budget beginner racket differ from an attacking intermediate one. The criteria and their weights are always shown transparently in the "How We Rated" section of each review.</p>
+        <p class="text-slate-600 text-sm leading-relaxed">Common criteria include: Speed/Maneuverability, Control, Power, Comfort, Durability, and Value for Money. Not all criteria appear in every review.</p>
+      </section>
+
+      <section>
+        <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 mb-3">Affiliate Links</h2>
+        <p class="text-slate-600 text-sm leading-relaxed">SmashHit participates in the Amazon Associates (India) and Flipkart Affiliate programmes. When you click a "Check Price" or "Buy Now" link and make a purchase, we may receive a small commission at no extra cost to you. This does not influence our ratings or recommendations.</p>
+      </section>
+
+    </div>
+  </div>
+</BaseLayout>

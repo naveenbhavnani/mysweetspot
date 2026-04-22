@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Barlow Condensed", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  /* Brand */
+  --color-brand: #16a34a;
+  --color-brand-dark: #15803d;
+  --color-brand-light: #dcfce7;
+
+  /* Surface */
+  --color-bg: #ffffff;
+  --color-surface: #f8fafc;
+  --color-card: #ffffff;
+
+  /* Text */
+  --color-text: #0f172a;
+  --color-text-secondary: #475569;
+  --color-text-muted: #94a3b8;
+
+  /* Border */
+  --color-border: #e2e8f0;
+  --color-border-strong: #cbd5e1;
+
+  /* Ratings */
+  --color-star: #f59e0b;
+
+  /* Sport accents */
+  --color-tennis: #84cc16;
+  --color-badminton: #06b6d4;
+  --color-pickleball: #f97316;
+  --color-squash: #8b5cf6;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+.prose h2 {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-text);
+}
+
+.prose h3 {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.prose p {
+  color: var(--color-text-secondary);
+  margin-bottom: 1rem;
+}
+
+.toc-link.active {
+  color: var(--color-brand);
+  font-weight: 600;
+}
+
+
+@keyframes grow {
+  from { width: 0; }
+  to { width: var(--target-width); }
+}
+
+.rating-bar-fill {
+  animation: grow 0.6s ease-out forwards;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 2px;
+  border-radius: 4px;
+}

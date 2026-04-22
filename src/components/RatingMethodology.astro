@@ -1,0 +1,90 @@
+---
+interface Criterion {
+  label: string;
+  weight: number; // integer, e.g. 25 for 25%
+  description: string;
+  icon?: "speed" | "control" | "power" | "durability" | "value" | "spin" | "comfort" | "defense" | "attack" | "maneuverability";
+}
+
+interface Props {
+  criteria: Criterion[];
+  note?: string;
+}
+
+const { criteria, note } = Astro.props;
+
+const totalWeight = criteria.reduce((sum, c) => sum + c.weight, 0);
+
+const iconPaths: Record<string, string> = {
+  speed:          "M13 2L3 14h9l-1 8 10-12h-9l1-8z",
+  control:        "M12 22C6.5 22 2 17.5 2 12S6.5 2 12 2s10 4.5 10 10-4.5 10-10 10zm0-14a4 4 0 1 0 0 8 4 4 0 0 0 0-8z",
+  power:          "M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z",
+  durability:     "M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z",
+  value:          "M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6",
+  spin:           "M21.5 2l-19 19M2.5 2l19 19",
+  comfort:        "M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z",
+  defense:        "M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z",
+  attack:         "M13 2L3 14h9l-1 8 10-12h-9l1-8z",
+  maneuverability:"M5 12h14M12 5l7 7-7 7",
+};
+
+const defaultIcon = "M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z";
+---
+
+<section id="how-we-rated" class="scroll-mt-24 rounded-2xl border border-slate-200 bg-slate-50 overflow-hidden">
+
+  <!-- Header -->
+  <div class="bg-slate-900 text-white px-6 py-4 flex items-center justify-between gap-4 flex-wrap">
+    <div>
+      <h2 class="font-[Barlow_Condensed] text-xl font-bold uppercase tracking-wide">How We Rated These Rackets</h2>
+      {note && <p class="text-slate-400 text-sm mt-0.5">{note}</p>}
+    </div>
+    <span class="text-xs font-semibold text-slate-400 bg-slate-800 px-3 py-1.5 rounded-full whitespace-nowrap">
+      Scored out of 10
+    </span>
+  </div>
+
+  <!-- Criteria grid -->
+  <div class={`grid gap-px bg-slate-200 ${criteria.length <= 3 ? "grid-cols-1 sm:grid-cols-3" : criteria.length === 4 ? "grid-cols-2 sm:grid-cols-4" : "grid-cols-2 sm:grid-cols-3 lg:grid-cols-5"}`}>
+    {criteria.map(c => {
+      const path = c.icon ? (iconPaths[c.icon] ?? defaultIcon) : defaultIcon;
+      const barWidth = Math.round((c.weight / totalWeight) * 100);
+      return (
+        <div class="bg-white px-5 py-4 flex flex-col gap-2">
+          <div class="flex items-center justify-between gap-2">
+            <div class="flex items-center gap-2">
+              <div class="w-7 h-7 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d={path}/>
+                </svg>
+              </div>
+              <span class="font-[Barlow_Condensed] text-base font-bold text-slate-900">{c.label}</span>
+            </div>
+            <span class="font-[Barlow_Condensed] text-xl font-bold text-green-600 tabular-nums flex-shrink-0">
+              {c.weight}%
+            </span>
+          </div>
+
+          <!-- Weight bar -->
+          <div class="h-1.5 bg-slate-100 rounded-full overflow-hidden">
+            <div
+              class="h-full bg-green-500 rounded-full"
+              style={`width: ${barWidth}%`}
+              aria-hidden="true"
+            ></div>
+          </div>
+
+          <p class="text-xs text-slate-500 leading-relaxed">{c.description}</p>
+        </div>
+      );
+    })}
+  </div>
+
+  <!-- Weights sum note -->
+  {totalWeight !== 100 && (
+    <p class="px-5 py-2 text-xs text-amber-600 bg-amber-50 border-t border-amber-200">
+      Note: Weights shown are relative, not percentage-based totals.
+    </p>
+  )}
+
+</section>

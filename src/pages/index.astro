@@ -1,0 +1,183 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import RatingBadge from "../components/RatingBadge.astro";
+
+const featuredReviews = [
+  {
+    sport: "Tennis",
+    sportKey: "tennis",
+    title: "Best Tennis Rackets for Beginners",
+    desc: "Tested 12 rackets. Wilson Clash 100 takes the top spot for its arm-friendly flex and massive sweet spot.",
+    rating: 9.2,
+    topPick: "Wilson Clash 100",
+    price: "₹20,999",
+    href: "/reviews/best-tennis-rackets-for-beginners",
+    colorClass: "bg-white border-slate-200",
+    accentClass: "text-lime-700 bg-lime-100",
+    image: "https://placehold.co/560x360/f7fee7/4d7c0f?text=Wilson+Clash+100&font=montserrat",
+  },
+  {
+    sport: "Badminton",
+    sportKey: "badminton",
+    title: "Best Badminton Rackets 2025",
+    desc: "From featherweight attackers to all-round defenders — we rank the best rackets across all skill levels.",
+    rating: 9.0,
+    topPick: "Yonex Astrox 88D Pro",
+    price: "₹16,999",
+    href: "/reviews/best-badminton-rackets",
+    colorClass: "bg-white border-slate-200",
+    accentClass: "text-cyan-700 bg-cyan-100",
+    image: "https://placehold.co/560x360/ecfeff/0e7490?text=Astrox+88D+Pro&font=montserrat",
+  },
+  {
+    sport: "Pickleball",
+    sportKey: "pickleball",
+    title: "Best Pickleball Paddles for Intermediate Players",
+    desc: "We narrowed it down to 5 paddles that balance pop, control, and durability without breaking the bank.",
+    rating: 8.8,
+    topPick: "Joola Ben Johns Perseus 3",
+    price: "₹18,499",
+    href: "/reviews/best-pickleball-paddles-intermediate",
+    colorClass: "bg-white border-slate-200",
+    accentClass: "text-orange-700 bg-orange-100",
+    image: "https://placehold.co/560x360/fff7ed/c2410c?text=Ben+Johns+Perseus&font=montserrat",
+  },
+];
+
+const sports = [
+  { name: "Tennis", count: 8, href: "/tennis", color: "bg-lime-500" },
+  { name: "Badminton", count: 6, href: "/badminton", color: "bg-cyan-500" },
+  { name: "Pickleball", count: 4, href: "/pickleball", color: "bg-orange-500" },
+  { name: "Squash", count: 3, href: "/squash", color: "bg-violet-500" },
+];
+---
+
+<BaseLayout
+  title="Independent Racket Sport Reviews"
+  description="India's independent racket review site — tennis, badminton, pickleball, and squash. In-depth specs, Indian pricing, pros & cons, and our own ratings."
+>
+
+  <!-- Hero -->
+  <section class="bg-white border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+      <div class="max-w-2xl">
+        <div class="inline-flex items-center gap-2 text-xs font-semibold text-green-700 bg-green-100 px-3 py-1.5 rounded-full mb-6">
+          <span class="w-1.5 h-1.5 bg-green-500 rounded-full" aria-hidden="true"></span>
+          Independent Reviews — No Sponsored Content
+        </div>
+        <h1 class="font-[Barlow_Condensed] text-5xl sm:text-6xl font-bold text-slate-900 leading-tight">
+          Find Your Perfect<br />Racket.
+        </h1>
+        <p class="mt-5 text-slate-500 text-lg leading-relaxed">
+          India's independent racket review site — tennis, badminton, pickleball, and squash. We dig into the specs, test on court, and give honest ratings with real Indian pricing.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a
+            href="/tennis"
+            class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-semibold px-5 py-3 rounded-xl transition-colors text-sm"
+          >
+            Browse Reviews
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+          <a
+            href="/methodology"
+            class="inline-flex items-center gap-2 border border-slate-200 hover:border-slate-300 text-slate-700 font-semibold px-5 py-3 rounded-xl transition-colors text-sm bg-white"
+          >
+            How We Test
+          </a>
+        </div>
+
+        <div class="mt-10 flex flex-wrap gap-6 text-sm text-slate-400">
+          <span class="flex items-center gap-1.5 font-medium">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            21 rackets reviewed
+          </span>
+          <span class="flex items-center gap-1.5 font-medium">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            10-point rating system
+          </span>
+          <span class="flex items-center gap-1.5 font-medium">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            No sponsored posts
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sports nav -->
+  <section class="bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+      <div class="flex flex-wrap gap-3 items-center">
+        <span class="text-xs font-semibold uppercase tracking-widest text-slate-400 mr-1">Browse by sport:</span>
+        {sports.map(sport => (
+          <a
+            href={sport.href}
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-200 bg-white hover:border-green-300 hover:bg-green-50 text-slate-700 hover:text-green-700 transition-colors text-sm font-medium"
+          >
+            <span class={`w-2 h-2 rounded-full ${sport.color}`} aria-hidden="true"></span>
+            {sport.name}
+            <span class="text-xs text-slate-400 font-normal">{sport.count} reviews</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Reviews -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="flex items-end justify-between mb-8">
+      <div>
+        <h2 class="font-[Barlow_Condensed] text-3xl font-bold text-slate-900">Latest Reviews</h2>
+        <p class="text-slate-500 text-sm mt-1">Our most recent in-depth comparisons</p>
+      </div>
+      <a href="/reviews" class="text-sm text-green-600 font-medium hover:underline hidden sm:inline">
+        View all →
+      </a>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {featuredReviews.map(review => (
+        <article class={`rounded-2xl border overflow-hidden shadow-sm hover:shadow-md transition-shadow ${review.colorClass}`}>
+          <a href={review.href} class="block overflow-hidden" tabindex="-1" aria-hidden="true">
+            <img
+              src={review.image}
+              alt=""
+              class="w-full h-44 object-cover hover:scale-105 transition-transform duration-300"
+              loading="lazy"
+              width="560"
+              height="176"
+            />
+          </a>
+          <div class="p-5">
+            <div class="flex items-center justify-between mb-3">
+              <span class={`text-xs font-semibold px-2 py-0.5 rounded-full ${review.accentClass}`}>
+                {review.sport}
+              </span>
+              <RatingBadge score={review.rating} size="sm" />
+            </div>
+            <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 leading-tight mb-2">
+              <a href={review.href} class="hover:text-green-600 transition-colors">{review.title}</a>
+            </h3>
+            <p class="text-sm text-slate-500 leading-relaxed mb-4">{review.desc}</p>
+            <div class="flex items-center justify-between border-t border-slate-100 pt-4">
+              <div>
+                <p class="text-xs text-slate-400 mb-0.5">Top Pick</p>
+                <p class="text-sm font-semibold text-slate-800">{review.topPick}</p>
+              </div>
+              <div class="text-right">
+                <p class="font-[Barlow_Condensed] text-lg font-bold text-slate-900">{review.price}</p>
+                <a href={review.href} class="text-xs text-green-600 font-semibold hover:underline">
+                  Read review →
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+</BaseLayout>

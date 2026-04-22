@@ -1,0 +1,138 @@
+---
+interface Props {
+  images: string[];
+  alt: string;
+  id: string;
+}
+
+const { images, alt, id } = Astro.props;
+const galleryId = `gallery-${id}`;
+---
+
+<div class="image-gallery" data-gallery-id={galleryId}>
+
+  <!-- Main image -->
+  <div class="relative bg-slate-100 rounded-xl overflow-hidden aspect-square w-full max-w-sm mx-auto lg:mx-0">
+    <img
+      id={`${galleryId}-main`}
+      src={images[0]}
+      alt={alt}
+      class="w-full h-full object-contain p-4 transition-opacity duration-200"
+      loading="lazy"
+      width="400"
+      height="400"
+    />
+    <!-- Prev/Next arrows (shown only when >1 image) -->
+    {images.length > 1 && (
+      <>
+        <button
+          class="gallery-prev absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white/90 shadow border border-slate-200 flex items-center justify-center text-slate-600 hover:bg-white hover:text-slate-900 transition-colors"
+          data-gallery={galleryId}
+          aria-label="Previous image"
+        >
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+            <polyline points="15 18 9 12 15 6"/>
+          </svg>
+        </button>
+        <button
+          class="gallery-next absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white/90 shadow border border-slate-200 flex items-center justify-center text-slate-600 hover:bg-white hover:text-slate-900 transition-colors"
+          data-gallery={galleryId}
+          aria-label="Next image"
+        >
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+            <polyline points="9 18 15 12 9 6"/>
+          </svg>
+        </button>
+        <!-- Dot indicator -->
+        <div class="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5" id={`${galleryId}-dots`} aria-hidden="true">
+          {images.map((_, i) => (
+            <span class={`w-1.5 h-1.5 rounded-full transition-colors ${i === 0 ? "bg-green-500" : "bg-slate-300"}`}></span>
+          ))}
+        </div>
+      </>
+    )}
+  </div>
+
+  <!-- Thumbnails -->
+  {images.length > 1 && (
+    <div class="flex gap-2 mt-3 flex-wrap" role="list" aria-label={`${alt} thumbnails`}>
+      {images.map((src, i) => (
+        <button
+          class={`gallery-thumb flex-shrink-0 w-14 h-14 rounded-lg border-2 overflow-hidden bg-white transition-all duration-150 ${i === 0 ? "border-green-500 shadow-sm" : "border-slate-200 hover:border-slate-400"}`}
+          data-gallery={galleryId}
+          data-index={i}
+          aria-label={`View image ${i + 1} of ${images.length}`}
+          aria-pressed={i === 0 ? "true" : "false"}
+          role="listitem"
+        >
+          <img
+            src={src}
+            alt=""
+            class="w-full h-full object-contain p-1"
+            loading="lazy"
+            width="56"
+            height="56"
+            aria-hidden="true"
+          />
+        </button>
+      ))}
+    </div>
+  )}
+</div>
+
+<script>
+  document.querySelectorAll<HTMLElement>(".image-gallery").forEach(gallery => {
+    const galleryId = gallery.dataset.galleryId!;
+    const mainImg = document.getElementById(`${galleryId}-main`) as HTMLImageElement;
+    const dots = document.getElementById(`${galleryId}-dots`);
+    const thumbs = gallery.querySelectorAll<HTMLButtonElement>(".gallery-thumb");
+    const prevBtn = gallery.querySelector<HTMLButtonElement>(".gallery-prev");
+    const nextBtn = gallery.querySelector<HTMLButtonElement>(".gallery-next");
+
+    let current = 0;
+    const total = thumbs.length;
+
+    function goTo(index: number) {
+      const next = (index + total) % total;
+      const src = thumbs[next].querySelector("img")!.src;
+
+      mainImg.style.opacity = "0";
+      setTimeout(() => {
+        mainImg.src = src;
+        mainImg.style.opacity = "1";
+      }, 150);
+
+      // Update thumb borders + aria-pressed
+      thumbs.forEach((t, i) => {
+        const active = i === next;
+        t.classList.toggle("border-green-500", active);
+        t.classList.toggle("shadow-sm", active);
+        t.classList.toggle("border-slate-200", !active);
+        t.setAttribute("aria-pressed", String(active));
+      });
+
+      // Update dots
+      if (dots) {
+        dots.querySelectorAll("span").forEach((dot, i) => {
+          dot.classList.toggle("bg-green-500", i === next);
+          dot.classList.toggle("bg-slate-300", i !== next);
+        });
+      }
+
+      current = next;
+    }
+
+    thumbs.forEach((thumb, i) => {
+      thumb.addEventListener("click", () => goTo(i));
+    });
+
+    prevBtn?.addEventListener("click", () => goTo(current - 1));
+    nextBtn?.addEventListener("click", () => goTo(current + 1));
+
+    // Keyboard navigation when gallery is focused
+    gallery.addEventListener("keydown", e => {
+      if (e.key === "ArrowLeft") goTo(current - 1);
+      if (e.key === "ArrowRight") goTo(current + 1);
+    });
+  });
+</script>
