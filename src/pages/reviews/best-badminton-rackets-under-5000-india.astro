@@ -4,7 +4,10 @@ import TopPick from "../../components/TopPick.astro";
 import ComparisonTable from "../../components/ComparisonTable.astro";
 import ProductReview from "../../components/ProductReview.astro";
 import RatingMethodology from "../../components/RatingMethodology.astro";
-import review from "../../data/reviews/badminton-under-2000";
+import review from "../../data/reviews/best-badminton-rackets-under-5000-india";
+import { buildReviewPageNodes } from "../../utils/schema";
+
+const jsonLdNodes = buildReviewPageNodes(review);
 
 const tocItems = [
   { id: "top-pick", label: "Our Top Pick" },
@@ -26,6 +29,7 @@ const tocItems = [
   level={review.meta.level}
   lastUpdated={review.meta.lastUpdated}
   tocItems={tocItems}
+  jsonLdNodes={jsonLdNodes}
 >
 
   <section class="prose max-w-none">

@@ -1,0 +1,103 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import RatingBadge from "../../components/RatingBadge.astro";
+import { collectionPageSchema, breadcrumbSchema, itemListSchema } from "../../utils/schema";
+
+const groups = [
+  {
+    sport: "Tennis",
+    color: "lime",
+    href: "/tennis",
+    reviews: [
+      { title: "Best Tennis Rackets for Beginners in India 2026", href: "/reviews/best-tennis-rackets-for-beginners-india", topPick: "Wilson Clash 100", price: "₹20,999", rating: 9.2, level: "Beginner" },
+      { title: "Best Tennis Rackets Under 5000 in India 2026", href: "/reviews/best-tennis-rackets-under-5000-india", topPick: "HEAD Titanium Tour Pro", price: "₹3,237", rating: 9.5, level: "Beginner" },
+      { title: "Best Tennis Rackets Under 10000 in India 2026", href: "/reviews/best-tennis-rackets-under-10000-india", topPick: "HEAD TI S6", price: "₹10,499", rating: 9.3, level: "Beginner–Intermediate" },
+      { title: "Best Tennis Rackets Under 20000 in India 2026", href: "/reviews/best-tennis-rackets-under-20000-india", topPick: "HEAD Radical Pro 2023", price: "₹17,708", rating: 9.4, level: "Intermediate" },
+    ],
+  },
+  {
+    sport: "Badminton",
+    color: "cyan",
+    href: "/badminton",
+    reviews: [
+      { title: "Best Badminton Rackets Under 2000 in India 2026", href: "/reviews/best-badminton-rackets-under-2000-india", topPick: "Yonex Nanoray Light 18i", price: "₹1,799", rating: 9.0, level: "Beginner" },
+      { title: "Best Badminton Rackets Under 5000 in India 2026", href: "/reviews/best-badminton-rackets-under-5000-india", topPick: "Yonex Astrox 77 Play", price: "₹2,890", rating: 9.5, level: "Intermediate" },
+    ],
+  },
+  {
+    sport: "Pickleball",
+    color: "orange",
+    href: "/pickleball",
+    reviews: [
+      { title: "Best Pickleball Paddles Under 2500 in India 2026", href: "/reviews/best-pickleball-paddles-under-2500-india", topPick: "Xtrieve USAPA T700 Carbon Fiber", price: "₹2,380", rating: 9.4, level: "Beginner" },
+      { title: "Best Pickleball Paddles Under 5000 in India 2026", href: "/reviews/best-pickleball-paddles-under-5000-india", topPick: "Voltik Alpha V1", price: "₹3,699", rating: 9.4, level: "Beginner–Intermediate" },
+      { title: "Best Pickleball Paddles Under 10000 in India 2026", href: "/reviews/best-pickleball-paddles-under-10000-india", topPick: "YAIT Takumi GEN4", price: "₹7,979", rating: 9.5, level: "Intermediate" },
+    ],
+  },
+  {
+    sport: "Table Tennis",
+    color: "blue",
+    href: "/table-tennis",
+    reviews: [
+      { title: "Best Table Tennis Tables in India 2026", href: "/reviews/best-table-tennis-tables-india", topPick: "Step Over Tournament Pro 25mm", price: "₹18,499", rating: 9.6 },
+    ],
+  },
+];
+
+const totalReviews = groups.reduce((sum, g) => sum + g.reviews.length, 0);
+
+const allReviewItems = groups.flatMap(g => g.reviews.map(r => ({ name: r.title, url: r.href })));
+const jsonLd = { "@graph": [
+  collectionPageSchema({ url: "/reviews", name: "All Reviews", description: "Browse all MySweetSpot reviews — tennis, badminton, pickleball, and table tennis equipment reviewed with real Indian pricing." }),
+  breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Reviews", url: "/reviews" }]),
+  itemListSchema(allReviewItems),
+] } as Record<string, unknown>;
+---
+
+<BaseLayout
+  title="All Reviews"
+  description="Browse all MySweetSpot reviews — tennis, badminton, pickleball, and table tennis equipment reviewed with real Indian pricing."
+  jsonLd={jsonLd}
+>
+
+  <div class="bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <nav class="text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-slate-800">Home</a> › <span class="text-slate-700 font-medium">Reviews</span>
+      </nav>
+      <h1 class="font-[Barlow_Condensed] text-4xl sm:text-5xl font-bold text-slate-900">All Reviews</h1>
+      <p class="mt-3 text-slate-500 text-base max-w-xl">{totalReviews} in-depth reviews across {groups.length} sports. Honest ratings, full specs, and Indian pricing.</p>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
+    {groups.map(group => (
+      <section>
+        <div class="flex items-center justify-between mb-5">
+          <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900">{group.sport}</h2>
+          <a href={group.href} class="text-sm text-green-600 font-medium hover:underline">View all →</a>
+        </div>
+        <div class="space-y-4">
+          {group.reviews.map(r => (
+            <article class="bg-white border border-slate-200 rounded-2xl p-5 flex flex-col sm:flex-row items-start gap-4 hover:shadow-md transition-shadow">
+              <div class="flex-1 min-w-0">
+                <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-900">
+                  <a href={r.href} class="hover:text-green-600 transition-colors">{r.title}</a>
+                </h3>
+                <div class="mt-2 flex items-center gap-4 flex-wrap">
+                  <div>
+                    <p class="text-xs text-slate-400">Top Pick</p>
+                    <p class="text-sm font-semibold text-slate-800">{r.topPick} · <span class="font-[Barlow_Condensed] text-base">{r.price}</span></p>
+                  </div>
+                  <a href={r.href} class="ml-auto text-sm font-semibold text-green-600 hover:underline">Read review →</a>
+                </div>
+              </div>
+              <RatingBadge score={r.rating} size="md" />
+            </article>
+          ))}
+        </div>
+      </section>
+    ))}
+  </div>
+
+</BaseLayout>

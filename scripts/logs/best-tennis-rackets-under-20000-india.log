@@ -1,0 +1,18 @@
+Done. Here's what was created:
+
+**Files created:**
+- `src/data/reviews/best-tennis-rackets-under-20000-india.ts` — Review data
+- `src/pages/reviews/best-tennis-rackets-under-20000-india.astro` — Astro page
+
+**4 products ranked:**
+
+| Rank | Product | Price | Rating | Badge |
+|------|---------|-------|--------|-------|
+| 1 | HEAD Radical Pro 2023 | ₹17,708 | 9.4 | Top Pick |
+| 2 | HEAD Ti.S6 | ₹12,141 | 9.0 | Best Value |
+| 3 | HEAD Metallix Attitude Elite | ₹14,549 | 8.5 | — |
+| 4 | Wilson Blade Feel RXT 105 | ₹7,933 | 8.1 | Best Budget |
+
+**Rating criteria:** Power & Spin (25%), Control (25%), Comfort (20%), Manoeuvrability (15%), Value (15%)
+
+The build completed successfully with the page at `/reviews/best-tennis-rackets-under-20000-india/`. The temporary fetch script has been deleted.

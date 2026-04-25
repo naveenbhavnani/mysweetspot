@@ -1,0 +1,18 @@
+Done. Here's what was created:
+
+**Files created:**
+- `src/data/reviews/best-tennis-rackets-under-10000-india.ts` — Review data with 4 products
+- `src/pages/reviews/best-tennis-rackets-under-10000-india.astro` — Astro page
+
+**Product rankings:**
+
+| # | Product | Rating | Price | Badge |
+|---|---------|--------|-------|-------|
+| 1 | HEAD TI S6 | 9.3 | ₹10,499 | Top Pick |
+| 2 | HEAD IG Challenge Team | 8.7 | ₹9,999 | Best Premium |
+| 3 | Wilson Pro Staff Precision XL 110 | 8.3 | ₹4,499 | Best Budget |
+| 4 | Wilson Ultra 26 V4.0 | 8.0 | ₹9,899 | Best for Juniors |
+
+**Rating criteria:** Power & Spin (25%), Control (25%), Comfort (20%), Manoeuvrability (15%), Value (15%)
+
+All Amazon URLs use `tag=mysweetspot-21`, all prices come from Playwright scraping, and all image URLs are real PA-API URLs from `m.media-amazon.com`. Build passes cleanly.

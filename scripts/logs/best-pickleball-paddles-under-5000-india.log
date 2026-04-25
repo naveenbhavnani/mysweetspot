@@ -1,0 +1,19 @@
+Build succeeds with no errors. The page is at `/reviews/best-pickleball-paddles-under-5000-india/index.html`.
+
+Here's a summary of what was created:
+
+**Data file:** `src/data/reviews/best-pickleball-paddles-under-5000-india.ts`
+**Page:** `src/pages/reviews/best-pickleball-paddles-under-5000-india.astro`
+
+**4 products ranked:**
+
+| Rank | Paddle | Price | Rating | Badge |
+|------|--------|-------|--------|-------|
+| 1 | Voltik Alpha V1 | ₹3,699 | 9.4 | Top Pick |
+| 2 | FirstEdge VeloFlex | ₹4,936 | 9.0 | Best Premium |
+| 3 | Boldfit Torq 800 | ₹2,999 | 8.5 | Best Budget |
+| 4 | Konex Epitome | ₹5,249 | 8.2 | — |
+
+**Rating criteria:** Control (25%), Power (20%), Spin (20%), Feel & Comfort (15%), Value (20%)
+
+The Voltik Alpha V1 takes the top spot due to its Gen 4 thermoformed construction, foam-injected walls, and exceptional value at ₹3,699 with a 4.9-star Amazon rating. All prices are from Playwright scraping (incl. GST) and all images are real PA-API URLs.

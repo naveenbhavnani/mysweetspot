@@ -1,0 +1,17 @@
+We have a significant issue. Here's the status of all 7 products:
+
+| # | Product | Price | Status |
+|---|---------|-------|--------|
+| 1 | Yonex Astrox 77 Tour (B0BQJWC29R) | ₹8,399 | Available |
+| 2 | Yonex ArcSaber 11 Pro (B09V28FDF8) | ₹14,687 | Available but **over ₹10,000 budget** |
+| 3 | Li-Ning Windstorm 79-S (B0BF5KNYWH) | - | **Currently unavailable** |
+| 4 | Yonex Astrox 77 Play (B0BNHGQCSZ) | - | **Currently unavailable** |
+| 5 | Victor Thruster K Hawk (B0F42LLGC7) | - | **Currently unavailable** |
+| 6 | Yonex Duora 10 (B083FSTKC1) | - | **Currently unavailable** |
+| 7 | Li-Ning AXForce Big Bang (B0DTYKNWLM) | - | **Currently unavailable** (1.0 stars) |
+
+Only 1 product is available and within budget. We can't create a meaningful roundup with just 1 product. How would you like to proceed? Options:
+
+1. **Include unavailable products anyway** using PA-API data (images, features) and note them as "check availability" - they may come back in stock
+2. **Find replacement products** - I could search Amazon for other badminton rackets under ₹10,000 that are currently in stock
+3. **Skip this roundup** and move to a different one from your list

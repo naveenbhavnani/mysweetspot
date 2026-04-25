@@ -1,7 +1,13 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { aboutPageSchema, breadcrumbSchema } from "../utils/schema";
+
+const jsonLd = { "@graph": [
+  aboutPageSchema({ url: "/about", name: "About MySweetSpot", description: "MySweetSpot is India's independent racket sport review site — tennis, badminton, pickleball, and squash." }),
+  breadcrumbSchema([{ name: "Home", url: "/" }, { name: "About", url: "/about" }]),
+] } as Record<string, unknown>;
 ---
-<BaseLayout title="About MySweetSpot" description="MySweetSpot is India's independent racket sport review site — tennis, badminton, pickleball, and squash.">
+<BaseLayout title="About MySweetSpot" description="MySweetSpot is India's independent racket sport review site — tennis, badminton, pickleball, and squash." jsonLd={jsonLd}>
   <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
     <nav class="text-xs text-slate-500 mb-6" aria-label="Breadcrumb"><a href="/" class="hover:text-slate-800">Home</a> › <span class="text-slate-700 font-medium">About</span></nav>
     <h1 class="font-[Barlow_Condensed] text-4xl sm:text-5xl font-bold text-slate-900 mb-6">About MySweetSpot</h1>

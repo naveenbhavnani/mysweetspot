@@ -1,12 +1,13 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import RatingBadge from "../../components/RatingBadge.astro";
+import { collectionPageSchema, breadcrumbSchema, itemListSchema } from "../../utils/schema";
 
 const reviews = [
   {
-    title: "Best Tennis Rackets for Beginners (2025)",
+    title: "Best Tennis Rackets for Beginners in India 2026",
     desc: "4 tested picks. Wilson Clash 100 leads for its arm-friendly flex and forgiving sweet spot.",
-    href: "/reviews/best-tennis-rackets-for-beginners",
+    href: "/reviews/best-tennis-rackets-for-beginners-india",
     topPick: "Wilson Clash 100",
     price: "₹20,999",
     rating: 9.2,
@@ -14,12 +15,52 @@ const reviews = [
     lastUpdated: "Mar 2025",
     image: "https://placehold.co/96x96/f7fee7/4d7c0f?text=Clash&font=montserrat",
   },
+  {
+    title: "Best Tennis Rackets Under 5000 in India 2026",
+    desc: "Budget picks under ₹5000. HEAD Titanium Tour Pro tops the list for its lightweight power and massive sweet spot.",
+    href: "/reviews/best-tennis-rackets-under-5000-india",
+    topPick: "HEAD Titanium Tour Pro",
+    price: "₹3,237",
+    rating: 9.5,
+    level: "Beginner",
+    lastUpdated: "Apr 2026",
+    image: "https://m.media-amazon.com/images/I/41fdpU-QkBL._SL500_.jpg",
+  },
+  {
+    title: "Best Tennis Rackets Under 10000 in India 2026",
+    desc: "Mid-range rackets under ₹10,000. HEAD TI S6 leads with its oversized head and featherweight feel.",
+    href: "/reviews/best-tennis-rackets-under-10000-india",
+    topPick: "HEAD TI S6",
+    price: "₹10,499",
+    rating: 9.3,
+    level: "Beginner–Intermediate",
+    lastUpdated: "Apr 2026",
+    image: "https://m.media-amazon.com/images/I/41fdpU-QkBL._SL500_.jpg",
+  },
+  {
+    title: "Best Tennis Rackets Under 20000 in India 2026",
+    desc: "Performance rackets under ₹20,000. HEAD Radical Pro 2023 delivers tour-level control at an accessible price.",
+    href: "/reviews/best-tennis-rackets-under-20000-india",
+    topPick: "HEAD Radical Pro 2023",
+    price: "₹17,708",
+    rating: 9.4,
+    level: "Intermediate",
+    lastUpdated: "Apr 2026",
+    image: "https://m.media-amazon.com/images/I/41fdpU-QkBL._SL500_.jpg",
+  },
 ];
+
+const jsonLd = { "@graph": [
+  collectionPageSchema({ url: "/tennis", name: "Tennis Racket Reviews", description: "Independent tennis racket reviews for Indian players. In-depth specs, pros/cons, and expert ratings with real Indian pricing." }),
+  breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Tennis", url: "/tennis" }]),
+  itemListSchema(reviews.map(r => ({ name: r.title, url: r.href }))),
+] } as Record<string, unknown>;
 ---
 
 <BaseLayout
   title="Tennis Racket Reviews"
   description="Independent tennis racket reviews for Indian players. In-depth specs, pros/cons, and expert ratings with real Indian pricing."
+  jsonLd={jsonLd}
 >
   <div class="bg-lime-50 border-b border-lime-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

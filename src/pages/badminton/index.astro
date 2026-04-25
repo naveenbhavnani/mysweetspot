@@ -1,28 +1,47 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import RatingBadge from "../../components/RatingBadge.astro";
+import { collectionPageSchema, breadcrumbSchema, itemListSchema } from "../../utils/schema";
 
 const sport = "badminton";
 const sportColor = "cyan";
 
 const reviews = [
   {
-    title: "Best Badminton Rackets Under ₹2000",
+    title: "Best Badminton Rackets Under 2000 in India 2026",
     desc: "5 tested, graphite-only picks for beginners and casual players. Yonex Nanoray Light 18i leads the pack.",
-    href: "/reviews/best-badminton-rackets-under-2000",
+    href: "/reviews/best-badminton-rackets-under-2000-india",
     topPick: "Yonex Nanoray Light 18i",
     price: "₹1,799",
     rating: 9.0,
     level: "Beginner",
-    lastUpdated: "Apr 2025",
+    lastUpdated: "Apr 2026",
     image: "https://m.media-amazon.com/images/I/31dmcHmJ0NL._SL500_.jpg",
   },
+  {
+    title: "Best Badminton Rackets Under 5000 in India 2026",
+    desc: "Mid-range rackets under ₹5000. Yonex Astrox 77 Play earns top spot for its explosive smash power.",
+    href: "/reviews/best-badminton-rackets-under-5000-india",
+    topPick: "Yonex Astrox 77 Play",
+    price: "₹2,890",
+    rating: 9.5,
+    level: "Intermediate",
+    lastUpdated: "Apr 2026",
+    image: "https://m.media-amazon.com/images/I/31EqWYWGxzL._SL500_.jpg",
+  },
 ];
+
+const jsonLd = { "@graph": [
+  collectionPageSchema({ url: "/badminton", name: "Badminton Racket Reviews", description: "Independent badminton racket reviews for Indian players. In-depth specs, pros/cons, and expert ratings with real Indian pricing." }),
+  breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Badminton", url: "/badminton" }]),
+  itemListSchema(reviews.map(r => ({ name: r.title, url: r.href }))),
+] } as Record<string, unknown>;
 ---
 
 <BaseLayout
   title="Badminton Racket Reviews"
   description="Independent badminton racket reviews for Indian players. In-depth specs, pros/cons, and expert ratings with real Indian pricing."
+  jsonLd={jsonLd}
 >
 
   <!-- Hero -->

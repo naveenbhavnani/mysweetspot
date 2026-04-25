@@ -61,7 +61,7 @@ export interface ReviewData {
   meta: {
     title: string;
     description: string;
-    sport: 'tennis' | 'badminton' | 'pickleball' | 'squash';
+    sport: 'tennis' | 'badminton' | 'pickleball' | 'squash' | 'table-tennis';
     level?: string;
     lastUpdated: string;
     slug: string;

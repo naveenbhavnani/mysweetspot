@@ -2,12 +2,12 @@ import type { ReviewData } from '../../types/review';
 
 const review: ReviewData = {
   meta: {
-    title: 'Best Badminton Rackets Under ₹2000 in India (2025)',
+    title: 'Best Badminton Rackets Under 2000 in India 2026',
     description: 'We tested 10 budget badminton rackets priced under ₹2000. Here are the 5 that stood out for speed, control, and durability — with full specs, pros/cons, and real Indian pricing.',
     sport: 'badminton',
     level: 'Beginner',
-    lastUpdated: '2025-04-01',
-    slug: 'best-badminton-rackets-under-2000',
+    lastUpdated: '2026-04-25',
+    slug: 'best-badminton-rackets-under-2000-india',
   },
   intro: [
     'Under ₹2000 is where most Indian players start their badminton journey — and it\'s a segment with a lot of noise. Generic aluminium rackets sit next to genuine graphite options, and the price tags don\'t always tell you which is which.',

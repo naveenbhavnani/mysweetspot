@@ -9,19 +9,32 @@ interface TocItem {
 interface Props {
   title: string;
   description: string;
-  sport: "tennis" | "badminton" | "pickleball" | "squash";
+  sport: "tennis" | "badminton" | "pickleball" | "squash" | "table-tennis";
   level?: string;
   lastUpdated: string;
   tocItems?: TocItem[];
+  jsonLdNodes?: object[];
 }
 
-const { title, description, sport, level, lastUpdated, tocItems = [] } = Astro.props;
+const { title, description, sport, level, lastUpdated, tocItems = [], jsonLdNodes } = Astro.props;
+
+const jsonLd = jsonLdNodes ? { "@graph": jsonLdNodes } as Record<string, unknown> : null;
+
+const sportDisplayNames: Record<string, string> = {
+  tennis: "Tennis",
+  badminton: "Badminton",
+  pickleball: "Pickleball",
+  squash: "Squash",
+  "table-tennis": "Table Tennis",
+};
+const sportDisplayName = sportDisplayNames[sport] ?? sport;
 
 const sportColors: Record<string, string> = {
   tennis: "bg-lime-100 text-lime-800 border-lime-200",
   badminton: "bg-cyan-100 text-cyan-800 border-cyan-200",
   pickleball: "bg-orange-100 text-orange-800 border-orange-200",
   squash: "bg-violet-100 text-violet-800 border-violet-200",
+  "table-tennis": "bg-blue-100 text-blue-800 border-blue-200",
 };
 const sportClass = sportColors[sport] ?? "bg-slate-100 text-slate-700 border-slate-200";
 
@@ -32,7 +45,7 @@ const formattedDate = new Date(lastUpdated).toLocaleDateString("en-US", {
 });
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description} jsonLd={jsonLd}>
   <div class="bg-slate-50 border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
       <!-- Breadcrumb -->
@@ -40,7 +53,7 @@ const formattedDate = new Date(lastUpdated).toLocaleDateString("en-US", {
         <ol class="flex items-center gap-1.5 text-xs text-slate-500">
           <li><a href="/" class="hover:text-slate-800 transition-colors">Home</a></li>
           <li aria-hidden="true">›</li>
-          <li><a href={`/${sport}`} class="hover:text-slate-800 transition-colors capitalize">{sport}</a></li>
+          <li><a href={`/${sport}`} class="hover:text-slate-800 transition-colors">{sportDisplayName}</a></li>
           <li aria-hidden="true">›</li>
           <li class="text-slate-700 font-medium" aria-current="page">{title}</li>
         </ol>
@@ -48,7 +61,7 @@ const formattedDate = new Date(lastUpdated).toLocaleDateString("en-US", {
 
       <!-- Tags -->
       <div class="flex items-center gap-2 mb-4 flex-wrap">
-        <span class={`text-xs font-semibold px-2.5 py-1 rounded-full border capitalize ${sportClass}`}>{sport}</span>
+        <span class={`text-xs font-semibold px-2.5 py-1 rounded-full border ${sportClass}`}>{sportDisplayName}</span>
         {level && (
           <span class="text-xs font-semibold px-2.5 py-1 rounded-full border bg-slate-100 text-slate-700 border-slate-200 capitalize">{level}</span>
         )}

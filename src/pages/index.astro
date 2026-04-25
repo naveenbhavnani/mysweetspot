@@ -1,60 +1,71 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import RatingBadge from "../components/RatingBadge.astro";
+import { webPageSchema, itemListSchema } from "../utils/schema";
 
 const featuredReviews = [
   {
     sport: "Tennis",
     sportKey: "tennis",
-    title: "Best Tennis Rackets for Beginners",
-    desc: "Tested 12 rackets. Wilson Clash 100 takes the top spot for its arm-friendly flex and massive sweet spot.",
-    rating: 9.2,
-    topPick: "Wilson Clash 100",
-    price: "₹20,999",
-    href: "/reviews/best-tennis-rackets-for-beginners",
+    title: "Best Tennis Rackets Under 5000 in India 2026",
+    desc: "Budget picks under ₹5000. HEAD Titanium Tour Pro tops the list for its lightweight power and massive sweet spot.",
+    rating: 9.5,
+    topPick: "HEAD Titanium Tour Pro",
+    price: "₹3,237",
+    href: "/reviews/best-tennis-rackets-under-5000-india",
     colorClass: "bg-white border-slate-200",
     accentClass: "text-lime-700 bg-lime-100",
-    image: "https://placehold.co/560x360/f7fee7/4d7c0f?text=Wilson+Clash+100&font=montserrat",
+    image: "https://m.media-amazon.com/images/I/41fdpU-QkBL._SL500_.jpg",
   },
   {
     sport: "Badminton",
     sportKey: "badminton",
-    title: "Best Badminton Rackets 2025",
-    desc: "From featherweight attackers to all-round defenders — we rank the best rackets across all skill levels.",
-    rating: 9.0,
-    topPick: "Yonex Astrox 88D Pro",
-    price: "₹16,999",
-    href: "/reviews/best-badminton-rackets",
+    title: "Best Badminton Rackets Under 5000 in India 2026",
+    desc: "Mid-range rackets under ₹5000. Yonex Astrox 77 Play earns top spot for its explosive smash power.",
+    rating: 9.5,
+    topPick: "Yonex Astrox 77 Play",
+    price: "₹2,890",
+    href: "/reviews/best-badminton-rackets-under-5000-india",
     colorClass: "bg-white border-slate-200",
     accentClass: "text-cyan-700 bg-cyan-100",
-    image: "https://placehold.co/560x360/ecfeff/0e7490?text=Astrox+88D+Pro&font=montserrat",
+    image: "https://m.media-amazon.com/images/I/31EqWYWGxzL._SL500_.jpg",
   },
   {
     sport: "Pickleball",
     sportKey: "pickleball",
-    title: "Best Pickleball Paddles for Intermediate Players",
-    desc: "We narrowed it down to 5 paddles that balance pop, control, and durability without breaking the bank.",
-    rating: 8.8,
-    topPick: "Joola Ben Johns Perseus 3",
-    price: "₹18,499",
-    href: "/reviews/best-pickleball-paddles-intermediate",
+    title: "Best Pickleball Paddles Under 5000 in India 2026",
+    desc: "Mid-range paddles under ₹5000. Voltik Alpha V1 delivers the best balance of power and control.",
+    rating: 9.4,
+    topPick: "Voltik Alpha V1",
+    price: "₹3,699",
+    href: "/reviews/best-pickleball-paddles-under-5000-india",
     colorClass: "bg-white border-slate-200",
     accentClass: "text-orange-700 bg-orange-100",
-    image: "https://placehold.co/560x360/fff7ed/c2410c?text=Ben+Johns+Perseus&font=montserrat",
+    image: "https://m.media-amazon.com/images/I/315j8u1ZXiL._SL500_.jpg",
   },
 ];
 
+const homeJsonLd = { "@graph": [
+  webPageSchema({
+    url: "/",
+    name: "Independent Racket Sport Reviews",
+    description: "India's independent racket review site — tennis, badminton, pickleball, and table tennis. In-depth specs, Indian pricing, pros & cons, and our own ratings.",
+  }),
+  itemListSchema(featuredReviews.map(r => ({ name: r.title, url: r.href }))),
+] } as Record<string, unknown>;
+
 const sports = [
-  { name: "Tennis", count: 8, href: "/tennis", color: "bg-lime-500" },
-  { name: "Badminton", count: 6, href: "/badminton", color: "bg-cyan-500" },
-  { name: "Pickleball", count: 4, href: "/pickleball", color: "bg-orange-500" },
-  { name: "Squash", count: 3, href: "/squash", color: "bg-violet-500" },
+  { name: "Tennis", count: 4, href: "/tennis", color: "bg-lime-500" },
+  { name: "Badminton", count: 2, href: "/badminton", color: "bg-cyan-500" },
+  { name: "Pickleball", count: 3, href: "/pickleball", color: "bg-orange-500" },
+  { name: "Table Tennis", count: 1, href: "/table-tennis", color: "bg-blue-500" },
 ];
 ---
 
 <BaseLayout
   title="Independent Racket Sport Reviews"
-  description="India's independent racket review site — tennis, badminton, pickleball, and squash. In-depth specs, Indian pricing, pros & cons, and our own ratings."
+  description="India's independent racket review site — tennis, badminton, pickleball, and table tennis. In-depth specs, Indian pricing, pros & cons, and our own ratings."
+  jsonLd={homeJsonLd}
 >
 
   <!-- Hero -->
@@ -69,7 +80,7 @@ const sports = [
           Find Your Perfect<br />Racket.
         </h1>
         <p class="mt-5 text-slate-500 text-lg leading-relaxed">
-          India's independent racket review site — tennis, badminton, pickleball, and squash. We dig into the specs, test on court, and give honest ratings with real Indian pricing.
+          India's independent racket review site — tennis, badminton, pickleball, and table tennis. We dig into the specs, test on court, and give honest ratings with real Indian pricing.
         </p>
         <div class="mt-8 flex flex-wrap gap-3">
           <a
@@ -92,7 +103,7 @@ const sports = [
         <div class="mt-10 flex flex-wrap gap-6 text-sm text-slate-400">
           <span class="flex items-center gap-1.5 font-medium">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-            21 rackets reviewed
+            10 reviews published
           </span>
           <span class="flex items-center gap-1.5 font-medium">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>

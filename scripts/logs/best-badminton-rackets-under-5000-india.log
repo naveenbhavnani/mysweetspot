@@ -1,0 +1,18 @@
+Done. Here's what was created:
+
+**Files created:**
+- `src/data/reviews/best-badminton-rackets-under-5000-india.ts` — Review data
+- `src/pages/reviews/best-badminton-rackets-under-5000-india.astro` — Astro page
+
+**6 products reviewed (ranked):**
+
+| Rank | Product | Price | Rating | Badge |
+|------|---------|-------|--------|-------|
+| 1 | Yonex Astrox 77 Play | ₹2,890 | 9.5 | Top Pick |
+| 2 | Apacs Z-Ziggler | ₹2,299 | 9.2 | Best Premium |
+| 3 | Li-Ning Air-Force 77 G3 | ₹2,780 | 9.0 | — |
+| 4 | Apacs Finapi 232 | ₹1,899 | 8.7 | Best Budget |
+| 5 | Yonex Astrox Lite 37i | ₹1,897 | 8.4 | — |
+| 6 | Yonex Astrox Lite 27i | ₹1,899 | 8.1 | — |
+
+**Note:** The Yonex Astrox 77 Play (B0BNHGQCSZ) is currently showing "unavailable" on its original Amazon listing, though an alternate listing (B0BQJX3DVS) has it at ₹2,890. The buy URL points to the original ASIN as provided. You may want to update the ASIN if availability doesn't return.
