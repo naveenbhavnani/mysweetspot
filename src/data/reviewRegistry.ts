@@ -120,6 +120,16 @@ const reviews: ReviewSummary[] = [
     topPickPrice: '₹2,630',
   },
   {
+    slug: 'best-table-tennis-rackets-under-2000-india',
+    title: 'Best Table Tennis Rackets Under 2000 in India 2026',
+    sport: 'table-tennis',
+    level: 'Beginner',
+    priceRange: 2,
+    topPickName: 'GKI Offensive XX',
+    topPickRating: 9.3,
+    topPickPrice: '₹980',
+  },
+  {
     slug: 'best-squash-rackets-under-20000',
     title: 'Best Squash Rackets Under ₹20,000 in India 2026',
     sport: 'squash',
@@ -128,6 +138,16 @@ const reviews: ReviewSummary[] = [
     topPickName: 'Dunlop SonicCore Ultimate 132',
     topPickRating: 9.0,
     topPickPrice: '₹17,299',
+  },
+  {
+    slug: 'best-table-tennis-rackets-under-5000-india',
+    title: 'Best Table Tennis Rackets Under 5000 in India 2026',
+    sport: 'table-tennis',
+    level: 'Beginner–Intermediate',
+    priceRange: 5,
+    topPickName: 'TANSO Black X Blade Pro',
+    topPickRating: 9.4,
+    topPickPrice: '₹2,199',
   },
 ];
 

@@ -1,0 +1,105 @@
+---
+import ReviewLayout from "../../layouts/ReviewLayout.astro";
+import TopPick from "../../components/TopPick.astro";
+import ComparisonTable from "../../components/ComparisonTable.astro";
+import ProductReview from "../../components/ProductReview.astro";
+import RatingMethodology from "../../components/RatingMethodology.astro";
+import RelatedArticles from "../../components/RelatedArticles.astro";
+import review from "../../data/reviews/best-table-tennis-rackets-under-5000-india";
+import { buildReviewPageNodes } from "../../utils/schema";
+
+const jsonLdNodes = buildReviewPageNodes(review);
+
+const tocItems = [
+  { id: "top-pick", label: "Our Top Pick" },
+  { id: "comparison-table", label: "Quick Comparison" },
+  { id: "how-we-rated", label: "How We Rated" },
+  ...review.products.map(p => ({
+    id: p.name.toLowerCase().replace(/\s+/g, "-"),
+    label: p.name,
+  })),
+  { id: "buying-guide", label: "Buying Guide" },
+  { id: "faq", label: "FAQ" },
+  { id: "related-articles", label: "Related Reviews" },
+];
+---
+
+<ReviewLayout
+  title={review.meta.title}
+  description={review.meta.description}
+  sport={review.meta.sport}
+  level={review.meta.level}
+  lastUpdated={review.meta.lastUpdated}
+  tocItems={tocItems}
+  jsonLdNodes={jsonLdNodes}
+>
+
+  <section class="prose max-w-none">
+    {review.intro.map(p => <p>{p}</p>)}
+  </section>
+
+  <section id="top-pick" class="scroll-mt-24">
+    <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Our Top Pick</h2>
+    <TopPick {...review.topPick} />
+  </section>
+
+  <section id="comparison-table" class="scroll-mt-24">
+    <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-2">Quick Comparison</h2>
+    <p class="text-sm text-slate-500 mb-4">Click any name to jump to its full review.</p>
+    <ComparisonTable
+      products={review.comparisonProducts}
+      columns={[
+        { key: "Blade Construction", label: "Blade" },
+        { key: "Rubber Type & Sponge Thickness", label: "Rubber / Sponge" },
+        { key: "Speed/Spin/Control Rating", label: "Speed/Spin/Control" },
+        { key: "Weight", label: "Weight" },
+        { key: "ITTF Certification", label: "ITTF" },
+      ]}
+    />
+  </section>
+
+  <RatingMethodology {...review.ratingCriteria} />
+
+  <section class="space-y-8">
+    <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide">Detailed Reviews</h2>
+    {review.products.map(p => <ProductReview {...p} />)}
+  </section>
+
+  <section id="buying-guide" class="scroll-mt-24 bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8">
+    <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">Buying Guide</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+      {review.buyingGuide.map(item => (
+        <div class="flex gap-3">
+          <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-semibold text-slate-900 text-sm mb-1">{item.title}</h3>
+            <p class="text-sm text-slate-500 leading-relaxed">{item.body}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section id="faq" class="scroll-mt-24">
+    <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">Frequently Asked Questions</h2>
+    <div class="space-y-4" itemscope itemtype="https://schema.org/FAQPage">
+      {review.faq.map(item => (
+        <div class="border border-slate-200 rounded-xl overflow-hidden" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <div class="bg-slate-50 px-5 py-3.5">
+            <h3 class="font-semibold text-slate-900 text-sm" itemprop="name">{item.q}</h3>
+          </div>
+          <div class="px-5 py-3.5" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p class="text-sm text-slate-600 leading-relaxed" itemprop="text">{item.a}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <RelatedArticles currentSlug={review.meta.slug} />
+
+</ReviewLayout>

@@ -1,0 +1,1682 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - link "Influencers & Associates SiteStripe" [ref=e6] [cursor=pointer]:
+      - /url: https://affiliate-program.amazon.in/home
+      - paragraph [ref=e7]: Influencers & Associates
+      - heading "SiteStripe" [level=2] [ref=e8]
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - paragraph [ref=e12]: Category
+          - paragraph [ref=e13]: Sports & Fitness
+        - generic [ref=e14]:
+          - paragraph [ref=e15]: Commission rate
+          - paragraph [ref=e16]: 4.70%
+      - generic:
+        - paragraph
+    - button "Get Link." [ref=e19] [cursor=pointer]
+    - button "Settings" [ref=e22] [cursor=pointer]:
+      - img [ref=e23]
+  - generic [ref=e26]: Skip to main content
+  - banner [ref=e27]:
+    - navigation "Primary" [ref=e28]:
+      - generic [ref=e29]:
+        - generic [ref=e30]:
+          - link "Amazon Business" [ref=e32] [cursor=pointer]:
+            - /url: /?ref_=abn_logo
+          - generic [ref=e35] [cursor=pointer]:
+            - generic:
+              - generic [ref=e37]: Deliver to naveen
+              - generic [ref=e38]: Jaipur 302033‌
+        - search [ref=e41]:
+          - generic [ref=e44]:
+            - generic [ref=e46]: Sports, Fitness & Outdoors
+            - combobox "Select the department you want to search in" [ref=e48] [cursor=pointer]:
+              - option "All Categories"
+              - option "Alexa Skills"
+              - option "Amazon Devices"
+              - option "Amazon Fashion"
+              - option "Amazon Fresh"
+              - option "Amazon Pharmacy"
+              - option "Appliances"
+              - option "Apps & Games"
+              - option "Audible Audiobooks"
+              - option "Baby"
+              - option "Beauty"
+              - option "Books"
+              - option "Car & Motorbike"
+              - option "Clothing & Accessories"
+              - option "Collectibles"
+              - option "Computers & Accessories"
+              - option "Deals"
+              - option "Electronics"
+              - option "Furniture"
+              - option "Garden & Outdoors"
+              - option "Gift Cards"
+              - option "Grocery & Gourmet Foods"
+              - option "Health & Personal Care"
+              - option "Home & Kitchen"
+              - option "Industrial & Scientific"
+              - option "Jewellery"
+              - option "Kindle Store"
+              - option "Luggage & Bags"
+              - option "Luxury Beauty"
+              - option "Movies & TV Shows"
+              - option "MP3 Music"
+              - option "Music"
+              - option "Musical Instruments"
+              - option "Office Products"
+              - option "Pet Supplies"
+              - option "Prime Video"
+              - option "Shoes & Handbags"
+              - option "Software"
+              - option "Sports, Fitness & Outdoors" [selected]
+              - option "Subscribe & Save"
+              - option "Tools & Home Improvement"
+              - option "Toys & Games"
+              - option "Under ₹500"
+              - option "Video Games"
+              - option "Watches"
+          - generic [ref=e50]:
+            - generic [ref=e51]: Enter keyword or product number
+            - textbox "Enter keyword or product number" [ref=e52]
+          - generic "Go" [ref=e55] [cursor=pointer]:
+            - button "Go" [ref=e56]
+        - generic [ref=e58]:
+          - link "Choose a language for shopping in Amazon India. The current selection is English (EN)." [ref=e59] [cursor=pointer]:
+            - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2Fdp%2FB00ID6PC60&ref_=topnav_lang
+            - generic [ref=e61]: EN
+          - img [ref=e67] [cursor=pointer]
+          - link "Hello, naveen Account for MOUTHWATERING MARVELS(OPC) PRIVATE LIMITED" [ref=e69] [cursor=pointer]:
+            - /url: https://www.amazon.in/gp/css/homepage.html?ref_=abn_bnav_youraccount_btn
+            - generic [ref=e70]: Hello, naveen
+            - generic [ref=e72]: Account for MOUTHWATERING MARVELS(OPC) PRIVATE LIMITED
+          - link "Returns & Orders" [ref=e74] [cursor=pointer]:
+            - /url: /gp/css/order-history?ref_=abn_yadd_ad_your_orders
+            - generic [ref=e75]: Returns
+            - generic [ref=e76]: "& Orders"
+          - link "1 item in cart" [ref=e77] [cursor=pointer]:
+            - /url: https://www.amazon.in/gp/cart/view.html?ref_=abn_tools_cart_nf
+            - generic [ref=e80]: "1"
+      - generic [ref=e81]:
+        - button "Open All Categories Menu" [ref=e83] [cursor=pointer]:
+          - generic [ref=e85]: All
+        - generic [ref=e88]:
+          - link "Buy Again" [ref=e89] [cursor=pointer]:
+            - /url: /gp/buyagain?ref_=abn_cs_pd_nav_b2b_reorder&pd_rd_r=340c6f65-f43d-4bff-8cae-5031333f242b&pd_rd_w=bkR8R&pd_rd_wg=5m8UC
+          - link "Today’s Deals" [ref=e90] [cursor=pointer]:
+            - /url: /gp/goldbox?ref_=abn_cs_deals&pd_rd_r=340c6f65-f43d-4bff-8cae-5031333f242b&pd_rd_w=Eptuv&pd_rd_wg=5m8UC
+          - link "Business Deals" [ref=e91] [cursor=pointer]:
+            - /url: /gp/browse.html?node=15423160031&ref_=abn_cs_businessdeals&pd_rd_r=340c6f65-f43d-4bff-8cae-5031333f242b&pd_rd_w=hGKbQ&pd_rd_wg=5m8UC
+          - link "Quantity Discounts" [ref=e92] [cursor=pointer]:
+            - /url: /gp/browse.html?node=15938996031&ref_=abn_cs_bd&pd_rd_r=340c6f65-f43d-4bff-8cae-5031333f242b&pd_rd_w=bPQx1&pd_rd_wg=5m8UC
+          - link "Savings Hub" [ref=e93] [cursor=pointer]:
+            - /url: /gp/savingshub?ref_=abn_cs_d_sh&pd_rd_r=340c6f65-f43d-4bff-8cae-5031333f242b&pd_rd_w=Dg34p&pd_rd_wg=5m8UC
+          - link "Add team" [ref=e94] [cursor=pointer]:
+            - /url: /bb/account/route/add-people?ref_=abn_cs_xshop_add_people&pd_rd_r=340c6f65-f43d-4bff-8cae-5031333f242b&pd_rd_w=9Rige&pd_rd_wg=5m8UC
+        - generic [ref=e96]:
+          - link "Buy more, save more | Shop now" [ref=e98] [cursor=pointer]:
+            - /url: /b/?_encoding=UTF8&ie=UTF8&node=15938996031&ref_=ab_nav_swm_BBD&pf_rd_p=5a31678a-f5c4-42d7-bb6d-d0549fd82a8c&pf_rd_s=nav-sitewide-msg&pf_rd_t=93001&pf_rd_i=b2b-nav&pf_rd_m=A21TJRUUN4KGV&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH
+          - link "Lists" [ref=e99] [cursor=pointer]:
+            - /url: /hz/wishlist/ls?ref_=abn_tools_business_lists
+            - generic [ref=e100]: Lists
+          - link "Join Prime" [ref=e102] [cursor=pointer]:
+            - /url: /amazonprime?ingressId=joinPrime_ingress&clientId=AB_Navigation&primeCampaignId=AB_Nav_Desktop&*entries*=0&*Version*=1&ref_=abn_tools_abingw_pc_yaddnavbar_hva_prime
+            - generic [ref=e103]: Join Prime
+      - generic "Secondary navigation bar" [ref=e105]:
+        - list:
+          - listitem:
+            - link "Sports, Fitness & Outdoors" [ref=e106] [cursor=pointer]:
+              - /url: /Sports/b/?ie=UTF8&node=1984443031&ref_=topnav_storetab_sg
+          - listitem:
+            - link "Exercise & Fitness" [ref=e107] [cursor=pointer]:
+              - /url: /Exercise-Fitness/b/?ie=UTF8&node=3403635031&ref_=sv_sg_1
+          - listitem:
+            - link "Cricket" [ref=e108] [cursor=pointer]:
+              - /url: /Cricket/b/?ie=UTF8&node=3403628031&ref_=sv_sg_2
+          - listitem:
+            - link "Badminton" [ref=e109] [cursor=pointer]:
+              - /url: /Badminton/b/?ie=UTF8&node=3403619031&ref_=sv_sg_3
+          - listitem:
+            - link "Cycling" [ref=e110] [cursor=pointer]:
+              - /url: /Cycling/b/?ie=UTF8&node=3403629031&ref_=sv_sg_4
+          - listitem:
+            - link "Football" [ref=e111] [cursor=pointer]:
+              - /url: /Football/b/?ie=UTF8&node=3403640031&ref_=sv_sg_5
+          - listitem:
+            - link "Running" [ref=e112] [cursor=pointer]:
+              - /url: /Running-Clothing-Accessories/b/?ie=UTF8&node=3403659031&ref_=sv_sg_6
+          - listitem:
+            - link "Camping & Hiking" [ref=e113] [cursor=pointer]:
+              - /url: /Camping-Hiking/b/?ie=UTF8&node=1984988031&ref_=sv_sg_7
+          - listitem:
+            - link "Swimming" [ref=e114] [cursor=pointer]:
+              - /url: /Swimming/b/?ie=UTF8&node=3404234031&ref_=sv_sg_8
+          - listitem:
+            - link "Volleyball" [ref=e115] [cursor=pointer]:
+              - /url: /Volley-Ball/b/?ie=UTF8&node=3403674031&ref_=sv_sg_9
+          - listitem:
+            - link "Basketball" [ref=e116] [cursor=pointer]:
+              - /url: /Basket-Ball/b/?ie=UTF8&node=3403621031&ref_=sv_sg_10
+          - listitem:
+            - link "Table Tennis" [ref=e117] [cursor=pointer]:
+              - /url: /Table-Tennis/b/?ie=UTF8&node=3403668031&ref_=sv_sg_11
+          - listitem:
+            - link "Sportswear" [ref=e118] [cursor=pointer]:
+              - /url: /fashion-sportswear-store/b/?ie=UTF8&node=12302882031&ref_=sv_sg_12
+  - generic [ref=e120]:
+    - heading "Product summary presents key product information Keyboard shortcut shift + opt + D" [level=1] [ref=e122]:
+      - button "Product summary presents key product information" [ref=e124] [cursor=pointer]:
+        - generic [ref=e125]: Product summary presents key product information
+      - separator [ref=e127]
+      - generic [ref=e128]:
+        - text: Keyboard shortcut
+        - generic [ref=e129]: shift + opt + D
+    - main [ref=e130]:
+      - generic [ref=e131]:
+        - generic [ref=e134]:
+          - iframe [ref=e135]:
+            - generic [ref=f6e4]:
+              - generic [ref=f6e5]: Sponsored Ad. Product image. Golfoy Basics Rubber Practice Range Golf Balls (Pack of 25), White 1390 Shop now
+              - generic [ref=f6e6]:
+                - link "Click to navigate to product detail page" [ref=f6e8] [cursor=pointer]:
+                  - /url: https://aax-eu-zaz.amazon.in/x/c/RCTbEnb9xL7Nds7LKqwgxTcAAAGdyt1bNwoAAAH_AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICAC-a09/clv1c_ek-4wnfSLcbSDbnvWbk-sThg64TRKJB9aNLGWsaY_oOPnbxpzfO9-Zfr0sQSrkMFFazmbuYwD0gSSItXy_9FEWhF5qfcyeLpNdl1Rnu-ge0rWUZuPwLZvSvv_o00x9JwJh2RKVT5mteFpLaANQ0nG_ZHrNFsVlfsppT_my8_kwYKAPp5huJqSuIuoRVUsm0QMhrzLgimRU6dYCEalq34hqr6vZ4TJU21ifAItavv63a9vXJ0_kLMc3DDxYQJr6CWav-bFULT1z8uN49K3Bbg_3tY4Ts8yfc0-ntAR-L7dr3yV62_0fdwSqLC_LI_Apsu1xk8cyDhaZOBo3Vtfl6ow-ES636b-1UV7mPYJ6XGBuOPOR8IOoC6mBZSGfFAVTW4V30Y5E-ZmYRPTxyKYLfNC53SsN_TFB6qGiT4E55NLO9fN4Yh6tlLwumxtj2AGOd_kH9_XB-GBKw7z-mRqiyh5EFIhGg_63rEZccvQFYAx0abkZk5vWj73_1jrP4CKmLW4yF0knEgZlr7gwXQXzPsNZcD_0gXjkLnQ1G9tscqdKY2mFKZh05O0PzxvYe5COuQcT1vHMu_4FKsbpQE5dyKkitmyHt2jU13rw1KbvGb1S7hlU0Ez3xLoANCTIzJHOmetNbO2PgG0GQs7Fp4bDPndl_bRp6C8W84KTrodhWEHluV00XTGu9_j7Pwx9Pb12yRE81y_XFLsoo-haSWIJZnXj62VB42Na_IgwZRIp56ho7xAKvrYuewyFgEDsJEdjgJf4AFrzVEc-P9XjMH5ZHQpAuCp2-BlIuuEThsCvJYvUz4hbezGSzpDzwSWMC6FyX26VcUnl1DH-cLzTxfCLHvj36zn7VQ31MwtvgALtWOtqNhRSU5doW5L0EETWaXI5NLd3AcqUOmB_PVD1mr7TKJrGhJVVsc4eRLQ1kYd-8EwDuxIHLp2hW2cnnUvgptDR1XSZYzCx13EW_40mvThCBBFm4gk2FUbwncYqteBpFEDWKMHSj4RE2sn3DJ6v2xduwK7rh5qfUCw9gjx2B4stIYAOvjXmC1LqId_clEuyrPffCvvgzs1l6thuQRbIIxlmGAjdxr5SaekYomSZpqw2Gs0HnHTZROSQiZoqEecjRl9Srz7O13DTzWCaQsmi3AhQ/http://www.amazon.in/dp/B0BS41RNTM/ref=syn_sd_onsite_desktop_0?ie=UTF8&psc=1&pf_rd_p=fd82b077-06f6-479f-8fb9-11c7d326b43b&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=gG3N5&pd_rd_w=l4RLC&pd_rd_r=7f583e60-0a94-4ef1-a41c-7d57780efac3&aref=hTmzrYsFuV
+                - generic [ref=f6e9]:
+                  - img [ref=f6e11]
+                  - img [ref=f6e17]
+              - generic [ref=f6e22]:
+                - img "Product image" [ref=f6e26]
+                - generic [ref=f6e29]:
+                  - generic [ref=f6e31]: Golfoy Basics Rubber Practice Range Golf Balls (Pack of 25), White
+                  - generic [ref=f6e34]:
+                    - generic [ref=f6e35]: ₹1,390.00
+                    - generic [ref=f6e36]:
+                      - generic [ref=f6e37]: ₹
+                      - generic [ref=f6e38]: 1,390
+                      - generic [ref=f6e39]: .
+                      - generic [ref=f6e40]: "00"
+                    - generic [ref=f6e41]: List price was ₹1,495.00
+                    - generic [ref=f6e42]: ₹1,495.00
+                  - link "Click to navigate to product detail page Sponsored Ad. Product image. Golfoy Basics Rubber Practice Range Golf Balls (Pack of 25), White 1390 Shop now" [ref=f6e44] [cursor=pointer]:
+                    - /url: https://aax-eu-zaz.amazon.in/x/c/RCTbEnb9xL7Nds7LKqwgxTcAAAGdyt1bNwoAAAH_AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICAC-a09/clv1c_ek-4wnfSLcbSDbnvWbk-sThg64TRKJB9aNLGWsaY_oOPnbxpzfO9-Zfr0sQSrkMFFazmbuYwD0gSSItXy_9FEWhF5qfcyeLpNdl1Rnu-ge0rWUZuPwLZvSvv_o00x9JwJh2RKVT5mteFpLaANQ0nG_ZHrNFsVlfsppT_my8_kwYKAPp5huJqSuIuoRVUsm0QMhrzLgimRU6dYCEalq34hqr6vZ4TJU21ifAItavv63a9vXJ0_kLMc3DDxYQJr6CWav-bFULT1z8uN49K3Bbg_3tY4Ts8yfc0-ntAR-L7dr3yV62_0fdwSqLC_LI_Apsu1xk8cyDhaZOBo3Vtfl6ow-ES636b-1UV7mPYJ6XGBuOPOR8IOoC6mBZSGfFAVTW4V30Y5E-ZmYRPTxyKYLfNC53SsN_TFB6qGiT4E55NLO9fN4Yh6tlLwumxtj2AGOd_kH9_XB-GBKw7z-mRqiyh5EFIhGg_63rEZccvQFYAx0abkZk5vWj73_1jrP4CKmLW4yF0knEgZlr7gwXQXzPsNZcD_0gXjkLnQ1G9tscqdKY2mFKZh05O0PzxvYe5COuQcT1vHMu_4FKsbpQE5dyKkitmyHt2jU13rw1KbvGb1S7hlU0Ez3xLoANCTIzJHOmetNbO2PgG0GQs7Fp4bDPndl_bRp6C8W84KTrodhWEHluV00XTGu9_j7Pwx9Pb12yRE81y_XFLsoo-haSWIJZnXj62VB42Na_IgwZRIp56ho7xAKvrYuewyFgEDsJEdjgJf4AFrzVEc-P9XjMH5ZHQpAuCp2-BlIuuEThsCvJYvUz4hbezGSzpDzwSWMC6FyX26VcUnl1DH-cLzTxfCLHvj36zn7VQ31MwtvgALtWOtqNhRSU5doW5L0EETWaXI5NLd3AcqUOmB_PVD1mr7TKJrGhJVVsc4eRLQ1kYd-8EwDuxIHLp2hW2cnnUvgptDR1XSZYzCx13EW_40mvThCBBFm4gk2FUbwncYqteBpFEDWKMHSj4RE2sn3DJ6v2xduwK7rh5qfUCw9gjx2B4stIYAOvjXmC1LqId_clEuyrPffCvvgzs1l6thuQRbIIxlmGAjdxr5SaekYomSZpqw2Gs0HnHTZROSQiZoqEecjRl9Srz7O13DTzWCaQsmi3AhQ/http://www.amazon.in/dp/B0BS41RNTM/ref=syn_sd_onsite_desktop_0?ie=UTF8&psc=1&pf_rd_p=fd82b077-06f6-479f-8fb9-11c7d326b43b&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=gG3N5&pd_rd_w=l4RLC&pd_rd_r=7f583e60-0a94-4ef1-a41c-7d57780efac3&aref=hTmzrYsFuV
+                    - generic [ref=f6e45]: Shop now
+          - button "Leave feedback on Sponsored advertisement" [ref=e137] [cursor=pointer]:
+            - generic [ref=e138]: Sponsored
+        - list [ref=e144]:
+          - listitem [ref=e145]:
+            - link "Sports, Fitness & Outdoors" [ref=e147] [cursor=pointer]:
+              - /url: /Sports/b/ref=dp_bc_1?ie=UTF8&node=1984443031
+          - listitem [ref=e148]: ›
+          - listitem [ref=e149]:
+            - link "Squash" [ref=e151] [cursor=pointer]:
+              - /url: /Squash/b/ref=dp_bc_2?ie=UTF8&node=3403667031
+          - listitem [ref=e152]: ›
+          - listitem [ref=e153]:
+            - link "Racquets" [ref=e155] [cursor=pointer]:
+              - /url: /Squash-Racquets/b/ref=dp_bc_3?ie=UTF8&node=3404170031
+      - generic [ref=e156]:
+        - generic [ref=e157]:
+          - generic [ref=e168]:
+            - generic [ref=e172]:
+              - generic [ref=e173]:
+                - generic [ref=e174]: ₹1,799.05
+                - text: ₹1,799.05
+              - generic [ref=e175]:
+                - text: (
+                - generic [ref=e176]:
+                  - generic [ref=e177]: 1,889.00
+                  - text: 1,889.00
+                - text: incl. GST)
+            - generic [ref=e179]:
+              - generic [ref=e180]:
+                - img "prime" [ref=e186]
+                - generic [ref=e187]:
+                  - generic [ref=e192]:
+                    - text: FREE delivery Tuesday, 28 April.
+                    - generic [ref=e194]: Order within 53 mins
+                    - text: .
+                    - link "Details about delivery costs and shipping methods" [ref=e195] [cursor=pointer]:
+                      - /url: /gp/help/customer/display.html/?nodeId=200534000
+                      - text: Details
+                  - button "Deliver to MOUTHWATERING - Jaipur 302033‌" [ref=e198] [cursor=pointer]:
+                    - generic [ref=e204]: Deliver to MOUTHWATERING - Jaipur 302033‌
+              - generic [ref=e211]: In stock
+              - generic [ref=e214]:
+                - text: Sold by
+                - link "RetailEZ Pvt Ltd" [ref=e215] [cursor=pointer]:
+                  - /url: /sp?marketplaceID=A21TJRUUN4KGV&seller=AXOGFIT0PZZ7G&isAmazonFulfilled=1&ref_=dp_merchant_link&asin=B00ID6PC60
+                - text: and
+                - link "Fulfilled by Amazon" [ref=e216] [cursor=pointer]:
+                  - /url: /gp/help/customer/display.html?ref=dp_fulfillment&nodeId=200953360
+                - text: .
+              - generic [ref=e219]:
+                - table [ref=e221]:
+                  - rowgroup [ref=e222]:
+                    - 'row "Quantity: 1" [ref=e223]':
+                      - cell
+                      - cell
+                      - cell "Quantity:" [ref=e224]:
+                        - generic [ref=e225]: "Quantity:"
+                      - cell "1" [ref=e226]:
+                        - generic [ref=e228]:
+                          - combobox [ref=e229]:
+                            - option "1" [selected]
+                            - option "2"
+                            - option "3"
+                            - option "4+"
+                          - generic [ref=e232] [cursor=pointer]: "1"
+                      - cell [ref=e234]
+                      - cell [ref=e235]
+                - link "Buying in Bulk?" [ref=e237] [cursor=pointer]:
+                  - /url: /ab/bulk-order/bebx/api/v2/fastForwardBasket?quantity=3&asin=B00ID6PC60&type=CQE&ref=dp_rfq
+              - generic [ref=e243] [cursor=pointer]:
+                - button "Add to cart" [ref=e244]
+                - generic [ref=e245]: Add to cart
+              - generic [ref=e250] [cursor=pointer]:
+                - button "Buy Now" [ref=e251]
+                - generic [ref=e252]: Buy Now
+              - link "Secure transaction" [ref=e256] [cursor=pointer]:
+                - /url: "#"
+                - text: Secure transaction
+              - generic [ref=e260]:
+                - checkbox "Add gift options" [ref=e261]
+                - generic [ref=e262]: Add gift options
+            - generic [ref=e263]:
+              - separator [ref=e264]
+              - generic [ref=e266]:
+                - generic [ref=e268] [cursor=pointer]:
+                  - button "Add to Wish List" [ref=e269]
+                  - generic [ref=e271]: Add to Wish List
+                - button "Select a list from the drop-down" [ref=e275] [cursor=pointer]
+          - generic [ref=e279]:
+            - generic [ref=e280]: Other sellers on Amazon
+            - separator [ref=e281]
+            - button "New (3) from ₹1,889.00 prime" [ref=e284] [cursor=pointer]:
+              - text: New (3) from ₹1,889.00
+              - img "prime" [ref=e286]
+          - generic [ref=e289]:
+            - iframe [ref=e290]:
+              - generic [ref=f7e4]:
+                - generic [ref=f7e5]: "Sponsored Ad. Product image. Passion Premium 2-Compartment Badminton & Tennis Unisex racquet Bag with Protective Padding – Lightweight & Durable Unisex Design for Players of All Levels: Men, Women, Youth & Adults (Black & Blue) 799 Shop now"
+                - link "Click to navigate to product detail page" [ref=f7e8] [cursor=pointer]:
+                  - /url: https://aax-eu-zaz.amazon.in/x/c/RLV-eI1OKq-v6SQcv0kK7qoAAAGdyt1cewoAAAH_AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICDIT_40/clv1c_ek-4wvHTLcbWDfn3Uan2wfggbbfRKlQd9CQ91AFMHqpVNjAbESof-Jfr0cyIJpRKmukY0ac2jZR5OkKvGvXz_0fDfC1sO_y6zFwneStQ7dlOB9boKavBARWQFc8ozvKQdFqEOipgOHWfIxUDNA7aGuAiiVKZkG36ksP-FzCwdv4JOa7ZRvGAV6lpNgtzrT3KuU3h1Pad2JLR_eGrcSjNp51LnR94gRP0l5DQA1C5VzEcMZ4Rjqb4yTsrFT4Iy2U1bKw8uFpwm-oIrxpdtNGDgbGj6CKFT5MBA3NaIAL8bA0s6OYTNkfocpcrCi8US4XDI-fPykuVk327tnICrErRVklFfxUwBfkspY_Z8ZKaMkQlq19Evu_IUOAE8fCwU4Ugt-GuMCCh9ALm3ZwowMuOuW52n_fk1wgNTYNIMQ3l3fISgMswWodeFcP85-kBB5Tm_aAbQi_ZWAlxPuRj4VnYYxt1V3PtiXLipTKiA3Rqe4xOjVP-55t66_4ndLL_SIGGVIsLuTWWQ_lrpk3H6TYc40psbhU4MJT6VsaPeZme0QQIwCtUA_3yzJLcbXapgaZGXh8MAXWAkQ44A8-ah-Wv1ewSY8sCBShTUVtdUuX662zllMqjkprz8BuuKFTiaF2RrqRAw3jFGK3f1RR04VZIVHOai4vrHfAF_in9PKk_6kzezDNIh8KneduGYODgPg180L7xTSTRzitoYUI-2joIp2Pg1duWDUGKKCkiAR3lU0MCUD0_RUn_H_cYrh92DvBss5te31s1VaDn81ADmBa7HdXDZxOrDNhiknTUqJBoJkMiSwJZbudTzyQ_oFmrtaH3DNSfaVs6ywIEXoQ59NFC3aTMBSmNYQb_qDrjrfT5ucT8_zcl0qhUPLuZ8RXQhE3jY_4G5qHg50yv48NB-7nccs0lcTsoT575sfCllthPTEw5U8ZhcOINYSAZMdaOyOUxR4-IqngHX4kZr2Z5XhV9jJy4vs4sbd4RpQ1moGN6Q5EsK4DywsUabWFZKjKHAk-6EPIqYXusYapxjen2Lq90kZMRFL_4gfsxc4H-ImP2hcdvlqeUiz48iuUtajWqdL_o87aThbwLr407RT4D-Agpy-1xrPipMxjDRHd9LBfRSgjveoH3FHwV2aVwrr6-pvbySf14a-se0JwGSxQ/http://www.amazon.in/dp/B0DNN3CJ79/ref=syn_sd_onsite_desktop_0?ie=UTF8&psc=1&pd_rd_plhdr=t&aref=qzx2LU5gto
+                - img "Product image" [ref=f7e13]
+            - button "Leave feedback on Sponsored advertisement" [ref=e292] [cursor=pointer]:
+              - generic [ref=e293]: Sponsored
+        - generic [ref=e295]:
+          - generic [ref=e297]:
+            - button "Share" [ref=e298]:
+              - button "Share" [ref=e299] [cursor=pointer]
+            - generic [ref=e302]:
+              - radiogroup "Image thumbnails" [ref=e304]:
+                - listitem [ref=e305]:
+                  - radio "Product Image" [ref=e310] [cursor=pointer]:
+                    - img "Product Image" [ref=e311]
+                - listitem [ref=e312]:
+                  - radio "Product Image" [ref=e317] [cursor=pointer]:
+                    - img "Product Image" [ref=e318]
+                - listitem [ref=e319]:
+                  - radio "Product Image" [ref=e324] [cursor=pointer]:
+                    - img "Product Image" [ref=e325]
+              - generic [ref=e326]:
+                - generic [ref=e328]:
+                  - list
+                  - list [ref=e329]:
+                    - listitem [ref=e330] [cursor=pointer]:
+                      - button "Cosco Power Aluminum 175 Squash Racquet, Multicolour" [ref=e333]:
+                        - img "Cosco Power Aluminum 175 Squash Racquet, Multicolour" [ref=e334]
+                - link "Click to see full view" [ref=e338] [cursor=pointer]:
+                  - /url: "#"
+          - generic [ref=e340]:
+            - generic:
+              - button
+        - generic [ref=e341]:
+          - heading "Cosco Power Aluminum 175 Squash Racquet, Multicolour" [level=1] [ref=e344]
+          - link "Visit the Cosco Store" [ref=e347] [cursor=pointer]:
+            - /url: /stores/COSCO/page/6BC9350C-0829-40AE-8BEC-A6700D8AF98F?lp_asin=B00ID6PC60&ref_=ast_bln&store_ref=bl_ast_dp_brandlogo_sto&bl_grd_status=override
+          - generic [ref=e349]:
+            - generic "4.3 out of 5 stars" [ref=e351]:
+              - button "4.3 out of 5 stars" [ref=e353] [cursor=pointer]:
+                - text: "4.3"
+                - generic [ref=e355]: 4.3 out of 5 stars
+            - link "139 Reviews" [ref=e358] [cursor=pointer]:
+              - /url: "#averageCustomerReviewsAnchor"
+              - text: (139)
+          - generic [ref=e359]:
+            - text: "|"
+            - link "Search this page" [ref=e362] [cursor=pointer]:
+              - /url: "#"
+          - separator [ref=e363]
+          - generic [ref=e365]:
+            - table [ref=e368]:
+              - rowgroup [ref=e369]:
+                - 'row "M.R.P.: ₹2,090" [ref=e370]':
+                  - cell "M.R.P.:" [ref=e371]
+                  - cell "₹2,090" [ref=e372]:
+                    - generic [ref=e373]:
+                      - generic [ref=e374]: ₹2,090
+                      - text: ₹2,090
+                - 'row "Price: ₹1,799.05 excl. GST ₹1,889.00 incl. GST prime" [ref=e375]':
+                  - cell "Price:" [ref=e376]
+                  - cell "₹1,799.05 excl. GST ₹1,889.00 incl. GST prime" [ref=e377]:
+                    - generic [ref=e378]:
+                      - generic [ref=e379]:
+                        - generic [ref=e380]: ₹1,799.05
+                        - text: ₹1,799.05
+                      - text: excl. GST
+                    - generic [ref=e381]:
+                      - generic [ref=e382]:
+                        - generic [ref=e383]: ₹1,889.00
+                        - text: ₹1,889.00
+                      - text: incl. GST
+                    - img "prime" [ref=e387]
+                - 'row "You Save: ₹201 (10%)" [ref=e388]':
+                  - cell "You Save:" [ref=e389]
+                  - cell "₹201 (10%)" [ref=e390]:
+                    - generic [ref=e391]:
+                      - generic [ref=e392]:
+                        - generic [ref=e393]: ₹201
+                        - text: ₹201
+                      - text: (10%)
+                - row "Inclusive of all taxes" [ref=e394]:
+                  - cell [ref=e395]
+                  - cell "Inclusive of all taxes" [ref=e396]
+            - generic [ref=e397]:
+              - generic [ref=e398]: EMI starts at ₹92. No Cost EMI available
+              - button "EMI options" [ref=e400] [cursor=pointer]: EMI options
+          - generic [ref=e408]:
+            - heading "Offers" [level=5] [ref=e412]
+            - region [ref=e414]:
+              - generic [ref=e416]:
+                - list [ref=e420]:
+                  - listitem [ref=e421] [cursor=pointer]:
+                    - generic [ref=e423]:
+                      - heading "Cashback" [level=6] [ref=e424]
+                      - generic [ref=e426]:
+                        - generic [ref=e427]: Upto ₹94.00 cashback as Amazon Pay Balance when you pay with select Credit Cards
+                        - generic [ref=e428]: Upto ₹94.00 cashback as Amazon Pay Balance when…
+                      - link "2 offers" [ref=e429]:
+                        - /url: "#"
+                  - listitem [ref=e430] [cursor=pointer]:
+                    - generic [ref=e432]:
+                      - heading "Bank Offer" [level=6] [ref=e433]
+                      - generic [ref=e435]:
+                        - generic [ref=e436]: Upto ₹2,500.00 discount on select Credit Cards
+                        - generic [ref=e437]: Upto ₹2,500.00 discount on select Credit Cards
+                      - link "44 offers" [ref=e438]:
+                        - /url: "#"
+                  - listitem [ref=e439] [cursor=pointer]:
+                    - generic [ref=e441]:
+                      - heading "No Cost EMI" [level=6] [ref=e442]
+                      - generic [ref=e444]:
+                        - generic [ref=e445]: Upto ₹61.25 EMI interest savings on Amazon Pay ICICI Bank Credit Cards, Amazon Pay Later
+                        - generic [ref=e446]: Upto ₹61.25 EMI interest savings on Amazon Pay ICICI…
+                      - link "2 offers" [ref=e447]:
+                        - /url: "#"
+                - button "Next page" [ref=e449] [cursor=pointer]:
+                  - generic [ref=e452]: Next page
+          - region [ref=e455]:
+            - generic [ref=e457]:
+              - list [ref=e461]:
+                - listitem [ref=e462] [cursor=pointer]:
+                  - button "Free Delivery" [ref=e466]
+                - listitem [ref=e467] [cursor=pointer]:
+                  - button "10 days Replacement" [ref=e472]
+                - listitem [ref=e473] [cursor=pointer]:
+                  - button "Top Brand" [ref=e477]
+                - listitem [ref=e478] [cursor=pointer]:
+                  - button "Amazon Delivered" [ref=e482]
+                - listitem [ref=e483] [cursor=pointer]:
+                  - button "Secure transaction" [ref=e487]
+              - button "Next page" [ref=e489] [cursor=pointer]:
+                - generic [ref=e492]: Next page
+          - list [ref=e495]:
+            - rowgroup [ref=e496]:
+              - listitem [ref=e497]: Size One Size
+              - listitem [ref=e498]: Brand Cosco
+              - listitem [ref=e499]: Grip Size 3 3/4 inches
+              - listitem [ref=e500]: Sport Racquetball
+              - listitem [ref=e501]: Material Aluminium, Graphite
+          - generic [ref=e503]:
+            - separator [ref=e504]
+            - heading "About this item" [level=2] [ref=e505]
+            - list [ref=e506]:
+              - listitem [ref=e507]: Aluminium Racket, Light Weight, PU Grip
+              - listitem [ref=e508]: "Grip Size: G4"
+              - listitem [ref=e509]: "Weight: 27 g"
+              - listitem [ref=e510]: Strung Racquet
+              - listitem [ref=e511]: With full cover
+            - generic [ref=e512]:
+              - text: ›
+              - link "See more product details" [ref=e513] [cursor=pointer]:
+                - /url: "#productDetails"
+          - link "Report an issue with this product" [ref=e519] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e521]:
+          - separator [ref=e522]
+          - generic [ref=e525]:
+            - iframe [ref=e526]:
+              - generic [ref=f8e4]:
+                - link "TANSO FEZA 125 Graphite High-Performance Strung Squash Racquet with Premium Squash Racket Cover (125g, Teardrop Head Shape, Carbon Fiber Construction)" [ref=f8e6] [cursor=pointer]:
+                  - /url: https://www.amazon.in/sspa/click?ie=UTF8&spc=MTozNDQ4MDk2NzIwODg1MjY6MTc3NzIyNDk5NzpzcF9ocXBfc2hhcmVkOjMwMDczNzk4OTAzNTkzMjo6Ojo&url=%2Fdp%2FB0FLK5GVYH%2Fref%3Dsspa_dk_hqp_detail_aax_0%3Fpsc%3D1%26aref%3DQcu2vCLhea%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9ocXBfc2hhcmVk&aref=Qcu2vCLhea&sp_cr=ZAZ
+                - img "TANSO FEZA 125 Graphite High-Performance Strung Squash Racquet with Premium Squash Racket Cover (125g, Teardrop Head Shape, Carbon Fiber Construction)" [ref=f8e7]
+                - generic [ref=f8e8]:
+                  - generic [ref=f8e9]: TANSO FEZA 125 Graphite High-Performance Strung Squash Racquet with Premium Squash Racket Cover...
+                  - generic [ref=f8e10]:
+                    - generic [ref=f8e11]: "9"
+                    - text: ₹2,999.00
+            - button "Leave feedback on Sponsored advertisement" [ref=e528] [cursor=pointer]:
+              - generic [ref=e529]: Sponsored
+      - generic [ref=e535]:
+        - separator [ref=e536]
+        - heading "Frequently bought together" [level=2] [ref=e537]
+        - generic [ref=e538]:
+          - group "Frequently bought together" [ref=e539]:
+            - generic [ref=e540]:
+              - generic [ref=e541]:
+                - 'checkbox "This item: Cosco Power Aluminum 175 Squash Racquet, Multicolour" [checked] [ref=e547]'
+                - generic [ref=e552]:
+                  - generic [ref=e554]: "This item: Cosco Power Aluminum 175 Squash Racquet, Multicolour"
+                  - generic [ref=e556]:
+                    - generic [ref=e561]:
+                      - generic [ref=e562]: ₹1,889.00
+                      - generic [ref=e563]:
+                        - text: ₹
+                        - generic [ref=e564]:
+                          - text: 1,889
+                          - generic [ref=e565]: .
+                        - text: "00"
+                    - img "Amazon Prime" [ref=e567]
+              - generic [ref=e568]:
+                - generic [ref=e569]:
+                  - generic [ref=e570]: +
+                  - checkbox "HEAD Prime Double Dot Squash Ball,Black" [checked] [ref=e574]
+                  - link "HEAD Prime Double Dot Squash Ball,Black" [ref=e578] [cursor=pointer]:
+                    - /url: /HEAD-Prime-Double-Squash-Yellow/dp/B01IIKEKQI/ref=pd_bxgy_thbs_d_sccl_1/525-3716588-0084000?pd_rd_w=4O3ie&content-id=amzn1.sym.142c0d31-3594-485b-b879-def9251f61c0&pf_rd_p=142c0d31-3594-485b-b879-def9251f61c0&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390&pd_rd_i=B01IIKEKQI&psc=1
+                    - img "HEAD Prime Double Dot Squash Ball,Black" [ref=e579]
+                - generic [ref=e580]:
+                  - link "HEAD Prime Double Dot Squash Ball,Black" [ref=e582] [cursor=pointer]:
+                    - /url: /HEAD-Prime-Double-Squash-Yellow/dp/B01IIKEKQI/ref=pd_bxgy_d_sccl_1/525-3716588-0084000?pd_rd_w=4O3ie&content-id=amzn1.sym.142c0d31-3594-485b-b879-def9251f61c0&pf_rd_p=142c0d31-3594-485b-b879-def9251f61c0&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390&pd_rd_i=B01IIKEKQI&psc=1
+                    - generic [ref=e583]: HEAD Prime Double Dot Squash Ball,Black
+                  - generic [ref=e585]:
+                    - generic [ref=e590]:
+                      - generic [ref=e591]: ₹269.00
+                      - generic [ref=e592]:
+                        - text: ₹
+                        - generic [ref=e593]:
+                          - text: "269"
+                          - generic [ref=e594]: .
+                        - text: "00"
+                    - img "Amazon Prime" [ref=e596]
+          - generic [ref=e598]:
+            - generic [ref=e600]:
+              - text: "Total price:"
+              - generic [ref=e601]:
+                - generic [ref=e602]: ₹2,158.00
+                - generic [ref=e603]:
+                  - text: ₹
+                  - generic [ref=e604]: 2,158.
+                  - text: "00"
+            - generic [ref=e610] [cursor=pointer]:
+              - button "Add both to Cart, Cosco Power Aluminum 175 Squash Racquet, Multicolour" [ref=e611]
+              - generic [ref=e612]: Add both to Cart
+      - generic [ref=e615]:
+        - separator [ref=e616]
+        - group [ref=e619]:
+          - generic [ref=e621]:
+            - heading "Featured items you may like" [level=2] [ref=e624]
+            - button "Not interested in specific items" [ref=e629] [cursor=pointer]
+          - group [ref=e633]:
+            - list [ref=e634]:
+              - listitem [ref=e635]:
+                - generic [ref=e637]:
+                  - link [ref=e638] [cursor=pointer]:
+                    - /url: /Amazon-Brand-Water-Repellent-Compartments-Essentials/dp/B0D1QHJKK5/ref=pb_allspark_dp_sims_pao_desktop_session_based_d_sccl_1_1/525-3716588-0084000?pd_rd_w=WAlPM&content-id=amzn1.sym.e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_p=e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390&pd_rd_i=B0D1QHJKK5&psc=1
+                    - img [ref=e640]
+                  - generic [ref=e642]:
+                    - link "Amazon Brand - Symactive Polyester Badminton Kit Bag | Water-Repellent Outer Fabric | Two Spacious Compartments | for Storing Racquet Sets and Essentials (Blue)" [ref=e643] [cursor=pointer]:
+                      - /url: /Amazon-Brand-Water-Repellent-Compartments-Essentials/dp/B0D1QHJKK5/ref=pb_allspark_dp_sims_pao_desktop_session_based_d_sccl_1_1/525-3716588-0084000?pd_rd_w=WAlPM&content-id=amzn1.sym.e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_p=e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390&pd_rd_i=B0D1QHJKK5&psc=1
+                      - generic [ref=e645]: Amazon Brand - Symactive Polyester Badminton Kit Bag | Water-Repellent Outer Fabric | Two Spacious Compartments | for Storing Racquet Sets and Essentials (Blue)
+                    - link "4.1 out of 5 stars, 150 ratings" [ref=e648] [cursor=pointer]:
+                      - /url: /product-reviews/B0D1QHJKK5/ref=pb_allspark_dp_sims_pao_desktop_session_based_d_sccl_1_1_cr/525-3716588-0084000?pd_rd_w=WAlPM&content-id=amzn1.sym.e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_p=e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390&pd_rd_i=B0D1QHJKK5
+                      - generic [ref=e650]: 4.1 out of 5 stars
+                      - text: "150"
+                    - generic [ref=e651]:
+                      - generic [ref=e653]:
+                        - generic [ref=e654]:
+                          - link "-54%" [ref=e655] [cursor=pointer]:
+                            - /url: /Amazon-Brand-Water-Repellent-Compartments-Essentials/dp/B0D1QHJKK5/ref=pb_allspark_dp_sims_pao_desktop_session_based_d_sccl_1_1/525-3716588-0084000?pd_rd_w=WAlPM&content-id=amzn1.sym.e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_p=e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390&pd_rd_i=B0D1QHJKK5&psc=1
+                            - text: "-54%"
+                          - link "₹729.00" [ref=e656] [cursor=pointer]:
+                            - /url: /Amazon-Brand-Water-Repellent-Compartments-Essentials/dp/B0D1QHJKK5/ref=pb_allspark_dp_sims_pao_desktop_session_based_d_sccl_1_1/525-3716588-0084000?pd_rd_w=WAlPM&content-id=amzn1.sym.e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_p=e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390&pd_rd_i=B0D1QHJKK5&psc=1
+                            - generic [ref=e657]:
+                              - generic [ref=e658]: ₹729.00
+                              - generic [ref=e659]:
+                                - text: ₹
+                                - generic [ref=e660]:
+                                  - text: "729"
+                                  - generic [ref=e661]: .
+                                - text: "00"
+                        - 'link "M.R.P: ₹1,600.00" [ref=e663] [cursor=pointer]':
+                          - /url: /Amazon-Brand-Water-Repellent-Compartments-Essentials/dp/B0D1QHJKK5/ref=pb_allspark_dp_sims_pao_desktop_session_based_d_sccl_1_1/525-3716588-0084000?pd_rd_w=WAlPM&content-id=amzn1.sym.e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_p=e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390&pd_rd_i=B0D1QHJKK5&psc=1
+                          - generic [ref=e665]: "M.R.P: ₹1,600.00"
+                      - generic [ref=e666]:
+                        - img "Amazon Prime" [ref=e668]
+                        - generic [ref=e669]: FREE Delivery Tuesday, April 28
+              - listitem [ref=e670]:
+                - generic [ref=e672]:
+                  - link [ref=e673] [cursor=pointer]:
+                    - /url: /Dunlop-Double-Dot-Squash-Ball/dp/B00GMLA9AM/ref=pb_allspark_dp_sims_pao_desktop_session_based_d_sccl_1_2/525-3716588-0084000?pd_rd_w=WAlPM&content-id=amzn1.sym.e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_p=e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390&pd_rd_i=B00GMLA9AM&psc=1
+                    - img [ref=e675]
+                  - generic [ref=e677]:
+                    - link "Dunlop 700108A Plastic Squash Ball, Size Standard (Black)" [ref=e678] [cursor=pointer]:
+                      - /url: /Dunlop-Double-Dot-Squash-Ball/dp/B00GMLA9AM/ref=pb_allspark_dp_sims_pao_desktop_session_based_d_sccl_1_2/525-3716588-0084000?pd_rd_w=WAlPM&content-id=amzn1.sym.e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_p=e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390&pd_rd_i=B00GMLA9AM&psc=1
+                      - generic [ref=e680]: Dunlop 700108A Plastic Squash Ball, Size Standard (Black)
+                    - link "4.4 out of 5 stars, 416 ratings" [ref=e683] [cursor=pointer]:
+                      - /url: /product-reviews/B00GMLA9AM/ref=pb_allspark_dp_sims_pao_desktop_session_based_d_sccl_1_2_cr/525-3716588-0084000?pd_rd_w=WAlPM&content-id=amzn1.sym.e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_p=e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390&pd_rd_i=B00GMLA9AM
+                      - generic [ref=e685]: 4.4 out of 5 stars
+                      - text: "416"
+                    - generic [ref=e686]:
+                      - generic [ref=e688]:
+                        - generic [ref=e689]:
+                          - link "-23%" [ref=e690] [cursor=pointer]:
+                            - /url: /Dunlop-Double-Dot-Squash-Ball/dp/B00GMLA9AM/ref=pb_allspark_dp_sims_pao_desktop_session_based_d_sccl_1_2/525-3716588-0084000?pd_rd_w=WAlPM&content-id=amzn1.sym.e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_p=e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390&pd_rd_i=B00GMLA9AM&psc=1
+                            - text: "-23%"
+                          - link "₹307.00" [ref=e691] [cursor=pointer]:
+                            - /url: /Dunlop-Double-Dot-Squash-Ball/dp/B00GMLA9AM/ref=pb_allspark_dp_sims_pao_desktop_session_based_d_sccl_1_2/525-3716588-0084000?pd_rd_w=WAlPM&content-id=amzn1.sym.e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_p=e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390&pd_rd_i=B00GMLA9AM&psc=1
+                            - generic [ref=e692]:
+                              - generic [ref=e693]: ₹307.00
+                              - generic [ref=e694]:
+                                - text: ₹
+                                - generic [ref=e695]:
+                                  - text: "307"
+                                  - generic [ref=e696]: .
+                                - text: "00"
+                        - 'link "M.R.P: ₹400.00" [ref=e698] [cursor=pointer]':
+                          - /url: /Dunlop-Double-Dot-Squash-Ball/dp/B00GMLA9AM/ref=pb_allspark_dp_sims_pao_desktop_session_based_d_sccl_1_2/525-3716588-0084000?pd_rd_w=WAlPM&content-id=amzn1.sym.e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_p=e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390&pd_rd_i=B00GMLA9AM&psc=1
+                          - generic [ref=e700]: "M.R.P: ₹400.00"
+                      - generic [ref=e701]:
+                        - img "Amazon Prime" [ref=e703]
+                        - generic [ref=e704]: FREE Delivery Saturday, May 2
+              - listitem [ref=e705]:
+                - generic [ref=e707]:
+                  - link [ref=e708] [cursor=pointer]:
+                    - /url: /Centrino-Lightweight-Breathable-Non-Marking-Comfortable/dp/B0GGRP3JNY/ref=pb_allspark_dp_sims_pao_desktop_session_based_d_sccl_1_3/525-3716588-0084000?pd_rd_w=WAlPM&content-id=amzn1.sym.e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_p=e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390&pd_rd_i=B0GGRP3JNY&psc=1
+                    - img [ref=e710]
+                  - generic [ref=e712]:
+                    - link "Centrino Men’s Badminton Shoes | Lightweight Indoor Court Shoes | Breathable Mesh Sports Sneakers | Non-Marking Grip Sole | Comfortable Training & Play Footwear (9345)" [ref=e713] [cursor=pointer]:
+                      - /url: /Centrino-Lightweight-Breathable-Non-Marking-Comfortable/dp/B0GGRP3JNY/ref=pb_allspark_dp_sims_pao_desktop_session_based_d_sccl_1_3/525-3716588-0084000?pd_rd_w=WAlPM&content-id=amzn1.sym.e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_p=e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390&pd_rd_i=B0GGRP3JNY&psc=1
+                      - generic [ref=e715]: Centrino Men’s Badminton Shoes | Lightweight Indoor Court Shoes | Breathable Mesh Sports Sneakers | Non-Marking Grip Sole | Comfortable Training & Play Footwear (9345)
+                    - link "4.3 out of 5 stars, 67 ratings" [ref=e718] [cursor=pointer]:
+                      - /url: /product-reviews/B0GGRP3JNY/ref=pb_allspark_dp_sims_pao_desktop_session_based_d_sccl_1_3_cr/525-3716588-0084000?pd_rd_w=WAlPM&content-id=amzn1.sym.e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_p=e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390&pd_rd_i=B0GGRP3JNY
+                      - generic [ref=e720]: 4.3 out of 5 stars
+                      - text: "67"
+                    - generic [ref=e721]:
+                      - generic [ref=e723]:
+                        - generic [ref=e724]:
+                          - link "-66%" [ref=e725] [cursor=pointer]:
+                            - /url: /Centrino-Lightweight-Breathable-Non-Marking-Comfortable/dp/B0GGRP3JNY/ref=pb_allspark_dp_sims_pao_desktop_session_based_d_sccl_1_3/525-3716588-0084000?pd_rd_w=WAlPM&content-id=amzn1.sym.e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_p=e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390&pd_rd_i=B0GGRP3JNY&psc=1
+                            - text: "-66%"
+                          - link "₹849.00" [ref=e726] [cursor=pointer]:
+                            - /url: /Centrino-Lightweight-Breathable-Non-Marking-Comfortable/dp/B0GGRP3JNY/ref=pb_allspark_dp_sims_pao_desktop_session_based_d_sccl_1_3/525-3716588-0084000?pd_rd_w=WAlPM&content-id=amzn1.sym.e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_p=e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390&pd_rd_i=B0GGRP3JNY&psc=1
+                            - generic [ref=e727]:
+                              - generic [ref=e728]: ₹849.00
+                              - generic [ref=e729]:
+                                - text: ₹
+                                - generic [ref=e730]:
+                                  - text: "849"
+                                  - generic [ref=e731]: .
+                                - text: "00"
+                        - generic [ref=e734]: Limited time deal
+                        - 'link "M.R.P: ₹2,499.00" [ref=e736] [cursor=pointer]':
+                          - /url: /Centrino-Lightweight-Breathable-Non-Marking-Comfortable/dp/B0GGRP3JNY/ref=pb_allspark_dp_sims_pao_desktop_session_based_d_sccl_1_3/525-3716588-0084000?pd_rd_w=WAlPM&content-id=amzn1.sym.e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_p=e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390&pd_rd_i=B0GGRP3JNY&psc=1
+                          - generic [ref=e738]: "M.R.P: ₹2,499.00"
+                      - generic [ref=e739]:
+                        - img "Amazon Prime" [ref=e741]
+                        - generic [ref=e742]: FREE Delivery Wednesday, April 29
+              - listitem [ref=e743]:
+                - generic [ref=e745]:
+                  - link [ref=e746] [cursor=pointer]:
+                    - /url: /Tecnifibre-Carboflex-Speed-Racket-6D-O92P-VNEG/dp/B079Z37551/ref=pb_allspark_dp_sims_pao_desktop_session_based_d_sccl_1_4/525-3716588-0084000?pd_rd_w=WAlPM&content-id=amzn1.sym.e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_p=e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390&pd_rd_i=B079Z37551&psc=1
+                    - img [ref=e748]
+                  - generic [ref=e750]:
+                    - link "Tecnifibre 12CAR12519 Graphite Blend Carboflex 125 X- Speed 2019 Squash Racquet, Black and Red" [ref=e751] [cursor=pointer]:
+                      - /url: /Tecnifibre-Carboflex-Speed-Racket-6D-O92P-VNEG/dp/B079Z37551/ref=pb_allspark_dp_sims_pao_desktop_session_based_d_sccl_1_4/525-3716588-0084000?pd_rd_w=WAlPM&content-id=amzn1.sym.e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_p=e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390&pd_rd_i=B079Z37551&psc=1
+                      - generic [ref=e753]: Tecnifibre 12CAR12519 Graphite Blend Carboflex 125 X- Speed 2019 Squash Racquet, Black and Red
+                    - link "4.6 out of 5 stars, 175 ratings" [ref=e756] [cursor=pointer]:
+                      - /url: /product-reviews/B079Z37551/ref=pb_allspark_dp_sims_pao_desktop_session_based_d_sccl_1_4_cr/525-3716588-0084000?pd_rd_w=WAlPM&content-id=amzn1.sym.e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_p=e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390&pd_rd_i=B079Z37551
+                      - generic [ref=e758]: 4.6 out of 5 stars
+                      - text: "175"
+                    - generic [ref=e759]:
+                      - generic [ref=e761]:
+                        - generic [ref=e762]:
+                          - link "-30%" [ref=e763] [cursor=pointer]:
+                            - /url: /Tecnifibre-Carboflex-Speed-Racket-6D-O92P-VNEG/dp/B079Z37551/ref=pb_allspark_dp_sims_pao_desktop_session_based_d_sccl_1_4/525-3716588-0084000?pd_rd_w=WAlPM&content-id=amzn1.sym.e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_p=e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390&pd_rd_i=B079Z37551&psc=1
+                            - text: "-30%"
+                          - link "₹10,490.00" [ref=e764] [cursor=pointer]:
+                            - /url: /Tecnifibre-Carboflex-Speed-Racket-6D-O92P-VNEG/dp/B079Z37551/ref=pb_allspark_dp_sims_pao_desktop_session_based_d_sccl_1_4/525-3716588-0084000?pd_rd_w=WAlPM&content-id=amzn1.sym.e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_p=e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390&pd_rd_i=B079Z37551&psc=1
+                            - generic [ref=e765]:
+                              - generic [ref=e766]: ₹10,490.00
+                              - generic [ref=e767]:
+                                - text: ₹
+                                - generic [ref=e768]:
+                                  - text: 10,490
+                                  - generic [ref=e769]: .
+                                - text: "00"
+                        - 'link "M.R.P: ₹14,999.00" [ref=e771] [cursor=pointer]':
+                          - /url: /Tecnifibre-Carboflex-Speed-Racket-6D-O92P-VNEG/dp/B079Z37551/ref=pb_allspark_dp_sims_pao_desktop_session_based_d_sccl_1_4/525-3716588-0084000?pd_rd_w=WAlPM&content-id=amzn1.sym.e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_p=e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390&pd_rd_i=B079Z37551&psc=1
+                          - generic [ref=e773]: "M.R.P: ₹14,999.00"
+                      - generic [ref=e774]:
+                        - img "Amazon Prime" [ref=e776]
+                        - generic [ref=e777]: FREE Delivery Saturday, May 2
+              - listitem [ref=e778]:
+                - generic [ref=e780]:
+                  - link [ref=e781] [cursor=pointer]:
+                    - /url: /Amazon-Brand-Symactive-absymkop1103-Cricket/dp/B08R1GH1K1/ref=pb_allspark_dp_sims_pao_desktop_session_based_d_sccl_1_5/525-3716588-0084000?pd_rd_w=WAlPM&content-id=amzn1.sym.e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_p=e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390&pd_rd_i=B08R1GH1K1&psc=1
+                    - img [ref=e783]
+                  - generic [ref=e785]:
+                    - link "Amazon Brand - Symactive Light Tennis Cricket Ball, Set of 3 (Green) | Woven Felt covered rubber ball" [ref=e786] [cursor=pointer]:
+                      - /url: /Amazon-Brand-Symactive-absymkop1103-Cricket/dp/B08R1GH1K1/ref=pb_allspark_dp_sims_pao_desktop_session_based_d_sccl_1_5/525-3716588-0084000?pd_rd_w=WAlPM&content-id=amzn1.sym.e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_p=e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390&pd_rd_i=B08R1GH1K1&psc=1
+                      - generic [ref=e788]: Amazon Brand - Symactive Light Tennis Cricket Ball, Set of 3 (Green) | Woven Felt covered rubber ball
+                    - link "3.9 out of 5 stars, 264 ratings" [ref=e791] [cursor=pointer]:
+                      - /url: /product-reviews/B08R1GH1K1/ref=pb_allspark_dp_sims_pao_desktop_session_based_d_sccl_1_5_cr/525-3716588-0084000?pd_rd_w=WAlPM&content-id=amzn1.sym.e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_p=e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390&pd_rd_i=B08R1GH1K1
+                      - generic [ref=e793]: 3.9 out of 5 stars
+                      - text: "264"
+                    - generic [ref=e794]:
+                      - generic [ref=e796]:
+                        - generic [ref=e797]:
+                          - link "-47%" [ref=e798] [cursor=pointer]:
+                            - /url: /Amazon-Brand-Symactive-absymkop1103-Cricket/dp/B08R1GH1K1/ref=pb_allspark_dp_sims_pao_desktop_session_based_d_sccl_1_5/525-3716588-0084000?pd_rd_w=WAlPM&content-id=amzn1.sym.e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_p=e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390&pd_rd_i=B08R1GH1K1&psc=1
+                            - text: "-47%"
+                          - link "₹221.00" [ref=e799] [cursor=pointer]:
+                            - /url: /Amazon-Brand-Symactive-absymkop1103-Cricket/dp/B08R1GH1K1/ref=pb_allspark_dp_sims_pao_desktop_session_based_d_sccl_1_5/525-3716588-0084000?pd_rd_w=WAlPM&content-id=amzn1.sym.e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_p=e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390&pd_rd_i=B08R1GH1K1&psc=1
+                            - generic [ref=e800]:
+                              - generic [ref=e801]: ₹221.00
+                              - generic [ref=e802]:
+                                - text: ₹
+                                - generic [ref=e803]:
+                                  - text: "221"
+                                  - generic [ref=e804]: .
+                                - text: "00"
+                        - 'link "M.R.P: ₹419.00" [ref=e806] [cursor=pointer]':
+                          - /url: /Amazon-Brand-Symactive-absymkop1103-Cricket/dp/B08R1GH1K1/ref=pb_allspark_dp_sims_pao_desktop_session_based_d_sccl_1_5/525-3716588-0084000?pd_rd_w=WAlPM&content-id=amzn1.sym.e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_p=e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390&pd_rd_i=B08R1GH1K1&psc=1
+                          - generic [ref=e808]: "M.R.P: ₹419.00"
+                      - generic [ref=e809]:
+                        - img "Amazon Prime" [ref=e811]
+                        - generic [ref=e812]: FREE Delivery Wednesday, April 29
+              - listitem [ref=e813]:
+                - generic [ref=e815]:
+                  - link [ref=e816] [cursor=pointer]:
+                    - /url: /Vector-Vxs-520-Full-Cover/dp/B00IOPO47I/ref=pb_allspark_dp_sims_pao_desktop_session_based_d_sccl_1_6/525-3716588-0084000?pd_rd_w=WAlPM&content-id=amzn1.sym.e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_p=e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390&pd_rd_i=B00IOPO47I&psc=1
+                    - img [ref=e818]
+                  - generic [ref=e820]:
+                    - link "Vector X VXS 520 Squash Racquet" [ref=e821] [cursor=pointer]:
+                      - /url: /Vector-Vxs-520-Full-Cover/dp/B00IOPO47I/ref=pb_allspark_dp_sims_pao_desktop_session_based_d_sccl_1_6/525-3716588-0084000?pd_rd_w=WAlPM&content-id=amzn1.sym.e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_p=e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390&pd_rd_i=B00IOPO47I&psc=1
+                      - generic [ref=e823]: Vector X VXS 520 Squash Racquet
+                    - link "3.2 out of 5 stars, 9 ratings" [ref=e826] [cursor=pointer]:
+                      - /url: /product-reviews/B00IOPO47I/ref=pb_allspark_dp_sims_pao_desktop_session_based_d_sccl_1_6_cr/525-3716588-0084000?pd_rd_w=WAlPM&content-id=amzn1.sym.e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_p=e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390&pd_rd_i=B00IOPO47I
+                      - generic [ref=e828]: 3.2 out of 5 stars
+                      - text: "9"
+                    - link "₹1,475.00" [ref=e833] [cursor=pointer]:
+                      - /url: /Vector-Vxs-520-Full-Cover/dp/B00IOPO47I/ref=pb_allspark_dp_sims_pao_desktop_session_based_d_sccl_1_6/525-3716588-0084000?pd_rd_w=WAlPM&content-id=amzn1.sym.e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_p=e84a26b2-5470-42e6-b7fa-162e7bb17185&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390&pd_rd_i=B00IOPO47I&psc=1
+                      - generic [ref=e834]:
+                        - generic [ref=e835]: ₹1,475.00
+                        - generic [ref=e836]:
+                          - text: ₹
+                          - generic [ref=e837]:
+                            - text: 1,475
+                            - generic [ref=e838]: .
+                          - text: "00"
+                    - text: FREE Delivery
+      - generic [ref=e844]:
+        - generic [ref=e846]:
+          - separator [ref=e847]
+          - generic [ref=e848]:
+            - heading "Rufus AI Looking for specific info?" [level=3] [ref=e849]:
+              - img [ref=e850]
+              - generic [ref=e853]:
+                - generic [ref=e854]: Rufus AI
+                - text: Looking for specific info?
+            - generic [ref=e855]:
+              - textbox "Looking for specific info?" [ref=e856]:
+                - /placeholder: Ask Rufus or search reviews and Q&A
+              - button "Submit" [ref=e859] [cursor=pointer]:
+                - img "Submit" [ref=e860]
+            - list [ref=e864]:
+              - listitem [ref=e865]:
+                - generic [ref=e869] [cursor=pointer]:
+                  - button "What material is the grip?" [ref=e870]
+                  - generic [ref=e871]: What material is the grip?
+              - listitem [ref=e872]:
+                - generic [ref=e876] [cursor=pointer]:
+                  - button "Does it come with a case?" [ref=e877]
+                  - generic [ref=e878]: Does it come with a case?
+              - listitem [ref=e879]:
+                - generic [ref=e883] [cursor=pointer]:
+                  - button "Is this racquet for adults?" [ref=e884]
+                  - generic [ref=e885]: Is this racquet for adults?
+              - listitem [ref=e886]:
+                - generic [ref=e890] [cursor=pointer]:
+                  - button "What is the weight?" [ref=e891]
+                  - generic [ref=e892]: What is the weight?
+              - listitem [ref=e893]:
+                - generic [ref=e897] [cursor=pointer]:
+                  - button "Is it good for beginners?" [ref=e898]
+                  - generic [ref=e899]: Is it good for beginners?
+        - generic:
+          - navigation:
+            - navigation "Navigate within the product detail page":
+              - navigation "Back to top jump link":
+                - generic:
+                  - generic: Top
+              - navigation "About this item widget jump link":
+                - generic:
+                  - generic: About this item
+              - navigation "Similar widget jump link":
+                - generic:
+                  - generic: Similar
+              - navigation "Questions widget jump link":
+                - generic:
+                  - generic: Questions
+              - navigation "Product information widget jump link":
+                - generic:
+                  - generic: Product information
+              - navigation "From the brand widget jump link":
+                - generic:
+                  - generic: From the Brand
+              - navigation "Customer reviews widget jump link":
+                - generic:
+                  - generic: Reviews
+            - navigation "Back to top Image jump link":
+              - img "Cosco Power Aluminum 175 Squash Racquet, Multicolour"
+            - navigation "Back to top title jump link":
+              - generic: Cosco Power Aluminum 175 Squash Racquet, Multicolour
+        - generic [ref=e905]:
+          - heading "Top Brand Cosco" [level=2] [ref=e906]:
+            - paragraph [ref=e908]: Top Brand
+            - paragraph [ref=e909]: Cosco
+          - list [ref=e910]:
+            - listitem [ref=e911]:
+              - paragraph [ref=e912]: 79% positive ratings from 50K+ customers
+            - listitem [ref=e913]:
+              - paragraph [ref=e914]: 10K+ recent orders from this brand
+            - listitem [ref=e915]:
+              - paragraph [ref=e916]: 12+ years on Amazon
+        - generic [ref=e917]:
+          - separator [ref=e918]
+          - generic [ref=e920]:
+            - heading "Product information" [level=1] [ref=e921]
+            - generic [ref=e925]:
+              - generic [ref=e926]:
+                - button "Item details" [ref=e931] [cursor=pointer]:
+                  - heading "Item details" [level=5] [ref=e933]
+                - generic [ref=e936]:
+                  - heading "Feedback" [level=3] [ref=e937]
+                  - generic [ref=e942]:
+                    - text: Would you like to
+                    - button "tell us about a lower price?" [ref=e944] [cursor=pointer]: tell us about a lower price?
+              - generic [ref=e948]:
+                - button "Measurements" [ref=e951] [cursor=pointer]:
+                  - heading "Measurements" [level=5] [ref=e953]
+                - button "Materials & Care" [ref=e956] [cursor=pointer]:
+                  - heading "Materials & Care" [level=5] [ref=e958]
+                - button "User guide" [ref=e961] [cursor=pointer]:
+                  - heading "User guide" [level=5] [ref=e963]
+        - generic [ref=e966]:
+          - heading "Product description" [level=2] [ref=e969]
+          - paragraph [ref=e971]: Aluminium racket, light weight, pu grip. Full cover. Quality checked by in house technician and with high standrads to match.A quality product from the house of cosco India limited.
+      - generic [ref=e973]:
+        - separator [ref=e974]
+        - heading "What is in the box?" [level=2] [ref=e975]
+        - listitem [ref=e977]: 1 Raquet
+      - generic [ref=e980]:
+        - separator [ref=e981]
+        - group "Products related to this item" [ref=e982]:
+          - generic [ref=e984]:
+            - heading "Products related to this item" [level=2] [ref=e985]
+            - link "Sponsored" [ref=e989] [cursor=pointer]:
+              - /url: "#sp_detail2_feedbackForm"
+              - generic [ref=e990]:
+                - text: Sponsored
+                - img [ref=e991]
+          - group [ref=e998]:
+            - list [ref=e999]:
+              - listitem [ref=e1000]:
+                - generic [ref=e1001]:
+                  - link "TANSO FEZA 125 Graphite High-Performance Strung Squash Racquet with Premium Squash Racket Cover (125g, Teardrop Head Shape, Carbon Fiber Construction)" [ref=e1002] [cursor=pointer]:
+                    - /url: /sspa/click?ie=UTF8&spc=MToyMjk4NDg4NzE1MDk3Mjk4OjE3NzcyMjQ5OTc6c3BfZGV0YWlsMjozMDA3Mzc5ODkwMzU5MzI6Ojo6&url=%2Fdp%2FB0FLK5GVYH%2Fref%3Dsspa_dk_detail_0%3Fpsc%3D1%26pd_rd_i%3DB0FLK5GVYH%26pd_rd_w%3D51HLP%26content-id%3Damzn1.sym.00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_p%3D00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_r%3DEEG3Y7GRDDTTD9SPPPDH%26pd_rd_wg%3DZw46N%26pd_rd_r%3D1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390%26aref%3DQcu2vCLhea%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy&aref=Qcu2vCLhea&sp_cr=ZAZ
+                    - img [ref=e1005]
+                    - generic [ref=e1006]: TANSO FEZA 125 Graphite High-Performance Strung Squash Racquet with…
+                  - link "3.8 out of 5 stars 9 ratings" [ref=e1008] [cursor=pointer]:
+                    - /url: /sspa/click?ie=UTF8&spc=MToyMjk4NDg4NzE1MDk3Mjk4OjE3NzcyMjQ5OTc6c3BfZGV0YWlsMjozMDA3Mzc5ODkwMzU5MzI6Ojo6&url=%2Fdp%2FB0FLK5GVYH%2Fref%3Dsspa_dk_detail_0%3Fpsc%3D1%26pd_rd_i%3DB0FLK5GVYH%26pd_rd_w%3D51HLP%26content-id%3Damzn1.sym.00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_p%3D00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_r%3DEEG3Y7GRDDTTD9SPPPDH%26pd_rd_wg%3DZw46N%26pd_rd_r%3D1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390%26aref%3DQcu2vCLhea%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy&aref=Qcu2vCLhea&sp_cr=ZAZ#customerReviews
+                    - text: "9"
+                  - link "Limited time deal" [ref=e1010] [cursor=pointer]:
+                    - /url: /sspa/click?ie=UTF8&spc=MToyMjk4NDg4NzE1MDk3Mjk4OjE3NzcyMjQ5OTc6c3BfZGV0YWlsMjozMDA3Mzc5ODkwMzU5MzI6Ojo6&url=%2Fdp%2FB0FLK5GVYH%2Fref%3Dsspa_dk_detail_0%3Fpsc%3D1%26pd_rd_i%3DB0FLK5GVYH%26pd_rd_w%3D51HLP%26content-id%3Damzn1.sym.00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_p%3D00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_r%3DEEG3Y7GRDDTTD9SPPPDH%26pd_rd_wg%3DZw46N%26pd_rd_r%3D1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390%26aref%3DQcu2vCLhea%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy&aref=Qcu2vCLhea&sp_cr=ZAZ
+                    - generic [ref=e1012]: Limited time deal
+                  - 'link "-57% ₹2,999.00 M.R.P: ₹6,999.00 M.R.P: ₹6,999.00" [ref=e1014] [cursor=pointer]':
+                    - /url: /sspa/click?ie=UTF8&spc=MToyMjk4NDg4NzE1MDk3Mjk4OjE3NzcyMjQ5OTc6c3BfZGV0YWlsMjozMDA3Mzc5ODkwMzU5MzI6Ojo6&url=%2Fdp%2FB0FLK5GVYH%2Fref%3Dsspa_dk_detail_0%3Fpsc%3D1%26pd_rd_i%3DB0FLK5GVYH%26pd_rd_w%3D51HLP%26content-id%3Damzn1.sym.00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_p%3D00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_r%3DEEG3Y7GRDDTTD9SPPPDH%26pd_rd_wg%3DZw46N%26pd_rd_r%3D1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390%26aref%3DQcu2vCLhea%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy&aref=Qcu2vCLhea&sp_cr=ZAZ
+                    - text: "-57%"
+                    - generic [ref=e1015]:
+                      - generic [ref=e1016]: ₹2,999.00
+                      - generic [ref=e1017]:
+                        - text: ₹
+                        - generic [ref=e1018]:
+                          - text: 2,999
+                          - generic [ref=e1019]: .
+                        - text: "00"
+                    - generic [ref=e1020]: "M.R.P: ₹6,999.00"
+                    - generic [ref=e1021]:
+                      - text: "M.R.P:"
+                      - generic [ref=e1022]:
+                        - generic [ref=e1023]: ₹6,999.00
+                        - text: ₹6,999.00
+                  - link "Prime FREE delivery Fri, 1 May" [ref=e1025] [cursor=pointer]:
+                    - /url: /sspa/click?ie=UTF8&spc=MToyMjk4NDg4NzE1MDk3Mjk4OjE3NzcyMjQ5OTc6c3BfZGV0YWlsMjozMDA3Mzc5ODkwMzU5MzI6Ojo6&url=%2Fdp%2FB0FLK5GVYH%2Fref%3Dsspa_dk_detail_0%3Fpsc%3D1%26pd_rd_i%3DB0FLK5GVYH%26pd_rd_w%3D51HLP%26content-id%3Damzn1.sym.00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_p%3D00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_r%3DEEG3Y7GRDDTTD9SPPPDH%26pd_rd_wg%3DZw46N%26pd_rd_r%3D1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390%26aref%3DQcu2vCLhea%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy&aref=Qcu2vCLhea&sp_cr=ZAZ
+                    - generic [ref=e1026]:
+                      - img "Prime" [ref=e1029]
+                      - generic [ref=e1031]: FREE delivery Fri, 1 May
+              - listitem [ref=e1032]:
+                - generic [ref=e1033]:
+                  - link "Tecnifibre 12CAR12519 Graphite Blend Carboflex 125 X- Speed 2019 Squash Racquet, Black and Red" [ref=e1034] [cursor=pointer]:
+                    - /url: /sspa/click?ie=UTF8&spc=MToyMjk4NDg4NzE1MDk3Mjk4OjE3NzcyMjQ5OTc6c3BfZGV0YWlsMjozMDA2MjMzNDg3MTI2MzI6Ojo6&url=%2Fdp%2FB079Z37551%2Fref%3Dsspa_dk_detail_1%3Fpsc%3D1%26pd_rd_i%3DB079Z37551%26pd_rd_w%3D51HLP%26content-id%3Damzn1.sym.00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_p%3D00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_r%3DEEG3Y7GRDDTTD9SPPPDH%26pd_rd_wg%3DZw46N%26pd_rd_r%3D1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390%26aref%3DuMmT7T1b5n%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy&aref=uMmT7T1b5n&sp_cr=ZAZ
+                    - img [ref=e1037]
+                    - generic [ref=e1038]: Tecnifibre 12CAR12519 Graphite Blend Carboflex 125 X- Speed 2019 Squash Racquet, Bl...
+                  - link "4.6 out of 5 stars 175 ratings" [ref=e1040] [cursor=pointer]:
+                    - /url: /sspa/click?ie=UTF8&spc=MToyMjk4NDg4NzE1MDk3Mjk4OjE3NzcyMjQ5OTc6c3BfZGV0YWlsMjozMDA2MjMzNDg3MTI2MzI6Ojo6&url=%2Fdp%2FB079Z37551%2Fref%3Dsspa_dk_detail_1%3Fpsc%3D1%26pd_rd_i%3DB079Z37551%26pd_rd_w%3D51HLP%26content-id%3Damzn1.sym.00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_p%3D00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_r%3DEEG3Y7GRDDTTD9SPPPDH%26pd_rd_wg%3DZw46N%26pd_rd_r%3D1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390%26aref%3DuMmT7T1b5n%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy&aref=uMmT7T1b5n&sp_cr=ZAZ#customerReviews
+                    - text: "175"
+                  - 'link "-30% ₹10,490.00 M.R.P: ₹14,999.00 M.R.P: ₹14,999.00" [ref=e1043] [cursor=pointer]':
+                    - /url: /sspa/click?ie=UTF8&spc=MToyMjk4NDg4NzE1MDk3Mjk4OjE3NzcyMjQ5OTc6c3BfZGV0YWlsMjozMDA2MjMzNDg3MTI2MzI6Ojo6&url=%2Fdp%2FB079Z37551%2Fref%3Dsspa_dk_detail_1%3Fpsc%3D1%26pd_rd_i%3DB079Z37551%26pd_rd_w%3D51HLP%26content-id%3Damzn1.sym.00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_p%3D00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_r%3DEEG3Y7GRDDTTD9SPPPDH%26pd_rd_wg%3DZw46N%26pd_rd_r%3D1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390%26aref%3DuMmT7T1b5n%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy&aref=uMmT7T1b5n&sp_cr=ZAZ
+                    - text: "-30%"
+                    - generic [ref=e1044]:
+                      - generic [ref=e1045]: ₹10,490.00
+                      - generic [ref=e1046]:
+                        - text: ₹
+                        - generic [ref=e1047]:
+                          - text: 10,490
+                          - generic [ref=e1048]: .
+                        - text: "00"
+                    - generic [ref=e1049]: "M.R.P: ₹14,999.00"
+                    - generic [ref=e1050]:
+                      - text: "M.R.P:"
+                      - generic [ref=e1051]:
+                        - generic [ref=e1052]: ₹14,999.00
+                        - text: ₹14,999.00
+                  - link "Prime FREE delivery Sat, 2 May" [ref=e1054] [cursor=pointer]:
+                    - /url: /sspa/click?ie=UTF8&spc=MToyMjk4NDg4NzE1MDk3Mjk4OjE3NzcyMjQ5OTc6c3BfZGV0YWlsMjozMDA2MjMzNDg3MTI2MzI6Ojo6&url=%2Fdp%2FB079Z37551%2Fref%3Dsspa_dk_detail_1%3Fpsc%3D1%26pd_rd_i%3DB079Z37551%26pd_rd_w%3D51HLP%26content-id%3Damzn1.sym.00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_p%3D00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_r%3DEEG3Y7GRDDTTD9SPPPDH%26pd_rd_wg%3DZw46N%26pd_rd_r%3D1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390%26aref%3DuMmT7T1b5n%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy&aref=uMmT7T1b5n&sp_cr=ZAZ
+                    - generic [ref=e1055]:
+                      - img "Prime" [ref=e1058]
+                      - generic [ref=e1060]: FREE delivery Sat, 2 May
+              - listitem [ref=e1061]:
+                - generic [ref=e1062]:
+                  - link "Nivia K-500 Pickleball Paddle, Fibreglass Surface,16 mm Thickness, Paddle Cover Bag, Cushion Comfort Handle Grip, Durable Pickleball Paddle, Outdoor Game Kit for Kids & Adults (Green)" [ref=e1063] [cursor=pointer]:
+                    - /url: /sspa/click?ie=UTF8&spc=MToyMjk4NDg4NzE1MDk3Mjk4OjE3NzcyMjQ5OTc6c3BfZGV0YWlsMjozMDEwNTU3MjIxOTcwMzI6Ojo6&url=%2Fdp%2FB0FG7ZZ5JX%2Fref%3Dsspa_dk_detail_2%3Fpsc%3D1%26pd_rd_i%3DB0FG7ZZ5JX%26pd_rd_w%3D51HLP%26content-id%3Damzn1.sym.00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_p%3D00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_r%3DEEG3Y7GRDDTTD9SPPPDH%26pd_rd_wg%3DZw46N%26pd_rd_r%3D1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390%26aref%3DlzwcwEX44a%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy&aref=lzwcwEX44a&sp_cr=ZAZ
+                    - img [ref=e1066]
+                    - generic [ref=e1067]: Nivia K-500 Pickleball Paddle, Fibreglass Surface,16 mm Thickness, Paddle…
+                  - link "4.9 out of 5 stars 10 ratings" [ref=e1069] [cursor=pointer]:
+                    - /url: /sspa/click?ie=UTF8&spc=MToyMjk4NDg4NzE1MDk3Mjk4OjE3NzcyMjQ5OTc6c3BfZGV0YWlsMjozMDEwNTU3MjIxOTcwMzI6Ojo6&url=%2Fdp%2FB0FG7ZZ5JX%2Fref%3Dsspa_dk_detail_2%3Fpsc%3D1%26pd_rd_i%3DB0FG7ZZ5JX%26pd_rd_w%3D51HLP%26content-id%3Damzn1.sym.00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_p%3D00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_r%3DEEG3Y7GRDDTTD9SPPPDH%26pd_rd_wg%3DZw46N%26pd_rd_r%3D1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390%26aref%3DlzwcwEX44a%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy&aref=lzwcwEX44a&sp_cr=ZAZ#customerReviews
+                    - text: "10"
+                  - 'link "-20% ₹1,799.00 M.R.P: ₹2,249.00 M.R.P: ₹2,249.00" [ref=e1072] [cursor=pointer]':
+                    - /url: /sspa/click?ie=UTF8&spc=MToyMjk4NDg4NzE1MDk3Mjk4OjE3NzcyMjQ5OTc6c3BfZGV0YWlsMjozMDEwNTU3MjIxOTcwMzI6Ojo6&url=%2Fdp%2FB0FG7ZZ5JX%2Fref%3Dsspa_dk_detail_2%3Fpsc%3D1%26pd_rd_i%3DB0FG7ZZ5JX%26pd_rd_w%3D51HLP%26content-id%3Damzn1.sym.00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_p%3D00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_r%3DEEG3Y7GRDDTTD9SPPPDH%26pd_rd_wg%3DZw46N%26pd_rd_r%3D1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390%26aref%3DlzwcwEX44a%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy&aref=lzwcwEX44a&sp_cr=ZAZ
+                    - text: "-20%"
+                    - generic [ref=e1073]:
+                      - generic [ref=e1074]: ₹1,799.00
+                      - generic [ref=e1075]:
+                        - text: ₹
+                        - generic [ref=e1076]:
+                          - text: 1,799
+                          - generic [ref=e1077]: .
+                        - text: "00"
+                    - generic [ref=e1078]: "M.R.P: ₹2,249.00"
+                    - generic [ref=e1079]:
+                      - text: "M.R.P:"
+                      - generic [ref=e1080]:
+                        - generic [ref=e1081]: ₹2,249.00
+                        - text: ₹2,249.00
+                  - link "Prime FREE delivery Sat, 2 May" [ref=e1083] [cursor=pointer]:
+                    - /url: /sspa/click?ie=UTF8&spc=MToyMjk4NDg4NzE1MDk3Mjk4OjE3NzcyMjQ5OTc6c3BfZGV0YWlsMjozMDEwNTU3MjIxOTcwMzI6Ojo6&url=%2Fdp%2FB0FG7ZZ5JX%2Fref%3Dsspa_dk_detail_2%3Fpsc%3D1%26pd_rd_i%3DB0FG7ZZ5JX%26pd_rd_w%3D51HLP%26content-id%3Damzn1.sym.00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_p%3D00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_r%3DEEG3Y7GRDDTTD9SPPPDH%26pd_rd_wg%3DZw46N%26pd_rd_r%3D1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390%26aref%3DlzwcwEX44a%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy&aref=lzwcwEX44a&sp_cr=ZAZ
+                    - generic [ref=e1084]:
+                      - img "Prime" [ref=e1087]
+                      - generic [ref=e1089]: FREE delivery Sat, 2 May
+              - listitem [ref=e1090]:
+                - generic [ref=e1091]:
+                  - link "Mapro Lemon Gluten Free Barley Water, 750Ml, Pack Of 1" [ref=e1092] [cursor=pointer]:
+                    - /url: /sspa/click?ie=UTF8&spc=MToyMjk4NDg4NzE1MDk3Mjk4OjE3NzcyMjQ5OTc6c3BfZGV0YWlsMjozMDA4NjgxMzE2NDYzMzI6Ojo6&url=%2Fdp%2FB00UTIGHKK%2Fref%3Dsspa_dk_detail_3%3Fpsc%3D1%26pd_rd_i%3DB00UTIGHKK%26pd_rd_w%3D51HLP%26content-id%3Damzn1.sym.00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_p%3D00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_r%3DEEG3Y7GRDDTTD9SPPPDH%26pd_rd_wg%3DZw46N%26pd_rd_r%3D1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390%26aref%3DyzRFNzOsZD%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy&aref=yzRFNzOsZD&sp_cr=ZAZ
+                    - img [ref=e1095]
+                    - generic [ref=e1096]: Mapro Lemon Gluten Free Barley Water, 750Ml, Pack Of 1
+                  - link "4.3 out of 5 stars 877 ratings" [ref=e1098] [cursor=pointer]:
+                    - /url: /sspa/click?ie=UTF8&spc=MToyMjk4NDg4NzE1MDk3Mjk4OjE3NzcyMjQ5OTc6c3BfZGV0YWlsMjozMDA4NjgxMzE2NDYzMzI6Ojo6&url=%2Fdp%2FB00UTIGHKK%2Fref%3Dsspa_dk_detail_3%3Fpsc%3D1%26pd_rd_i%3DB00UTIGHKK%26pd_rd_w%3D51HLP%26content-id%3Damzn1.sym.00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_p%3D00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_r%3DEEG3Y7GRDDTTD9SPPPDH%26pd_rd_wg%3DZw46N%26pd_rd_r%3D1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390%26aref%3DyzRFNzOsZD%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy&aref=yzRFNzOsZD&sp_cr=ZAZ#customerReviews
+                    - text: "877"
+                  - link "Deal selling fast" [ref=e1100] [cursor=pointer]:
+                    - /url: /sspa/click?ie=UTF8&spc=MToyMjk4NDg4NzE1MDk3Mjk4OjE3NzcyMjQ5OTc6c3BfZGV0YWlsMjozMDA4NjgxMzE2NDYzMzI6Ojo6&url=%2Fdp%2FB00UTIGHKK%2Fref%3Dsspa_dk_detail_3%3Fpsc%3D1%26pd_rd_i%3DB00UTIGHKK%26pd_rd_w%3D51HLP%26content-id%3Damzn1.sym.00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_p%3D00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_r%3DEEG3Y7GRDDTTD9SPPPDH%26pd_rd_wg%3DZw46N%26pd_rd_r%3D1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390%26aref%3DyzRFNzOsZD%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy&aref=yzRFNzOsZD&sp_cr=ZAZ
+                    - generic [ref=e1102]: Deal selling fast
+                  - 'link "-10% ₹179.00 ( ₹23.87 / 100 ml) M.R.P: ₹198.00 M.R.P: ₹198.00" [ref=e1104] [cursor=pointer]':
+                    - /url: /sspa/click?ie=UTF8&spc=MToyMjk4NDg4NzE1MDk3Mjk4OjE3NzcyMjQ5OTc6c3BfZGV0YWlsMjozMDA4NjgxMzE2NDYzMzI6Ojo6&url=%2Fdp%2FB00UTIGHKK%2Fref%3Dsspa_dk_detail_3%3Fpsc%3D1%26pd_rd_i%3DB00UTIGHKK%26pd_rd_w%3D51HLP%26content-id%3Damzn1.sym.00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_p%3D00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_r%3DEEG3Y7GRDDTTD9SPPPDH%26pd_rd_wg%3DZw46N%26pd_rd_r%3D1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390%26aref%3DyzRFNzOsZD%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy&aref=yzRFNzOsZD&sp_cr=ZAZ
+                    - text: "-10%"
+                    - generic [ref=e1105]:
+                      - generic [ref=e1106]: ₹179.00
+                      - generic [ref=e1107]:
+                        - text: ₹
+                        - generic [ref=e1108]:
+                          - text: "179"
+                          - generic [ref=e1109]: .
+                        - text: "00"
+                    - generic [ref=e1110]:
+                      - text: (
+                      - generic [ref=e1111]:
+                        - generic [ref=e1112]: ₹23.87
+                        - text: ₹23.87
+                      - text: / 100 ml)
+                    - generic [ref=e1113]: "M.R.P: ₹198.00"
+                    - generic [ref=e1114]:
+                      - text: "M.R.P:"
+                      - generic [ref=e1115]:
+                        - generic [ref=e1116]: ₹198.00
+                        - text: ₹198.00
+                  - link "Prime FREE delivery Wed, 29 Apr" [ref=e1118] [cursor=pointer]:
+                    - /url: /sspa/click?ie=UTF8&spc=MToyMjk4NDg4NzE1MDk3Mjk4OjE3NzcyMjQ5OTc6c3BfZGV0YWlsMjozMDA4NjgxMzE2NDYzMzI6Ojo6&url=%2Fdp%2FB00UTIGHKK%2Fref%3Dsspa_dk_detail_3%3Fpsc%3D1%26pd_rd_i%3DB00UTIGHKK%26pd_rd_w%3D51HLP%26content-id%3Damzn1.sym.00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_p%3D00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_r%3DEEG3Y7GRDDTTD9SPPPDH%26pd_rd_wg%3DZw46N%26pd_rd_r%3D1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390%26aref%3DyzRFNzOsZD%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy&aref=yzRFNzOsZD&sp_cr=ZAZ
+                    - generic [ref=e1119]:
+                      - img "Prime" [ref=e1122]
+                      - generic [ref=e1124]: FREE delivery Wed, 29 Apr
+              - listitem [ref=e1125]:
+                - generic [ref=e1126]:
+                  - link "Head Graphite-Titanium-Lined Nano Ti Tornado Squash Racquet (Orange, Black)" [ref=e1127] [cursor=pointer]:
+                    - /url: /sspa/click?ie=UTF8&spc=MToyMjk4NDg4NzE1MDk3Mjk4OjE3NzcyMjQ5OTc6c3BfZGV0YWlsMjoyMDA0NzYxMzI5OTc5ODo6Ojo&url=%2Fdp%2FB00ICJEGH4%2Fref%3Dsspa_dk_detail_4%3Fpsc%3D1%26pd_rd_i%3DB00ICJEGH4%26pd_rd_w%3D51HLP%26content-id%3Damzn1.sym.00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_p%3D00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_r%3DEEG3Y7GRDDTTD9SPPPDH%26pd_rd_wg%3DZw46N%26pd_rd_r%3D1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390%26aref%3DP8ex4F1Tni%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy&aref=P8ex4F1Tni&sp_cr=ZAZ
+                    - img [ref=e1130]
+                    - generic [ref=e1131]: Head Graphite-Titanium-Lined Nano Ti Tornado Squash Racquet (Orange, Black)
+                  - link "4.4 out of 5 stars 265 ratings" [ref=e1133] [cursor=pointer]:
+                    - /url: /sspa/click?ie=UTF8&spc=MToyMjk4NDg4NzE1MDk3Mjk4OjE3NzcyMjQ5OTc6c3BfZGV0YWlsMjoyMDA0NzYxMzI5OTc5ODo6Ojo&url=%2Fdp%2FB00ICJEGH4%2Fref%3Dsspa_dk_detail_4%3Fpsc%3D1%26pd_rd_i%3DB00ICJEGH4%26pd_rd_w%3D51HLP%26content-id%3Damzn1.sym.00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_p%3D00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_r%3DEEG3Y7GRDDTTD9SPPPDH%26pd_rd_wg%3DZw46N%26pd_rd_r%3D1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390%26aref%3DP8ex4F1Tni%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy&aref=P8ex4F1Tni&sp_cr=ZAZ#customerReviews
+                    - text: "265"
+                  - 'link "-36% ₹2,376.00 M.R.P: ₹3,699.00 M.R.P: ₹3,699.00" [ref=e1136] [cursor=pointer]':
+                    - /url: /sspa/click?ie=UTF8&spc=MToyMjk4NDg4NzE1MDk3Mjk4OjE3NzcyMjQ5OTc6c3BfZGV0YWlsMjoyMDA0NzYxMzI5OTc5ODo6Ojo&url=%2Fdp%2FB00ICJEGH4%2Fref%3Dsspa_dk_detail_4%3Fpsc%3D1%26pd_rd_i%3DB00ICJEGH4%26pd_rd_w%3D51HLP%26content-id%3Damzn1.sym.00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_p%3D00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_r%3DEEG3Y7GRDDTTD9SPPPDH%26pd_rd_wg%3DZw46N%26pd_rd_r%3D1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390%26aref%3DP8ex4F1Tni%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy&aref=P8ex4F1Tni&sp_cr=ZAZ
+                    - text: "-36%"
+                    - generic [ref=e1137]:
+                      - generic [ref=e1138]: ₹2,376.00
+                      - generic [ref=e1139]:
+                        - text: ₹
+                        - generic [ref=e1140]:
+                          - text: 2,376
+                          - generic [ref=e1141]: .
+                        - text: "00"
+                    - generic [ref=e1142]: "M.R.P: ₹3,699.00"
+                    - generic [ref=e1143]:
+                      - text: "M.R.P:"
+                      - generic [ref=e1144]:
+                        - generic [ref=e1145]: ₹3,699.00
+                        - text: ₹3,699.00
+                  - link "Prime FREE delivery Fri, 1 May" [ref=e1147] [cursor=pointer]:
+                    - /url: /sspa/click?ie=UTF8&spc=MToyMjk4NDg4NzE1MDk3Mjk4OjE3NzcyMjQ5OTc6c3BfZGV0YWlsMjoyMDA0NzYxMzI5OTc5ODo6Ojo&url=%2Fdp%2FB00ICJEGH4%2Fref%3Dsspa_dk_detail_4%3Fpsc%3D1%26pd_rd_i%3DB00ICJEGH4%26pd_rd_w%3D51HLP%26content-id%3Damzn1.sym.00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_p%3D00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_r%3DEEG3Y7GRDDTTD9SPPPDH%26pd_rd_wg%3DZw46N%26pd_rd_r%3D1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390%26aref%3DP8ex4F1Tni%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy&aref=P8ex4F1Tni&sp_cr=ZAZ
+                    - generic [ref=e1148]:
+                      - img "Prime" [ref=e1151]
+                      - generic [ref=e1153]: FREE delivery Fri, 1 May
+              - listitem [ref=e1154]:
+                - generic [ref=e1155]:
+                  - link "Head Nano Ti Graphite Spector 2.0 Squash Racquet, Black/White" [ref=e1156] [cursor=pointer]:
+                    - /url: /sspa/click?ie=UTF8&spc=MToyMjk4NDg4NzE1MDk3Mjk4OjE3NzcyMjQ5OTc6c3BfZGV0YWlsMjoyMDA0NzYxMzI5OTY5ODo6Ojo&url=%2Fdp%2FB00CSN7D2A%2Fref%3Dsspa_dk_detail_5%3Fpsc%3D1%26pd_rd_i%3DB00CSN7D2A%26pd_rd_w%3D51HLP%26content-id%3Damzn1.sym.00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_p%3D00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_r%3DEEG3Y7GRDDTTD9SPPPDH%26pd_rd_wg%3DZw46N%26pd_rd_r%3D1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390%26aref%3Dv5OsVoiYNK%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy&aref=v5OsVoiYNK&sp_cr=ZAZ
+                    - img [ref=e1159]
+                    - generic [ref=e1160]: Head Nano Ti Graphite Spector 2.0 Squash Racquet, Black/White
+                  - link "4.4 out of 5 stars 981 ratings" [ref=e1162] [cursor=pointer]:
+                    - /url: /sspa/click?ie=UTF8&spc=MToyMjk4NDg4NzE1MDk3Mjk4OjE3NzcyMjQ5OTc6c3BfZGV0YWlsMjoyMDA0NzYxMzI5OTY5ODo6Ojo&url=%2Fdp%2FB00CSN7D2A%2Fref%3Dsspa_dk_detail_5%3Fpsc%3D1%26pd_rd_i%3DB00CSN7D2A%26pd_rd_w%3D51HLP%26content-id%3Damzn1.sym.00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_p%3D00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_r%3DEEG3Y7GRDDTTD9SPPPDH%26pd_rd_wg%3DZw46N%26pd_rd_r%3D1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390%26aref%3Dv5OsVoiYNK%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy&aref=v5OsVoiYNK&sp_cr=ZAZ#customerReviews
+                    - text: "981"
+                  - generic [ref=e1164]:
+                    - generic:
+                      - link "#1 Best Seller":
+                        - /url: /sspa/click?ie=UTF8&spc=MToyMjk4NDg4NzE1MDk3Mjk4OjE3NzcyMjQ5OTc6c3BfZGV0YWlsMjoyMDA0NzYxMzI5OTY5ODo6Ojo&url=%2Fdp%2FB00CSN7D2A%2Fref%3Dsspa_dk_detail_5%3Fpsc%3D1%26pd_rd_i%3DB00CSN7D2A%26pd_rd_w%3D51HLP%26content-id%3Damzn1.sym.00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_p%3D00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_r%3DEEG3Y7GRDDTTD9SPPPDH%26pd_rd_wg%3DZw46N%26pd_rd_r%3D1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390%26aref%3Dv5OsVoiYNK%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy&aref=v5OsVoiYNK&sp_cr=ZAZ
+                        - generic [ref=e1166] [cursor=pointer]: "#1 Best Seller"
+                  - 'link "-29% ₹2,627.00 M.R.P: ₹3,699.00 M.R.P: ₹3,699.00" [ref=e1168] [cursor=pointer]':
+                    - /url: /sspa/click?ie=UTF8&spc=MToyMjk4NDg4NzE1MDk3Mjk4OjE3NzcyMjQ5OTc6c3BfZGV0YWlsMjoyMDA0NzYxMzI5OTY5ODo6Ojo&url=%2Fdp%2FB00CSN7D2A%2Fref%3Dsspa_dk_detail_5%3Fpsc%3D1%26pd_rd_i%3DB00CSN7D2A%26pd_rd_w%3D51HLP%26content-id%3Damzn1.sym.00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_p%3D00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_r%3DEEG3Y7GRDDTTD9SPPPDH%26pd_rd_wg%3DZw46N%26pd_rd_r%3D1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390%26aref%3Dv5OsVoiYNK%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy&aref=v5OsVoiYNK&sp_cr=ZAZ
+                    - text: "-29%"
+                    - generic [ref=e1169]:
+                      - generic [ref=e1170]: ₹2,627.00
+                      - generic [ref=e1171]:
+                        - text: ₹
+                        - generic [ref=e1172]:
+                          - text: 2,627
+                          - generic [ref=e1173]: .
+                        - text: "00"
+                    - generic [ref=e1174]: "M.R.P: ₹3,699.00"
+                    - generic [ref=e1175]:
+                      - text: "M.R.P:"
+                      - generic [ref=e1176]:
+                        - generic [ref=e1177]: ₹3,699.00
+                        - text: ₹3,699.00
+                  - link "Prime FREE delivery Fri, 1 May" [ref=e1179] [cursor=pointer]:
+                    - /url: /sspa/click?ie=UTF8&spc=MToyMjk4NDg4NzE1MDk3Mjk4OjE3NzcyMjQ5OTc6c3BfZGV0YWlsMjoyMDA0NzYxMzI5OTY5ODo6Ojo&url=%2Fdp%2FB00CSN7D2A%2Fref%3Dsspa_dk_detail_5%3Fpsc%3D1%26pd_rd_i%3DB00CSN7D2A%26pd_rd_w%3D51HLP%26content-id%3Damzn1.sym.00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_p%3D00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_r%3DEEG3Y7GRDDTTD9SPPPDH%26pd_rd_wg%3DZw46N%26pd_rd_r%3D1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390%26aref%3Dv5OsVoiYNK%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy&aref=v5OsVoiYNK&sp_cr=ZAZ
+                    - generic [ref=e1180]:
+                      - img "Prime" [ref=e1183]
+                      - generic [ref=e1185]: FREE delivery Fri, 1 May
+              - listitem [ref=e1186]:
+                - generic [ref=e1187]:
+                  - link "Orgaheal Organic Unflavoured Plant-Based Pea Protein Powder, 980g | 30g protein - No Added Sugar & Gluten-free, 5g BCAAs for Weight Management & Post-Workout | USDA & India Organic Certified" [ref=e1188] [cursor=pointer]:
+                    - /url: /sspa/click?ie=UTF8&spc=MToyMjk4NDg4NzE1MDk3Mjk4OjE3NzcyMjQ5OTc6c3BfZGV0YWlsMjozMDA5OTUwOTU3OTcxMzI6Ojo6&url=%2Fdp%2FB0FFT8C41S%2Fref%3Dsspa_dk_detail_6%3Fpsc%3D1%26pd_rd_i%3DB0FFT8C41S%26pd_rd_w%3D51HLP%26content-id%3Damzn1.sym.00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_p%3D00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_r%3DEEG3Y7GRDDTTD9SPPPDH%26pd_rd_wg%3DZw46N%26pd_rd_r%3D1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390%26aref%3D8lvyqmt3uf%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy&aref=8lvyqmt3uf&sp_cr=ZAZ
+                    - img [ref=e1191]
+                    - generic [ref=e1192]: Orgaheal Organic Unflavoured Plant-Based Pea Protein Powder, 980g | 30g protein - N...
+                  - link "5.0 out of 5 stars 1 rating" [ref=e1194] [cursor=pointer]:
+                    - /url: /sspa/click?ie=UTF8&spc=MToyMjk4NDg4NzE1MDk3Mjk4OjE3NzcyMjQ5OTc6c3BfZGV0YWlsMjozMDA5OTUwOTU3OTcxMzI6Ojo6&url=%2Fdp%2FB0FFT8C41S%2Fref%3Dsspa_dk_detail_6%3Fpsc%3D1%26pd_rd_i%3DB0FFT8C41S%26pd_rd_w%3D51HLP%26content-id%3Damzn1.sym.00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_p%3D00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_r%3DEEG3Y7GRDDTTD9SPPPDH%26pd_rd_wg%3DZw46N%26pd_rd_r%3D1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390%26aref%3D8lvyqmt3uf%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy&aref=8lvyqmt3uf&sp_cr=ZAZ#customerReviews
+                    - text: "1"
+                  - link "₹4,999.00 ( ₹510.10 / 100 g)" [ref=e1197] [cursor=pointer]:
+                    - /url: /sspa/click?ie=UTF8&spc=MToyMjk4NDg4NzE1MDk3Mjk4OjE3NzcyMjQ5OTc6c3BfZGV0YWlsMjozMDA5OTUwOTU3OTcxMzI6Ojo6&url=%2Fdp%2FB0FFT8C41S%2Fref%3Dsspa_dk_detail_6%3Fpsc%3D1%26pd_rd_i%3DB0FFT8C41S%26pd_rd_w%3D51HLP%26content-id%3Damzn1.sym.00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_p%3D00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_r%3DEEG3Y7GRDDTTD9SPPPDH%26pd_rd_wg%3DZw46N%26pd_rd_r%3D1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390%26aref%3D8lvyqmt3uf%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy&aref=8lvyqmt3uf&sp_cr=ZAZ
+                    - generic [ref=e1198]:
+                      - generic [ref=e1199]: ₹4,999.00
+                      - generic [ref=e1200]:
+                        - text: ₹
+                        - generic [ref=e1201]:
+                          - text: 4,999
+                          - generic [ref=e1202]: .
+                        - text: "00"
+                    - generic [ref=e1203]:
+                      - text: (
+                      - generic [ref=e1204]:
+                        - generic [ref=e1205]: ₹510.10
+                        - text: ₹510.10
+                      - text: / 100 g)
+                  - link "Prime Tomorrow FREE delivery Tomorrow, 27 Apr" [ref=e1207] [cursor=pointer]:
+                    - /url: /sspa/click?ie=UTF8&spc=MToyMjk4NDg4NzE1MDk3Mjk4OjE3NzcyMjQ5OTc6c3BfZGV0YWlsMjozMDA5OTUwOTU3OTcxMzI6Ojo6&url=%2Fdp%2FB0FFT8C41S%2Fref%3Dsspa_dk_detail_6%3Fpsc%3D1%26pd_rd_i%3DB0FFT8C41S%26pd_rd_w%3D51HLP%26content-id%3Damzn1.sym.00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_p%3D00892a2d-bd0e-4f46-9295-e128db4dc924%26pf_rd_r%3DEEG3Y7GRDDTTD9SPPPDH%26pd_rd_wg%3DZw46N%26pd_rd_r%3D1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390%26aref%3D8lvyqmt3uf%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9kZXRhaWwy&aref=8lvyqmt3uf&sp_cr=ZAZ
+                    - generic [ref=e1208]:
+                      - generic [ref=e1211]:
+                        - img "Prime" [ref=e1212]
+                        - generic [ref=e1213]: Tomorrow
+                      - generic [ref=e1215]: FREE delivery Tomorrow, 27 Apr
+      - generic [ref=e1218]:
+        - iframe [ref=e1219]:
+          - generic [ref=f9e4]:
+            - generic [ref=f9e5]: "Click to navigate to product detail page Sponsored Ad. Product image. Branded image. Passion Premium 2-Compartment Badminton & Tennis Unisex racquet Bag with Protective Padding – Lightweight & Durable Unisex Design for Players of All Levels: Men, Women, Youth & Adults (Black & Blue). 799."
+            - img "Product image" [ref=f9e13]
+            - link "Click to navigate to product detail page" [ref=f9e17] [cursor=pointer]:
+              - /url: https://aax-eu-zaz.amazon.in/x/c/RLh_aReiWdaGp42Bb9Wywp8AAAGdyt1bjAoAAAH_AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICDl6vCP/clv1c_ek-4wvHTLcbWDfn3Uan2wfggbbfRKpB9SBI9RH43X5sxyzN_EfQUyqqq5GBIXZPxthfB4IoOEyBo8QT5kq066LBMlmNymrfpIg7dBw0giDAukx6LSrginWu2mTg2p2YkzqI0_fQVr5fjnS0oyQ_cPDSe-dGK7rXrkdJoxA3AJZH_3R2VK-00qYu8pQ11oE-bT-I0pGl0LLOUkZqGk_4AMMmbk9UzX0a7rNZOAlP_1tI9-InoRr7lnIKJhXu22UUj-fPbJe8w4sxGjnX3MjTxnYMwGYm2bvDz4RFGOsIA2x_qq13ZsvWZ3R0xN7LjQz2dPiwzVtu8LIJslWI0l0nwjemeRGsqUenu1p9gZp0Us8viWCM4YvmIP0vYgEnhfemc512BDwCWhQUgR0nL9NNrcktXuxiU-qMoIiV4VzRhQQRJVh3oELQbTYWmDP5EFQE1n67sJce23OOOaoT7Jw3cmdOcjWJD7XeYxxjrO2Xbsj-QpXOUUmYb6U1WgAD7v0ziepltD6ul3Ke3aWCfJQnSQBeSfo29niGjQlqz8l7bfPvIc6RCVPmKsMIGZnKmVUiyJvt8Oj4nFixLoRidPz1AyoVQLJN8g1YZcRCDEdHtx06n482qs2ub2ckGylyZNQUeegyoBVTOqQxCg3k_uGzy5hJ5UlExe4TnJjPiHINSiy3XVWnE5ogJlHDvW2KW4NlZVBxHnKaS9LBj2oMnhn280LT-kGfcNwtfP_bgA2MWsrru5vM1Nm9lmt2XiVRQ8o3f8HaH5GDBcODJpKcAeHKnJc65pzSgQLK2zryZWf3gejmiXqL7DHY9TF5WOlBgsWrnHCEKWFsS9fDIIvxhZvuA9cucan9dUvBQXCDDakxZIREhdWIpGFY1C19x91pEhXQ2eD27KV-XCGZ3CF-T9VJvvYIRyFK3DnjuWERey2zAh7ibJCeKgXCIkUJaA-_0cMGqbihqzH2oRTTTPqMEUVZrQuPauHMy92196_BQVR6qjxGpTUeoXmRa5viRKYzG8KMY2krwh6WD3N5pxyyKdewcZ1_iYhHqwUGsIL3MTyeWzHDc8JA9hQamvmUxsgZSwD7a0-G3jix7ISyhBDph7GgdMHV19Qx4MxEnePs3Geua6yytFMWd4oRFuVaKLx8/http://www.amazon.in/dp/B0DNN3CJ79/ref=syn_sd_onsite_desktop_0?ie=UTF8&psc=1&pd_rd_plhdr=t&aref=qzx2LU5gto
+        - button "Leave feedback on Sponsored advertisement" [ref=e1221] [cursor=pointer]:
+          - generic [ref=e1222]: Sponsored
+      - generic [ref=e1226]:
+        - separator [ref=e1227]
+        - generic [ref=e1228]:
+          - heading "Brands in this category on Amazon" [level=2] [ref=e1229]
+          - button "Leave feedback on Sponsored ad" [ref=e1234] [cursor=pointer]: Sponsored
+          - region "Brands in this category on Amazon" [ref=e1236]:
+            - button "Go to the previous sponsored brands carousel slide." [disabled] [ref=e1239]
+            - generic [ref=e1241]:
+              - group "1 of 5" [ref=e1242]:
+                - generic [ref=e1243]:
+                  - link "Sponsored ad from Balwaan Krishi. \"Farm Smarter, Not Harder – Balwaan Power Weeder.\" Shop Balwaan Krishi." [ref=e1244] [cursor=pointer]:
+                    - /url: https://aax-eu-zaz.amazon.in/x/c/JJbLguz6qCkJIyhp3rkMp1EAAAGdyt1a-QoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICCn6nhw/clv1c_ek-wwwHSLdbWTLnKUU0T4MCVjhJY4vSVCjz1LFepD-9ENjMPD2qIwnTQg7yc0bI2jv2FAg5YRcvS_i53SIdC7t0PdtrDBpQLaycaNq7qGMwrhJEtX79l3Ol96NHcLiJdXZL7K4gnpqwYhGYvQYRAtv2T4N6fjsWqZojAB9cTTKVe2tk5v0YqDWO8yehXA121i0kO-WFTe0Mg-IBdJ2SRpk57xDN6UlM4cJ_zJawbGmoAh36ErBvf03Iksv6OKsFs6-S2y7JB5ZCBzXBnRAs8Wj5PoIT-pMRd37xqT1dDynWfA7z5gLbYQqrvpfGpZ_TsMNjGJ4BfStXuW8Lt7LBZ18ulwzJr_TJUMQONFhD2GnxJK46ln0hPEPt4Nc92YQqUe-8QF1C4JXbfg8KF_-y6rqBeG1PFjRyQQIHWUN08JNStZAwCYWMkQxg6aLxZozfdS9cSbbFbFJ055JMKChgRKoayO_UNPXA_LIpUkAo1UVZDXHGmYKFst7ZbPLF1j1r3zZY1o5yrC9HUOFE6867MCgjTanoZNbMCkyOK5I9aP3bKh-xpXcfBe8ku53WRQdqEnQa4EUwkch2frXSecdvx7ZpgBhDvNHNZOja9yYTB1X8QrExet0tBySwBweIIxVOPDpgkKCrOJqKfXYUxvu1OYp5tNM865Ttu0GKWKRyA_HRDIlpzIQKvTKgGyWRZV4DFCDQpDoLQB5TpG1Pzmi_o-MrEZr2qSGA6RMCyP59lL5S3PaIaP9A1HQrtVohriww6NhkEocuhzNJ2DVtLPNGnRZcue2tDOCQHCBJOmYoiOc7ugnTwXPpJKALkA1H0J2Xc49Bo801ZCgNJofzElRjroMuR6Kv-cdk6bA0U9_58UEL11P2UKsIPcKNzquiETIWeJ6Gw_JVyzfVg-zvWcybKGYAwLndoeelHCDgRMH3aN16VA291uyJAWLYVIVsaMzC-PWcl82o3OnQ7_UBeTs5DAb0ZuufvoUMt9foxSaLeOf6ZtDigPWcGf21Gvi75bFGSGbkSgmi881R7vtdWD8HL/https://www.amazon.in/stores/page/798A88A5-CD2E-4295-8C14-6C5330307BD4/?_encoding=UTF8&store_ref=SB_A06981583QLPTZBR1DZJI-A10214928CTNF0D71T7H&pd_rd_plhdr=t&aaxitk=57a7bbab42c2437397264694f1e2d4ea&hsa_cr_id=0&lp_slot=desktop-arbies&lp_page_asin=B00ID6PC60&aref=MktUNusfM6&pd_rd_i=ad1&ref_=sbx_be_dp_arbies_mblsd_mb0_bkgd&pd_rd_w=c3der&content-id=amzn1.sym.7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_p=7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390
+                  - generic:
+                    - generic:
+                      - link "Balwaan Krishi" [ref=e1245] [cursor=pointer]:
+                        - /url: https://aax-eu-zaz.amazon.in/x/c/JJbLguz6qCkJIyhp3rkMp1EAAAGdyt1a-QoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICCn6nhw/clv1c_ek-wwwHSLdbWTLnKUU0T4MCVjhJY4vSVCjz1LFepD-9ENjMPD2qIwnTQg7yc0bI2jv2FAg5YRcvS_i53SIdC7t0PdtrDBpQLaycaNq7qGMwrhJEtX79l3Ol96NHcLiJdXZL7K4gnpqwYhGYvQYRAtv2T4N6fjsWqZojAB9cTTKVe2tk5v0YqDWO8yehXA121i0kO-WFTe0Mg-IBdJ2SRpk57xDN6UlM4cJ_zJawbGmoAh36ErBvf03Iksv6OKsFs6-S2y7JB5ZCBzXBnRAs8Wj5PoIT-pMRd37xqT1dDynWfA7z5gLbYQqrvpfGpZ_TsMNjGJ4BfStXuW8Lt7LBZ18ulwzJr_TJUMQONFhD2GnxJK46ln0hPEPt4Nc92YQqUe-8QF1C4JXbfg8KF_-y6rqBeG1PFjRyQQIHWUN08JNStZAwCYWMkQxg6aLxZozfdS9cSbbFbFJ055JMKChgRKoayO_UNPXA_LIpUkAo1UVZDXHGmYKFst7ZbPLF1j1r3zZY1o5yrC9HUOFE6867MCgjTanoZNbMCkyOK5I9aP3bKh-xpXcfBe8ku53WRQdqEnQa4EUwkch2frXSecdvx7ZpgBhDvNHNZOja9yYTB1X8QrExet0tBySwBweIIxVOPDpgkKCrOJqKfXYUxvu1OYp5tNM865Ttu0GKWKRyA_HRDIlpzIQKvTKgGyWRZV4DFCDQpDoLQB5TpG1Pzmi_o-MrEZr2qSGA6RMCyP59lL5S3PaIaP9A1HQrtVohriww6NhkEocuhzNJ2DVtLPNGnRZcue2tDOCQHCBJOmYoiOc7ugnTwXPpJKALkA1H0J2Xc49Bo801ZCgNJofzElRjroMuR6Kv-cdk6bA0U9_58UEL11P2UKsIPcKNzquiETIWeJ6Gw_JVyzfVg-zvWcybKGYAwLndoeelHCDgRMH3aN16VA291uyJAWLYVIVsaMzC-PWcl82o3OnQ7_UBeTs5DAb0ZuufvoUMt9foxSaLeOf6ZtDigPWcGf21Gvi75bFGSGbkSgmi881R7vtdWD8HL/https://www.amazon.in/stores/page/798A88A5-CD2E-4295-8C14-6C5330307BD4/?_encoding=UTF8&store_ref=SB_A06981583QLPTZBR1DZJI-A10214928CTNF0D71T7H&pd_rd_plhdr=t&aaxitk=57a7bbab42c2437397264694f1e2d4ea&hsa_cr_id=0&lp_slot=desktop-arbies&lp_page_asin=B00ID6PC60&aref=MktUNusfM6&pd_rd_i=ad1&ref_=sbx_be_dp_arbies_mblsd_mb0_ls&pd_rd_w=c3der&content-id=amzn1.sym.7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_p=7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390
+                        - img "Balwaan Krishi" [ref=e1246]
+                      - generic [ref=e1248]:
+                        - generic [ref=e1249]:
+                          - link [ref=e1250] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JJbLguz6qCkJIyhp3rkMp1EAAAGdyt1a-QoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICCn6nhw/clv1c_ek-wwwHSLdbWTLnKUU0T4MCVjhJY4vSVCjz1LFepD-9ENjMPD2qIwnTQg7yc0bI2jv2FAg5YRcvS_i53SIdC7t0PdtrDBpQLaycaNq7qGMwrhJEtX79l3Ol96NHcLiJdXZL7K4gnpqwYhGYvQYRAtv2T4N6fjsWqZojAB9cTTKVe2tk5v0YqDWO8yehXA121i0kO-WFTe0Mg-IBdJ2SRpk57xDN6UlM4cJ_zJawbGmoAh36ErBvf03Iksv6OKsFs6-S2y7JB5ZCBzXBnRAs8Wj5PoIT-pMRd37xqT1dDynWfA7z5gLbYQqrvpfGpZ_TsMNjGJ4BfStXuW8Lt7LBZ18ulwzJr_TJUMQONFhD2GnxJK46ln0hPEPt4Nc92YQqUe-8QF1C4JXbfg8KF_-y6rqBeG1PFjRyQQIHWUN08JNStZAwCYWMkQxg6aLxZozfdS9cSbbFbFJ055JMKChgRKoayO_UNPXA_LIpUkAo1UVZDXHGmYKFst7ZbPLF1j1r3zZY1o5yrC9HUOFE6867MCgjTanoZNbMCkyOK5I9aP3bKh-xpXcfBe8ku53WRQdqEnQa4EUwkch2frXSecdvx7ZpgBhDvNHNZOja9yYTB1X8QrExet0tBySwBweIIxVOPDpgkKCrOJqKfXYUxvu1OYp5tNM865Ttu0GKWKRyA_HRDIlpzIQKvTKgGyWRZV4DFCDQpDoLQB5TpG1Pzmi_o-MrEZr2qSGA6RMCyP59lL5S3PaIaP9A1HQrtVohriww6NhkEocuhzNJ2DVtLPNGnRZcue2tDOCQHCBJOmYoiOc7ugnTwXPpJKALkA1H0J2Xc49Bo801ZCgNJofzElRjroMuR6Kv-cdk6bA0U9_58UEL11P2UKsIPcKNzquiETIWeJ6Gw_JVyzfVg-zvWcybKGYAwLndoeelHCDgRMH3aN16VA291uyJAWLYVIVsaMzC-PWcl82o3OnQ7_UBeTs5DAb0ZuufvoUMt9foxSaLeOf6ZtDigPWcGf21Gvi75bFGSGbkSgmi881R7vtdWD8HL/https://www.amazon.in/stores/page/798A88A5-CD2E-4295-8C14-6C5330307BD4/?_encoding=UTF8&store_ref=SB_A06981583QLPTZBR1DZJI-A10214928CTNF0D71T7H&pd_rd_plhdr=t&aaxitk=57a7bbab42c2437397264694f1e2d4ea&hsa_cr_id=0&lp_slot=desktop-arbies&lp_page_asin=B00ID6PC60&aref=MktUNusfM6&pd_rd_i=ad1&ref_=sbx_be_dp_arbies_mblsd_mb0_bkgd&pd_rd_w=c3der&content-id=amzn1.sym.7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_p=7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390
+                          - link "Balwaan Krishi" [ref=e1251] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JJbLguz6qCkJIyhp3rkMp1EAAAGdyt1a-QoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICCn6nhw/clv1c_ek-wwwHSLdbWTLnKUU0T4MCVjhJY4vSVCjz1LFepD-9ENjMPD2qIwnTQg7yc0bI2jv2FAg5YRcvS_i53SIdC7t0PdtrDBpQLaycaNq7qGMwrhJEtX79l3Ol96NHcLiJdXZL7K4gnpqwYhGYvQYRAtv2T4N6fjsWqZojAB9cTTKVe2tk5v0YqDWO8yehXA121i0kO-WFTe0Mg-IBdJ2SRpk57xDN6UlM4cJ_zJawbGmoAh36ErBvf03Iksv6OKsFs6-S2y7JB5ZCBzXBnRAs8Wj5PoIT-pMRd37xqT1dDynWfA7z5gLbYQqrvpfGpZ_TsMNjGJ4BfStXuW8Lt7LBZ18ulwzJr_TJUMQONFhD2GnxJK46ln0hPEPt4Nc92YQqUe-8QF1C4JXbfg8KF_-y6rqBeG1PFjRyQQIHWUN08JNStZAwCYWMkQxg6aLxZozfdS9cSbbFbFJ055JMKChgRKoayO_UNPXA_LIpUkAo1UVZDXHGmYKFst7ZbPLF1j1r3zZY1o5yrC9HUOFE6867MCgjTanoZNbMCkyOK5I9aP3bKh-xpXcfBe8ku53WRQdqEnQa4EUwkch2frXSecdvx7ZpgBhDvNHNZOja9yYTB1X8QrExet0tBySwBweIIxVOPDpgkKCrOJqKfXYUxvu1OYp5tNM865Ttu0GKWKRyA_HRDIlpzIQKvTKgGyWRZV4DFCDQpDoLQB5TpG1Pzmi_o-MrEZr2qSGA6RMCyP59lL5S3PaIaP9A1HQrtVohriww6NhkEocuhzNJ2DVtLPNGnRZcue2tDOCQHCBJOmYoiOc7ugnTwXPpJKALkA1H0J2Xc49Bo801ZCgNJofzElRjroMuR6Kv-cdk6bA0U9_58UEL11P2UKsIPcKNzquiETIWeJ6Gw_JVyzfVg-zvWcybKGYAwLndoeelHCDgRMH3aN16VA291uyJAWLYVIVsaMzC-PWcl82o3OnQ7_UBeTs5DAb0ZuufvoUMt9foxSaLeOf6ZtDigPWcGf21Gvi75bFGSGbkSgmi881R7vtdWD8HL/https://www.amazon.in/stores/page/798A88A5-CD2E-4295-8C14-6C5330307BD4/?_encoding=UTF8&store_ref=SB_A06981583QLPTZBR1DZJI-A10214928CTNF0D71T7H&pd_rd_plhdr=t&aaxitk=57a7bbab42c2437397264694f1e2d4ea&hsa_cr_id=0&lp_slot=desktop-arbies&lp_page_asin=B00ID6PC60&aref=MktUNusfM6&pd_rd_i=ad1&ref_=sbx_be_dp_arbies_mblsd_mb0_logo&pd_rd_w=c3der&content-id=amzn1.sym.7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_p=7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390
+                            - img "Balwaan Krishi" [ref=e1253]
+                        - generic [ref=e1254]:
+                          - link [ref=e1255] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JJbLguz6qCkJIyhp3rkMp1EAAAGdyt1a-QoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICCn6nhw/clv1c_ek-wwwHSLdbWTLnKUU0T4MCVjhJY4vSVCjz1LFepD-9ENjMPD2qIwnTQg7yc0bI2jv2FAg5YRcvS_i53SIdC7t0PdtrDBpQLaycaNq7qGMwrhJEtX79l3Ol96NHcLiJdXZL7K4gnpqwYhGYvQYRAtv2T4N6fjsWqZojAB9cTTKVe2tk5v0YqDWO8yehXA121i0kO-WFTe0Mg-IBdJ2SRpk57xDN6UlM4cJ_zJawbGmoAh36ErBvf03Iksv6OKsFs6-S2y7JB5ZCBzXBnRAs8Wj5PoIT-pMRd37xqT1dDynWfA7z5gLbYQqrvpfGpZ_TsMNjGJ4BfStXuW8Lt7LBZ18ulwzJr_TJUMQONFhD2GnxJK46ln0hPEPt4Nc92YQqUe-8QF1C4JXbfg8KF_-y6rqBeG1PFjRyQQIHWUN08JNStZAwCYWMkQxg6aLxZozfdS9cSbbFbFJ055JMKChgRKoayO_UNPXA_LIpUkAo1UVZDXHGmYKFst7ZbPLF1j1r3zZY1o5yrC9HUOFE6867MCgjTanoZNbMCkyOK5I9aP3bKh-xpXcfBe8ku53WRQdqEnQa4EUwkch2frXSecdvx7ZpgBhDvNHNZOja9yYTB1X8QrExet0tBySwBweIIxVOPDpgkKCrOJqKfXYUxvu1OYp5tNM865Ttu0GKWKRyA_HRDIlpzIQKvTKgGyWRZV4DFCDQpDoLQB5TpG1Pzmi_o-MrEZr2qSGA6RMCyP59lL5S3PaIaP9A1HQrtVohriww6NhkEocuhzNJ2DVtLPNGnRZcue2tDOCQHCBJOmYoiOc7ugnTwXPpJKALkA1H0J2Xc49Bo801ZCgNJofzElRjroMuR6Kv-cdk6bA0U9_58UEL11P2UKsIPcKNzquiETIWeJ6Gw_JVyzfVg-zvWcybKGYAwLndoeelHCDgRMH3aN16VA291uyJAWLYVIVsaMzC-PWcl82o3OnQ7_UBeTs5DAb0ZuufvoUMt9foxSaLeOf6ZtDigPWcGf21Gvi75bFGSGbkSgmi881R7vtdWD8HL/https://www.amazon.in/stores/page/798A88A5-CD2E-4295-8C14-6C5330307BD4/?_encoding=UTF8&store_ref=SB_A06981583QLPTZBR1DZJI-A10214928CTNF0D71T7H&pd_rd_plhdr=t&aaxitk=57a7bbab42c2437397264694f1e2d4ea&hsa_cr_id=0&lp_slot=desktop-arbies&lp_page_asin=B00ID6PC60&aref=MktUNusfM6&pd_rd_i=ad1&ref_=sbx_be_dp_arbies_mblsd_mb0_bkgd&pd_rd_w=c3der&content-id=amzn1.sym.7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_p=7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390
+                          - link "Farm Smarter, Not Harder – Balwaan Power Weeder" [ref=e1256] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JJbLguz6qCkJIyhp3rkMp1EAAAGdyt1a-QoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICCn6nhw/clv1c_ek-wwwHSLdbWTLnKUU0T4MCVjhJY4vSVCjz1LFepD-9ENjMPD2qIwnTQg7yc0bI2jv2FAg5YRcvS_i53SIdC7t0PdtrDBpQLaycaNq7qGMwrhJEtX79l3Ol96NHcLiJdXZL7K4gnpqwYhGYvQYRAtv2T4N6fjsWqZojAB9cTTKVe2tk5v0YqDWO8yehXA121i0kO-WFTe0Mg-IBdJ2SRpk57xDN6UlM4cJ_zJawbGmoAh36ErBvf03Iksv6OKsFs6-S2y7JB5ZCBzXBnRAs8Wj5PoIT-pMRd37xqT1dDynWfA7z5gLbYQqrvpfGpZ_TsMNjGJ4BfStXuW8Lt7LBZ18ulwzJr_TJUMQONFhD2GnxJK46ln0hPEPt4Nc92YQqUe-8QF1C4JXbfg8KF_-y6rqBeG1PFjRyQQIHWUN08JNStZAwCYWMkQxg6aLxZozfdS9cSbbFbFJ055JMKChgRKoayO_UNPXA_LIpUkAo1UVZDXHGmYKFst7ZbPLF1j1r3zZY1o5yrC9HUOFE6867MCgjTanoZNbMCkyOK5I9aP3bKh-xpXcfBe8ku53WRQdqEnQa4EUwkch2frXSecdvx7ZpgBhDvNHNZOja9yYTB1X8QrExet0tBySwBweIIxVOPDpgkKCrOJqKfXYUxvu1OYp5tNM865Ttu0GKWKRyA_HRDIlpzIQKvTKgGyWRZV4DFCDQpDoLQB5TpG1Pzmi_o-MrEZr2qSGA6RMCyP59lL5S3PaIaP9A1HQrtVohriww6NhkEocuhzNJ2DVtLPNGnRZcue2tDOCQHCBJOmYoiOc7ugnTwXPpJKALkA1H0J2Xc49Bo801ZCgNJofzElRjroMuR6Kv-cdk6bA0U9_58UEL11P2UKsIPcKNzquiETIWeJ6Gw_JVyzfVg-zvWcybKGYAwLndoeelHCDgRMH3aN16VA291uyJAWLYVIVsaMzC-PWcl82o3OnQ7_UBeTs5DAb0ZuufvoUMt9foxSaLeOf6ZtDigPWcGf21Gvi75bFGSGbkSgmi881R7vtdWD8HL/https://www.amazon.in/stores/page/798A88A5-CD2E-4295-8C14-6C5330307BD4/?_encoding=UTF8&store_ref=SB_A06981583QLPTZBR1DZJI-A10214928CTNF0D71T7H&pd_rd_plhdr=t&aaxitk=57a7bbab42c2437397264694f1e2d4ea&hsa_cr_id=0&lp_slot=desktop-arbies&lp_page_asin=B00ID6PC60&aref=MktUNusfM6&pd_rd_i=ad1&ref_=sbx_be_dp_arbies_mblsd_mb0_hl&pd_rd_w=c3der&content-id=amzn1.sym.7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_p=7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390
+                            - generic [ref=e1258]:
+                              - generic [ref=e1259]: Farm Smarter, Not Harder – Balwaan Power Weeder
+                              - generic [ref=e1260]: Farm Smarter, Not Harder – Balwaan Power Weeder
+              - group "2 of 5" [ref=e1261]:
+                - generic [ref=e1262]:
+                  - link "Sponsored ad from Ledure. \"Mosquito Control Made Powerful & Easy.\" Shop Ledure." [ref=e1263] [cursor=pointer]:
+                    - /url: https://aax-eu-zaz.amazon.in/x/c/JNEDemu1Ogz_Z8Yc8yKPPlIAAAGdyt1a-goAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICDOlvpo/clv1c_ek-ww4fXFcbWDoHOZIcZsmPkRA0Lu0ndTrclx31i_vvUgQhSREURoNJv6SrUR30ZDk8WxtnnnPRyustdcOmixiLzUpvcCxJwWy_nhSrFqMgUJ7KIMvSOzRvmphH0Jv47Gjmw23e7S6uVW4nq310Q0WOxsF2ejAXKkquYr-drvYdc2mqQa9_QbNZSL0Crli1xx7DRmSejf9eZtDKtNgxz1iMKnDqMEdJc5upZ6aLnGnbtPtM7M5m9Oqgux5lmxspNUaXkoRADJQjKGEVuAWnbbiXH5amz76D3KXdl-eAofRUHurhmzMMHU9v6QJ8tga45WAp755Lt7cV2kRg0JQdvzEaJe9OVuVpzrMc7OGlIpdbHHH3gfjhnVfowKKQcCye_9FJm_jlAm1OUoso4L1fFq1ypXeK1UzyrjRY1geMjj9A8q0MnFGEsVr4KsSxW0Etbgyz-N-YKA9pWtR64Qbbog3IEm4RndHaBdcN6NQiju_LPI8Mmm34sw_DEkAtSlrz01ZQ0p5oo3QJFAylF5qq-jW5nAZzQRMwhXYZ1BaL1TF5W3Wu6w0xiNVIGrnP2EFHrvk9yJSoDftR713dT60OmStFnB46hXGW-2icV0baum6G5rbV27EUJFa5nElaJEdCoJl3kQD6kGcTBGgF2A86aPIQFwi0KTpPXWOlIhEaWVWgHlq1tm7rlz9sPg7v1ZFcPkYPF_eLDWGwzeEWk5Uct2DLgsSvO7DeOj9eu8sC6aKXmnwcrmAjwk32FkiJj-XFAafvQbHYF7yAwpKqvM1iP3KpUxNYalNHO-Z6D2bpDtGriejKjq_3v74jMnkKd2p3CSybveNQZ5LMZLlzGt6Qr_0O-Uz_TfvoJLLgJtp_qHF-AgGJmz7p3c5k6MLXAxvT5oS1aWw92c3IJ3xJ-Dymzkk-Try9hJPa5e60PXF_WrqFXpyUIz7dfybvzm1qyB1A1iqk8qRHUQ_XqR4X7rFzovWo3ZuOO1g96apUx4vadJLMBVWRKXtvdP3TVnhM72GWXQecmMryTECsMvPVb/https://www.amazon.in/stores/page/3914C9D9-374B-40E5-811D-63D1FAC20584/?_encoding=UTF8&store_ref=SB_A0835315M992U9NFXF6F-A01991333UCCURX5BW5BO&pd_rd_plhdr=t&aaxitk=bcad0bfec953b59fcb15dbec2d75729d&hsa_cr_id=0&lp_slot=desktop-arbies&lp_page_asin=B00ID6PC60&aref=6vPQlAcoNG&pd_rd_i=ad2&ref_=sbx_be_dp_arbies_mblsd_mb1_bkgd&pd_rd_w=c3der&content-id=amzn1.sym.7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_p=7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390
+                  - generic:
+                    - generic:
+                      - link "Ledure" [ref=e1264] [cursor=pointer]:
+                        - /url: https://aax-eu-zaz.amazon.in/x/c/JNEDemu1Ogz_Z8Yc8yKPPlIAAAGdyt1a-goAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICDOlvpo/clv1c_ek-ww4fXFcbWDoHOZIcZsmPkRA0Lu0ndTrclx31i_vvUgQhSREURoNJv6SrUR30ZDk8WxtnnnPRyustdcOmixiLzUpvcCxJwWy_nhSrFqMgUJ7KIMvSOzRvmphH0Jv47Gjmw23e7S6uVW4nq310Q0WOxsF2ejAXKkquYr-drvYdc2mqQa9_QbNZSL0Crli1xx7DRmSejf9eZtDKtNgxz1iMKnDqMEdJc5upZ6aLnGnbtPtM7M5m9Oqgux5lmxspNUaXkoRADJQjKGEVuAWnbbiXH5amz76D3KXdl-eAofRUHurhmzMMHU9v6QJ8tga45WAp755Lt7cV2kRg0JQdvzEaJe9OVuVpzrMc7OGlIpdbHHH3gfjhnVfowKKQcCye_9FJm_jlAm1OUoso4L1fFq1ypXeK1UzyrjRY1geMjj9A8q0MnFGEsVr4KsSxW0Etbgyz-N-YKA9pWtR64Qbbog3IEm4RndHaBdcN6NQiju_LPI8Mmm34sw_DEkAtSlrz01ZQ0p5oo3QJFAylF5qq-jW5nAZzQRMwhXYZ1BaL1TF5W3Wu6w0xiNVIGrnP2EFHrvk9yJSoDftR713dT60OmStFnB46hXGW-2icV0baum6G5rbV27EUJFa5nElaJEdCoJl3kQD6kGcTBGgF2A86aPIQFwi0KTpPXWOlIhEaWVWgHlq1tm7rlz9sPg7v1ZFcPkYPF_eLDWGwzeEWk5Uct2DLgsSvO7DeOj9eu8sC6aKXmnwcrmAjwk32FkiJj-XFAafvQbHYF7yAwpKqvM1iP3KpUxNYalNHO-Z6D2bpDtGriejKjq_3v74jMnkKd2p3CSybveNQZ5LMZLlzGt6Qr_0O-Uz_TfvoJLLgJtp_qHF-AgGJmz7p3c5k6MLXAxvT5oS1aWw92c3IJ3xJ-Dymzkk-Try9hJPa5e60PXF_WrqFXpyUIz7dfybvzm1qyB1A1iqk8qRHUQ_XqR4X7rFzovWo3ZuOO1g96apUx4vadJLMBVWRKXtvdP3TVnhM72GWXQecmMryTECsMvPVb/https://www.amazon.in/stores/page/3914C9D9-374B-40E5-811D-63D1FAC20584/?_encoding=UTF8&store_ref=SB_A0835315M992U9NFXF6F-A01991333UCCURX5BW5BO&pd_rd_plhdr=t&aaxitk=bcad0bfec953b59fcb15dbec2d75729d&hsa_cr_id=0&lp_slot=desktop-arbies&lp_page_asin=B00ID6PC60&aref=6vPQlAcoNG&pd_rd_i=ad2&ref_=sbx_be_dp_arbies_mblsd_mb1_ls&pd_rd_w=c3der&content-id=amzn1.sym.7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_p=7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390
+                        - img "Ledure" [ref=e1265]
+                      - generic [ref=e1267]:
+                        - generic [ref=e1268]:
+                          - link [ref=e1269] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JNEDemu1Ogz_Z8Yc8yKPPlIAAAGdyt1a-goAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICDOlvpo/clv1c_ek-ww4fXFcbWDoHOZIcZsmPkRA0Lu0ndTrclx31i_vvUgQhSREURoNJv6SrUR30ZDk8WxtnnnPRyustdcOmixiLzUpvcCxJwWy_nhSrFqMgUJ7KIMvSOzRvmphH0Jv47Gjmw23e7S6uVW4nq310Q0WOxsF2ejAXKkquYr-drvYdc2mqQa9_QbNZSL0Crli1xx7DRmSejf9eZtDKtNgxz1iMKnDqMEdJc5upZ6aLnGnbtPtM7M5m9Oqgux5lmxspNUaXkoRADJQjKGEVuAWnbbiXH5amz76D3KXdl-eAofRUHurhmzMMHU9v6QJ8tga45WAp755Lt7cV2kRg0JQdvzEaJe9OVuVpzrMc7OGlIpdbHHH3gfjhnVfowKKQcCye_9FJm_jlAm1OUoso4L1fFq1ypXeK1UzyrjRY1geMjj9A8q0MnFGEsVr4KsSxW0Etbgyz-N-YKA9pWtR64Qbbog3IEm4RndHaBdcN6NQiju_LPI8Mmm34sw_DEkAtSlrz01ZQ0p5oo3QJFAylF5qq-jW5nAZzQRMwhXYZ1BaL1TF5W3Wu6w0xiNVIGrnP2EFHrvk9yJSoDftR713dT60OmStFnB46hXGW-2icV0baum6G5rbV27EUJFa5nElaJEdCoJl3kQD6kGcTBGgF2A86aPIQFwi0KTpPXWOlIhEaWVWgHlq1tm7rlz9sPg7v1ZFcPkYPF_eLDWGwzeEWk5Uct2DLgsSvO7DeOj9eu8sC6aKXmnwcrmAjwk32FkiJj-XFAafvQbHYF7yAwpKqvM1iP3KpUxNYalNHO-Z6D2bpDtGriejKjq_3v74jMnkKd2p3CSybveNQZ5LMZLlzGt6Qr_0O-Uz_TfvoJLLgJtp_qHF-AgGJmz7p3c5k6MLXAxvT5oS1aWw92c3IJ3xJ-Dymzkk-Try9hJPa5e60PXF_WrqFXpyUIz7dfybvzm1qyB1A1iqk8qRHUQ_XqR4X7rFzovWo3ZuOO1g96apUx4vadJLMBVWRKXtvdP3TVnhM72GWXQecmMryTECsMvPVb/https://www.amazon.in/stores/page/3914C9D9-374B-40E5-811D-63D1FAC20584/?_encoding=UTF8&store_ref=SB_A0835315M992U9NFXF6F-A01991333UCCURX5BW5BO&pd_rd_plhdr=t&aaxitk=bcad0bfec953b59fcb15dbec2d75729d&hsa_cr_id=0&lp_slot=desktop-arbies&lp_page_asin=B00ID6PC60&aref=6vPQlAcoNG&pd_rd_i=ad2&ref_=sbx_be_dp_arbies_mblsd_mb1_bkgd&pd_rd_w=c3der&content-id=amzn1.sym.7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_p=7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390
+                          - link "Ledure" [ref=e1270] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JNEDemu1Ogz_Z8Yc8yKPPlIAAAGdyt1a-goAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICDOlvpo/clv1c_ek-ww4fXFcbWDoHOZIcZsmPkRA0Lu0ndTrclx31i_vvUgQhSREURoNJv6SrUR30ZDk8WxtnnnPRyustdcOmixiLzUpvcCxJwWy_nhSrFqMgUJ7KIMvSOzRvmphH0Jv47Gjmw23e7S6uVW4nq310Q0WOxsF2ejAXKkquYr-drvYdc2mqQa9_QbNZSL0Crli1xx7DRmSejf9eZtDKtNgxz1iMKnDqMEdJc5upZ6aLnGnbtPtM7M5m9Oqgux5lmxspNUaXkoRADJQjKGEVuAWnbbiXH5amz76D3KXdl-eAofRUHurhmzMMHU9v6QJ8tga45WAp755Lt7cV2kRg0JQdvzEaJe9OVuVpzrMc7OGlIpdbHHH3gfjhnVfowKKQcCye_9FJm_jlAm1OUoso4L1fFq1ypXeK1UzyrjRY1geMjj9A8q0MnFGEsVr4KsSxW0Etbgyz-N-YKA9pWtR64Qbbog3IEm4RndHaBdcN6NQiju_LPI8Mmm34sw_DEkAtSlrz01ZQ0p5oo3QJFAylF5qq-jW5nAZzQRMwhXYZ1BaL1TF5W3Wu6w0xiNVIGrnP2EFHrvk9yJSoDftR713dT60OmStFnB46hXGW-2icV0baum6G5rbV27EUJFa5nElaJEdCoJl3kQD6kGcTBGgF2A86aPIQFwi0KTpPXWOlIhEaWVWgHlq1tm7rlz9sPg7v1ZFcPkYPF_eLDWGwzeEWk5Uct2DLgsSvO7DeOj9eu8sC6aKXmnwcrmAjwk32FkiJj-XFAafvQbHYF7yAwpKqvM1iP3KpUxNYalNHO-Z6D2bpDtGriejKjq_3v74jMnkKd2p3CSybveNQZ5LMZLlzGt6Qr_0O-Uz_TfvoJLLgJtp_qHF-AgGJmz7p3c5k6MLXAxvT5oS1aWw92c3IJ3xJ-Dymzkk-Try9hJPa5e60PXF_WrqFXpyUIz7dfybvzm1qyB1A1iqk8qRHUQ_XqR4X7rFzovWo3ZuOO1g96apUx4vadJLMBVWRKXtvdP3TVnhM72GWXQecmMryTECsMvPVb/https://www.amazon.in/stores/page/3914C9D9-374B-40E5-811D-63D1FAC20584/?_encoding=UTF8&store_ref=SB_A0835315M992U9NFXF6F-A01991333UCCURX5BW5BO&pd_rd_plhdr=t&aaxitk=bcad0bfec953b59fcb15dbec2d75729d&hsa_cr_id=0&lp_slot=desktop-arbies&lp_page_asin=B00ID6PC60&aref=6vPQlAcoNG&pd_rd_i=ad2&ref_=sbx_be_dp_arbies_mblsd_mb1_logo&pd_rd_w=c3der&content-id=amzn1.sym.7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_p=7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390
+                            - img "Ledure" [ref=e1272]
+                        - generic [ref=e1273]:
+                          - link [ref=e1274] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JNEDemu1Ogz_Z8Yc8yKPPlIAAAGdyt1a-goAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICDOlvpo/clv1c_ek-ww4fXFcbWDoHOZIcZsmPkRA0Lu0ndTrclx31i_vvUgQhSREURoNJv6SrUR30ZDk8WxtnnnPRyustdcOmixiLzUpvcCxJwWy_nhSrFqMgUJ7KIMvSOzRvmphH0Jv47Gjmw23e7S6uVW4nq310Q0WOxsF2ejAXKkquYr-drvYdc2mqQa9_QbNZSL0Crli1xx7DRmSejf9eZtDKtNgxz1iMKnDqMEdJc5upZ6aLnGnbtPtM7M5m9Oqgux5lmxspNUaXkoRADJQjKGEVuAWnbbiXH5amz76D3KXdl-eAofRUHurhmzMMHU9v6QJ8tga45WAp755Lt7cV2kRg0JQdvzEaJe9OVuVpzrMc7OGlIpdbHHH3gfjhnVfowKKQcCye_9FJm_jlAm1OUoso4L1fFq1ypXeK1UzyrjRY1geMjj9A8q0MnFGEsVr4KsSxW0Etbgyz-N-YKA9pWtR64Qbbog3IEm4RndHaBdcN6NQiju_LPI8Mmm34sw_DEkAtSlrz01ZQ0p5oo3QJFAylF5qq-jW5nAZzQRMwhXYZ1BaL1TF5W3Wu6w0xiNVIGrnP2EFHrvk9yJSoDftR713dT60OmStFnB46hXGW-2icV0baum6G5rbV27EUJFa5nElaJEdCoJl3kQD6kGcTBGgF2A86aPIQFwi0KTpPXWOlIhEaWVWgHlq1tm7rlz9sPg7v1ZFcPkYPF_eLDWGwzeEWk5Uct2DLgsSvO7DeOj9eu8sC6aKXmnwcrmAjwk32FkiJj-XFAafvQbHYF7yAwpKqvM1iP3KpUxNYalNHO-Z6D2bpDtGriejKjq_3v74jMnkKd2p3CSybveNQZ5LMZLlzGt6Qr_0O-Uz_TfvoJLLgJtp_qHF-AgGJmz7p3c5k6MLXAxvT5oS1aWw92c3IJ3xJ-Dymzkk-Try9hJPa5e60PXF_WrqFXpyUIz7dfybvzm1qyB1A1iqk8qRHUQ_XqR4X7rFzovWo3ZuOO1g96apUx4vadJLMBVWRKXtvdP3TVnhM72GWXQecmMryTECsMvPVb/https://www.amazon.in/stores/page/3914C9D9-374B-40E5-811D-63D1FAC20584/?_encoding=UTF8&store_ref=SB_A0835315M992U9NFXF6F-A01991333UCCURX5BW5BO&pd_rd_plhdr=t&aaxitk=bcad0bfec953b59fcb15dbec2d75729d&hsa_cr_id=0&lp_slot=desktop-arbies&lp_page_asin=B00ID6PC60&aref=6vPQlAcoNG&pd_rd_i=ad2&ref_=sbx_be_dp_arbies_mblsd_mb1_bkgd&pd_rd_w=c3der&content-id=amzn1.sym.7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_p=7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390
+                          - link "Mosquito Control Made Powerful & Easy" [ref=e1275] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JNEDemu1Ogz_Z8Yc8yKPPlIAAAGdyt1a-goAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICDOlvpo/clv1c_ek-ww4fXFcbWDoHOZIcZsmPkRA0Lu0ndTrclx31i_vvUgQhSREURoNJv6SrUR30ZDk8WxtnnnPRyustdcOmixiLzUpvcCxJwWy_nhSrFqMgUJ7KIMvSOzRvmphH0Jv47Gjmw23e7S6uVW4nq310Q0WOxsF2ejAXKkquYr-drvYdc2mqQa9_QbNZSL0Crli1xx7DRmSejf9eZtDKtNgxz1iMKnDqMEdJc5upZ6aLnGnbtPtM7M5m9Oqgux5lmxspNUaXkoRADJQjKGEVuAWnbbiXH5amz76D3KXdl-eAofRUHurhmzMMHU9v6QJ8tga45WAp755Lt7cV2kRg0JQdvzEaJe9OVuVpzrMc7OGlIpdbHHH3gfjhnVfowKKQcCye_9FJm_jlAm1OUoso4L1fFq1ypXeK1UzyrjRY1geMjj9A8q0MnFGEsVr4KsSxW0Etbgyz-N-YKA9pWtR64Qbbog3IEm4RndHaBdcN6NQiju_LPI8Mmm34sw_DEkAtSlrz01ZQ0p5oo3QJFAylF5qq-jW5nAZzQRMwhXYZ1BaL1TF5W3Wu6w0xiNVIGrnP2EFHrvk9yJSoDftR713dT60OmStFnB46hXGW-2icV0baum6G5rbV27EUJFa5nElaJEdCoJl3kQD6kGcTBGgF2A86aPIQFwi0KTpPXWOlIhEaWVWgHlq1tm7rlz9sPg7v1ZFcPkYPF_eLDWGwzeEWk5Uct2DLgsSvO7DeOj9eu8sC6aKXmnwcrmAjwk32FkiJj-XFAafvQbHYF7yAwpKqvM1iP3KpUxNYalNHO-Z6D2bpDtGriejKjq_3v74jMnkKd2p3CSybveNQZ5LMZLlzGt6Qr_0O-Uz_TfvoJLLgJtp_qHF-AgGJmz7p3c5k6MLXAxvT5oS1aWw92c3IJ3xJ-Dymzkk-Try9hJPa5e60PXF_WrqFXpyUIz7dfybvzm1qyB1A1iqk8qRHUQ_XqR4X7rFzovWo3ZuOO1g96apUx4vadJLMBVWRKXtvdP3TVnhM72GWXQecmMryTECsMvPVb/https://www.amazon.in/stores/page/3914C9D9-374B-40E5-811D-63D1FAC20584/?_encoding=UTF8&store_ref=SB_A0835315M992U9NFXF6F-A01991333UCCURX5BW5BO&pd_rd_plhdr=t&aaxitk=bcad0bfec953b59fcb15dbec2d75729d&hsa_cr_id=0&lp_slot=desktop-arbies&lp_page_asin=B00ID6PC60&aref=6vPQlAcoNG&pd_rd_i=ad2&ref_=sbx_be_dp_arbies_mblsd_mb1_hl&pd_rd_w=c3der&content-id=amzn1.sym.7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_p=7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390
+                            - generic [ref=e1277]:
+                              - generic [ref=e1278]: Mosquito Control Made Powerful & Easy
+                              - generic [ref=e1279]: Mosquito Control Made Powerful & Easy
+              - group "3 of 5" [ref=e1280]:
+                - generic [ref=e1281]:
+                  - link "Sponsored ad from FirstEdge. \"Unleash Speed. Command Spin. Dominate Every Rally.\" Shop FirstEdge." [ref=e1282] [cursor=pointer]:
+                    - /url: https://aax-eu-zaz.amazon.in/x/c/JCebdCvmOmEQnkwEMuVm4PEAAAGdyt1a-woAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICBe74jx/clv1c_ek-ww3fWVdbWDfVq9CX3IfBwSk5GbrcOvXxeriJHt-ktsAAKicPAcAzAtzUhlHfD3qBfSctolU4JFLVNZ96c-1-bAvNXGLiuKaaRRM7xH9SUaFNb8nYl-3Lcenn0LnjyHk0PWCC7cgnM-bxtZBz_x-Qboduk_qUKqN6ouxdzrFZ_mJOwKiTORtiOE0sWiOTQS0LWfiuaTmb_BeW4BGyJY-v9L0qj7vzSi89NrGChJodJ5StBgzxBQA7yWUFW3QrWjuGUFndVAO6Jb5RYMdr0sE1XjVdMpuBB_-Ks_0iYmLN78wDKU3CcONXSJ8AiCpnbh_-80voHBv4jX-DUEt3xvB3kSf1p5fhy7pDM0JhTNq9MDPNF2QQWZnlUEBhqbW2cxBfRiSU9GJqQXSx74HxbU8Ran2T7S4oHVv10WskljhyR2A8_HCGwuP0SOiKPcuJAuTbVBlnhtCdruXvcpbkl71wRlcXbBs2FHjbqZaYYk2jRt95GhCmaC59lzxmExs7zJVnbGNF5Jeap7VUK_SwY3FQ8WRxw2pta4_3BfVQohG8Gx4NOSQk3cSE1hJGZydXFp-GIjazdL5tDEZjGVKKIABptzmhXnDDxcPMfB_1nhlDUl2G7tFNJ4eTWkHmxQNNzkAEwgNIfyPx91IThL1UZ-S0746poEZYDFtCoo8ILtLORX_APvnmn9Dt0bZ405r9HK-DWt_avpBOt7blAGEjYnCe219UBisiX-Qqaf1b8jqhhsvr81PedeG2e7hyYKvM3tGwQlLFKCSXfVvABK1uQ4lViEcofrgJN34yOx5cBhQ-26tf92PApDzzYORiWLx_QGTRBrdvYvJEZT9WRGItIyHZij7K4lx1RrMjkSYojAr8oyf9JjyYfmUNSOct-wD8qWbcAHDglV-flz1ELemba3z6XbWYVRBxhYbem2uYvZ7t8sTzZ4DQu9797Okd5bOAIuwag8fTGi4O9CdvmtUQdnlTRbnsByg9tf4Cty7zzqFC4yYUw3SAhy-vk74ECrLcjQuNvztgjxvQyEA/https://www.amazon.in/stores/page/D35D421A-47F1-49D1-A6A7-84CD710B5AA2/?_encoding=UTF8&store_ref=SB_A0090298OGL5LOF7SJRP-A0411614JYD81WBHP6YN&pd_rd_plhdr=t&aaxitk=eac786d58c68a6c490b42be1efe78277&hsa_cr_id=0&lp_slot=desktop-arbies&lp_page_asin=B00ID6PC60&aref=JB5A1F2NER&pd_rd_i=ad3&ref_=sbx_be_dp_arbies_mblsd_mb2_bkgd&pd_rd_w=c3der&content-id=amzn1.sym.7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_p=7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390
+                  - generic:
+                    - generic:
+                      - link "FirstEdge" [ref=e1283] [cursor=pointer]:
+                        - /url: https://aax-eu-zaz.amazon.in/x/c/JCebdCvmOmEQnkwEMuVm4PEAAAGdyt1a-woAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICBe74jx/clv1c_ek-ww3fWVdbWDfVq9CX3IfBwSk5GbrcOvXxeriJHt-ktsAAKicPAcAzAtzUhlHfD3qBfSctolU4JFLVNZ96c-1-bAvNXGLiuKaaRRM7xH9SUaFNb8nYl-3Lcenn0LnjyHk0PWCC7cgnM-bxtZBz_x-Qboduk_qUKqN6ouxdzrFZ_mJOwKiTORtiOE0sWiOTQS0LWfiuaTmb_BeW4BGyJY-v9L0qj7vzSi89NrGChJodJ5StBgzxBQA7yWUFW3QrWjuGUFndVAO6Jb5RYMdr0sE1XjVdMpuBB_-Ks_0iYmLN78wDKU3CcONXSJ8AiCpnbh_-80voHBv4jX-DUEt3xvB3kSf1p5fhy7pDM0JhTNq9MDPNF2QQWZnlUEBhqbW2cxBfRiSU9GJqQXSx74HxbU8Ran2T7S4oHVv10WskljhyR2A8_HCGwuP0SOiKPcuJAuTbVBlnhtCdruXvcpbkl71wRlcXbBs2FHjbqZaYYk2jRt95GhCmaC59lzxmExs7zJVnbGNF5Jeap7VUK_SwY3FQ8WRxw2pta4_3BfVQohG8Gx4NOSQk3cSE1hJGZydXFp-GIjazdL5tDEZjGVKKIABptzmhXnDDxcPMfB_1nhlDUl2G7tFNJ4eTWkHmxQNNzkAEwgNIfyPx91IThL1UZ-S0746poEZYDFtCoo8ILtLORX_APvnmn9Dt0bZ405r9HK-DWt_avpBOt7blAGEjYnCe219UBisiX-Qqaf1b8jqhhsvr81PedeG2e7hyYKvM3tGwQlLFKCSXfVvABK1uQ4lViEcofrgJN34yOx5cBhQ-26tf92PApDzzYORiWLx_QGTRBrdvYvJEZT9WRGItIyHZij7K4lx1RrMjkSYojAr8oyf9JjyYfmUNSOct-wD8qWbcAHDglV-flz1ELemba3z6XbWYVRBxhYbem2uYvZ7t8sTzZ4DQu9797Okd5bOAIuwag8fTGi4O9CdvmtUQdnlTRbnsByg9tf4Cty7zzqFC4yYUw3SAhy-vk74ECrLcjQuNvztgjxvQyEA/https://www.amazon.in/stores/page/D35D421A-47F1-49D1-A6A7-84CD710B5AA2/?_encoding=UTF8&store_ref=SB_A0090298OGL5LOF7SJRP-A0411614JYD81WBHP6YN&pd_rd_plhdr=t&aaxitk=eac786d58c68a6c490b42be1efe78277&hsa_cr_id=0&lp_slot=desktop-arbies&lp_page_asin=B00ID6PC60&aref=JB5A1F2NER&pd_rd_i=ad3&ref_=sbx_be_dp_arbies_mblsd_mb2_ls&pd_rd_w=c3der&content-id=amzn1.sym.7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_p=7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390
+                        - img "FirstEdge" [ref=e1284]
+                      - generic [ref=e1286]:
+                        - generic [ref=e1287]:
+                          - link [ref=e1288] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JCebdCvmOmEQnkwEMuVm4PEAAAGdyt1a-woAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICBe74jx/clv1c_ek-ww3fWVdbWDfVq9CX3IfBwSk5GbrcOvXxeriJHt-ktsAAKicPAcAzAtzUhlHfD3qBfSctolU4JFLVNZ96c-1-bAvNXGLiuKaaRRM7xH9SUaFNb8nYl-3Lcenn0LnjyHk0PWCC7cgnM-bxtZBz_x-Qboduk_qUKqN6ouxdzrFZ_mJOwKiTORtiOE0sWiOTQS0LWfiuaTmb_BeW4BGyJY-v9L0qj7vzSi89NrGChJodJ5StBgzxBQA7yWUFW3QrWjuGUFndVAO6Jb5RYMdr0sE1XjVdMpuBB_-Ks_0iYmLN78wDKU3CcONXSJ8AiCpnbh_-80voHBv4jX-DUEt3xvB3kSf1p5fhy7pDM0JhTNq9MDPNF2QQWZnlUEBhqbW2cxBfRiSU9GJqQXSx74HxbU8Ran2T7S4oHVv10WskljhyR2A8_HCGwuP0SOiKPcuJAuTbVBlnhtCdruXvcpbkl71wRlcXbBs2FHjbqZaYYk2jRt95GhCmaC59lzxmExs7zJVnbGNF5Jeap7VUK_SwY3FQ8WRxw2pta4_3BfVQohG8Gx4NOSQk3cSE1hJGZydXFp-GIjazdL5tDEZjGVKKIABptzmhXnDDxcPMfB_1nhlDUl2G7tFNJ4eTWkHmxQNNzkAEwgNIfyPx91IThL1UZ-S0746poEZYDFtCoo8ILtLORX_APvnmn9Dt0bZ405r9HK-DWt_avpBOt7blAGEjYnCe219UBisiX-Qqaf1b8jqhhsvr81PedeG2e7hyYKvM3tGwQlLFKCSXfVvABK1uQ4lViEcofrgJN34yOx5cBhQ-26tf92PApDzzYORiWLx_QGTRBrdvYvJEZT9WRGItIyHZij7K4lx1RrMjkSYojAr8oyf9JjyYfmUNSOct-wD8qWbcAHDglV-flz1ELemba3z6XbWYVRBxhYbem2uYvZ7t8sTzZ4DQu9797Okd5bOAIuwag8fTGi4O9CdvmtUQdnlTRbnsByg9tf4Cty7zzqFC4yYUw3SAhy-vk74ECrLcjQuNvztgjxvQyEA/https://www.amazon.in/stores/page/D35D421A-47F1-49D1-A6A7-84CD710B5AA2/?_encoding=UTF8&store_ref=SB_A0090298OGL5LOF7SJRP-A0411614JYD81WBHP6YN&pd_rd_plhdr=t&aaxitk=eac786d58c68a6c490b42be1efe78277&hsa_cr_id=0&lp_slot=desktop-arbies&lp_page_asin=B00ID6PC60&aref=JB5A1F2NER&pd_rd_i=ad3&ref_=sbx_be_dp_arbies_mblsd_mb2_bkgd&pd_rd_w=c3der&content-id=amzn1.sym.7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_p=7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390
+                          - link "FirstEdge" [ref=e1289] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JCebdCvmOmEQnkwEMuVm4PEAAAGdyt1a-woAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICBe74jx/clv1c_ek-ww3fWVdbWDfVq9CX3IfBwSk5GbrcOvXxeriJHt-ktsAAKicPAcAzAtzUhlHfD3qBfSctolU4JFLVNZ96c-1-bAvNXGLiuKaaRRM7xH9SUaFNb8nYl-3Lcenn0LnjyHk0PWCC7cgnM-bxtZBz_x-Qboduk_qUKqN6ouxdzrFZ_mJOwKiTORtiOE0sWiOTQS0LWfiuaTmb_BeW4BGyJY-v9L0qj7vzSi89NrGChJodJ5StBgzxBQA7yWUFW3QrWjuGUFndVAO6Jb5RYMdr0sE1XjVdMpuBB_-Ks_0iYmLN78wDKU3CcONXSJ8AiCpnbh_-80voHBv4jX-DUEt3xvB3kSf1p5fhy7pDM0JhTNq9MDPNF2QQWZnlUEBhqbW2cxBfRiSU9GJqQXSx74HxbU8Ran2T7S4oHVv10WskljhyR2A8_HCGwuP0SOiKPcuJAuTbVBlnhtCdruXvcpbkl71wRlcXbBs2FHjbqZaYYk2jRt95GhCmaC59lzxmExs7zJVnbGNF5Jeap7VUK_SwY3FQ8WRxw2pta4_3BfVQohG8Gx4NOSQk3cSE1hJGZydXFp-GIjazdL5tDEZjGVKKIABptzmhXnDDxcPMfB_1nhlDUl2G7tFNJ4eTWkHmxQNNzkAEwgNIfyPx91IThL1UZ-S0746poEZYDFtCoo8ILtLORX_APvnmn9Dt0bZ405r9HK-DWt_avpBOt7blAGEjYnCe219UBisiX-Qqaf1b8jqhhsvr81PedeG2e7hyYKvM3tGwQlLFKCSXfVvABK1uQ4lViEcofrgJN34yOx5cBhQ-26tf92PApDzzYORiWLx_QGTRBrdvYvJEZT9WRGItIyHZij7K4lx1RrMjkSYojAr8oyf9JjyYfmUNSOct-wD8qWbcAHDglV-flz1ELemba3z6XbWYVRBxhYbem2uYvZ7t8sTzZ4DQu9797Okd5bOAIuwag8fTGi4O9CdvmtUQdnlTRbnsByg9tf4Cty7zzqFC4yYUw3SAhy-vk74ECrLcjQuNvztgjxvQyEA/https://www.amazon.in/stores/page/D35D421A-47F1-49D1-A6A7-84CD710B5AA2/?_encoding=UTF8&store_ref=SB_A0090298OGL5LOF7SJRP-A0411614JYD81WBHP6YN&pd_rd_plhdr=t&aaxitk=eac786d58c68a6c490b42be1efe78277&hsa_cr_id=0&lp_slot=desktop-arbies&lp_page_asin=B00ID6PC60&aref=JB5A1F2NER&pd_rd_i=ad3&ref_=sbx_be_dp_arbies_mblsd_mb2_logo&pd_rd_w=c3der&content-id=amzn1.sym.7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_p=7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390
+                            - img "FirstEdge" [ref=e1291]
+                        - generic [ref=e1292]:
+                          - link [ref=e1293] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JCebdCvmOmEQnkwEMuVm4PEAAAGdyt1a-woAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICBe74jx/clv1c_ek-ww3fWVdbWDfVq9CX3IfBwSk5GbrcOvXxeriJHt-ktsAAKicPAcAzAtzUhlHfD3qBfSctolU4JFLVNZ96c-1-bAvNXGLiuKaaRRM7xH9SUaFNb8nYl-3Lcenn0LnjyHk0PWCC7cgnM-bxtZBz_x-Qboduk_qUKqN6ouxdzrFZ_mJOwKiTORtiOE0sWiOTQS0LWfiuaTmb_BeW4BGyJY-v9L0qj7vzSi89NrGChJodJ5StBgzxBQA7yWUFW3QrWjuGUFndVAO6Jb5RYMdr0sE1XjVdMpuBB_-Ks_0iYmLN78wDKU3CcONXSJ8AiCpnbh_-80voHBv4jX-DUEt3xvB3kSf1p5fhy7pDM0JhTNq9MDPNF2QQWZnlUEBhqbW2cxBfRiSU9GJqQXSx74HxbU8Ran2T7S4oHVv10WskljhyR2A8_HCGwuP0SOiKPcuJAuTbVBlnhtCdruXvcpbkl71wRlcXbBs2FHjbqZaYYk2jRt95GhCmaC59lzxmExs7zJVnbGNF5Jeap7VUK_SwY3FQ8WRxw2pta4_3BfVQohG8Gx4NOSQk3cSE1hJGZydXFp-GIjazdL5tDEZjGVKKIABptzmhXnDDxcPMfB_1nhlDUl2G7tFNJ4eTWkHmxQNNzkAEwgNIfyPx91IThL1UZ-S0746poEZYDFtCoo8ILtLORX_APvnmn9Dt0bZ405r9HK-DWt_avpBOt7blAGEjYnCe219UBisiX-Qqaf1b8jqhhsvr81PedeG2e7hyYKvM3tGwQlLFKCSXfVvABK1uQ4lViEcofrgJN34yOx5cBhQ-26tf92PApDzzYORiWLx_QGTRBrdvYvJEZT9WRGItIyHZij7K4lx1RrMjkSYojAr8oyf9JjyYfmUNSOct-wD8qWbcAHDglV-flz1ELemba3z6XbWYVRBxhYbem2uYvZ7t8sTzZ4DQu9797Okd5bOAIuwag8fTGi4O9CdvmtUQdnlTRbnsByg9tf4Cty7zzqFC4yYUw3SAhy-vk74ECrLcjQuNvztgjxvQyEA/https://www.amazon.in/stores/page/D35D421A-47F1-49D1-A6A7-84CD710B5AA2/?_encoding=UTF8&store_ref=SB_A0090298OGL5LOF7SJRP-A0411614JYD81WBHP6YN&pd_rd_plhdr=t&aaxitk=eac786d58c68a6c490b42be1efe78277&hsa_cr_id=0&lp_slot=desktop-arbies&lp_page_asin=B00ID6PC60&aref=JB5A1F2NER&pd_rd_i=ad3&ref_=sbx_be_dp_arbies_mblsd_mb2_bkgd&pd_rd_w=c3der&content-id=amzn1.sym.7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_p=7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390
+                          - link "Unleash Speed. Command Spin. Dominate Every Rally" [ref=e1294] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JCebdCvmOmEQnkwEMuVm4PEAAAGdyt1a-woAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICBe74jx/clv1c_ek-ww3fWVdbWDfVq9CX3IfBwSk5GbrcOvXxeriJHt-ktsAAKicPAcAzAtzUhlHfD3qBfSctolU4JFLVNZ96c-1-bAvNXGLiuKaaRRM7xH9SUaFNb8nYl-3Lcenn0LnjyHk0PWCC7cgnM-bxtZBz_x-Qboduk_qUKqN6ouxdzrFZ_mJOwKiTORtiOE0sWiOTQS0LWfiuaTmb_BeW4BGyJY-v9L0qj7vzSi89NrGChJodJ5StBgzxBQA7yWUFW3QrWjuGUFndVAO6Jb5RYMdr0sE1XjVdMpuBB_-Ks_0iYmLN78wDKU3CcONXSJ8AiCpnbh_-80voHBv4jX-DUEt3xvB3kSf1p5fhy7pDM0JhTNq9MDPNF2QQWZnlUEBhqbW2cxBfRiSU9GJqQXSx74HxbU8Ran2T7S4oHVv10WskljhyR2A8_HCGwuP0SOiKPcuJAuTbVBlnhtCdruXvcpbkl71wRlcXbBs2FHjbqZaYYk2jRt95GhCmaC59lzxmExs7zJVnbGNF5Jeap7VUK_SwY3FQ8WRxw2pta4_3BfVQohG8Gx4NOSQk3cSE1hJGZydXFp-GIjazdL5tDEZjGVKKIABptzmhXnDDxcPMfB_1nhlDUl2G7tFNJ4eTWkHmxQNNzkAEwgNIfyPx91IThL1UZ-S0746poEZYDFtCoo8ILtLORX_APvnmn9Dt0bZ405r9HK-DWt_avpBOt7blAGEjYnCe219UBisiX-Qqaf1b8jqhhsvr81PedeG2e7hyYKvM3tGwQlLFKCSXfVvABK1uQ4lViEcofrgJN34yOx5cBhQ-26tf92PApDzzYORiWLx_QGTRBrdvYvJEZT9WRGItIyHZij7K4lx1RrMjkSYojAr8oyf9JjyYfmUNSOct-wD8qWbcAHDglV-flz1ELemba3z6XbWYVRBxhYbem2uYvZ7t8sTzZ4DQu9797Okd5bOAIuwag8fTGi4O9CdvmtUQdnlTRbnsByg9tf4Cty7zzqFC4yYUw3SAhy-vk74ECrLcjQuNvztgjxvQyEA/https://www.amazon.in/stores/page/D35D421A-47F1-49D1-A6A7-84CD710B5AA2/?_encoding=UTF8&store_ref=SB_A0090298OGL5LOF7SJRP-A0411614JYD81WBHP6YN&pd_rd_plhdr=t&aaxitk=eac786d58c68a6c490b42be1efe78277&hsa_cr_id=0&lp_slot=desktop-arbies&lp_page_asin=B00ID6PC60&aref=JB5A1F2NER&pd_rd_i=ad3&ref_=sbx_be_dp_arbies_mblsd_mb2_hl&pd_rd_w=c3der&content-id=amzn1.sym.7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_p=7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390
+                            - generic [ref=e1296]:
+                              - generic [ref=e1297]: Unleash Speed. Command Spin. Dominate Every Rally
+                              - generic [ref=e1298]: Unleash Speed. Command Spin. Dominate Every Rally
+              - group "4 of 5" [ref=e1299]:
+                - generic [ref=e1300]:
+                  - link "Sponsored ad from Amazon Basics. \"Compact Exercise Cycle for Daily Fitness.\" Shop Amazon Basics." [ref=e1301] [cursor=pointer]:
+                    - /url: https://aax-eu-zaz.amazon.in/x/c/JJxiiXfOOf7hPHwtSlGU0AYAAAGdyt1a_AoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICA8e6pF/clv1c_ek-wwwfWUtbWDYVORJv8GRgA8DKhGOVM789j9nJwirptwclpjZoegqB-AvzsOLy_6BhKfENEGsXyFbfNvsM6lj-zFKORSfO33hG3N1OG0CVmqkmnUYltO0hgYnv8rLH9sgzwDfRDGbcs5E2FL9PB7egbId2Qus1LkUn-Xj6gwZAT_KcWtWNbwjRf7sXmeSaAJuWY0nFh8xHy7dCgp2zRmlDG35YpRzomgJltIopXY_Gw8sOPue2He_t3MhMdC1i2UnfAKwrhHxiYiPGwug8hpCULX0P6KKYLPb0BuZfY7uLVMiuL4emGMV540ZavIZAd2Z6-ZQMKaxNZBN7zLj7pojaVSRMCb8kNLFUdVn6AfAQFVdE3dYqv3j1C2cwWnZD2jKOHvf-KYh_rgO1IOanSbqZbs1sQbTjvJkH44tn9_fjyqFHjAK_COv8rVtaxGMupKp0vYfLHuOjias-_4q5XYpwxUQpmesHadeYlPlVQN7rjrYNZ31kLPLLHdUhsDr4KqFuUfweFYNTKYV11EnW9MmRssz6MyU3G9H_PdVuHW19emPVi8ZvBlLhmtC4qtq7AI_2kElGXXmMsoTljWkXZKWw0q05WiWB-kJ-a-eZLMy-ZlyYash7l9SsLX6cOzWKAZiomfD5fBAphE7X520RtEJ0ZRcdpEI6wtGWHwxrOPXAABmCkECjxWZ1OUoMIu-a0f9sr1IiabeDNX0RmpdOgnpLMQbWNL7NLA2aIf3_eEElRE6ZFHqM23PKQA8DYGJ6ot0NopA6qxSj7Yrda6EpdSX2mhnwrDwV5utLao9xrzvg_mZlN9WyFZh9-36_r1fXmFL0yKnwrMW5ZDqDUTZ_F_ZMdgXupTD96vSXab87M1VBBA9DJbuSUG3vcy2x-sMl3yxUzOppLk9elOn9EZ0xYTZMVut3kuZAIZZhJ3pWJSo3pkuXT60kePG-SY7SgGItfw4AIQg84KSaiYpk8DoHWcgKnvE8e6ngH_hOXjD9kNn9TmLXgkavevy6zNgeStidWoD4JTwf77tn0DaPZL0Q/https://www.amazon.in/stores/page/C0D7D48B-A824-4250-A32F-CEED719151DE/?_encoding=UTF8&store_ref=SB_A035910726ULEBFG72TWY-A0002380294BQVMUXCTGF&pd_rd_plhdr=t&aaxitk=50fc9d5199753f49e1ca67f86d8eba19&hsa_cr_id=0&lp_slot=desktop-arbies&lp_page_asin=B00ID6PC60&aref=0DxgXk4gWF&pd_rd_i=ad4&ref_=sbx_be_dp_arbies_mblsd_mb3_bkgd&pd_rd_w=c3der&content-id=amzn1.sym.7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_p=7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390
+                  - generic:
+                    - generic:
+                      - link "Amazon Basics" [ref=e1302] [cursor=pointer]:
+                        - /url: https://aax-eu-zaz.amazon.in/x/c/JJxiiXfOOf7hPHwtSlGU0AYAAAGdyt1a_AoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICA8e6pF/clv1c_ek-wwwfWUtbWDYVORJv8GRgA8DKhGOVM789j9nJwirptwclpjZoegqB-AvzsOLy_6BhKfENEGsXyFbfNvsM6lj-zFKORSfO33hG3N1OG0CVmqkmnUYltO0hgYnv8rLH9sgzwDfRDGbcs5E2FL9PB7egbId2Qus1LkUn-Xj6gwZAT_KcWtWNbwjRf7sXmeSaAJuWY0nFh8xHy7dCgp2zRmlDG35YpRzomgJltIopXY_Gw8sOPue2He_t3MhMdC1i2UnfAKwrhHxiYiPGwug8hpCULX0P6KKYLPb0BuZfY7uLVMiuL4emGMV540ZavIZAd2Z6-ZQMKaxNZBN7zLj7pojaVSRMCb8kNLFUdVn6AfAQFVdE3dYqv3j1C2cwWnZD2jKOHvf-KYh_rgO1IOanSbqZbs1sQbTjvJkH44tn9_fjyqFHjAK_COv8rVtaxGMupKp0vYfLHuOjias-_4q5XYpwxUQpmesHadeYlPlVQN7rjrYNZ31kLPLLHdUhsDr4KqFuUfweFYNTKYV11EnW9MmRssz6MyU3G9H_PdVuHW19emPVi8ZvBlLhmtC4qtq7AI_2kElGXXmMsoTljWkXZKWw0q05WiWB-kJ-a-eZLMy-ZlyYash7l9SsLX6cOzWKAZiomfD5fBAphE7X520RtEJ0ZRcdpEI6wtGWHwxrOPXAABmCkECjxWZ1OUoMIu-a0f9sr1IiabeDNX0RmpdOgnpLMQbWNL7NLA2aIf3_eEElRE6ZFHqM23PKQA8DYGJ6ot0NopA6qxSj7Yrda6EpdSX2mhnwrDwV5utLao9xrzvg_mZlN9WyFZh9-36_r1fXmFL0yKnwrMW5ZDqDUTZ_F_ZMdgXupTD96vSXab87M1VBBA9DJbuSUG3vcy2x-sMl3yxUzOppLk9elOn9EZ0xYTZMVut3kuZAIZZhJ3pWJSo3pkuXT60kePG-SY7SgGItfw4AIQg84KSaiYpk8DoHWcgKnvE8e6ngH_hOXjD9kNn9TmLXgkavevy6zNgeStidWoD4JTwf77tn0DaPZL0Q/https://www.amazon.in/stores/page/C0D7D48B-A824-4250-A32F-CEED719151DE/?_encoding=UTF8&store_ref=SB_A035910726ULEBFG72TWY-A0002380294BQVMUXCTGF&pd_rd_plhdr=t&aaxitk=50fc9d5199753f49e1ca67f86d8eba19&hsa_cr_id=0&lp_slot=desktop-arbies&lp_page_asin=B00ID6PC60&aref=0DxgXk4gWF&pd_rd_i=ad4&ref_=sbx_be_dp_arbies_mblsd_mb3_ls&pd_rd_w=c3der&content-id=amzn1.sym.7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_p=7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390
+                        - img "Amazon Basics" [ref=e1303]
+                      - generic [ref=e1305]:
+                        - generic [ref=e1306]:
+                          - link [ref=e1307] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JJxiiXfOOf7hPHwtSlGU0AYAAAGdyt1a_AoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICA8e6pF/clv1c_ek-wwwfWUtbWDYVORJv8GRgA8DKhGOVM789j9nJwirptwclpjZoegqB-AvzsOLy_6BhKfENEGsXyFbfNvsM6lj-zFKORSfO33hG3N1OG0CVmqkmnUYltO0hgYnv8rLH9sgzwDfRDGbcs5E2FL9PB7egbId2Qus1LkUn-Xj6gwZAT_KcWtWNbwjRf7sXmeSaAJuWY0nFh8xHy7dCgp2zRmlDG35YpRzomgJltIopXY_Gw8sOPue2He_t3MhMdC1i2UnfAKwrhHxiYiPGwug8hpCULX0P6KKYLPb0BuZfY7uLVMiuL4emGMV540ZavIZAd2Z6-ZQMKaxNZBN7zLj7pojaVSRMCb8kNLFUdVn6AfAQFVdE3dYqv3j1C2cwWnZD2jKOHvf-KYh_rgO1IOanSbqZbs1sQbTjvJkH44tn9_fjyqFHjAK_COv8rVtaxGMupKp0vYfLHuOjias-_4q5XYpwxUQpmesHadeYlPlVQN7rjrYNZ31kLPLLHdUhsDr4KqFuUfweFYNTKYV11EnW9MmRssz6MyU3G9H_PdVuHW19emPVi8ZvBlLhmtC4qtq7AI_2kElGXXmMsoTljWkXZKWw0q05WiWB-kJ-a-eZLMy-ZlyYash7l9SsLX6cOzWKAZiomfD5fBAphE7X520RtEJ0ZRcdpEI6wtGWHwxrOPXAABmCkECjxWZ1OUoMIu-a0f9sr1IiabeDNX0RmpdOgnpLMQbWNL7NLA2aIf3_eEElRE6ZFHqM23PKQA8DYGJ6ot0NopA6qxSj7Yrda6EpdSX2mhnwrDwV5utLao9xrzvg_mZlN9WyFZh9-36_r1fXmFL0yKnwrMW5ZDqDUTZ_F_ZMdgXupTD96vSXab87M1VBBA9DJbuSUG3vcy2x-sMl3yxUzOppLk9elOn9EZ0xYTZMVut3kuZAIZZhJ3pWJSo3pkuXT60kePG-SY7SgGItfw4AIQg84KSaiYpk8DoHWcgKnvE8e6ngH_hOXjD9kNn9TmLXgkavevy6zNgeStidWoD4JTwf77tn0DaPZL0Q/https://www.amazon.in/stores/page/C0D7D48B-A824-4250-A32F-CEED719151DE/?_encoding=UTF8&store_ref=SB_A035910726ULEBFG72TWY-A0002380294BQVMUXCTGF&pd_rd_plhdr=t&aaxitk=50fc9d5199753f49e1ca67f86d8eba19&hsa_cr_id=0&lp_slot=desktop-arbies&lp_page_asin=B00ID6PC60&aref=0DxgXk4gWF&pd_rd_i=ad4&ref_=sbx_be_dp_arbies_mblsd_mb3_bkgd&pd_rd_w=c3der&content-id=amzn1.sym.7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_p=7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390
+                          - link "Amazon Basics" [ref=e1308] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JJxiiXfOOf7hPHwtSlGU0AYAAAGdyt1a_AoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICA8e6pF/clv1c_ek-wwwfWUtbWDYVORJv8GRgA8DKhGOVM789j9nJwirptwclpjZoegqB-AvzsOLy_6BhKfENEGsXyFbfNvsM6lj-zFKORSfO33hG3N1OG0CVmqkmnUYltO0hgYnv8rLH9sgzwDfRDGbcs5E2FL9PB7egbId2Qus1LkUn-Xj6gwZAT_KcWtWNbwjRf7sXmeSaAJuWY0nFh8xHy7dCgp2zRmlDG35YpRzomgJltIopXY_Gw8sOPue2He_t3MhMdC1i2UnfAKwrhHxiYiPGwug8hpCULX0P6KKYLPb0BuZfY7uLVMiuL4emGMV540ZavIZAd2Z6-ZQMKaxNZBN7zLj7pojaVSRMCb8kNLFUdVn6AfAQFVdE3dYqv3j1C2cwWnZD2jKOHvf-KYh_rgO1IOanSbqZbs1sQbTjvJkH44tn9_fjyqFHjAK_COv8rVtaxGMupKp0vYfLHuOjias-_4q5XYpwxUQpmesHadeYlPlVQN7rjrYNZ31kLPLLHdUhsDr4KqFuUfweFYNTKYV11EnW9MmRssz6MyU3G9H_PdVuHW19emPVi8ZvBlLhmtC4qtq7AI_2kElGXXmMsoTljWkXZKWw0q05WiWB-kJ-a-eZLMy-ZlyYash7l9SsLX6cOzWKAZiomfD5fBAphE7X520RtEJ0ZRcdpEI6wtGWHwxrOPXAABmCkECjxWZ1OUoMIu-a0f9sr1IiabeDNX0RmpdOgnpLMQbWNL7NLA2aIf3_eEElRE6ZFHqM23PKQA8DYGJ6ot0NopA6qxSj7Yrda6EpdSX2mhnwrDwV5utLao9xrzvg_mZlN9WyFZh9-36_r1fXmFL0yKnwrMW5ZDqDUTZ_F_ZMdgXupTD96vSXab87M1VBBA9DJbuSUG3vcy2x-sMl3yxUzOppLk9elOn9EZ0xYTZMVut3kuZAIZZhJ3pWJSo3pkuXT60kePG-SY7SgGItfw4AIQg84KSaiYpk8DoHWcgKnvE8e6ngH_hOXjD9kNn9TmLXgkavevy6zNgeStidWoD4JTwf77tn0DaPZL0Q/https://www.amazon.in/stores/page/C0D7D48B-A824-4250-A32F-CEED719151DE/?_encoding=UTF8&store_ref=SB_A035910726ULEBFG72TWY-A0002380294BQVMUXCTGF&pd_rd_plhdr=t&aaxitk=50fc9d5199753f49e1ca67f86d8eba19&hsa_cr_id=0&lp_slot=desktop-arbies&lp_page_asin=B00ID6PC60&aref=0DxgXk4gWF&pd_rd_i=ad4&ref_=sbx_be_dp_arbies_mblsd_mb3_logo&pd_rd_w=c3der&content-id=amzn1.sym.7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_p=7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390
+                            - img "Amazon Basics" [ref=e1310]
+                        - generic [ref=e1311]:
+                          - link [ref=e1312] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JJxiiXfOOf7hPHwtSlGU0AYAAAGdyt1a_AoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICA8e6pF/clv1c_ek-wwwfWUtbWDYVORJv8GRgA8DKhGOVM789j9nJwirptwclpjZoegqB-AvzsOLy_6BhKfENEGsXyFbfNvsM6lj-zFKORSfO33hG3N1OG0CVmqkmnUYltO0hgYnv8rLH9sgzwDfRDGbcs5E2FL9PB7egbId2Qus1LkUn-Xj6gwZAT_KcWtWNbwjRf7sXmeSaAJuWY0nFh8xHy7dCgp2zRmlDG35YpRzomgJltIopXY_Gw8sOPue2He_t3MhMdC1i2UnfAKwrhHxiYiPGwug8hpCULX0P6KKYLPb0BuZfY7uLVMiuL4emGMV540ZavIZAd2Z6-ZQMKaxNZBN7zLj7pojaVSRMCb8kNLFUdVn6AfAQFVdE3dYqv3j1C2cwWnZD2jKOHvf-KYh_rgO1IOanSbqZbs1sQbTjvJkH44tn9_fjyqFHjAK_COv8rVtaxGMupKp0vYfLHuOjias-_4q5XYpwxUQpmesHadeYlPlVQN7rjrYNZ31kLPLLHdUhsDr4KqFuUfweFYNTKYV11EnW9MmRssz6MyU3G9H_PdVuHW19emPVi8ZvBlLhmtC4qtq7AI_2kElGXXmMsoTljWkXZKWw0q05WiWB-kJ-a-eZLMy-ZlyYash7l9SsLX6cOzWKAZiomfD5fBAphE7X520RtEJ0ZRcdpEI6wtGWHwxrOPXAABmCkECjxWZ1OUoMIu-a0f9sr1IiabeDNX0RmpdOgnpLMQbWNL7NLA2aIf3_eEElRE6ZFHqM23PKQA8DYGJ6ot0NopA6qxSj7Yrda6EpdSX2mhnwrDwV5utLao9xrzvg_mZlN9WyFZh9-36_r1fXmFL0yKnwrMW5ZDqDUTZ_F_ZMdgXupTD96vSXab87M1VBBA9DJbuSUG3vcy2x-sMl3yxUzOppLk9elOn9EZ0xYTZMVut3kuZAIZZhJ3pWJSo3pkuXT60kePG-SY7SgGItfw4AIQg84KSaiYpk8DoHWcgKnvE8e6ngH_hOXjD9kNn9TmLXgkavevy6zNgeStidWoD4JTwf77tn0DaPZL0Q/https://www.amazon.in/stores/page/C0D7D48B-A824-4250-A32F-CEED719151DE/?_encoding=UTF8&store_ref=SB_A035910726ULEBFG72TWY-A0002380294BQVMUXCTGF&pd_rd_plhdr=t&aaxitk=50fc9d5199753f49e1ca67f86d8eba19&hsa_cr_id=0&lp_slot=desktop-arbies&lp_page_asin=B00ID6PC60&aref=0DxgXk4gWF&pd_rd_i=ad4&ref_=sbx_be_dp_arbies_mblsd_mb3_bkgd&pd_rd_w=c3der&content-id=amzn1.sym.7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_p=7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390
+                          - link "Compact Exercise Cycle for Daily Fitness" [ref=e1313] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JJxiiXfOOf7hPHwtSlGU0AYAAAGdyt1a_AoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICA8e6pF/clv1c_ek-wwwfWUtbWDYVORJv8GRgA8DKhGOVM789j9nJwirptwclpjZoegqB-AvzsOLy_6BhKfENEGsXyFbfNvsM6lj-zFKORSfO33hG3N1OG0CVmqkmnUYltO0hgYnv8rLH9sgzwDfRDGbcs5E2FL9PB7egbId2Qus1LkUn-Xj6gwZAT_KcWtWNbwjRf7sXmeSaAJuWY0nFh8xHy7dCgp2zRmlDG35YpRzomgJltIopXY_Gw8sOPue2He_t3MhMdC1i2UnfAKwrhHxiYiPGwug8hpCULX0P6KKYLPb0BuZfY7uLVMiuL4emGMV540ZavIZAd2Z6-ZQMKaxNZBN7zLj7pojaVSRMCb8kNLFUdVn6AfAQFVdE3dYqv3j1C2cwWnZD2jKOHvf-KYh_rgO1IOanSbqZbs1sQbTjvJkH44tn9_fjyqFHjAK_COv8rVtaxGMupKp0vYfLHuOjias-_4q5XYpwxUQpmesHadeYlPlVQN7rjrYNZ31kLPLLHdUhsDr4KqFuUfweFYNTKYV11EnW9MmRssz6MyU3G9H_PdVuHW19emPVi8ZvBlLhmtC4qtq7AI_2kElGXXmMsoTljWkXZKWw0q05WiWB-kJ-a-eZLMy-ZlyYash7l9SsLX6cOzWKAZiomfD5fBAphE7X520RtEJ0ZRcdpEI6wtGWHwxrOPXAABmCkECjxWZ1OUoMIu-a0f9sr1IiabeDNX0RmpdOgnpLMQbWNL7NLA2aIf3_eEElRE6ZFHqM23PKQA8DYGJ6ot0NopA6qxSj7Yrda6EpdSX2mhnwrDwV5utLao9xrzvg_mZlN9WyFZh9-36_r1fXmFL0yKnwrMW5ZDqDUTZ_F_ZMdgXupTD96vSXab87M1VBBA9DJbuSUG3vcy2x-sMl3yxUzOppLk9elOn9EZ0xYTZMVut3kuZAIZZhJ3pWJSo3pkuXT60kePG-SY7SgGItfw4AIQg84KSaiYpk8DoHWcgKnvE8e6ngH_hOXjD9kNn9TmLXgkavevy6zNgeStidWoD4JTwf77tn0DaPZL0Q/https://www.amazon.in/stores/page/C0D7D48B-A824-4250-A32F-CEED719151DE/?_encoding=UTF8&store_ref=SB_A035910726ULEBFG72TWY-A0002380294BQVMUXCTGF&pd_rd_plhdr=t&aaxitk=50fc9d5199753f49e1ca67f86d8eba19&hsa_cr_id=0&lp_slot=desktop-arbies&lp_page_asin=B00ID6PC60&aref=0DxgXk4gWF&pd_rd_i=ad4&ref_=sbx_be_dp_arbies_mblsd_mb3_hl&pd_rd_w=c3der&content-id=amzn1.sym.7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_p=7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390
+                            - generic [ref=e1315]:
+                              - generic [ref=e1316]: Compact Exercise Cycle for Daily Fitness
+                              - generic [ref=e1317]: Compact Exercise Cycle for Daily Fitness
+              - group "5 of 5" [ref=e1318]:
+                - generic [ref=e1319]:
+                  - link "Sponsored ad from Whackk. \"Football and Basketball Bags.\" Shop Whackk." [ref=e1320] [cursor=pointer]:
+                    - /url: https://aax-eu-zaz.amazon.in/x/c/JLC5v8Y3XyLcrk3kH6XCJu0AAAGdyt1a_QoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICArV__7/clv1c_ek-wwwXWbdbWTtXQv5ooHgAJ7UzCEAh7HvkD-7iqNIMtwO8Hj6-_kmEE8kYgEmQfH6c-J5OGFoGLeof-QfA8vV6JywDks4ZJPQDLeobXzK0rnFII8KOjYq-75-0gwlonkl3BoAnqVl1G7GX2kVYuuNPJcB2ckHH6vsLom8f2DNe_GPrVjUNsofk7d0oW22gPJ21zR8kKWoEWleL3cliFt2gF0AlbcT2SU0r_8HClZl9cRNku71Y-LQn6RZbcTxE2q9rdwwphRUmKL64_IfHLokixTUjUrz9aCM7ExZhjuDua_ZKK81QgnFM8kQdZDYgfirVZC48-4Qd-7TAABB5k55D_-rqdm1esq7cjZceovHPnkGRhvAExlF6SBjrYVw0wDi7w_2gQGDYbql9NgqpbROqP5BI1iA8flAB4W9ll6G81D2kkyAcRBs8FyUheSLhGNmL68N2Gv-DOjlNc1rSDBfFkXk3OIr84YpLsJ372yCiuavmqZmcNfOgOP9KBVa64u_z_mfIqYfiR6rFrNuoFV3vx9gkhNnM7FdbsrJDH8932wEgnvSOJxzMQ3PV1qvT7hZMV1TA687E_pxpxdNQfP4MG1Faxmm8kVJdWjqW8X13ucIrPijekHrvsY7nwY5uQRZ1OVRRnunWUOa3zVX-nKmRBPkXrlgLlT-DtaUAz6gN2BxpEyGTf6jpANMXeIQNl9_BUUR4TYo5eP6YKpKjThhQVab2mBaSe-crQqfy3mfRUEyPcxOhmxmyGOwKFoN77NZkEnsD7Wo1bfGaRVOEtPBQOUe34915W16danu_oKwhLmjII1C6eXcUtxog52plgyr74AlIFnod5LlbEtdRo_7eoSrHRulXDeCuncVDC4kVLDXCF_AWFWKlVoPrx73dMkUB3sSLKjJPbG30_I6pKpywgD9SOisCCZwishdSI-vTdF2dx3e8VempKG1H8zhEqTuNrZZhnTAhGXLe4UBHnipcWwTW-B8VXUPts9jpEy-L_wPG0iY9u3N-SI1mM6aGv1HG5IaBYmauTngJgSQ/https://www.amazon.in/stores/page/8D985336-D024-4D34-9AE0-1D0712F818ED/?_encoding=UTF8&store_ref=SB_A015477336UFEJNEGC824-A080708739KQAJ21CT22Y&pd_rd_plhdr=t&aaxitk=a6fcd1dac95fcbf43a986775ec36ad6d&hsa_cr_id=0&lp_slot=desktop-arbies&lp_page_asin=B00ID6PC60&aref=ljObGJCBr7&pd_rd_i=ad5&ref_=sbx_be_dp_arbies_mblsd_mb4_bkgd&pd_rd_w=c3der&content-id=amzn1.sym.7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_p=7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390
+                  - generic:
+                    - generic:
+                      - link "Whackk" [ref=e1321] [cursor=pointer]:
+                        - /url: https://aax-eu-zaz.amazon.in/x/c/JLC5v8Y3XyLcrk3kH6XCJu0AAAGdyt1a_QoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICArV__7/clv1c_ek-wwwXWbdbWTtXQv5ooHgAJ7UzCEAh7HvkD-7iqNIMtwO8Hj6-_kmEE8kYgEmQfH6c-J5OGFoGLeof-QfA8vV6JywDks4ZJPQDLeobXzK0rnFII8KOjYq-75-0gwlonkl3BoAnqVl1G7GX2kVYuuNPJcB2ckHH6vsLom8f2DNe_GPrVjUNsofk7d0oW22gPJ21zR8kKWoEWleL3cliFt2gF0AlbcT2SU0r_8HClZl9cRNku71Y-LQn6RZbcTxE2q9rdwwphRUmKL64_IfHLokixTUjUrz9aCM7ExZhjuDua_ZKK81QgnFM8kQdZDYgfirVZC48-4Qd-7TAABB5k55D_-rqdm1esq7cjZceovHPnkGRhvAExlF6SBjrYVw0wDi7w_2gQGDYbql9NgqpbROqP5BI1iA8flAB4W9ll6G81D2kkyAcRBs8FyUheSLhGNmL68N2Gv-DOjlNc1rSDBfFkXk3OIr84YpLsJ372yCiuavmqZmcNfOgOP9KBVa64u_z_mfIqYfiR6rFrNuoFV3vx9gkhNnM7FdbsrJDH8932wEgnvSOJxzMQ3PV1qvT7hZMV1TA687E_pxpxdNQfP4MG1Faxmm8kVJdWjqW8X13ucIrPijekHrvsY7nwY5uQRZ1OVRRnunWUOa3zVX-nKmRBPkXrlgLlT-DtaUAz6gN2BxpEyGTf6jpANMXeIQNl9_BUUR4TYo5eP6YKpKjThhQVab2mBaSe-crQqfy3mfRUEyPcxOhmxmyGOwKFoN77NZkEnsD7Wo1bfGaRVOEtPBQOUe34915W16danu_oKwhLmjII1C6eXcUtxog52plgyr74AlIFnod5LlbEtdRo_7eoSrHRulXDeCuncVDC4kVLDXCF_AWFWKlVoPrx73dMkUB3sSLKjJPbG30_I6pKpywgD9SOisCCZwishdSI-vTdF2dx3e8VempKG1H8zhEqTuNrZZhnTAhGXLe4UBHnipcWwTW-B8VXUPts9jpEy-L_wPG0iY9u3N-SI1mM6aGv1HG5IaBYmauTngJgSQ/https://www.amazon.in/stores/page/8D985336-D024-4D34-9AE0-1D0712F818ED/?_encoding=UTF8&store_ref=SB_A015477336UFEJNEGC824-A080708739KQAJ21CT22Y&pd_rd_plhdr=t&aaxitk=a6fcd1dac95fcbf43a986775ec36ad6d&hsa_cr_id=0&lp_slot=desktop-arbies&lp_page_asin=B00ID6PC60&aref=ljObGJCBr7&pd_rd_i=ad5&ref_=sbx_be_dp_arbies_mblsd_mb4_ls&pd_rd_w=c3der&content-id=amzn1.sym.7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_p=7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390
+                        - img "Whackk" [ref=e1322]
+                      - generic [ref=e1324]:
+                        - generic [ref=e1325]:
+                          - link [ref=e1326] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JLC5v8Y3XyLcrk3kH6XCJu0AAAGdyt1a_QoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICArV__7/clv1c_ek-wwwXWbdbWTtXQv5ooHgAJ7UzCEAh7HvkD-7iqNIMtwO8Hj6-_kmEE8kYgEmQfH6c-J5OGFoGLeof-QfA8vV6JywDks4ZJPQDLeobXzK0rnFII8KOjYq-75-0gwlonkl3BoAnqVl1G7GX2kVYuuNPJcB2ckHH6vsLom8f2DNe_GPrVjUNsofk7d0oW22gPJ21zR8kKWoEWleL3cliFt2gF0AlbcT2SU0r_8HClZl9cRNku71Y-LQn6RZbcTxE2q9rdwwphRUmKL64_IfHLokixTUjUrz9aCM7ExZhjuDua_ZKK81QgnFM8kQdZDYgfirVZC48-4Qd-7TAABB5k55D_-rqdm1esq7cjZceovHPnkGRhvAExlF6SBjrYVw0wDi7w_2gQGDYbql9NgqpbROqP5BI1iA8flAB4W9ll6G81D2kkyAcRBs8FyUheSLhGNmL68N2Gv-DOjlNc1rSDBfFkXk3OIr84YpLsJ372yCiuavmqZmcNfOgOP9KBVa64u_z_mfIqYfiR6rFrNuoFV3vx9gkhNnM7FdbsrJDH8932wEgnvSOJxzMQ3PV1qvT7hZMV1TA687E_pxpxdNQfP4MG1Faxmm8kVJdWjqW8X13ucIrPijekHrvsY7nwY5uQRZ1OVRRnunWUOa3zVX-nKmRBPkXrlgLlT-DtaUAz6gN2BxpEyGTf6jpANMXeIQNl9_BUUR4TYo5eP6YKpKjThhQVab2mBaSe-crQqfy3mfRUEyPcxOhmxmyGOwKFoN77NZkEnsD7Wo1bfGaRVOEtPBQOUe34915W16danu_oKwhLmjII1C6eXcUtxog52plgyr74AlIFnod5LlbEtdRo_7eoSrHRulXDeCuncVDC4kVLDXCF_AWFWKlVoPrx73dMkUB3sSLKjJPbG30_I6pKpywgD9SOisCCZwishdSI-vTdF2dx3e8VempKG1H8zhEqTuNrZZhnTAhGXLe4UBHnipcWwTW-B8VXUPts9jpEy-L_wPG0iY9u3N-SI1mM6aGv1HG5IaBYmauTngJgSQ/https://www.amazon.in/stores/page/8D985336-D024-4D34-9AE0-1D0712F818ED/?_encoding=UTF8&store_ref=SB_A015477336UFEJNEGC824-A080708739KQAJ21CT22Y&pd_rd_plhdr=t&aaxitk=a6fcd1dac95fcbf43a986775ec36ad6d&hsa_cr_id=0&lp_slot=desktop-arbies&lp_page_asin=B00ID6PC60&aref=ljObGJCBr7&pd_rd_i=ad5&ref_=sbx_be_dp_arbies_mblsd_mb4_bkgd&pd_rd_w=c3der&content-id=amzn1.sym.7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_p=7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390
+                          - link "Whackk" [ref=e1327] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JLC5v8Y3XyLcrk3kH6XCJu0AAAGdyt1a_QoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICArV__7/clv1c_ek-wwwXWbdbWTtXQv5ooHgAJ7UzCEAh7HvkD-7iqNIMtwO8Hj6-_kmEE8kYgEmQfH6c-J5OGFoGLeof-QfA8vV6JywDks4ZJPQDLeobXzK0rnFII8KOjYq-75-0gwlonkl3BoAnqVl1G7GX2kVYuuNPJcB2ckHH6vsLom8f2DNe_GPrVjUNsofk7d0oW22gPJ21zR8kKWoEWleL3cliFt2gF0AlbcT2SU0r_8HClZl9cRNku71Y-LQn6RZbcTxE2q9rdwwphRUmKL64_IfHLokixTUjUrz9aCM7ExZhjuDua_ZKK81QgnFM8kQdZDYgfirVZC48-4Qd-7TAABB5k55D_-rqdm1esq7cjZceovHPnkGRhvAExlF6SBjrYVw0wDi7w_2gQGDYbql9NgqpbROqP5BI1iA8flAB4W9ll6G81D2kkyAcRBs8FyUheSLhGNmL68N2Gv-DOjlNc1rSDBfFkXk3OIr84YpLsJ372yCiuavmqZmcNfOgOP9KBVa64u_z_mfIqYfiR6rFrNuoFV3vx9gkhNnM7FdbsrJDH8932wEgnvSOJxzMQ3PV1qvT7hZMV1TA687E_pxpxdNQfP4MG1Faxmm8kVJdWjqW8X13ucIrPijekHrvsY7nwY5uQRZ1OVRRnunWUOa3zVX-nKmRBPkXrlgLlT-DtaUAz6gN2BxpEyGTf6jpANMXeIQNl9_BUUR4TYo5eP6YKpKjThhQVab2mBaSe-crQqfy3mfRUEyPcxOhmxmyGOwKFoN77NZkEnsD7Wo1bfGaRVOEtPBQOUe34915W16danu_oKwhLmjII1C6eXcUtxog52plgyr74AlIFnod5LlbEtdRo_7eoSrHRulXDeCuncVDC4kVLDXCF_AWFWKlVoPrx73dMkUB3sSLKjJPbG30_I6pKpywgD9SOisCCZwishdSI-vTdF2dx3e8VempKG1H8zhEqTuNrZZhnTAhGXLe4UBHnipcWwTW-B8VXUPts9jpEy-L_wPG0iY9u3N-SI1mM6aGv1HG5IaBYmauTngJgSQ/https://www.amazon.in/stores/page/8D985336-D024-4D34-9AE0-1D0712F818ED/?_encoding=UTF8&store_ref=SB_A015477336UFEJNEGC824-A080708739KQAJ21CT22Y&pd_rd_plhdr=t&aaxitk=a6fcd1dac95fcbf43a986775ec36ad6d&hsa_cr_id=0&lp_slot=desktop-arbies&lp_page_asin=B00ID6PC60&aref=ljObGJCBr7&pd_rd_i=ad5&ref_=sbx_be_dp_arbies_mblsd_mb4_logo&pd_rd_w=c3der&content-id=amzn1.sym.7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_p=7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390
+                            - img "Whackk" [ref=e1329]
+                        - generic [ref=e1330]:
+                          - link [ref=e1331] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JLC5v8Y3XyLcrk3kH6XCJu0AAAGdyt1a_QoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICArV__7/clv1c_ek-wwwXWbdbWTtXQv5ooHgAJ7UzCEAh7HvkD-7iqNIMtwO8Hj6-_kmEE8kYgEmQfH6c-J5OGFoGLeof-QfA8vV6JywDks4ZJPQDLeobXzK0rnFII8KOjYq-75-0gwlonkl3BoAnqVl1G7GX2kVYuuNPJcB2ckHH6vsLom8f2DNe_GPrVjUNsofk7d0oW22gPJ21zR8kKWoEWleL3cliFt2gF0AlbcT2SU0r_8HClZl9cRNku71Y-LQn6RZbcTxE2q9rdwwphRUmKL64_IfHLokixTUjUrz9aCM7ExZhjuDua_ZKK81QgnFM8kQdZDYgfirVZC48-4Qd-7TAABB5k55D_-rqdm1esq7cjZceovHPnkGRhvAExlF6SBjrYVw0wDi7w_2gQGDYbql9NgqpbROqP5BI1iA8flAB4W9ll6G81D2kkyAcRBs8FyUheSLhGNmL68N2Gv-DOjlNc1rSDBfFkXk3OIr84YpLsJ372yCiuavmqZmcNfOgOP9KBVa64u_z_mfIqYfiR6rFrNuoFV3vx9gkhNnM7FdbsrJDH8932wEgnvSOJxzMQ3PV1qvT7hZMV1TA687E_pxpxdNQfP4MG1Faxmm8kVJdWjqW8X13ucIrPijekHrvsY7nwY5uQRZ1OVRRnunWUOa3zVX-nKmRBPkXrlgLlT-DtaUAz6gN2BxpEyGTf6jpANMXeIQNl9_BUUR4TYo5eP6YKpKjThhQVab2mBaSe-crQqfy3mfRUEyPcxOhmxmyGOwKFoN77NZkEnsD7Wo1bfGaRVOEtPBQOUe34915W16danu_oKwhLmjII1C6eXcUtxog52plgyr74AlIFnod5LlbEtdRo_7eoSrHRulXDeCuncVDC4kVLDXCF_AWFWKlVoPrx73dMkUB3sSLKjJPbG30_I6pKpywgD9SOisCCZwishdSI-vTdF2dx3e8VempKG1H8zhEqTuNrZZhnTAhGXLe4UBHnipcWwTW-B8VXUPts9jpEy-L_wPG0iY9u3N-SI1mM6aGv1HG5IaBYmauTngJgSQ/https://www.amazon.in/stores/page/8D985336-D024-4D34-9AE0-1D0712F818ED/?_encoding=UTF8&store_ref=SB_A015477336UFEJNEGC824-A080708739KQAJ21CT22Y&pd_rd_plhdr=t&aaxitk=a6fcd1dac95fcbf43a986775ec36ad6d&hsa_cr_id=0&lp_slot=desktop-arbies&lp_page_asin=B00ID6PC60&aref=ljObGJCBr7&pd_rd_i=ad5&ref_=sbx_be_dp_arbies_mblsd_mb4_bkgd&pd_rd_w=c3der&content-id=amzn1.sym.7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_p=7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390
+                          - link "Football and Basketball Bags" [ref=e1332] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JLC5v8Y3XyLcrk3kH6XCJu0AAAGdyt1a_QoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICArV__7/clv1c_ek-wwwXWbdbWTtXQv5ooHgAJ7UzCEAh7HvkD-7iqNIMtwO8Hj6-_kmEE8kYgEmQfH6c-J5OGFoGLeof-QfA8vV6JywDks4ZJPQDLeobXzK0rnFII8KOjYq-75-0gwlonkl3BoAnqVl1G7GX2kVYuuNPJcB2ckHH6vsLom8f2DNe_GPrVjUNsofk7d0oW22gPJ21zR8kKWoEWleL3cliFt2gF0AlbcT2SU0r_8HClZl9cRNku71Y-LQn6RZbcTxE2q9rdwwphRUmKL64_IfHLokixTUjUrz9aCM7ExZhjuDua_ZKK81QgnFM8kQdZDYgfirVZC48-4Qd-7TAABB5k55D_-rqdm1esq7cjZceovHPnkGRhvAExlF6SBjrYVw0wDi7w_2gQGDYbql9NgqpbROqP5BI1iA8flAB4W9ll6G81D2kkyAcRBs8FyUheSLhGNmL68N2Gv-DOjlNc1rSDBfFkXk3OIr84YpLsJ372yCiuavmqZmcNfOgOP9KBVa64u_z_mfIqYfiR6rFrNuoFV3vx9gkhNnM7FdbsrJDH8932wEgnvSOJxzMQ3PV1qvT7hZMV1TA687E_pxpxdNQfP4MG1Faxmm8kVJdWjqW8X13ucIrPijekHrvsY7nwY5uQRZ1OVRRnunWUOa3zVX-nKmRBPkXrlgLlT-DtaUAz6gN2BxpEyGTf6jpANMXeIQNl9_BUUR4TYo5eP6YKpKjThhQVab2mBaSe-crQqfy3mfRUEyPcxOhmxmyGOwKFoN77NZkEnsD7Wo1bfGaRVOEtPBQOUe34915W16danu_oKwhLmjII1C6eXcUtxog52plgyr74AlIFnod5LlbEtdRo_7eoSrHRulXDeCuncVDC4kVLDXCF_AWFWKlVoPrx73dMkUB3sSLKjJPbG30_I6pKpywgD9SOisCCZwishdSI-vTdF2dx3e8VempKG1H8zhEqTuNrZZhnTAhGXLe4UBHnipcWwTW-B8VXUPts9jpEy-L_wPG0iY9u3N-SI1mM6aGv1HG5IaBYmauTngJgSQ/https://www.amazon.in/stores/page/8D985336-D024-4D34-9AE0-1D0712F818ED/?_encoding=UTF8&store_ref=SB_A015477336UFEJNEGC824-A080708739KQAJ21CT22Y&pd_rd_plhdr=t&aaxitk=a6fcd1dac95fcbf43a986775ec36ad6d&hsa_cr_id=0&lp_slot=desktop-arbies&lp_page_asin=B00ID6PC60&aref=ljObGJCBr7&pd_rd_i=ad5&ref_=sbx_be_dp_arbies_mblsd_mb4_hl&pd_rd_w=c3der&content-id=amzn1.sym.7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_p=7e7fd29d-32f9-46bd-a74b-f5f2ade509dd&pf_rd_r=EEG3Y7GRDDTTD9SPPPDH&pd_rd_wg=Zw46N&pd_rd_r=1c0aab26-ec5e-4ba5-95d8-a2cc3f98c390
+                            - generic [ref=e1334]:
+                              - generic [ref=e1335]: Football and Basketball Bags
+                              - generic [ref=e1336]: Football and Basketball Bags
+            - button "Go to the next sponsored brands carousel slide." [ref=e1339] [cursor=pointer]
+      - generic "Top reviews" [ref=e1342]:
+        - separator [ref=e1343]
+        - generic [ref=e1345]:
+          - generic [ref=e1346]:
+            - generic [ref=e1351]:
+              - heading "Customer reviews" [level=2] [ref=e1353]
+              - generic [ref=e1355]:
+                - generic [ref=e1357]:
+                  - generic [ref=e1360]: 4.3 out of 5 stars
+                  - generic [ref=e1363]: 4.3 out of 5
+                - generic [ref=e1364]: 139 global ratings
+              - list [ref=e1369]:
+                - listitem [ref=e1370]:
+                  - link "53 percent of reviews have 5 stars" [ref=e1373] [cursor=pointer]:
+                    - /url: /product-reviews/B00ID6PC60/ref=acr_dp_hist_5?ie=UTF8&filterByStar=five_star&reviewerType=all_reviews#reviews-filter-bar
+                    - generic [ref=e1374]: 5 star
+                    - progressbar [ref=e1376]
+                    - generic [ref=e1377]: 53%
+                - listitem [ref=e1378]:
+                  - link "36 percent of reviews have 4 stars" [ref=e1381] [cursor=pointer]:
+                    - /url: /product-reviews/B00ID6PC60/ref=acr_dp_hist_4?ie=UTF8&filterByStar=four_star&reviewerType=all_reviews#reviews-filter-bar
+                    - generic [ref=e1382]: 4 star
+                    - progressbar [ref=e1384]
+                    - generic [ref=e1385]: 36%
+                - listitem [ref=e1386]:
+                  - link "4 percent of reviews have 3 stars" [ref=e1389] [cursor=pointer]:
+                    - /url: /product-reviews/B00ID6PC60/ref=acr_dp_hist_3?ie=UTF8&filterByStar=three_star&reviewerType=all_reviews#reviews-filter-bar
+                    - generic [ref=e1390]: 3 star
+                    - progressbar [ref=e1392]
+                    - generic [ref=e1393]: 4%
+                - listitem [ref=e1394]:
+                  - link "2 percent of reviews have 2 stars" [ref=e1397] [cursor=pointer]:
+                    - /url: /product-reviews/B00ID6PC60/ref=acr_dp_hist_2?ie=UTF8&filterByStar=two_star&reviewerType=all_reviews#reviews-filter-bar
+                    - generic [ref=e1398]: 2 star
+                    - progressbar [ref=e1400]
+                    - generic [ref=e1401]: 2%
+                - listitem [ref=e1402]:
+                  - link "5 percent of reviews have 1 stars" [ref=e1405] [cursor=pointer]:
+                    - /url: /product-reviews/B00ID6PC60/ref=acr_dp_hist_1?ie=UTF8&filterByStar=one_star&reviewerType=all_reviews#reviews-filter-bar
+                    - generic [ref=e1406]: 1 star
+                    - progressbar [ref=e1408]
+                    - generic [ref=e1409]: 5%
+              - button "How are ratings calculated?" [ref=e1414] [cursor=pointer]: How are ratings calculated?
+            - separator [ref=e1416]
+            - separator [ref=e1417]
+            - generic [ref=e1419]:
+              - iframe [ref=e1420]:
+                - generic [ref=f10e4]:
+                  - link "TANSO FEZA 125 Graphite High-Performance Strung Squash Racquet with Premium Squash Racket Cover (125g, Teardrop Head Shape, Carbon Fiber Construction)" [ref=f10e5] [cursor=pointer]:
+                    - /url: https://aax-eu-zaz.amazon.in/x/c/RMyJMFcotYu1pWgbMwitISgAAAGdyt1a0goAAAH_AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICB8uxIN/clv1c_ek8OM3GX57OOBXc7_aNgPSjicvB1LjuzP6txdb8Pzh8EREEgbTeA_AXKmD6gwcHxvVxrp48mWOVTK3k6H9wvHqleJi9u-ff9YU__ic49GSaeTZUPsS8l-E9kj2T_9d8s0FSdr9SLIl-AiuVnI8j_69RXRH5HfwZukNf9LN_QCFQTOCpwvfoEHJFKAFfqMWQqD7UfdRbfiJqWvUGoEytgVwfFiQRXZy4SOysr_VHZ6_UtSnqY1n1ZtnoRc3GEOmqI9ooS8g86TuJl3IApBziApfcMsLU8E321XN92cDqfO02uTTLAkJvTucvfI1OOTsoP5qTQvLZlNuJs3UWBT5A7FWIV4i7SEjIdCLLCmntVU9Ujp0D3ZBaDW-Ysr1zcpZlkj920pOnRUsjIXC8jKpy2YuinbBmEplrqBOPUhhaFcjODU_4I1m3omXVyTBq8tdzck1FMRuYZA6lZGQ/https://www.amazon.in/sspa/click?ie=UTF8&spc=MTozMzcyMzI4MzIzMzE4MzQ1OjE3NzcyMjQ5OTc6c3BfY3JyX3NoYXJlZDozMDA3Mzc2MDE5NTk0MzI6Ojo6&url=%2Fdp%2FB0FLK5GVYH%2Fref%3Dsspa_dk_crr_aax_0%3Fpsc%3D1%26aref%3DOxiimiYvWZ%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9jcnJfc2hhcmVk&aref=OxiimiYvWZ&sp_cr=ZAZ
+                  - img "TANSO FEZA 125 Graphite High-Performance Strung Squash Racquet with Premium Squash Racket Cover (125g, Teardrop Head Shape, Carbon Fiber Construction)" [ref=f10e9]
+                  - generic [ref=f10e11]: TANSO FEZA 125 Graphite High-Performance Strung Squash Racquet with Premium Squash Racket Cover (125g, Teardrop Head Shape, Carbon Fiber Construction)
+                  - generic [ref=f10e12]:
+                    - generic [ref=f10e13]:
+                      - link "9" [ref=f10e15] [cursor=pointer]:
+                        - /url: https://aax-eu-zaz.amazon.in/x/c/RMyJMFcotYu1pWgbMwitISgAAAGdyt1a0goAAAH_AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICB8uxIN/clv1c_ek8OM3GX57OOBXc7_aNgPSjicvB1LjuzP6txdb8Pzh8EREEgbTeA_AXKmD6gwcHxvVxrp48mWOVTK3k6H9wvHqleJi9u-ff9YU__ic49GSaeTZUPsS8l-E9kj2T_9d8s0FSdr9SLIl-AiuVnI8j_69RXRH5HfwZukNf9LN_QCFQTOCpwvfoEHJFKAFfqMWQqD7UfdRbfiJqWvUGoEytgVwfFiQRXZy4SOysr_VHZ6_UtSnqY1n1ZtnoRc3GEOmqI9ooS8g86TuJl3IApBziApfcMsLU8E321XN92cDqfO02uTTLAkJvTucvfI1OOTsoP5qTQvLZlNuJs3UWBT5A7FWIV4i7SEjIdCLLCmntVU9Ujp0D3ZBaDW-Ysr1zcpZlkj920pOnRUsjIXC8jKpy2YuinbBmEplrqBOPUhhaFcjODU_4I1m3omXVyTBq8tdzck1FMRuYZA6lZGQ/https://www.amazon.in/sspa/click?ie=UTF8&spc=MTozMzcyMzI4MzIzMzE4MzQ1OjE3NzcyMjQ5OTc6c3BfY3JyX3NoYXJlZDozMDA3Mzc2MDE5NTk0MzI6Ojo6&url=%2Fdp%2FB0FLK5GVYH%2Fref%3Dsspa_dk_crr_aax_0%3Fpsc%3D1%26aref%3DOxiimiYvWZ%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9jcnJfc2hhcmVk&aref=OxiimiYvWZ&sp_cr=ZAZ#customerReviews
+                        - text: "9"
+                      - generic [ref=f10e17]: ₹2,999.00
+                    - link "Shop now" [ref=f10e21] [cursor=pointer]:
+                      - /url: https://aax-eu-zaz.amazon.in/x/c/RMyJMFcotYu1pWgbMwitISgAAAGdyt1a0goAAAH_AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICB8uxIN/clv1c_ek8OM3GX57OOBXc7_aNgPSjicvB1LjuzP6txdb8Pzh8EREEgbTeA_AXKmD6gwcHxvVxrp48mWOVTK3k6H9wvHqleJi9u-ff9YU__ic49GSaeTZUPsS8l-E9kj2T_9d8s0FSdr9SLIl-AiuVnI8j_69RXRH5HfwZukNf9LN_QCFQTOCpwvfoEHJFKAFfqMWQqD7UfdRbfiJqWvUGoEytgVwfFiQRXZy4SOysr_VHZ6_UtSnqY1n1ZtnoRc3GEOmqI9ooS8g86TuJl3IApBziApfcMsLU8E321XN92cDqfO02uTTLAkJvTucvfI1OOTsoP5qTQvLZlNuJs3UWBT5A7FWIV4i7SEjIdCLLCmntVU9Ujp0D3ZBaDW-Ysr1zcpZlkj920pOnRUsjIXC8jKpy2YuinbBmEplrqBOPUhhaFcjODU_4I1m3omXVyTBq8tdzck1FMRuYZA6lZGQ/https://www.amazon.in/sspa/click?ie=UTF8&spc=MTozMzcyMzI4MzIzMzE4MzQ1OjE3NzcyMjQ5OTc6c3BfY3JyX3NoYXJlZDozMDA3Mzc2MDE5NTk0MzI6Ojo6&url=%2Fdp%2FB0FLK5GVYH%2Fref%3Dsspa_dk_crr_aax_0%3Fpsc%3D1%26aref%3DOxiimiYvWZ%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9jcnJfc2hhcmVk&aref=OxiimiYvWZ&sp_cr=ZAZ
+              - button "Leave feedback on Sponsored advertisement" [ref=e1422] [cursor=pointer]:
+                - generic [ref=e1423]: Sponsored
+          - generic [ref=e1428]:
+            - generic [ref=e1432]:
+              - heading "Customers say" [level=3] [ref=e1433]
+              - generic [ref=e1435]: Customers find the squash racket to be good value for money and suitable for beginners. However, the quality receives mixed feedback, with some finding it decent while others report poor quality. Moreover, durability is a concern as strings break within days of use, and several customers note the racket is heavy.
+              - generic [ref=e1436]:
+                - generic [ref=e1437]:
+                  - generic [ref=e1438]: AI Generated from the text of customer reviews
+                  - img [ref=e1439]
+                  - generic [ref=e1440]: Generated from the text of customer reviews
+                - heading "Select to learn more" [level=4] [ref=e1441]
+                - tablist "Select to learn more" [ref=e1442]:
+                  - generic [ref=e1443]:
+                    - tab "Positive aspect, value for money, 11 mentions" [ref=e1447]:
+                      - button "Value for money(11)" [ref=e1448] [cursor=pointer]:
+                        - generic [ref=e1449]:
+                          - img [ref=e1450]
+                          - generic [ref=e1452]: Value for money(11)
+                    - tab "Positive aspect, suitability for beginners, 5 mentions" [ref=e1457]:
+                      - button "Suitability for beginners(5)" [ref=e1458] [cursor=pointer]:
+                        - generic [ref=e1459]:
+                          - img [ref=e1460]
+                          - generic [ref=e1462]: Suitability for beginners(5)
+                    - tab "Mixed aspect, quality, 23 mentions" [ref=e1467]:
+                      - button "Quality(23)" [ref=e1468] [cursor=pointer]:
+                        - generic [ref=e1469]:
+                          - img [ref=e1470]
+                          - generic [ref=e1472]: Quality(23)
+                    - tab "Mixed aspect, weight, 5 mentions" [ref=e1477]:
+                      - button "Weight(5)" [ref=e1478] [cursor=pointer]:
+                        - generic [ref=e1479]:
+                          - img [ref=e1480]
+                          - generic [ref=e1482]: Weight(5)
+                    - tab "Negative aspect, durability, 6 mentions" [ref=e1487]:
+                      - button "Durability(6)" [ref=e1488] [cursor=pointer]:
+                        - generic [ref=e1489]:
+                          - img [ref=e1490]
+                          - generic [ref=e1492]: Durability(6)
+            - generic [ref=e1496]:
+              - heading "Top reviews from India" [level=3] [ref=e1498]
+              - link "Translate all reviews to English" [ref=e1504] [cursor=pointer]:
+                - /url: "#customerReviews"
+              - list [ref=e1507]:
+                - listitem [ref=e1508]:
+                  - generic [ref=e1511]:
+                    - link "Titeeksha Godambe" [ref=e1513] [cursor=pointer]:
+                      - /url: /gp/profile/amzn1.account.AESYNDQ7RX7YD2U5WDXFK2YJF5YQ
+                      - img [ref=e1516]
+                      - generic [ref=e1517]: Titeeksha Godambe
+                    - heading "5.0 out of 5 stars Racquet quality" [level=5] [ref=e1519]:
+                      - link "5.0 out of 5 stars Racquet quality" [ref=e1520] [cursor=pointer]:
+                        - /url: /gp/customer-reviews/R3O32LLTF2Z470/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8
+                        - generic [ref=e1522]: 5.0 out of 5 stars
+                        - text: Racquet quality
+                    - heading "Reviewed in India on 28 March 2025" [level=6] [ref=e1523]
+                    - generic [ref=e1524]: Verified Purchase
+                    - generic [ref=e1529]: Its a good racquet for beginners. I read earlier its heavier but when played its not that heavy and loved it. It has decent power. Its a good product for the price it is offered(1599).
+                    - generic [ref=e1530]:
+                      - generic [ref=e1533] [cursor=pointer]:
+                        - button "Mark Review As Helpful" [ref=e1534]: Mark this review as helpful BUTTON
+                        - generic [ref=e1536]: Helpful
+                      - generic [ref=e1538]:
+                        - img [ref=e1539]
+                        - link "Report review by Titeeksha Godambe" [ref=e1541] [cursor=pointer]:
+                          - /url: /hz/reviews-render/report-review/ref=cm_cr_dp_d_report?csrfT=hD%2Bi90GrHLMHt36Yv4pfg9JG0I41uprWQ6OkRwcWaeUFAAAAAGnuTSUAAAAB&reviewId=R3O32LLTF2Z470
+                          - text: Report
+                - listitem [ref=e1542]:
+                  - generic [ref=e1545]:
+                    - link "devaraj" [ref=e1547] [cursor=pointer]:
+                      - /url: /gp/profile/amzn1.account.AECVJSHE3QIY4BTFY77NEOETDQSA
+                      - img [ref=e1550]
+                      - generic [ref=e1551]: devaraj
+                    - heading "4.0 out of 5 stars Good" [level=5] [ref=e1553]:
+                      - link "4.0 out of 5 stars Good" [ref=e1554] [cursor=pointer]:
+                        - /url: /gp/customer-reviews/R2O0961038NEY9/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8
+                        - generic [ref=e1556]: 4.0 out of 5 stars
+                        - text: Good
+                    - heading "Reviewed in India on 2 January 2026" [level=6] [ref=e1557]
+                    - generic [ref=e1558]: Verified Purchase
+                    - generic [ref=e1563]: Good for beginners
+                    - generic [ref=e1564]:
+                      - generic [ref=e1567] [cursor=pointer]:
+                        - button "Mark Review As Helpful" [ref=e1568]: Mark this review as helpful BUTTON
+                        - generic [ref=e1570]: Helpful
+                      - generic [ref=e1572]:
+                        - img [ref=e1573]
+                        - link "Report review by devaraj" [ref=e1575] [cursor=pointer]:
+                          - /url: /hz/reviews-render/report-review/ref=cm_cr_dp_d_report?csrfT=hGec21gukUUBKtBra3O0thH7PwR9uZWZVrTxAYqpdIAEAAAAAGnuTSUAAAAB&reviewId=R2O0961038NEY9
+                          - text: Report
+                - listitem [ref=e1576]:
+                  - generic [ref=e1579]:
+                    - link "Ankur Gupta" [ref=e1581] [cursor=pointer]:
+                      - /url: /gp/profile/amzn1.account.AEKW524ECD3GOTB6AB7GFMTUSR2A
+                      - img [ref=e1584]
+                      - generic [ref=e1585]: Ankur Gupta
+                    - heading "5.0 out of 5 stars Good product" [level=5] [ref=e1587]:
+                      - link "5.0 out of 5 stars Good product" [ref=e1588] [cursor=pointer]:
+                        - /url: /gp/customer-reviews/R26LCVWAWGFKCJ/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8
+                        - generic [ref=e1590]: 5.0 out of 5 stars
+                        - text: Good product
+                    - heading "Reviewed in India on 16 April 2023" [level=6] [ref=e1591]
+                    - generic [ref=e1592]: Verified Purchase
+                    - generic [ref=e1597]: Reasonable and quality product
+                    - generic [ref=e1598]:
+                      - generic [ref=e1599]:
+                        - generic [ref=e1600]: One person found this helpful
+                        - generic [ref=e1603] [cursor=pointer]:
+                          - button "Mark Review As Helpful" [ref=e1604]: Mark this review as helpful BUTTON
+                          - generic [ref=e1606]: Helpful
+                      - generic [ref=e1608]:
+                        - img [ref=e1609]
+                        - link "Report review by Ankur Gupta" [ref=e1611] [cursor=pointer]:
+                          - /url: /hz/reviews-render/report-review/ref=cm_cr_dp_d_report?csrfT=hJSJOLW5FB%2FEgBv3Cu8j2aCd3v0mwSLuACxofk33SSj%2FAAAAAGnuTSUAAAAB&reviewId=R26LCVWAWGFKCJ
+                          - text: Report
+                - listitem [ref=e1612]:
+                  - generic [ref=e1615]:
+                    - link "Pratik Mehta" [ref=e1617] [cursor=pointer]:
+                      - /url: /gp/profile/amzn1.account.AHK3EVNLQL3WIMKCND2NEA7MQIMA
+                      - img [ref=e1620]
+                      - generic [ref=e1621]: Pratik Mehta
+                    - heading "5.0 out of 5 stars A Good Racket For Beginners" [level=5] [ref=e1623]:
+                      - link "5.0 out of 5 stars A Good Racket For Beginners" [ref=e1624] [cursor=pointer]:
+                        - /url: /gp/customer-reviews/R6TWSEP4DFZ5W/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8
+                        - generic [ref=e1626]: 5.0 out of 5 stars
+                        - text: A Good Racket For Beginners
+                    - heading "Reviewed in India on 6 April 2016" [level=6] [ref=e1627]
+                    - generic [ref=e1628]: Verified Purchase
+                    - generic [ref=e1633]:
+                      - text: For Beginners its a Good racquet to start with it. I read earlier its heavier but when played its not that heavier and loved it. Same is the case with
+                      - text: NIVIA Attack-Ti Squash Racquet
+                    - generic [ref=e1634]:
+                      - generic [ref=e1635]:
+                        - generic [ref=e1636]: 2 people found this helpful
+                        - generic [ref=e1639] [cursor=pointer]:
+                          - button "Mark Review As Helpful" [ref=e1640]: Mark this review as helpful BUTTON
+                          - generic [ref=e1642]: Helpful
+                      - generic [ref=e1644]:
+                        - img [ref=e1645]
+                        - link "Report review by Pratik Mehta" [ref=e1647] [cursor=pointer]:
+                          - /url: /hz/reviews-render/report-review/ref=cm_cr_dp_d_report?csrfT=hAWlBJYde3%2Fqk8FEP1CDMgj4KYgvycsqrgyNOjhZKkJSAAAAAGnuTSUAAAAB&reviewId=R6TWSEP4DFZ5W
+                          - text: Report
+                - listitem [ref=e1648]:
+                  - generic [ref=e1651]:
+                    - link "Saurabh" [ref=e1653] [cursor=pointer]:
+                      - /url: /gp/profile/amzn1.account.AHWQV4MQQUFNLSEJT63CAGUPPP4Q
+                      - img [ref=e1656]
+                      - generic [ref=e1657]: Saurabh
+                    - heading "4.0 out of 5 stars value for money" [level=5] [ref=e1659]:
+                      - link "4.0 out of 5 stars value for money" [ref=e1660] [cursor=pointer]:
+                        - /url: /gp/customer-reviews/R3HVKK9VVLZGY8/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8
+                        - generic [ref=e1662]: 4.0 out of 5 stars
+                        - text: value for money
+                    - heading "Reviewed in India on 26 January 2026" [level=6] [ref=e1663]
+                    - generic [ref=e1664]: Verified Purchase
+                    - generic [ref=e1669]: Feeling great and enjoy playing squash with it. worth the price
+                    - generic [ref=e1670]:
+                      - generic [ref=e1673] [cursor=pointer]:
+                        - button "Mark Review As Helpful" [ref=e1674]: Mark this review as helpful BUTTON
+                        - generic [ref=e1676]: Helpful
+                      - generic [ref=e1678]:
+                        - img [ref=e1679]
+                        - link "Report review by Saurabh" [ref=e1681] [cursor=pointer]:
+                          - /url: /hz/reviews-render/report-review/ref=cm_cr_dp_d_report?csrfT=hJTXZzVbZNejKNzZaFRFyga5QFZpaq1OMh36ohrgRLUPAAAAAGnuTSUAAAAB&reviewId=R3HVKK9VVLZGY8
+                          - text: Report
+                - listitem [ref=e1682]:
+                  - generic [ref=e1685]:
+                    - link "VK SRIVASTAVA" [ref=e1687] [cursor=pointer]:
+                      - /url: /gp/profile/amzn1.account.AEIGWS4634RAQ7QHLA7RVBLH7VHQ
+                      - img [ref=e1690]
+                      - generic [ref=e1691]: VK SRIVASTAVA
+                    - heading "5.0 out of 5 stars Excellent product value for money" [level=5] [ref=e1693]:
+                      - link "5.0 out of 5 stars Excellent product value for money" [ref=e1694] [cursor=pointer]:
+                        - /url: /gp/customer-reviews/R363JO0K2PRN9Z/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8
+                        - generic [ref=e1696]: 5.0 out of 5 stars
+                        - text: Excellent product value for money
+                    - heading "Reviewed in India on 2 September 2021" [level=6] [ref=e1697]
+                    - generic [ref=e1698]: Verified Purchase
+                    - generic [ref=e1703]: It's a good product
+                    - generic [ref=e1704]:
+                      - generic [ref=e1707] [cursor=pointer]:
+                        - button "Mark Review As Helpful" [ref=e1708]: Mark this review as helpful BUTTON
+                        - generic [ref=e1710]: Helpful
+                      - generic [ref=e1712]:
+                        - img [ref=e1713]
+                        - link "Report review by VK SRIVASTAVA" [ref=e1715] [cursor=pointer]:
+                          - /url: /hz/reviews-render/report-review/ref=cm_cr_dp_d_report?csrfT=hPyK4E1BsciQOg6KmLK9uQPKqzIvZ8gInM0nBDBRzdDNAAAAAGnuTSUAAAAB&reviewId=R363JO0K2PRN9Z
+                          - text: Report
+                - listitem [ref=e1716]:
+                  - generic [ref=e1719]:
+                    - link "Amazon Customer" [ref=e1721] [cursor=pointer]:
+                      - /url: /gp/profile/amzn1.account.AF4OKDL5JI6VHBXWV7J6FNL5SUWA
+                      - img [ref=e1724]
+                      - generic [ref=e1725]: Amazon Customer
+                    - heading "5.0 out of 5 stars I loved it for the price offered as its extremely powerful ..." [level=5] [ref=e1727]:
+                      - link "5.0 out of 5 stars I loved it for the price offered as its extremely powerful ..." [ref=e1728] [cursor=pointer]:
+                        - /url: /gp/customer-reviews/R2PBP1G6ARARSM/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8
+                        - generic [ref=e1730]: 5.0 out of 5 stars
+                        - text: I loved it for the price offered as its extremely powerful ...
+                    - heading "Reviewed in India on 22 January 2017" [level=6] [ref=e1731]
+                    - generic [ref=e1732]: Verified Purchase
+                    - generic [ref=e1737]:
+                      - text: I loved it for the price offered as its extremely powerful and highly recommended for beginners..
+                      - text: The quality is Amazing...
+                    - generic [ref=e1738]:
+                      - generic [ref=e1741] [cursor=pointer]:
+                        - button "Mark Review As Helpful" [ref=e1742]: Mark this review as helpful BUTTON
+                        - generic [ref=e1744]: Helpful
+                      - generic [ref=e1746]:
+                        - img [ref=e1747]
+                        - link "Report review by Amazon Customer" [ref=e1749] [cursor=pointer]:
+                          - /url: /hz/reviews-render/report-review/ref=cm_cr_dp_d_report?csrfT=hEJq6yCdkcgA4EwRxwcJsCwLghm2yRL4NrbJWyNuRmTmAAAAAGnuTSUAAAAB&reviewId=R2PBP1G6ARARSM
+                          - text: Report
+                - listitem [ref=e1750]:
+                  - generic [ref=e1753]:
+                    - link "Amazon Customer" [ref=e1755] [cursor=pointer]:
+                      - /url: /gp/profile/amzn1.account.AESET6GRKPK3GBIGXWFHT5XE6VBA
+                      - img [ref=e1758]
+                      - generic [ref=e1759]: Amazon Customer
+                    - heading "1.0 out of 5 stars VERY BAD SERVICE" [level=5] [ref=e1761]:
+                      - link "1.0 out of 5 stars VERY BAD SERVICE" [ref=e1762] [cursor=pointer]:
+                        - /url: /gp/customer-reviews/R2RDREY7ZNK0GL/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8
+                        - generic [ref=e1764]: 1.0 out of 5 stars
+                        - text: VERY BAD SERVICE
+                    - heading "Reviewed in India on 26 November 2025" [level=6] [ref=e1765]
+                    - generic [ref=e1766]: Verified Purchase
+                    - generic [ref=e1771]:
+                      - text: Amazon’s service is really bad. The prepaid product I ordered shows as delivered on 15 November, but I still 26 /11/26 haven’t received it. When I called Amazon, they gave no response and took no responsibility. Because of that, I suggest avoiding purchases from Amazon.
+                      - text: no refund no product
+                      - text: अमेझॉन ची सर्विस खूप खराब आहे मी घेतलेला प्रोडक्ट 15 नोव्हेंबरला डिलिव्हर झाला असे दाखवत आहे परंतु आजपर्यंत मला मला माझा प्रॉडक्ट मिळालेला नाही तसेच अमेझॉन ला कॉल केले असता ते कोणताही रिस्पॉन्स देत नाही व कोणतीही जबाबदारी घेत नाही त्यामुळे अमेझॉन वरून प्रॉडक्ट खरेदी करणे टाळा
+                    - generic [ref=e1772]:
+                      - generic [ref=e1775] [cursor=pointer]:
+                        - button "Mark Review As Helpful" [ref=e1776]: Mark this review as helpful BUTTON
+                        - generic [ref=e1778]: Helpful
+                      - generic [ref=e1780]:
+                        - img [ref=e1781]
+                        - link "Report review by Amazon Customer" [ref=e1783] [cursor=pointer]:
+                          - /url: /hz/reviews-render/report-review/ref=cm_cr_dp_d_report?csrfT=hAZVz1p%2B65rq9waUbc0H2T%2FRk6nmmfX%2F4V7zt2k3%2B43CAAAAAGnuTSUAAAAB&reviewId=R2RDREY7ZNK0GL
+                          - text: Report
+                      - link "Translate review to English" [ref=e1786] [cursor=pointer]:
+                        - /url: "#customerReviews"
+              - generic [ref=e1788]:
+                - separator [ref=e1789]
+                - link "See more reviews" [ref=e1790] [cursor=pointer]:
+                  - /url: /product-reviews/B00ID6PC60/ref=cm_cr_dp_d_show_all_btm?ie=UTF8
+  - complementary "Your recently viewed items and featured recommendations"
+  - generic [ref=e1795]:
+    - list [ref=e1797]:
+      - link "Have an idea to help us improve?Send feedback›" [ref=e1798] [cursor=pointer]:
+        - /url: /b2b/feedback/?ref_=abn_bfooter_wf
+        - listitem [ref=e1799]: Have an idea to help us improve?
+        - listitem [ref=e1800]: Send feedback
+        - listitem [ref=e1801]: ›
+    - generic [ref=e1802]:
+      - generic [ref=e1803]:
+        - generic [ref=e1804]: Get to Know Us
+        - list [ref=e1805]:
+          - listitem [ref=e1806]:
+            - link "About Us" [ref=e1807] [cursor=pointer]:
+              - /url: http://www.amazon.in/b/ref=in_ab_ft_gk_au?ie=UTF8&node=1592138031
+          - listitem [ref=e1808]:
+            - link "Careers" [ref=e1809] [cursor=pointer]:
+              - /url: http://www.amazon.jobs
+          - listitem [ref=e1810]:
+            - link "Press Releases" [ref=e1811] [cursor=pointer]:
+              - /url: https://www.amazon.in/b/ref=in_ab_ft_gk_pr?ie=UTF8&node=1592137031
+          - listitem [ref=e1812]:
+            - link "Amazon Cares" [ref=e1813] [cursor=pointer]:
+              - /url: https://www.amazon.in/b/ref=in_ab_ft_gk_ac?ie=UTF8&node=8872558031
+          - listitem [ref=e1814]:
+            - link "Gift a Smile" [ref=e1815] [cursor=pointer]:
+              - /url: https://www.amazon.in/Online-Charity/b/ref=in_ab_ft_gk_gs?ie=UTF8&node=4594605031
+      - generic [ref=e1817]:
+        - generic [ref=e1818]: Let Us Help You
+        - list [ref=e1819]:
+          - listitem [ref=e1820]:
+            - link "Customer Service" [ref=e1821] [cursor=pointer]:
+              - /url: /gp/help/customer/display.html/?ref_=abn_in_ab_ft_ww_he_cs
+          - listitem [ref=e1822]:
+            - link "Shipping Rates & Policies" [ref=e1823] [cursor=pointer]:
+              - /url: http://www.amazon.in/gp/help/customer/display.html/ref=in_ab_ft_ww_sr?ie=UTF8&nodeId=201910060
+          - listitem [ref=e1824]:
+            - link "Business FAQ" [ref=e1825] [cursor=pointer]:
+              - /url: http://www.amazon.in/gp/help/customer/display.html/ref=in_ab_ft_ww_bf?ie=UTF8&nodeId=202117460
+      - generic [ref=e1827]:
+        - generic [ref=e1828]: Work with Amazon
+        - list [ref=e1829]:
+          - listitem [ref=e1830]:
+            - link "Sell" [ref=e1831] [cursor=pointer]:
+              - /url: https://services.amazon.in/landing/amazon-business.html/ref=in_ab_ft_he_se
+          - listitem [ref=e1832]:
+            - link "Fulfillment By Amazon" [ref=e1833] [cursor=pointer]:
+              - /url: http://services.amazon.in/services/fulfilment-by-amazon/benefits.html/ref=in_ab_ft_he_fu?ld=AWRGINFBAfooter
+          - listitem [ref=e1834]:
+            - link "Advertise on Amazon" [ref=e1835] [cursor=pointer]:
+              - /url: https://advertising.amazon.in/?ref=in_ab_ft_he_aa
+          - listitem [ref=e1836]:
+            - link "Become an Affilate" [ref=e1837] [cursor=pointer]:
+              - /url: https://affiliate-program.amazon.in/ref=in_ab_ft_he_af?utm_campaign=assocshowcase&utm_medium=footer&utm_source=GW
+      - generic [ref=e1839]:
+        - generic [ref=e1840]: Business Solutions
+        - list [ref=e1841]:
+          - listitem [ref=e1842]:
+            - link "Prime for business account" [ref=e1843] [cursor=pointer]:
+              - /url: /amazonprime?ref_=abn_b2b_footer_abin_prime_IN
+      - generic [ref=e1845]:
+        - generic [ref=e1846]: Business Settings
+        - list [ref=e1847]:
+          - listitem [ref=e1848]:
+            - link "Add Users" [ref=e1849] [cursor=pointer]:
+              - /url: /bb/account/route/add-people?ref_=abn_footer_add_people
+          - listitem [ref=e1850]:
+            - link "Buying Policies & Approvals" [ref=e1851] [cursor=pointer]:
+              - /url: /ab/ccp-portal/policies/list/group?ref_=abn_footer_buying_policies
+          - listitem [ref=e1852]:
+            - link "Manage your Budgets (Blanket PO)" [ref=e1853] [cursor=pointer]:
+              - /url: /bb/account/budgets/?ref_=abn_b2b_footer_budget_management
+          - listitem [ref=e1854]:
+            - link "Billing and Shipping" [ref=e1855] [cursor=pointer]:
+              - /url: /bb/account/route/billing-shipping?ref_=abn_footer_billing_shipping
+          - listitem [ref=e1856]:
+            - link "Manage Your GST" [ref=e1857] [cursor=pointer]:
+              - /url: /ab/tax/vat/redirect/manage?ref_=abn_footer_manage_gst
+      - generic [ref=e1859]:
+        - generic [ref=e1860]: Buy for your business
+        - list [ref=e1861]:
+          - listitem [ref=e1862]:
+            - link "Today's Deals" [ref=e1863] [cursor=pointer]:
+              - /url: /gp/goldbox?ref_=abn_footer_todays_deals
+          - listitem [ref=e1864]:
+            - link "Buy Again" [ref=e1865] [cursor=pointer]:
+              - /url: /gp/buyagain?ref_=abn_footer_buy_again
+          - listitem [ref=e1866]:
+            - link "PPE for Work" [ref=e1867] [cursor=pointer]:
+              - /url: /gp/browse.html?node=8452598031&ref_=abn_footer_ppe_for_work
+    - generic [ref=e1868]:
+      - generic [ref=e1869]:
+        - img "amazon.in" [ref=e1871]
+        - generic [ref=e1872]:
+          - generic [ref=e1873]: Scan the QR code to download the new Amazon Business app
+          - generic [ref=e1874]:
+            - link "amazon.in" [ref=e1875] [cursor=pointer]:
+              - /url: https://www.amazon.in/r?ref_=abn_footer_app_playstore_logo&dest=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Din.amazon.mShop.android.business.shopping%26referrer%3Dutm_source%253Damazon_business%2526utm_campaign%253Dnav_desktop_footer&aid=TzD3GcAlT4qL6XDsTv6zAA
+              - img "amazon.in" [ref=e1876]
+            - link "Download on the app store" [ref=e1877] [cursor=pointer]:
+              - /url: https://www.amazon.in/r?ref_=abn_footer_app_appstore_logo&dest=https%3A%2F%2Fapps.apple.com%2Fin%2Fapp%2Famazon-business-india%2Fid1579372261%3Fct%3Dnav_desktop_footer%26mt%3D8%26pt%3Damazon_business&aid=IVzQ5ia2QUaLP8SySQhvKg
+              - img "Download on the app store" [ref=e1878]
+      - generic [ref=e1879]:
+        - link "amazon.in" [ref=e1881] [cursor=pointer]:
+          - /url: /?ref_=abn_bfooter_logo
+          - img "amazon.in" [ref=e1882]
+        - generic [ref=e1884]:
+          - link "English" [ref=e1885] [cursor=pointer]:
+            - /url: /customer-preferences/edit?ref_=abn_footer_lang&preferencesReturnUrl=%2F
+            - generic [ref=e1887]: English
+          - link "India" [ref=e1889] [cursor=pointer]:
+            - /url: /customer-preferences/country?ref_=abn_footer_icp_cp&preferencesReturnUrl=%2F
+            - generic [ref=e1891]: India
+    - table [ref=e1893]:
+      - rowgroup [ref=e1894]:
+        - row "Amazon Web Services Scalable Cloud Computing Services Audible Download Audio Books Amazon Marketing Services Self-service Advertising Solutions Amazon Payments Login and Pay with Amazon" [ref=e1895]:
+          - cell [ref=e1896]
+          - cell "Amazon Web Services Scalable Cloud Computing Services" [ref=e1897]:
+            - link "Amazon Web Services Scalable Cloud Computing Services" [ref=e1898] [cursor=pointer]:
+              - /url: http://aws.amazon.com/what-is-cloud-computing?sc_channel=EL&sc_campaign=IN_amazonfooter
+              - text: Amazon Web Services
+              - generic [ref=e1899]:
+                - text: Scalable Cloud
+                - text: Computing Services
+          - cell [ref=e1900]
+          - cell "Audible Download Audio Books" [ref=e1901]:
+            - link "Audible Download Audio Books" [ref=e1902] [cursor=pointer]:
+              - /url: http://www.audible.com/ref=in_ab_ft_af_au
+              - text: Audible
+              - generic [ref=e1903]:
+                - text: Download
+                - text: Audio Books
+          - cell [ref=e1904]
+          - cell "Amazon Marketing Services Self-service Advertising Solutions" [ref=e1905]:
+            - link "Amazon Marketing Services Self-service Advertising Solutions" [ref=e1906] [cursor=pointer]:
+              - /url: https://ams.amazon.in/ref=in_ab_ft_af_ams
+              - text: Amazon Marketing Services
+              - generic [ref=e1907]:
+                - text: Self-service
+                - text: Advertising Solutions
+          - cell [ref=e1908]
+          - cell "Amazon Payments Login and Pay with Amazon" [ref=e1909]:
+            - link "Amazon Payments Login and Pay with Amazon" [ref=e1910] [cursor=pointer]:
+              - /url: https://www.amazonpay.in
+              - text: Amazon Payments
+              - generic [ref=e1911]:
+                - text: Login and Pay
+                - text: with Amazon
+          - cell [ref=e1912]
+    - generic [ref=e1913]:
+      - list [ref=e1914]:
+        - listitem [ref=e1915]:
+          - link "Conditions of Use" [ref=e1916] [cursor=pointer]:
+            - /url: http://www.amazon.in/gp/help/customer/display.html/ref=in_ab_ft_cr_co?ie=UTF8&nodeId=202117720
+        - listitem [ref=e1917]:
+          - link "Privacy Notice" [ref=e1918] [cursor=pointer]:
+            - /url: http://www.amazon.in/gp/help/customer/display.html/ref=in_ab_ft_cr_pn?ie=UTF8&nodeId=202117760
+        - listitem [ref=e1919]:
+          - link "Interest-Based Ads" [ref=e1920] [cursor=pointer]:
+            - /url: http://www.amazon.in/b/ref=in_ab_ft_cr_ad?ie=UTF8&node=6691071031
+      - generic [ref=e1921]: © 1996-2026, Amazon.com, Inc. or its affiliates

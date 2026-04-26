@@ -10,6 +10,7 @@ const review: ReviewData = {
     slug: 'best-squash-rackets-under-3000-india',
   },
   intro: [
+    'The best squash racket under ₹3,000 in India is the HEAD Nano Ti Graphite Spector 2.0 (₹2,630), which scored 9.3/10 in our evaluation. It is the only full graphite option in this price range, weighing just 195g with a 4.4-star rating across 981 Amazon reviews — the most reviewed squash racket on the platform. For a budget alternative, the HEAD Spark Elite at ₹1,770 (rated 8.8) is the bestselling squash racket on Amazon India.',
     'Squash is quietly growing across Indian metros — new courts are popping up in gyms and sports complexes, and more players are picking up rackets for the first time. But finding a decent squash racket under ₹3,000 on Amazon India is trickier than it looks. The listings are cluttered with aluminium frames masquerading as premium options, and specs that don\'t always match reality.',
     'We sifted through 11 squash rackets available under ₹3,000 on Amazon.in, cross-referencing specs, user reviews, and actual pricing. Five made the cut — ranging from a ₹1,770 bestseller to the only true graphite option in this segment.',
   ],
@@ -36,7 +37,7 @@ const review: ReviewData = {
       price: '₹2,630',
       buyUrl: 'https://www.amazon.in/dp/B00CSN7D2A?tag=mysweetspot-21',
       badge: 'Top Pick',
-      specs: { material: 'Graphite', weight: '195g', balance: 'Head Light', headSize: '485 cm²' },
+      specs: { material: 'Graphite', weight: '195g', balance: 'Head Light', level: 'Intermediate' },
     },
     {
       name: 'HEAD Aluminum Nano Titanium Spector Squash Racquet',
@@ -44,7 +45,7 @@ const review: ReviewData = {
       price: '₹2,539',
       buyUrl: 'https://www.amazon.in/dp/B081B389G5?tag=mysweetspot-21',
       badge: 'Best for Beginners',
-      specs: { material: 'Aluminium', weight: '215g', balance: 'Head Light', headSize: '485 cm²' },
+      specs: { material: 'Aluminium', weight: '215g', balance: 'Head Light', level: 'Beginner' },
     },
     {
       name: 'Cosco Power Aluminum 175 Squash Racquet',
@@ -52,7 +53,7 @@ const review: ReviewData = {
       price: '₹1,889',
       buyUrl: 'https://www.amazon.in/dp/B00ID6PC60?tag=mysweetspot-21',
       badge: 'Best Budget',
-      specs: { material: 'Aluminium', weight: '~225g', balance: 'Even' },
+      specs: { material: 'Aluminium', weight: '~225g', balance: 'Even', level: 'Intermediate' },
     },
     {
       name: 'Cosco LST 125 Aluminium Squash Racquet',
@@ -60,7 +61,7 @@ const review: ReviewData = {
       price: '₹1,770',
       buyUrl: 'https://www.amazon.in/dp/B009BKF08W?tag=mysweetspot-21',
       badge: 'Best Value',
-      specs: { material: 'Aluminium', weight: '360g', balance: '320–335mm' },
+      specs: { material: 'Aluminium', weight: '360g', balance: '320–335mm', level: 'Beginner' },
     },
     {
       name: 'TANSO FEZA 125 Graphite Squash Racquet',
@@ -68,7 +69,7 @@ const review: ReviewData = {
       price: '₹2,999',
       buyUrl: 'https://www.amazon.in/dp/B0FLK5GVYH?tag=mysweetspot-21',
       badge: 'Lightest Option',
-      specs: { material: 'Carbon Fiber', weight: '125g (claimed)', balance: 'Head Heavy', headSize: '470 cm²' },
+      specs: { material: 'Carbon Fiber', weight: '125g (claimed)', balance: 'Head Heavy', level: 'Advanced' },
     },
   ],
   ratingCriteria: {
@@ -327,14 +328,14 @@ const review: ReviewData = {
     { title: 'When to Upgrade from a Budget Racket', body: 'Budget rackets under ₹3,000 are ideal for learning the basics — grip, swing technique, movement. Once you\'re playing regularly (3+ times/week) and can consistently hit the ball to the back wall, it\'s time to upgrade to a ₹5,000-10,000 range racket from brands like Dunlop, Prince, or higher-end HEAD models. The step up in string quality, frame stiffness, and weight distribution will noticeably improve your game.' },
   ],
   faq: [
-    { q: 'Which is the best squash racket for beginners under ₹3,000?', a: 'The HEAD Nano Ti Graphite Spector 2.0 (₹2,630) is the best option. It offers a full graphite frame at 195g, making it light enough for extended play while providing good power transfer. If budget is tight, the Cosco LST 125 at ₹1,770 is the cheapest viable option.' },
-    { q: 'Is graphite better than aluminium for a squash racket?', a: 'Yes. Graphite is lighter, absorbs vibrations better, and provides superior power transfer compared to aluminium. At this price point, the HEAD Spector 2.0 (graphite, ₹2,630) outperforms the aluminium Spector (₹2,539) in every performance metric for just ₹91 more.' },
-    { q: 'Why does the grip come off so quickly on budget squash rackets?', a: 'Budget rackets use low-quality factory grips to keep costs down. This is a universal issue — not limited to any one brand. The solution is to buy a replacement overgrip (₹150-300) like Yonex Super Grap and apply it immediately.' },
-    { q: 'How long do the strings last on a budget squash racket?', a: 'With regular play (2-3 times/week), expect factory strings to last 2-5 months. String breakage is the #1 complaint across all budget rackets. Re-stringing costs ₹300-500 at a local sports shop.' },
-    { q: 'Is the TANSO FEZA 125 worth buying at ₹2,999?', a: 'It\'s risky. With only 9 reviews and one report of breakage on day one, there\'s insufficient data to recommend it confidently. The carbon fiber construction and 125g weight claim are appealing, but the HEAD Spector 2.0 at ₹2,630 is a safer choice with 981 reviews backing it.' },
-    { q: 'Should I buy a strung or unstrung squash racket?', a: 'For beginners, always buy strung. Unstrung rackets require professional stringing (₹300-500 extra) and string selection knowledge. All five recommended rackets in this guide come pre-strung.' },
-    { q: 'Can I use a squash racket for racquetball?', a: 'No. While they look similar, squash rackets have a longer, narrower head and are designed for a smaller, bouncier ball. Racquetball rackets are shorter with wider faces. Using the wrong racket damages both the racket and your gameplay.' },
-    { q: 'Is the Cosco LST 125 too heavy at 360g?', a: 'For casual, occasional play it\'s fine. But for regular sessions (30+ minutes, 2+ times/week), the weight will cause noticeable arm fatigue. If you can stretch your budget to ₹2,630, the HEAD Spector 2.0 at 195g is nearly half the weight and significantly easier on your arm.' },
+    { q: 'Which is the best squash racket for beginners under ₹3,000?', a: 'The HEAD Nano Ti Graphite Spector 2.0 (₹2,630) is the best squash racket for beginners under ₹3,000. It is the only full graphite option in this price range, weighing just 195g with a head-light balance that makes it easy to swing during extended rallies. Its 485 cm² head size provides a forgiving sweet spot for off-center hits, which is critical when you are still developing your technique. The racket carries a 4.4/5 rating across 981 Amazon reviews — the highest review count of any squash racket on the platform — giving you strong buying confidence. Nano Titanium technology in the frame adds flexibility and durability. If your budget is truly tight, the Cosco LST 125 at ₹1,770 is the cheapest viable option, though at 360g it is nearly double the weight and will cause arm fatigue in longer sessions.' },
+    { q: 'Is graphite better than aluminium for a squash racket?', a: 'Yes, graphite is significantly better than aluminium for squash rackets. Graphite frames are lighter — the HEAD Nano Ti Graphite Spector 2.0 weighs just 195g compared to 215g for its aluminium counterpart — which translates to faster swing speeds and less arm fatigue during long sessions. Graphite also absorbs vibrations more effectively, reducing the jarring impact you feel on each shot, and delivers superior power transfer so your shots reach the back wall with less effort. At this price point, the graphite HEAD Spector 2.0 at ₹2,630 outperforms the aluminium HEAD Spector at ₹2,539 in every performance metric for just ₹91 more, making it an obvious upgrade. The only advantage aluminium has is raw durability against wall impacts — aluminium frames dent rather than crack. But for overall playability, control, and comfort, graphite is the clear winner in the under ₹3,000 segment.' },
+    { q: 'Why does the grip come off so quickly on budget squash rackets?', a: 'Budget squash rackets under ₹3,000 universally use low-quality factory grips to keep manufacturing costs down, and this is the single most common complaint across all brands including HEAD, Cosco, and TANSO. The factory adhesive weakens quickly with sweat and regular use, causing the grip to peel off within days to weeks. This happens on the HEAD Nano Ti Graphite Spector 2.0 (₹2,630), the Cosco Power 175 (₹1,889), and the Cosco LST 125 (₹1,770) alike. The solution is straightforward: budget an additional ₹150–300 for a replacement overgrip such as the Yonex Super Grap or Karakal PU Super Grip and apply it immediately upon purchase. Some players apply the overgrip even before their first session on court. This is not optional — it is a known, expected maintenance step for every budget squash racket sold on Amazon India.' },
+    { q: 'How long do the strings last on a budget squash racket?', a: 'With regular play of two to three sessions per week, factory strings on budget squash rackets under ₹3,000 typically last between two and five months. String breakage is the number one complaint across all budget rackets in this segment, including the HEAD Nano Ti Graphite Spector 2.0 (₹2,630), the Cosco Power 175 (₹1,889), and the Cosco LST 125 (₹1,770). The factory strings are basic synthetic gut designed to a standard tension for general play — they are not built for aggressive hitting or high-frequency use. Re-stringing at a local sports shop costs ₹300–500 depending on your city and the string type you choose. For better durability, consider upgrading to multifilament strings like Tecnifibre 305 or Ashaway SuperNick when you re-string. Players who hit hard or play daily should expect to re-string more frequently, roughly every six to eight weeks.' },
+    { q: 'Is the TANSO FEZA 125 worth buying at ₹2,999?', a: 'The TANSO FEZA 125 at ₹2,999 is a risky purchase that we cannot confidently recommend at this time. While its carbon fiber construction and claimed 125g weight are appealing on paper — making it potentially the lightest and most premium-material racket in the under ₹3,000 segment — the product has only 9 reviews on Amazon India with a 3.8/5 rating, which is the lowest among all five rackets we evaluated. One reviewer reported the racket breaking on the very first day of use, and there is a significant weight discrepancy in the listing showing both 125g and 440g. TANSO is an unknown brand with no established track record in squash equipment. By comparison, the HEAD Nano Ti Graphite Spector 2.0 at ₹2,630 costs ₹369 less, has 981 verified reviews, a 4.4/5 rating, and a proven graphite frame. The HEAD is the safer and better-value choice until TANSO builds more real-world credibility.' },
+    { q: 'Should I buy a strung or unstrung squash racket?', a: 'For beginners buying a squash racket under ₹3,000, always choose a pre-strung option. Unstrung rackets require professional stringing that costs an additional ₹300–500, plus you need to know which string type and tension to select — knowledge that most new players simply do not have yet. All five rackets recommended in this guide come pre-strung and ready to play out of the box: the HEAD Nano Ti Graphite Spector 2.0 (₹2,630), the HEAD Aluminium Spector (₹2,539), the Cosco Power 175 (₹1,889), the Cosco LST 125 (₹1,770), and the TANSO FEZA 125 (₹2,999). The factory strings are perfectly adequate for learning the basics and developing your swing technique over the first few months. Once you are playing regularly and breaking strings every two to five months, you can then explore aftermarket strings like Tecnifibre 305 or Ashaway SuperNick for improved durability and performance.' },
+    { q: 'Can I use a squash racket for racquetball?', a: 'No, you should not use a squash racket for racquetball. While the two sports look similar, the equipment differs significantly in design and purpose. Squash rackets like the HEAD Nano Ti Graphite Spector 2.0 have a longer, narrower head shape (485 cm² head size) optimized for a smaller, harder ball in a confined court. Racquetball rackets are shorter — typically around 22 inches compared to 27 inches for squash — with wider, rounder faces designed for a larger, bouncier ball. The string patterns also differ: squash rackets use denser patterns like 14/19 for control, while racquetball rackets use open patterns for power. Using a squash racket for racquetball risks frame damage from the heavier ball impact and ruins your gameplay because the racket geometry does not match the sport. Similarly, using a racquetball racket for squash would provide poor control and excessive power. Always use sport-specific equipment for the best experience.' },
+    { q: 'Is the Cosco LST 125 too heavy at 360g?', a: 'The Cosco LST 125 at 360g is significantly heavier than every other squash racket in the under ₹3,000 segment, and for regular players this weight is a genuine concern. For casual play once a week in sessions under 30 minutes, the extra weight is manageable and the sturdy aluminium frame can actually provide stability on basic shots. However, if you play two or more times per week in sessions lasting 30 minutes or longer, the 360g weight will cause noticeable arm and shoulder fatigue that affects your shot quality as the session progresses. By comparison, the HEAD Nano Ti Graphite Spector 2.0 weighs just 195g — nearly half the weight — and costs ₹2,630 versus ₹1,770 for the Cosco. That ₹860 difference buys you a racket that is dramatically easier on your arm, offers better power transfer through its graphite frame, and carries 981 verified reviews with a 4.4/5 rating.' },
   ],
 };
 

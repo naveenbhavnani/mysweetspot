@@ -46,7 +46,15 @@ const tocItems = [
   <section id="comparison-table" class="scroll-mt-24">
     <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-2">Quick Comparison</h2>
     <p class="text-sm text-slate-500 mb-4">Click any name to jump to its full review.</p>
-    <ComparisonTable products={review.comparisonProducts} />
+    <ComparisonTable
+      products={review.comparisonProducts}
+      columns={[
+        { key: "material", label: "Material" },
+        { key: "weight", label: "Weight" },
+        { key: "balance", label: "Balance" },
+        { key: "level", label: "Skill Level" },
+      ]}
+    />
   </section>
 
   <RatingMethodology {...review.ratingCriteria} />

@@ -27,7 +27,7 @@ export interface RatingCriterion {
   label: string;
   weight: number;
   description: string;
-  icon?: string;
+  icon?: "speed" | "control" | "power" | "durability" | "value" | "spin" | "comfort" | "defense" | "attack" | "maneuverability" | "weight" | "portability" | "ratings";
 }
 
 export interface ProductDetail {

@@ -10,6 +10,7 @@ const review: ReviewData = {
     slug: 'best-squash-rackets-under-10000-india',
   },
   intro: [
+    'The best squash racket under ₹10,000 in India is the Tecnifibre Carboflex 125-S (₹9,759), which scored 9.1/10 in our evaluation. Its premium Carboflex blend composite frame delivers exceptional power transfer with zero vibrations on impact, making it the top choice for serious Indian club players. For the best value under ₹5,000, the HEAD Graphene 360+ Speed 135 at ₹4,499 (rated 8.5) offers Graphene technology at a mid-range price.',
     'Squash is a demanding sport, and in India\'s growing club scene, the right racket makes all the difference between winning that crucial point and watching the tin. The ₹5,000-10,000 range is where things get interesting — you\'re past beginner aluminium frames and into proper graphite and composite construction with real technologies behind them.',
     'We evaluated 15 squash rackets available on Amazon India in this price bracket, scoring them across build quality, playability, weight balance, value, and real user feedback. Here are the five that earned their spot.',
   ],
@@ -36,7 +37,7 @@ const review: ReviewData = {
       price: '₹9,759',
       buyUrl: 'https://www.amazon.in/dp/B013P2SKJC?tag=mysweetspot-21',
       badge: 'Top Pick',
-      specs: { material: 'Blend Composite', weight: '~125g' },
+      specs: { material: 'Blend Composite', weight: '~125g', level: 'Advanced', gripSize: 'G2' },
     },
     {
       name: 'HEAD Microgel Blast Graphite Squash Racquet',
@@ -44,7 +45,7 @@ const review: ReviewData = {
       price: '₹6,578',
       buyUrl: 'https://www.amazon.in/dp/B073Q226CY?tag=mysweetspot-21',
       badge: 'Best Value',
-      specs: { material: 'Graphite', weight: '150g', headSize: '500 sq.cm', balance: 'Head Heavy', stringPattern: '12/17' },
+      specs: { material: 'Graphite', weight: '150g', level: 'Beginner', gripSize: '3 3/4"' },
     },
     {
       name: 'HEAD G. 110 Squash Racquet',
@@ -52,7 +53,7 @@ const review: ReviewData = {
       price: '₹9,860',
       buyUrl: 'https://www.amazon.in/dp/B0B149QKTL?tag=mysweetspot-21',
       badge: 'Best Lightweight',
-      specs: { material: 'Graphite', weight: '110g', headSize: '495 sq.cm', balance: 'Head Heavy', stringPattern: '12/17' },
+      specs: { material: 'Graphite', weight: '110g', level: 'Intermediate', gripSize: '3 7/8"' },
     },
     {
       name: 'HEAD Extreme 120 Squash Racquet',
@@ -60,7 +61,7 @@ const review: ReviewData = {
       price: '₹9,289',
       buyUrl: 'https://www.amazon.in/dp/B0CF81PK6G?tag=mysweetspot-21',
       badge: 'Runner Up',
-      specs: { material: 'Graphite', weight: '120g' },
+      specs: { material: 'Graphite', weight: '120g', level: 'Intermediate', gripSize: '3 7/8"' },
     },
     {
       name: 'HEAD Cyber Tour Squash Racquet (Orange/Blue)',
@@ -68,7 +69,7 @@ const review: ReviewData = {
       price: '₹5,355',
       buyUrl: 'https://www.amazon.in/dp/B0DQKLMPFZ?tag=mysweetspot-21',
       badge: 'Best Budget',
-      specs: { material: 'AFT (Amplified Fibre Technology)', weight: '190g', headSize: '~500 sq.cm', balance: 'Head Heavy' },
+      specs: { material: 'AFT (Amplified Fibre Technology)', weight: '190g', level: 'Beginner', gripSize: '3 7/8"' },
     },
   ],
   ratingCriteria: {
@@ -343,35 +344,35 @@ const review: ReviewData = {
   faq: [
     {
       q: 'Is HEAD a good brand for squash rackets?',
-      a: 'HEAD is one of the most popular squash brands in India and globally, used by professional players. They dominate the ₹5,000-10,000 segment on Amazon.in with multiple models featuring different technologies. Quality is generally good, though string durability can be an issue.',
+      a: 'HEAD is one of the most popular and trusted squash racket brands in India and globally, used by professional players on the PSA World Tour. In the ₹5,000–10,000 segment on Amazon India, HEAD dominates with four of our five recommended models: the Microgel Blast (₹6,578, rated 9.1/10), the G. 110 (₹9,860, rated 9.0/10), the Extreme 120 (₹9,289, rated 9.0/10), and the Cyber Tour (₹5,355, rated 8.8/10). Each model features distinct proprietary technologies — Microgel for vibration dampening, Intellifibers for power amplification, Innegra for shock absorption, and AFT for frame stiffness. Build quality across the range is generally strong, with graphite frames delivering good power-to-weight ratios. The main recurring issue is string durability, with factory strings breaking within days to months depending on play intensity. Budget ₹500–₹1,500 for restringing. Overall, HEAD offers excellent variety and reliable performance at this price point.',
     },
     {
       q: 'What\'s the difference between Microgel, Intellifibers, Innegra, and AFT technologies?',
-      a: 'Microgel distributes impact load for reduced vibration. Intellifibers convert mechanical energy into stiffness for more power. Innegra is a shock-absorbing composite for stability. AFT increases frame stiffness for power. Microgel and Innegra prioritize comfort, while Intellifibers and AFT prioritize power.',
+      a: 'These four HEAD technologies each serve different purposes in the ₹5,000–10,000 squash racket segment. Microgel, found in the HEAD Microgel Blast (₹6,578), distributes the impact load across the entire frame to reduce vibration — ideal for players who want comfort during long sessions. Intellifibers, used in the HEAD G. 110 (₹9,860), converts mechanical energy into frame stiffness at the moment of impact, amplifying power and generating faster ball speed from the same swing effort. Innegra, featured in the HEAD Extreme 120 (₹9,289), is a lightweight shock-absorbing composite that improves frame stability and reduces vibration on off-center hits — excellent for control-oriented players. AFT (Amplified Fibre Technology), found in the HEAD Cyber Tour (₹5,355), increases overall frame stiffness for enhanced power delivery. In summary, Microgel and Innegra prioritize comfort and vibration dampening, while Intellifibers and AFT prioritize power and frame rigidity.',
     },
     {
       q: 'Should I buy a strung or unstrung racket?',
-      a: 'All five selected rackets come strung. For beginners and intermediates, strung is more convenient. Advanced players often prefer unstrung to choose their own string type and tension. Stock strings often break early, so factor in restringing costs.',
+      a: 'All five squash rackets recommended in our ₹5,000–10,000 guide come pre-strung and ready to play: the Tecnifibre Carboflex 125-S (₹9,759), HEAD Microgel Blast (₹6,578), HEAD G. 110 (₹9,860), HEAD Extreme 120 (₹9,289), and HEAD Cyber Tour (₹5,355). For beginner and intermediate players, buying strung is the most convenient option — you can start playing immediately without the added cost and complexity of professional stringing. Advanced and competitive players often prefer buying unstrung rackets so they can choose their own string type (such as Tecnifibre 305 or Ashaway SuperNick) and set a custom tension that matches their playing style. Regardless of which option you choose, factor in restringing costs of ₹500–₹1,500 every three to six months, as factory strings across all brands tend to break earlier than aftermarket alternatives. Stock strings are adequate for learning but will limit performance as your game develops.',
     },
     {
       q: 'Is 110g too light for a squash racket?',
-      a: '110g is ultralight and offers the fastest swing speed, great for net play and quick reactions. However, very light rackets can feel unstable on off-center hits and may lack mass for powerful drives. For power players, 140-160g is better.',
+      a: 'At 110g, the HEAD G. 110 (₹9,860) is the lightest squash racket in our ₹5,000–10,000 roundup, and whether it is too light depends entirely on your playing style. The ultralight weight offers the fastest swing speed of any racket in this segment, making it exceptional for net play, quick volleying, and rapid reaction shots in front of the court. The Intellifibers technology compensates for the low mass by converting mechanical energy into frame stiffness, adding meaningful power despite the featherweight frame. However, very light rackets can feel unstable on off-center hits and may lack the mass needed for powerful baseline drives. Multiple buyers report frame cracking within two to six months, suggesting the lightweight construction sacrifices some durability. For power-oriented players who rely on heavy drives from the back wall, a heavier option like the HEAD Microgel Blast at 150g (₹6,578) provides more stability and mass behind each shot.',
     },
     {
       q: 'Why do squash racket strings break so quickly?',
-      a: 'Squash puts enormous stress on strings due to high-speed impacts and wall contact. Factory strings are often basic synthetic gut. To extend string life: use multifilament strings, maintain proper tension, avoid hitting walls, and store at room temperature.',
+      a: 'Squash racket strings break frequently because the sport puts enormous stress on them — the ball impacts at high speed, the strings contact the wall during aggressive retrievals, and the small court means shots are played at close range with maximum force. Factory strings on rackets like the HEAD Extreme 120 (₹9,289) and HEAD G. 110 (₹9,860) are basic synthetic gut designed to a standard tension, not built for the demands of aggressive or high-frequency play. Multiple buyers of the Extreme 120 report string breakage within days of purchase. To extend string life, upgrade to multifilament strings such as Tecnifibre 305 or Ashaway SuperNick, which offer better durability and feel. Maintain proper string tension — overtight strings break faster under impact. Avoid directly hitting walls during play, as this is the primary cause of premature string failure. Store your racket at room temperature, as extreme heat or cold weakens string integrity. Budget ₹500–₹1,500 for professional restringing every three to six months.',
     },
     {
       q: 'Is Tecnifibre worth the premium over HEAD?',
-      a: 'Tecnifibre is a specialist brand with a strong competitive squash reputation. Indian club players specifically praise the Carboflex for power and vibration dampening. For competitive or club play, the premium is justified. For recreational play, HEAD offers comparable performance at lower prices.',
+      a: 'Tecnifibre is a specialist squash brand with a strong reputation in competitive play, and our top pick — the Tecnifibre Carboflex 125-S at ₹9,759 (rated 9.1/10) — demonstrates why. Indian club players specifically praise its blend composite Carboflex frame for exceptional power delivery and zero vibrations on impact, making it noticeably more comfortable than HEAD alternatives during extended sessions. The Carboflex construction provides a premium feel that the HEAD Microgel Blast (₹6,578) and HEAD Extreme 120 (₹9,289) cannot fully match, particularly in terms of vibration dampening and shot consistency. For competitive club players who train two to three times per week and participate in local tournaments, the Tecnifibre premium is justified by the superior on-court performance. However, for recreational players who play once a week or less, HEAD offers comparable performance at lower prices — the Microgel Blast at ₹6,578 delivers 90 percent of the Tecnifibre experience at two-thirds the cost.',
     },
     {
       q: 'Do these rackets come with a cover?',
-      a: 'Only the HEAD Microgel Blast (₹6,578) comes with a cover. The others don\'t — budget ₹300-800 for a quality cover separately.',
+      a: 'Among the five squash rackets in our ₹5,000–10,000 roundup, only the HEAD Microgel Blast at ₹6,578 comes with a protective cover included in the box — making it an even stronger value proposition at its price point. The Tecnifibre Carboflex 125-S (₹9,759), HEAD G. 110 (₹9,860), HEAD Extreme 120 (₹9,289), and HEAD Cyber Tour (₹5,355) do not include covers. A quality racket cover is not optional at this price range — it protects the frame and strings from damage during transport, prevents accidental impacts when stored in a sports bag, and extends the overall life of your racket. Budget ₹300–800 for a separate padded cover from brands like HEAD, Dunlop, or Tecnifibre. A basic sleeve-style cover costs around ₹300, while a full padded thermal cover with compartments runs ₹500–800. Given you are investing ₹5,000 or more in the racket itself, the cover cost is a worthwhile addition.',
     },
     {
       q: 'Which racket is best for beginners?',
-      a: 'The HEAD Microgel Blast (₹6,578) is the best beginner pick with its large sweet spot, forgiving balance, included cover, and highest rating. The HEAD Cyber Tour Orange (₹5,355) is also great for beginners at a lower price. Avoid the Tecnifibre Carboflex for beginners as it\'s designed for advanced players.',
+      a: 'The HEAD Microgel Blast at ₹6,578 (rated 9.1/10) is the best beginner squash racket in the ₹5,000–10,000 range. It features a large 500 sq.cm teardrop head that provides the biggest sweet spot in this roundup, which is critical for new players who do not consistently hit the center of the strings. The Microgel technology dampens vibration for arm comfort, the 150g weight offers a reassuring heft without causing fatigue, and it is the only racket in this selection that includes a protective cover. Its 4.6/5 Amazon rating — the highest in the category — confirms widespread buyer satisfaction. For a more affordable entry point, the HEAD Cyber Tour at ₹5,355 (rated 8.8/10) combines AFT and Innegra technologies at the lowest price in this segment, with early Indian buyers confirming its suitability for beginners. Avoid the Tecnifibre Carboflex 125-S (₹9,759) as a beginner — it is designed for advanced players and its performance advantages will not be noticeable to new players.',
     },
   ],
 };

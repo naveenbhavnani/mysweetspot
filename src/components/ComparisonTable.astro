@@ -7,22 +7,20 @@ export interface Product {
   price: string;
   buyUrl: string;
   badge?: string;
-  specs: {
-    weight?: string;
-    balance?: string;
-    headSize?: string;
-    stringPattern?: string;
-    material?: string;
-    flexibility?: string;
-    level?: string;
-  };
+  specs: Record<string, string | undefined>;
+}
+
+interface Column {
+  key: string;
+  label: string;
 }
 
 interface Props {
   products: Product[];
+  columns: Column[];
 }
 
-const { products } = Astro.props;
+const { products, columns } = Astro.props;
 ---
 
 <div class="overflow-x-auto rounded-xl border border-slate-200 shadow-sm">
@@ -32,10 +30,9 @@ const { products } = Astro.props;
         <th scope="col" class="text-left px-4 py-3 font-semibold text-slate-700 w-48">Racket</th>
         <th scope="col" class="text-center px-3 py-3 font-semibold text-slate-700">Rating</th>
         <th scope="col" class="text-center px-3 py-3 font-semibold text-slate-700">Price</th>
-        <th scope="col" class="text-center px-3 py-3 font-semibold text-slate-700">Weight</th>
-        <th scope="col" class="text-center px-3 py-3 font-semibold text-slate-700">Balance</th>
-        <th scope="col" class="text-center px-3 py-3 font-semibold text-slate-700">Head Size</th>
-        <th scope="col" class="text-center px-3 py-3 font-semibold text-slate-700">Level</th>
+        {columns.map(col => (
+          <th scope="col" class="text-center px-3 py-3 font-semibold text-slate-700">{col.label}</th>
+        ))}
         <th scope="col" class="text-center px-3 py-3 font-semibold text-slate-700 sr-only">Buy</th>
       </tr>
     </thead>
@@ -65,10 +62,9 @@ const { products } = Astro.props;
           <td class="px-3 py-3 text-center font-[Barlow_Condensed] text-base font-semibold text-slate-900 tabular-nums">
             {p.price}
           </td>
-          <td class="px-3 py-3 text-center text-slate-600">{p.specs.weight ?? "—"}</td>
-          <td class="px-3 py-3 text-center text-slate-600">{p.specs.balance ?? "—"}</td>
-          <td class="px-3 py-3 text-center text-slate-600">{p.specs.headSize ?? "—"}</td>
-          <td class="px-3 py-3 text-center text-slate-600">{p.specs.level ?? "—"}</td>
+          {columns.map(col => (
+            <td class="px-3 py-3 text-center text-slate-600">{p.specs[col.key] ?? "—"}</td>
+          ))}
           <td class="px-3 py-3 text-center">
             <a
               href={p.buyUrl}
