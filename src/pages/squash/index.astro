@@ -4,7 +4,36 @@ import RatingBadge from "../../components/RatingBadge.astro";
 import { collectionPageSchema, breadcrumbSchema, itemListSchema } from "../../utils/schema";
 
 const reviews = [
-  { title: "Best Squash Rackets Under 3000 in India 2026", href: "/reviews/best-squash-rackets-under-3000-india", topPick: "HEAD Nano Ti Graphite Spector 2.0", price: "₹2,630", rating: 9.3, level: "Beginner" },
+  {
+    title: "Best Squash Rackets Under 3000 in India 2026",
+    desc: "5 budget squash rackets tested. HEAD Nano Ti Spector 2.0 leads for beginners with the best balance of feel and durability.",
+    href: "/reviews/best-squash-rackets-under-3000-india",
+    topPick: "HEAD Nano Ti Graphite Spector 2.0",
+    price: "₹2,630",
+    rating: 9.3,
+    level: "Beginner",
+    lastUpdated: "Apr 2026",
+  },
+  {
+    title: "Best Squash Rackets Under 10000 in India 2026",
+    desc: "Mid-range graphite rackets for club players. Tecnifibre Carboflex 125-S earns the top spot for playability and value.",
+    href: "/reviews/best-squash-rackets-under-10000-india",
+    topPick: "Tecnifibre Carboflex 125-S",
+    price: "₹9,759",
+    rating: 9.1,
+    level: "Intermediate",
+    lastUpdated: "Apr 2026",
+  },
+  {
+    title: "Best Squash Rackets Under ₹20,000 in India 2026",
+    desc: "5 premium squash rackets evaluated. Dunlop SonicCore Ultimate 132 tops the list with SonicCore Infinergy vibration control.",
+    href: "/reviews/best-squash-rackets-under-20000",
+    topPick: "Dunlop SonicCore Ultimate 132",
+    price: "₹17,299",
+    rating: 9.0,
+    level: "Intermediate–Advanced",
+    lastUpdated: "Apr 2026",
+  },
 ];
 
 const jsonLd = { "@graph": [
@@ -14,36 +43,57 @@ const jsonLd = { "@graph": [
 ] } as Record<string, unknown>;
 ---
 
-<BaseLayout title="Squash Racket Reviews" description="Independent squash racket reviews for Indian players. In-depth specs, pros/cons, and expert ratings with real Indian pricing." jsonLd={jsonLd}>
+<BaseLayout
+  title="Squash Racket Reviews"
+  description="Independent squash racket reviews for Indian players. In-depth specs, pros/cons, and expert ratings with real Indian pricing."
+  jsonLd={jsonLd}
+>
+
   <div class="bg-violet-50 border-b border-violet-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <nav class="text-xs text-slate-500 mb-4" aria-label="Breadcrumb"><a href="/" class="hover:text-slate-800">Home</a> › <span class="text-slate-700 font-medium">Squash</span></nav>
-      <div class="flex items-center gap-3 mb-3"><span class="w-3 h-3 rounded-full bg-violet-500" aria-hidden="true"></span><span class="text-xs font-semibold text-violet-700 uppercase tracking-widest">Squash</span></div>
+      <nav class="text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-slate-800">Home</a> › <span class="text-slate-700 font-medium">Squash</span>
+      </nav>
+      <div class="flex items-center gap-3 mb-3">
+        <span class="w-3 h-3 rounded-full bg-violet-500" aria-hidden="true"></span>
+        <span class="text-xs font-semibold text-violet-700 uppercase tracking-widest">Squash</span>
+      </div>
       <h1 class="font-[Barlow_Condensed] text-4xl sm:text-5xl font-bold text-slate-900">Squash Racket Reviews</h1>
-      <p class="mt-3 text-slate-500 text-base max-w-xl">Every racket tested in real play. Honest ratings, full specs, and Indian pricing.</p>
+      <p class="mt-3 text-slate-500 text-base max-w-xl">Every racket tested in real play sessions. Honest ratings, full specs, and Indian pricing — no fluff.</p>
     </div>
   </div>
 
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-4">
-    {reviews.map(r => (
-      <article class="bg-white border border-slate-200 rounded-2xl p-5 flex flex-col sm:flex-row items-start gap-4 hover:shadow-md transition-shadow">
-        <div class="flex-1 min-w-0">
-          <div class="flex items-center gap-2 mb-1 flex-wrap">
-            {r.level && <span class="text-xs font-medium text-slate-500 bg-slate-100 px-2 py-0.5 rounded-full">{r.level}</span>}
-          </div>
-          <h2 class="font-[Barlow_Condensed] text-lg font-bold text-slate-900">
-            <a href={r.href} class="hover:text-green-600 transition-colors">{r.title}</a>
-          </h2>
-          <div class="mt-2 flex items-center gap-4 flex-wrap">
-            <div>
-              <p class="text-xs text-slate-400">Top Pick</p>
-              <p class="text-sm font-semibold text-slate-800">{r.topPick} · <span class="font-[Barlow_Condensed] text-base">{r.price}</span></p>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <p class="text-sm text-slate-400 mb-6">{reviews.length} review{reviews.length !== 1 ? "s" : ""} published</p>
+
+    <div class="space-y-4">
+      {reviews.map(r => (
+        <a href={r.href} class="block group">
+          <article class="bg-white border border-slate-200 rounded-2xl p-5 flex flex-col sm:flex-row gap-5 group-hover:shadow-md group-hover:border-slate-300 transition-all">
+            <div class="flex-1 min-w-0">
+              <div class="flex items-start justify-between gap-3 flex-wrap">
+                <div>
+                  <div class="flex items-center gap-2 flex-wrap mb-1">
+                    <span class="text-xs font-semibold text-violet-700 bg-violet-100 px-2 py-0.5 rounded-full">{r.level}</span>
+                    <span class="text-xs text-slate-400">Updated {r.lastUpdated}</span>
+                  </div>
+                  <h2 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 group-hover:text-green-600 transition-colors">{r.title}</h2>
+                  <p class="text-sm text-slate-500 mt-1">{r.desc}</p>
+                </div>
+                <RatingBadge score={r.rating} size="md" />
+              </div>
+              <div class="mt-3 flex items-center gap-4 flex-wrap">
+                <div>
+                  <p class="text-xs text-slate-400">Top Pick</p>
+                  <p class="text-sm font-semibold text-slate-800">{r.topPick} · <span class="font-[Barlow_Condensed] text-base">{r.price}</span></p>
+                </div>
+                <span class="ml-auto text-sm font-semibold text-green-600 group-hover:underline">Read review →</span>
+              </div>
             </div>
-            <a href={r.href} class="ml-auto text-sm font-semibold text-green-600 hover:underline">Read review →</a>
-          </div>
-        </div>
-        <RatingBadge score={r.rating} size="md" />
-      </article>
-    ))}
+          </article>
+        </a>
+      ))}
+    </div>
   </div>
+
 </BaseLayout>

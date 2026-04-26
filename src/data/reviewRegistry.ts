@@ -100,6 +100,16 @@ const reviews: ReviewSummary[] = [
     topPickPrice: '₹18,499',
   },
   {
+    slug: 'best-squash-rackets-under-10000-india',
+    title: 'Best Squash Rackets Under 10000 in India 2026',
+    sport: 'squash',
+    level: 'Intermediate',
+    priceRange: 10,
+    topPickName: 'Tecnifibre Carboflex 125-S Squash Racquet',
+    topPickRating: 9.1,
+    topPickPrice: '₹9,759',
+  },
+  {
     slug: 'best-squash-rackets-under-3000-india',
     title: 'Best Squash Rackets Under 3000 in India 2026',
     sport: 'squash',
@@ -108,6 +118,16 @@ const reviews: ReviewSummary[] = [
     topPickName: 'HEAD Nano Ti Graphite Spector 2.0 Squash Racquet',
     topPickRating: 9.3,
     topPickPrice: '₹2,630',
+  },
+  {
+    slug: 'best-squash-rackets-under-20000',
+    title: 'Best Squash Rackets Under ₹20,000 in India 2026',
+    sport: 'squash',
+    level: 'Intermediate–Advanced',
+    priceRange: 20,
+    topPickName: 'Dunlop SonicCore Ultimate 132',
+    topPickRating: 9.0,
+    topPickPrice: '₹17,299',
   },
 ];
 
