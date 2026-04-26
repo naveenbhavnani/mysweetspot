@@ -9,8 +9,7 @@ const groups = [
     color: "lime",
     href: "/tennis",
     reviews: [
-      { title: "Best Tennis Rackets for Beginners in India 2026", href: "/reviews/best-tennis-rackets-for-beginners-india", topPick: "Wilson Clash 100", price: "₹20,999", rating: 9.2, level: "Beginner" },
-      { title: "Best Tennis Rackets Under 5000 in India 2026", href: "/reviews/best-tennis-rackets-under-5000-india", topPick: "HEAD Titanium Tour Pro", price: "₹3,237", rating: 9.5, level: "Beginner" },
+{ title: "Best Tennis Rackets Under 5000 in India 2026", href: "/reviews/best-tennis-rackets-under-5000-india", topPick: "HEAD Titanium Tour Pro", price: "₹3,237", rating: 9.5, level: "Beginner" },
       { title: "Best Tennis Rackets Under 10000 in India 2026", href: "/reviews/best-tennis-rackets-under-10000-india", topPick: "HEAD TI S6", price: "₹10,499", rating: 9.3, level: "Beginner–Intermediate" },
       { title: "Best Tennis Rackets Under 20000 in India 2026", href: "/reviews/best-tennis-rackets-under-20000-india", topPick: "HEAD Radical Pro 2023", price: "₹17,708", rating: 9.4, level: "Intermediate" },
     ],
@@ -35,6 +34,14 @@ const groups = [
     ],
   },
   {
+    sport: "Squash",
+    color: "violet",
+    href: "/squash",
+    reviews: [
+      { title: "Best Squash Rackets Under 3000 in India 2026", href: "/reviews/best-squash-rackets-under-3000-india", topPick: "HEAD Nano Ti Graphite Spector 2.0", price: "₹2,630", rating: 9.3, level: "Beginner" },
+    ],
+  },
+  {
     sport: "Table Tennis",
     color: "blue",
     href: "/table-tennis",
@@ -48,7 +55,7 @@ const totalReviews = groups.reduce((sum, g) => sum + g.reviews.length, 0);
 
 const allReviewItems = groups.flatMap(g => g.reviews.map(r => ({ name: r.title, url: r.href })));
 const jsonLd = { "@graph": [
-  collectionPageSchema({ url: "/reviews", name: "All Reviews", description: "Browse all MySweetSpot reviews — tennis, badminton, pickleball, and table tennis equipment reviewed with real Indian pricing." }),
+  collectionPageSchema({ url: "/reviews", name: "All Reviews", description: "Browse all MySweetSpot reviews — tennis, badminton, pickleball, squash, and table tennis equipment reviewed with real Indian pricing." }),
   breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Reviews", url: "/reviews" }]),
   itemListSchema(allReviewItems),
 ] } as Record<string, unknown>;
@@ -56,7 +63,7 @@ const jsonLd = { "@graph": [
 
 <BaseLayout
   title="All Reviews"
-  description="Browse all MySweetSpot reviews — tennis, badminton, pickleball, and table tennis equipment reviewed with real Indian pricing."
+  description="Browse all MySweetSpot reviews — tennis, badminton, pickleball, squash, and table tennis equipment reviewed with real Indian pricing."
   jsonLd={jsonLd}
 >
 

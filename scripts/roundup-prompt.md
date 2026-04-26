@@ -253,7 +253,11 @@ import TopPick from "../../components/TopPick.astro";
 import ComparisonTable from "../../components/ComparisonTable.astro";
 import ProductReview from "../../components/ProductReview.astro";
 import RatingMethodology from "../../components/RatingMethodology.astro";
+import RelatedArticles from "../../components/RelatedArticles.astro";
 import review from "../../data/reviews/{{SLUG}}";
+import { buildReviewPageNodes } from "../../utils/schema";
+
+const jsonLdNodes = buildReviewPageNodes(review);
 
 const tocItems = [
   { id: "top-pick", label: "Our Top Pick" },
@@ -265,6 +269,7 @@ const tocItems = [
   })),
   { id: "buying-guide", label: "Buying Guide" },
   { id: "faq", label: "FAQ" },
+  { id: "related-articles", label: "Related Reviews" },
 ];
 ---
 
@@ -275,6 +280,7 @@ const tocItems = [
   level={review.meta.level}
   lastUpdated={review.meta.lastUpdated}
   tocItems={tocItems}
+  jsonLdNodes={jsonLdNodes}
 >
 
   <section class="prose max-w-none">
@@ -334,7 +340,28 @@ const tocItems = [
     </div>
   </section>
 
+  <RelatedArticles currentSlug={review.meta.slug} />
+
 </ReviewLayout>
+```
+
+## Step 5: Register in the review registry
+
+Add an entry for the new review in `src/data/reviewRegistry.ts`. This powers the `RelatedArticles` component that cross-links reviews by sport.
+
+Add a new object to the `reviews` array:
+
+```typescript
+{
+  slug: '{{SLUG}}',
+  title: '{{TITLE}}',
+  sport: '...', // must match meta.sport
+  level: '...', // optional, must match meta.level
+  priceRange: 5, // budget ceiling in thousands (e.g. 5 = "under 5K")
+  topPickName: '...', // from topPick.name
+  topPickRating: 9.5, // from topPick.rating
+  topPickPrice: '₹X,XXX', // from topPick.price
+},
 ```
 
 ## Writing Guidelines
@@ -376,5 +403,8 @@ Before writing any code, read these files to understand the exact patterns:
 | `src/components/ComparisonTable.astro` | Comparison table |
 | `src/components/ProductReview.astro` | Product review card |
 | `src/components/RatingMethodology.astro` | Rating methodology section |
-| `src/data/reviews/badminton-under-2000.ts` | Example review data (reference pattern) |
-| `src/pages/reviews/best-badminton-rackets-under-2000.astro` | Example review page (reference pattern) |
+| `src/components/RelatedArticles.astro` | Related articles component |
+| `src/data/reviewRegistry.ts` | Review registry for cross-linking |
+| `src/utils/schema.ts` | JSON-LD schema builder |
+| `src/data/reviews/best-badminton-rackets-under-2000-india.ts` | Example review data (reference pattern) |
+| `src/pages/reviews/best-badminton-rackets-under-2000-india.astro` | Example review page (reference pattern) |

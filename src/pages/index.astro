@@ -46,7 +46,7 @@ const homeJsonLd = { "@graph": [
   webPageSchema({
     url: "/",
     name: "Independent Racket Sport Reviews",
-    description: "India's independent racket review site — tennis, badminton, pickleball, and table tennis. In-depth specs, Indian pricing, pros & cons, and our own ratings.",
+    description: "India's independent racket review site — tennis, badminton, pickleball, squash, and table tennis. In-depth specs, Indian pricing, pros & cons, and our own ratings.",
   }),
   itemListSchema(featuredReviews.map(r => ({ name: r.title, url: r.href }))),
 ] } as Record<string, unknown>;
@@ -55,13 +55,14 @@ const sports = [
   { name: "Tennis", count: 4, href: "/tennis", color: "bg-lime-500" },
   { name: "Badminton", count: 2, href: "/badminton", color: "bg-cyan-500" },
   { name: "Pickleball", count: 3, href: "/pickleball", color: "bg-orange-500" },
+  { name: "Squash", count: 1, href: "/squash", color: "bg-violet-500" },
   { name: "Table Tennis", count: 1, href: "/table-tennis", color: "bg-blue-500" },
 ];
 ---
 
 <BaseLayout
   title="Independent Racket Sport Reviews"
-  description="India's independent racket review site — tennis, badminton, pickleball, and table tennis. In-depth specs, Indian pricing, pros & cons, and our own ratings."
+  description="India's independent racket review site — tennis, badminton, pickleball, squash, and table tennis. In-depth specs, Indian pricing, pros & cons, and our own ratings."
   jsonLd={homeJsonLd}
 >
 
@@ -77,7 +78,7 @@ const sports = [
           Find Your Perfect<br />Racket.
         </h1>
         <p class="mt-5 text-slate-500 text-lg leading-relaxed">
-          India's independent racket review site — tennis, badminton, pickleball, and table tennis. We dig into the specs, test on court, and give honest ratings with real Indian pricing.
+          India's independent racket review site — tennis, badminton, pickleball, squash, and table tennis. We dig into the specs, test on court, and give honest ratings with real Indian pricing.
         </p>
         <div class="mt-8 flex flex-wrap gap-3">
           <a
@@ -100,7 +101,7 @@ const sports = [
         <div class="mt-10 flex flex-wrap gap-6 text-sm text-slate-400">
           <span class="flex items-center gap-1.5 font-medium">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-            10 reviews published
+            11 reviews published
           </span>
           <span class="flex items-center gap-1.5 font-medium">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>

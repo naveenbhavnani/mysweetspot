@@ -10,17 +10,7 @@ export interface ReviewSummary {
 }
 
 const reviews: ReviewSummary[] = [
-  {
-    slug: 'best-tennis-rackets-for-beginners-india',
-    title: 'Best Tennis Rackets for Beginners in India 2026',
-    sport: 'tennis',
-    level: 'Beginner',
-    priceRange: 5,
-    topPickName: 'Wilson Clash 100',
-    topPickRating: 9.2,
-    topPickPrice: '₹20,999',
-  },
-  {
+{
     slug: 'best-tennis-rackets-under-5000-india',
     title: 'Best Tennis Rackets Under 5000 in India 2026',
     sport: 'tennis',
@@ -108,6 +98,16 @@ const reviews: ReviewSummary[] = [
     topPickName: 'Step Over Tournament Pro 25mm',
     topPickRating: 9.6,
     topPickPrice: '₹18,499',
+  },
+  {
+    slug: 'best-squash-rackets-under-3000-india',
+    title: 'Best Squash Rackets Under 3000 in India 2026',
+    sport: 'squash',
+    level: 'Beginner',
+    priceRange: 3,
+    topPickName: 'HEAD Nano Ti Graphite Spector 2.0 Squash Racquet',
+    topPickRating: 9.3,
+    topPickPrice: '₹2,630',
   },
 ];
 
