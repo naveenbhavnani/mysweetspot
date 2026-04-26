@@ -4,6 +4,7 @@ import TopPick from "../../components/TopPick.astro";
 import ComparisonTable from "../../components/ComparisonTable.astro";
 import ProductReview from "../../components/ProductReview.astro";
 import RatingMethodology from "../../components/RatingMethodology.astro";
+import RelatedArticles from "../../components/RelatedArticles.astro";
 import review from "../../data/reviews/best-tennis-rackets-under-20000-india";
 import { buildReviewPageNodes } from "../../utils/schema";
 
@@ -19,6 +20,7 @@ const tocItems = [
   })),
   { id: "buying-guide", label: "Buying Guide" },
   { id: "faq", label: "FAQ" },
+  { id: "related-articles", label: "Related Reviews" },
 ];
 ---
 
@@ -88,5 +90,7 @@ const tocItems = [
       ))}
     </div>
   </section>
+
+  <RelatedArticles currentSlug={review.meta.slug} />
 
 </ReviewLayout>

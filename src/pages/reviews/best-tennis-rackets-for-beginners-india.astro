@@ -3,6 +3,7 @@ import ReviewLayout from "../../layouts/ReviewLayout.astro";
 import TopPick from "../../components/TopPick.astro";
 import ComparisonTable from "../../components/ComparisonTable.astro";
 import ProductReview from "../../components/ProductReview.astro";
+import RelatedArticles from "../../components/RelatedArticles.astro";
 import type { Product } from "../../components/ComparisonTable.astro";
 import { reviewArticleSchema, breadcrumbSchema, faqSchema, productSchema, productItemListSchema, parseINRPrice, extractBrand } from "../../utils/schema";
 
@@ -81,6 +82,7 @@ const tocItems = [
   { id: "prince-textreme-tour-100p", label: "Prince Textreme Tour" },
   { id: "buying-guide", label: "Buying Guide" },
   { id: "faq", label: "FAQ" },
+  { id: "related-articles", label: "Related Reviews" },
 ];
 
 const pageTitle = "Best Tennis Rackets for Beginners in India 2026";
@@ -394,5 +396,7 @@ const jsonLdNodes = [
       ))}
     </div>
   </section>
+
+  <RelatedArticles currentSlug="best-tennis-rackets-for-beginners-india" />
 
 </ReviewLayout>
