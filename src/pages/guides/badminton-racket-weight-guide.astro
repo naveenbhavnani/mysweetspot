@@ -1,0 +1,342 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { webPageSchema, breadcrumbSchema, faqSchema } from "../../utils/schema";
+
+const title = "Badminton Racket Weight Guide — What Do 1U to 5U Mean?";
+const description = "Understand the badminton racket U weight system. Complete guide to 1U, 2U, 3U, 4U, and 5U weights with recommendations for different play styles in India.";
+const url = "/guides/badminton-racket-weight-guide";
+
+const faqItems = [
+  { q: "What does 4U G5 mean on a badminton racket?", a: "4U refers to the racket weight (80-84 grams), and G5 refers to the grip size (83mm circumference). In India, G5 is the most common grip size, suitable for most adult hands. G4 (86mm) is slightly larger and preferred by players with bigger hands. So '4U G5' simply means a racket weighing 80-84g with a standard Indian grip size." },
+  { q: "Is a 3U racket too heavy for a beginner?", a: "For most beginners, yes. A 3U racket (85-89g) demands faster swing speed and better technique to generate consistent shots. Beginners with slower, less refined swings will find a 3U racket tiring and less forgiving. Start with 4U or 5U, and move to 3U once your technique is solid and your arm strength has developed through regular play." },
+  { q: "Why do professional players use 3U rackets?", a: "Professional players have the swing speed, technique, and physical conditioning to exploit the advantages of heavier rackets. A 3U racket generates more momentum on contact, resulting in more powerful smashes and steeper angles. Pros also have the wrist strength to control the extra weight during fast net exchanges. Their hundreds of hours of training make the weight difference an advantage rather than a burden." },
+  { q: "Can I add weight to a lighter racket to make it heavier?", a: "Yes, you can add lead tape to the racket head or handle to increase weight. Adding tape to the head makes it more head-heavy (more power), while adding to the handle makes it more head-light (more control). However, this changes the balance point as well as the weight, and the swing weight increase may not feel the same as a naturally heavier racket. It's better to start with the right weight class." },
+  { q: "Does the weight printed on the racket include strings and grip?", a: "No. The U weight classification refers to the unstrung racket weight only. Strings typically add 4-6 grams, and an overgrip adds another 5-8 grams. So a 4U racket (80-84g unstrung) will weigh approximately 89-98g when fully strung and gripped. Keep this in mind when comparing how rackets feel in your hand versus their listed specifications." },
+  { q: "Which weight is best for someone with a tennis elbow or shoulder injury?", a: "If you have tennis elbow, golfer's elbow, or shoulder issues, go as light as possible — 5U (75-79g) or even lighter if you can find it. Pair this with a flexible shaft and lower string tension (20-22 lbs). The lighter weight reduces the stress on your joints and tendons with each swing. Also consider a head-light balance to keep the swing weight down further." },
+];
+
+const jsonLd = { "@graph": [
+  webPageSchema({ url, name: title, description }),
+  breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Badminton", url: "/badminton" },
+    { name: "Racket Weight Guide", url },
+  ]),
+  faqSchema(faqItems),
+] } as Record<string, unknown>;
+---
+<BaseLayout title={title} description={description} jsonLd={jsonLd}>
+  <div class="bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+      <!-- Breadcrumb -->
+      <nav aria-label="Breadcrumb" class="mb-4">
+        <ol class="flex items-center gap-1.5 text-xs text-slate-500">
+          <li><a href="/" class="hover:text-slate-800 transition-colors">Home</a></li>
+          <li aria-hidden="true">&rsaquo;</li>
+          <li><a href="/badminton" class="hover:text-slate-800 transition-colors">Badminton</a></li>
+          <li aria-hidden="true">&rsaquo;</li>
+          <li class="text-slate-700 font-medium" aria-current="page">Racket Weight Guide</li>
+        </ol>
+      </nav>
+
+      <h1 class="font-[Barlow_Condensed] text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 uppercase tracking-wide mb-4">Badminton Racket Weight Guide &mdash; What Do 1U to 5U Mean?</h1>
+      <p class="text-slate-600 text-sm sm:text-base max-w-3xl leading-relaxed">A deep dive into the U weight system used in badminton rackets, with recommendations tailored for Indian players at every level.</p>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+    <div class="max-w-3xl mx-auto space-y-12">
+
+      <!-- Intro -->
+      <section class="space-y-4 text-sm text-slate-600 leading-relaxed">
+        <p>If you've ever shopped for a badminton racket on Amazon.in or walked into a Decathlon store, you've seen labels like "3U", "4U", or "5U" next to the racket name. But what do those numbers actually mean, and more importantly, which one should you pick?</p>
+        <p>Racket weight is one of the most consequential choices you'll make. It directly affects your swing speed, power output, control, and how your arm feels after a 90-minute session. Get it right and the racket feels like an extension of your hand. Get it wrong and you'll either struggle to generate power or tire out before the session ends.</p>
+        <p>This guide explains the entire U weight system, breaks down what each weight class offers, and gives you specific racket recommendations available in the Indian market.</p>
+      </section>
+
+      <img src="/images/guides/badminton/badminton-weight-guide-hero.png" alt="A badminton racket balanced on a fingertip demonstrating the concept of weight distribution" class="rounded-xl w-full my-8" width="1200" height="675" loading="eager" />
+
+      <!-- What the U System Means -->
+      <section id="u-system" class="scroll-mt-24">
+        <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">What Does the U System Mean?</h2>
+        <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+          <p>The "U" in badminton racket weights stands for a weight classification standardised across the industry. It measures the <strong>unstrung weight</strong> of the racket &mdash; that is, the frame and shaft without strings, grip, or any accessories.</p>
+          <p>The numbering is counter-intuitive: <strong>a higher U number means a lighter racket</strong>. So 5U is lighter than 3U, which is lighter than 1U. Each U class spans a 5-gram range, giving manufacturers a small tolerance window during production.</p>
+          <p>Here's why this matters in practice: a 5-gram difference might sound trivial, but when you're swinging a racket hundreds of times in a session at high speed, even small weight differences compound. Moving from 4U to 3U feels noticeably different after your first 15 minutes of play.</p>
+        </div>
+      </section>
+
+      <!-- Complete Weight Table -->
+      <section id="weight-table" class="scroll-mt-24">
+        <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">Complete U Weight Classification Table</h2>
+
+        <div class="overflow-x-auto my-6">
+          <table class="w-full text-sm border border-slate-200 rounded-xl overflow-hidden">
+            <thead>
+              <tr class="bg-slate-50 text-left">
+                <th class="px-4 py-3 font-semibold text-slate-900 border-b border-slate-200">Class</th>
+                <th class="px-4 py-3 font-semibold text-slate-900 border-b border-slate-200">Weight (Unstrung)</th>
+                <th class="px-4 py-3 font-semibold text-slate-900 border-b border-slate-200">Typical Use</th>
+                <th class="px-4 py-3 font-semibold text-slate-900 border-b border-slate-200">Popular Rackets in India</th>
+              </tr>
+            </thead>
+            <tbody class="text-slate-600">
+              <tr class="border-b border-slate-100">
+                <td class="px-4 py-3 font-medium text-slate-900">1U</td>
+                <td class="px-4 py-3">95-99g</td>
+                <td class="px-4 py-3">Training rackets, weight conditioning</td>
+                <td class="px-4 py-3">Rarely sold in India; some training-specific models from local brands</td>
+              </tr>
+              <tr class="border-b border-slate-100 bg-slate-50/50">
+                <td class="px-4 py-3 font-medium text-slate-900">2U</td>
+                <td class="px-4 py-3">90-94g</td>
+                <td class="px-4 py-3">Heavy singles rackets, power-focused play</td>
+                <td class="px-4 py-3">Yonex Astrox 99 (2U variant), Li-Ning Turbo Charging 75</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-4 py-3 font-medium text-slate-900">3U</td>
+                <td class="px-4 py-3">85-89g</td>
+                <td class="px-4 py-3">Advanced singles, powerful all-rounders</td>
+                <td class="px-4 py-3">Yonex Astrox 88D, Li-Ning Axforce 80, Victor Thruster K Falcon</td>
+              </tr>
+              <tr class="border-b border-slate-100 bg-slate-50/50">
+                <td class="px-4 py-3 font-medium text-slate-900">4U</td>
+                <td class="px-4 py-3">80-84g</td>
+                <td class="px-4 py-3">All-round play, doubles, intermediates</td>
+                <td class="px-4 py-3">Yonex Nanoflare 700, Li-Ning Bladex 900, Victor Auraspeed 90K</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-medium text-slate-900">5U</td>
+                <td class="px-4 py-3">75-79g</td>
+                <td class="px-4 py-3">Fast doubles, beginners, juniors, injury recovery</td>
+                <td class="px-4 py-3">Yonex Nanoflare 800, Li-Ning Windstorm 72, Victor Jetspeed S 12F</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+          <p><strong>Note on strung weight:</strong> Once you add strings (4-6g) and an overgrip (5-8g), the actual playing weight increases by roughly 9-14 grams. A 4U racket listed at 83g unstrung will weigh around 93-97g in your hand. Keep this in mind when comparing rackets &mdash; the weight you feel during play is always higher than the listed specification.</p>
+        </div>
+      </section>
+
+      <!-- Weight by Play Style -->
+      <section id="play-styles" class="scroll-mt-24">
+        <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">Which Weight Suits Your Play Style?</h2>
+
+        <div class="space-y-6 my-6">
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+            <h3 class="font-semibold text-slate-900 text-sm mb-2">The Smasher &mdash; Go 3U</h3>
+            <p class="text-xs text-slate-500 leading-relaxed">If your game revolves around powerful smashes from the rear court, you want the extra mass that 3U provides. Physics is simple here: more mass at the same swing speed equals more momentum transferred to the shuttle. The Yonex Astrox series in 3U is the gold standard for smash-oriented play, and Li-Ning's Axforce line delivers similar results.</p>
+            <p class="text-xs text-slate-500 leading-relaxed mt-2">The caveat: you need the arm strength and swing speed to move a 3U racket quickly. If your smash is more arm-push than full-body rotation, the heavier weight will actually slow you down and reduce power.</p>
+          </div>
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+            <h3 class="font-semibold text-slate-900 text-sm mb-2">The All-Rounder &mdash; Go 4U</h3>
+            <p class="text-xs text-slate-500 leading-relaxed">Most players in India fall into this category &mdash; you play a bit of everything, mix singles and doubles, and want a racket that doesn't limit any aspect of your game. 4U is the most versatile weight class, offering enough mass for decent power while being light enough for quick defensive reactions and net play.</p>
+            <p class="text-xs text-slate-500 leading-relaxed mt-2">This is also the weight class with the most options in the Indian market. Nearly every racket from Yonex, Li-Ning, Victor, and Apacs comes in a 4U version, giving you the widest selection across every price range.</p>
+          </div>
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+            <h3 class="font-semibold text-slate-900 text-sm mb-2">The Doubles Specialist &mdash; Go 4U or 5U</h3>
+            <p class="text-xs text-slate-500 leading-relaxed">Doubles is a game of speed. Drives, pushes, net kills, and rapid exchanges at the mid-court define the format. A lighter racket &mdash; 4U or 5U &mdash; gives you the racket speed to stay competitive in these fast rallies. Many top doubles players globally use 4U rackets, and some (particularly women's doubles players) prefer 5U.</p>
+            <p class="text-xs text-slate-500 leading-relaxed mt-2">If your club sessions are predominantly doubles (as they are for most Indian recreational players), you won't regret going lighter.</p>
+          </div>
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+            <h3 class="font-semibold text-slate-900 text-sm mb-2">The Defender &mdash; Go 5U</h3>
+            <p class="text-xs text-slate-500 leading-relaxed">If your game is built on retrieving, lifting, and outlasting opponents with consistency, 5U is your friend. The lighter weight makes it easier to reach wide shots, dig out smashes at your feet, and maintain a defensive position for extended rallies without arm fatigue. Li-Ning's Windstorm series is specifically designed for this style of play.</p>
+          </div>
+        </div>
+
+        <img src="/images/guides/badminton/badminton-weight-guide-play-style.png" alt="Split-screen image showing an aggressive smash player on the left and a defensive net player on the right" class="rounded-xl w-full my-8" width="1200" height="675" loading="lazy" />
+      </section>
+
+      <!-- How Weight Affects Performance -->
+      <section id="weight-performance" class="scroll-mt-24">
+        <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">How Weight Affects Swing Speed, Power, and Control</h2>
+
+        <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+          <p>Understanding the three-way relationship between weight, swing speed, and power will help you make a smarter choice.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 my-6">
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+            <h3 class="font-semibold text-slate-900 text-sm mb-2">Swing Speed</h3>
+            <p class="text-xs text-slate-500 leading-relaxed">Lighter rackets swing faster, period. A 5U racket can be swung significantly faster than a 3U racket by the same player. This is crucial for reaction-based shots like drives and blocks where you have less than half a second to respond.</p>
+            <p class="text-xs text-green-600 font-medium mt-3">Lighter = Faster swing</p>
+          </div>
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+            <h3 class="font-semibold text-slate-900 text-sm mb-2">Power</h3>
+            <p class="text-xs text-slate-500 leading-relaxed">Power depends on momentum (mass x velocity). A heavier racket at the same speed generates more power. But if the heavier racket reduces your swing speed significantly, the power gain is negated. The ideal weight is the heaviest you can swing at full speed without fatigue.</p>
+            <p class="text-xs text-green-600 font-medium mt-3">Heavier = More power (if technique is there)</p>
+          </div>
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+            <h3 class="font-semibold text-slate-900 text-sm mb-2">Control</h3>
+            <p class="text-xs text-slate-500 leading-relaxed">Heavier rackets offer more stability on contact &mdash; they vibrate less and twist less on off-centre hits. This translates to more consistent shot direction. However, if the weight causes you to mis-time shots, the stability advantage is wasted.</p>
+            <p class="text-xs text-green-600 font-medium mt-3">Heavier = More stable, but timing matters</p>
+          </div>
+        </div>
+
+        <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+          <p><strong>The practical takeaway:</strong> Choose the heaviest weight you can swing comfortably for an entire session. For most Indian recreational players, that's 4U. For competitive players with strength training, it's 3U. For juniors, seniors, and injury-prone players, it's 5U.</p>
+        </div>
+      </section>
+
+      <!-- Weight vs Balance Interaction -->
+      <section id="weight-balance" class="scroll-mt-24">
+        <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">Weight vs Balance: The Interaction Most Players Miss</h2>
+        <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+          <p>Here's something most guides don't explain: weight class and balance point interact to create a property called <strong>swing weight</strong>. Swing weight is how heavy the racket <em>feels</em> when you swing it, and it can differ significantly from the static weight.</p>
+          <p>Consider two rackets, both 4U (83g):</p>
+        </div>
+
+        <div class="overflow-x-auto my-6">
+          <table class="w-full text-sm border border-slate-200 rounded-xl overflow-hidden">
+            <thead>
+              <tr class="bg-slate-50 text-left">
+                <th class="px-4 py-3 font-semibold text-slate-900 border-b border-slate-200">Racket</th>
+                <th class="px-4 py-3 font-semibold text-slate-900 border-b border-slate-200">Static Weight</th>
+                <th class="px-4 py-3 font-semibold text-slate-900 border-b border-slate-200">Balance</th>
+                <th class="px-4 py-3 font-semibold text-slate-900 border-b border-slate-200">Swing Weight Feel</th>
+                <th class="px-4 py-3 font-semibold text-slate-900 border-b border-slate-200">Comparable To</th>
+              </tr>
+            </thead>
+            <tbody class="text-slate-600">
+              <tr class="border-b border-slate-100">
+                <td class="px-4 py-3 font-medium text-slate-900">Racket A</td>
+                <td class="px-4 py-3">83g (4U)</td>
+                <td class="px-4 py-3">Head-heavy (300mm)</td>
+                <td class="px-4 py-3">Heavy</td>
+                <td class="px-4 py-3">Feels like a 3U even-balance racket</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-medium text-slate-900">Racket B</td>
+                <td class="px-4 py-3">83g (4U)</td>
+                <td class="px-4 py-3">Head-light (280mm)</td>
+                <td class="px-4 py-3">Light</td>
+                <td class="px-4 py-3">Feels like a 5U even-balance racket</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+          <p>This is why you shouldn't look at weight in isolation. A 4U head-heavy racket can feel just as demanding as a 3U even-balance racket. Conversely, a 3U head-light racket can feel surprisingly nimble.</p>
+          <p><strong>Our advice for Indian players:</strong> If you want the power of a heavier racket without the fatigue, consider a 4U head-heavy racket instead of a 3U even-balance. You get similar smash power with better manoeuvrability on defensive shots. This combination is particularly popular in the Rs 3,000-5,000 range &mdash; see our <a href="/reviews/best-badminton-rackets-under-5000-india" class="text-green-600 hover:text-green-700 underline underline-offset-2">best badminton rackets under Rs 5,000</a> for options.</p>
+        </div>
+      </section>
+
+      <!-- Popular Rackets by Weight Class -->
+      <section id="popular-rackets" class="scroll-mt-24">
+        <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">Popular Rackets by Weight Class in India</h2>
+        <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+          <p>Here are specific, widely-available rackets in each weight class that you can buy in India right now, across different budgets.</p>
+        </div>
+
+        <div class="space-y-6 my-6">
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+            <h3 class="font-semibold text-slate-900 text-sm mb-3">3U Rackets (85-89g) &mdash; For Power Players</h3>
+            <div class="space-y-2 text-xs text-slate-500 leading-relaxed">
+              <p><strong class="text-slate-700">Budget (Under Rs 2,000):</strong> Li-Ning XP 2020 (3U variant), Yonex ZR 100 &mdash; basic graphite frames that are surprisingly playable. Good for beginners who are physically strong and want to build power early. Read our <a href="/reviews/best-badminton-rackets-under-2000-india" class="text-green-600 hover:text-green-700 underline underline-offset-2">detailed under-2000 reviews</a>.</p>
+              <p><strong class="text-slate-700">Mid-range (Rs 2,000-5,000):</strong> Yonex Astrox Lite 27i, Li-Ning G-Force Superlite 3600 &mdash; full graphite with decent shaft technology. Ideal for intermediate singles players who want to develop their attacking game.</p>
+              <p><strong class="text-slate-700">Premium (Rs 5,000+):</strong> Yonex Astrox 88D Pro, Li-Ning Axforce 80, Victor Thruster K Falcon &mdash; competition-grade rackets used by national-level players. The pinnacle of power-oriented design.</p>
+            </div>
+          </div>
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+            <h3 class="font-semibold text-slate-900 text-sm mb-3">4U Rackets (80-84g) &mdash; The All-Rounders</h3>
+            <div class="space-y-2 text-xs text-slate-500 leading-relaxed">
+              <p><strong class="text-slate-700">Budget (Under Rs 2,000):</strong> Yonex GR 303, Cosco CBX 450, Li-Ning XP 901 &mdash; the most popular category for beginners in India. Check our <a href="/reviews/best-badminton-rackets-under-2000-india" class="text-green-600 hover:text-green-700 underline underline-offset-2">full reviews of the best under Rs 2,000</a>.</p>
+              <p><strong class="text-slate-700">Mid-range (Rs 2,000-5,000):</strong> Yonex Nanoray Light 18i, Li-Ning Turbo X 70, Victor Brave Sword 12 &mdash; excellent choices for players who have been playing for a year or more. Browse our <a href="/reviews/best-badminton-rackets-under-5000-india" class="text-green-600 hover:text-green-700 underline underline-offset-2">under Rs 5,000 picks</a>.</p>
+              <p><strong class="text-slate-700">Premium (Rs 5,000+):</strong> Yonex Nanoflare 700, Li-Ning Bladex 900 Moon Max, Victor Auraspeed 90K &mdash; tournament-ready rackets with cutting-edge materials and engineering.</p>
+            </div>
+          </div>
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+            <h3 class="font-semibold text-slate-900 text-sm mb-3">5U Rackets (75-79g) &mdash; Speed Demons</h3>
+            <div class="space-y-2 text-xs text-slate-500 leading-relaxed">
+              <p><strong class="text-slate-700">Budget (Under Rs 2,000):</strong> Limited options at this weight in the budget segment. Some Apacs models and lesser-known brands offer 5U frames, but quality varies.</p>
+              <p><strong class="text-slate-700">Mid-range (Rs 2,000-5,000):</strong> Li-Ning Windstorm 72, Apacs Finapi 232 &mdash; purpose-built for speed. Great for doubles players who prioritise racket speed above all else.</p>
+              <p><strong class="text-slate-700">Premium (Rs 5,000+):</strong> Yonex Nanoflare 800, Victor Jetspeed S 12F, Li-Ning Windstorm 79 &mdash; professional-grade speed rackets. Used by elite doubles players worldwide.</p>
+            </div>
+          </div>
+        </div>
+
+        <img src="/images/guides/badminton/badminton-weight-guide-classes.png" alt="Five badminton rackets arranged by weight from heaviest to lightest on a white marble surface showing colour graduation from dark to light" class="rounded-xl w-full my-8" width="1200" height="675" loading="lazy" />
+      </section>
+
+      <!-- Choosing Tips for Indian Players -->
+      <section id="indian-tips" class="scroll-mt-24">
+        <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">Weight Selection Tips Specific to India</h2>
+        <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+          <p>A few India-specific factors that should influence your weight choice:</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 my-6">
+          <div class="flex gap-3">
+            <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-slate-900 text-sm mb-1">Session Length</h3>
+              <p class="text-sm text-slate-500 leading-relaxed">Indian club sessions typically run 1.5-2 hours. If you play that long, favour a lighter weight to avoid fatigue-related injuries. A 3U racket in a 30-minute session is fine; in a 2-hour session, your technique deteriorates as your arm tires.</p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-slate-900 text-sm mb-1">Heat and Humidity</h3>
+              <p class="text-sm text-slate-500 leading-relaxed">Playing in warm, humid conditions (common across most of India outside winter months) increases fatigue. Your grip becomes slippery, your arm tires faster, and your reactions slow down. A lighter racket compensates for these conditions.</p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-slate-900 text-sm mb-1">Outdoor vs Indoor</h3>
+              <p class="text-sm text-slate-500 leading-relaxed">Many recreational players in India play outdoors where wind is a factor. Heavier rackets (3U) provide more stability against wind interference. If you play outdoors regularly, you might benefit from the extra mass that a 3U offers over a 5U.</p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-slate-900 text-sm mb-1">Availability</h3>
+              <p class="text-sm text-slate-500 leading-relaxed">In India, 4U is the most widely stocked weight. 3U is available in most premium models. 5U options are growing but still limited, especially in the budget segment. If you want maximum choice, 4U gives you the widest selection.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+          <p>For a comprehensive look at all the factors beyond weight &mdash; balance, shaft flex, head shape, and string tension &mdash; read our complete <a href="/guides/how-to-choose-badminton-racket" class="text-green-600 hover:text-green-700 underline underline-offset-2">how to choose a badminton racket</a> guide.</p>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="scroll-mt-24">
+        <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">Frequently Asked Questions</h2>
+        <div class="space-y-4" itemscope itemtype="https://schema.org/FAQPage">
+          {faqItems.map(item => (
+            <div class="border border-slate-200 rounded-xl overflow-hidden" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+              <div class="bg-slate-50 px-5 py-3.5">
+                <h3 class="font-semibold text-slate-900 text-sm" itemprop="name">{item.q}</h3>
+              </div>
+              <div class="px-5 py-3.5" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <p class="text-sm text-slate-600 leading-relaxed" itemprop="text">{item.a}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,345 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { webPageSchema, breadcrumbSchema, faqSchema } from "../../utils/schema";
+
+const faqs = [
+  { q: "Is graphite the same as carbon fibre in tennis rackets?", a: "Technically, graphite is a form of carbon fibre. In the tennis industry, 'graphite' usually refers to standard graphite composite frames, while 'carbon fibre' is a marketing term for premium layups using higher-modulus carbon. The base material is the same — the difference lies in the manufacturing process, weave pattern, and resin quality. For most players, the performance difference is negligible." },
+  { q: "Why are aluminium rackets still sold in India?", a: "Aluminium rackets fill the sub-₹2,000 price segment where many casual players shop. They're extremely durable (they don't crack), which matters for school programmes and public courts where rackets take a beating. For someone who plays once a month, an aluminium racket is adequate." },
+  { q: "When should I upgrade from an aluminium to a graphite racket?", a: "Upgrade as soon as you decide tennis is a regular activity — even if you're a beginner. If you play once a week or more, the improvement in comfort, power, and vibration reduction is immediately noticeable. Good graphite rackets start at ₹2,500-₹3,000 in India." },
+  { q: "Are carbon fibre rackets worth the extra cost for intermediate players?", a: "For most intermediate players in India, a standard graphite racket in the ₹5,000-₹15,000 range offers everything you need. Premium carbon fibre rackets (₹15,000+) provide marginal gains in stiffness and weight distribution that only advanced players with refined technique can exploit. Invest in coaching and string quality before upgrading your frame material." },
+  { q: "Do aluminium rackets cause tennis elbow?", a: "Aluminium transmits significantly more vibration to the arm than graphite, which increases the risk of tennis elbow (lateral epicondylitis) over time. If you already have elbow issues, switching to a graphite racket with a vibration dampener can provide immediate relief." },
+  { q: "What about titanium tennis rackets sold in India?", a: "Titanium rackets (like the HEAD Titanium series) are actually graphite-titanium composites. They use a small amount of titanium mesh woven into the graphite to add durability and slight stiffness without much weight penalty. These are excellent budget rackets and not to be confused with pure metal frames." },
+  { q: "Can I tell what material a racket is made from by looking at it?", a: "Generally, yes. Aluminium frames have visible weld joints and a shinier, metallic finish. Graphite and carbon fibre frames have a matte or semi-gloss painted finish with no visible joints. The material is also printed on the frame or listed in the product specs. When buying on Amazon.in, check the 'Frame Material' specification." },
+  { q: "How long does each type of racket last?", a: "Aluminium rackets can last 10+ years as they bend rather than crack. Graphite rackets typically last 2-5 years of regular play before micro-cracks reduce performance (though they may still be playable). Premium carbon fibre rackets last similarly to graphite — 3-5 years of regular use." },
+];
+
+const jsonLd = { "@graph": [
+  webPageSchema({ url: "/guides/graphite-vs-aluminium-vs-carbon-fibre-tennis-rackets", name: "Graphite vs Aluminium vs Carbon Fibre Tennis Rackets — What's the Difference?", description: "Compare graphite, aluminium, and carbon fibre tennis rackets. Material differences, who each suits, and price implications in the Indian market." }),
+  breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Tennis", url: "/tennis" }, { name: "Graphite vs Aluminium vs Carbon Fibre", url: "/guides/graphite-vs-aluminium-vs-carbon-fibre-tennis-rackets" }]),
+  faqSchema(faqs),
+] } as Record<string, unknown>;
+---
+
+<BaseLayout
+  title="Graphite vs Aluminium vs Carbon Fibre Tennis Rackets — What's the Difference?"
+  description="Compare graphite, aluminium, and carbon fibre tennis rackets. Material differences, who each suits, and price implications in the Indian market."
+  jsonLd={jsonLd}
+>
+  <!-- Hero -->
+  <div class="bg-lime-50 border-b border-lime-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <nav class="text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-slate-800">Home</a> ›
+        <a href="/tennis" class="hover:text-slate-800">Tennis</a> ›
+        <span class="text-slate-700 font-medium">Graphite vs Aluminium vs Carbon Fibre</span>
+      </nav>
+      <div class="flex items-center gap-3 mb-3">
+        <span class="w-3 h-3 rounded-full bg-lime-500" aria-hidden="true"></span>
+        <span class="text-xs font-semibold text-lime-700 uppercase tracking-widest">Guide</span>
+      </div>
+      <h1 class="font-[Barlow_Condensed] text-4xl sm:text-5xl font-bold text-slate-900">Graphite vs Aluminium vs Carbon Fibre Tennis Rackets</h1>
+      <p class="mt-3 text-slate-500 text-base max-w-2xl">What's actually different between these materials, who should use each, and what it means for your wallet in the Indian market.</p>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="max-w-3xl mx-auto">
+
+      <!-- Intro -->
+      <div class="space-y-4 text-sm text-slate-600 leading-relaxed mb-10">
+        <p>Every tennis racket listing on Amazon.in mentions the frame material — aluminium, graphite, carbon fibre, graphite composite, titanium-graphite blend. For most buyers in India, these terms are confusing. Is graphite the same as carbon fibre? Is aluminium really that bad? Does the material justify a ₹15,000 price difference?</p>
+        <p>This guide breaks down the material science behind tennis rackets in plain language. We'll compare the three main material categories, explain exactly how they differ in performance, and help you decide which one matches your level and budget. Everything is framed for the Indian market with real prices and locally available examples.</p>
+      </div>
+
+      <img src="/images/guides/tennis/choose-tennis-racket-frame-materials.png" alt="Three cross-section tubes showing aluminium (silver), graphite (dark grey matte), and carbon fibre (black woven texture) tennis racket frame materials" class="rounded-xl w-full my-8" width="1200" height="675" loading="eager" />
+
+      <!-- Material Science -->
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">The Material Science — Simplified</h2>
+      <div class="space-y-4 text-sm text-slate-600 leading-relaxed mb-10">
+        <p>Before we compare performance, it helps to understand what these materials actually are:</p>
+
+        <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-800 uppercase tracking-wide mt-6 mb-3">Aluminium (Aluminum Alloy)</h3>
+        <p>Aluminium rackets are made from extruded aluminium alloy tubes, bent into the racket head shape and welded at the throat. The manufacturing process is simple and cheap, which is why aluminium rackets are the most affordable option.</p>
+        <p>The key property of aluminium is its <strong class="text-slate-800">ductility</strong> — it bends rather than breaks. When an aluminium racket takes a hard impact, it deforms slightly. This makes it durable in the sense that it won't crack, but it also means it absorbs less shock, transmitting more vibration to your hand and arm.</p>
+
+        <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-800 uppercase tracking-wide mt-6 mb-3">Graphite (Graphite Composite)</h3>
+        <p>Graphite rackets are made by laying sheets of graphite-reinforced polymer (carbon fibres embedded in epoxy resin) into a mould, then curing them under heat and pressure. The result is a hollow frame that's lighter and stiffer than aluminium.</p>
+        <p>The key property of graphite is its <strong class="text-slate-800">stiffness-to-weight ratio</strong>. A graphite frame can be made very light while remaining rigid enough to transfer energy efficiently to the ball. It also dampens vibration naturally, which is why graphite rackets feel more comfortable on impact.</p>
+        <p>Most rackets labelled "graphite" in India are actually graphite composites — they use graphite as the primary material but may include small amounts of fibreglass, Kevlar, or other materials for specific performance characteristics.</p>
+
+        <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-800 uppercase tracking-wide mt-6 mb-3">Carbon Fibre (High-Modulus Carbon)</h3>
+        <p>Here's where it gets confusing: carbon fibre and graphite are essentially the same base material — carbon fibres in a polymer matrix. When manufacturers say "carbon fibre," they typically mean a higher-grade carbon with tighter weave patterns, higher modulus (stiffness per unit weight), and more precisely controlled layup.</p>
+        <p>Premium "carbon fibre" rackets use proprietary manufacturing techniques — Wilson's Countervail, HEAD's Auxetic, Babolat's Cortex Pure Feel — that optimise specific properties like vibration filtering, flex patterns, or torsional stability. These are genuine engineering advances, but the improvements are incremental rather than revolutionary.</p>
+      </div>
+
+      <!-- Comparison Table -->
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Head-to-Head Comparison</h2>
+      <p class="text-sm text-slate-600 leading-relaxed mb-4">Here's how the three materials stack up across the metrics that matter most:</p>
+
+      <div class="overflow-x-auto mb-10">
+        <table class="w-full text-sm border border-slate-200 rounded-xl overflow-hidden">
+          <thead>
+            <tr class="bg-slate-50">
+              <th class="text-left px-4 py-3 font-semibold text-slate-700 border-b border-slate-200">Property</th>
+              <th class="text-left px-4 py-3 font-semibold text-slate-700 border-b border-slate-200">Aluminium</th>
+              <th class="text-left px-4 py-3 font-semibold text-slate-700 border-b border-slate-200">Graphite</th>
+              <th class="text-left px-4 py-3 font-semibold text-slate-700 border-b border-slate-200">Carbon Fibre (Premium)</th>
+            </tr>
+          </thead>
+          <tbody class="text-slate-600">
+            <tr class="border-b border-slate-100">
+              <td class="px-4 py-3 font-medium text-slate-800">Typical Weight</td>
+              <td class="px-4 py-3">290–330g</td>
+              <td class="px-4 py-3">260–300g</td>
+              <td class="px-4 py-3">250–310g</td>
+            </tr>
+            <tr class="border-b border-slate-100 bg-slate-50/50">
+              <td class="px-4 py-3 font-medium text-slate-800">Stiffness</td>
+              <td class="px-4 py-3">Low-Medium</td>
+              <td class="px-4 py-3">Medium-High</td>
+              <td class="px-4 py-3">Tunable (Low to Very High)</td>
+            </tr>
+            <tr class="border-b border-slate-100">
+              <td class="px-4 py-3 font-medium text-slate-800">Vibration Dampening</td>
+              <td class="px-4 py-3">Poor</td>
+              <td class="px-4 py-3">Good</td>
+              <td class="px-4 py-3">Excellent</td>
+            </tr>
+            <tr class="border-b border-slate-100 bg-slate-50/50">
+              <td class="px-4 py-3 font-medium text-slate-800">Power Transfer</td>
+              <td class="px-4 py-3">Low</td>
+              <td class="px-4 py-3">High</td>
+              <td class="px-4 py-3">Very High</td>
+            </tr>
+            <tr class="border-b border-slate-100">
+              <td class="px-4 py-3 font-medium text-slate-800">Durability</td>
+              <td class="px-4 py-3">Very High (bends, doesn't crack)</td>
+              <td class="px-4 py-3">Good (2-5 years regular use)</td>
+              <td class="px-4 py-3">Good (3-5 years regular use)</td>
+            </tr>
+            <tr class="border-b border-slate-100 bg-slate-50/50">
+              <td class="px-4 py-3 font-medium text-slate-800">Price Range (India)</td>
+              <td class="px-4 py-3">₹800–₹2,500</td>
+              <td class="px-4 py-3">₹2,500–₹15,000</td>
+              <td class="px-4 py-3">₹12,000–₹30,000+</td>
+            </tr>
+            <tr class="border-b border-slate-100">
+              <td class="px-4 py-3 font-medium text-slate-800">Best For</td>
+              <td class="px-4 py-3">Casual players, school use</td>
+              <td class="px-4 py-3">Beginners to advanced</td>
+              <td class="px-4 py-3">Advanced, competitive players</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3 font-medium text-slate-800">Arm Friendliness</td>
+              <td class="px-4 py-3">Poor</td>
+              <td class="px-4 py-3">Good</td>
+              <td class="px-4 py-3">Excellent</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Detailed Breakdown: Aluminium -->
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Aluminium Rackets — The Full Picture</h2>
+
+      <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-800 uppercase tracking-wide mb-3">Pros</h3>
+      <div class="space-y-2 text-sm text-slate-600 leading-relaxed mb-6">
+        <ul class="list-disc list-inside space-y-2">
+          <li><strong class="text-slate-800">Extremely affordable:</strong> ₹800-₹2,500 gets you a playable racket. The Cosco Ace series and similar models are available in virtually every sports shop in India.</li>
+          <li><strong class="text-slate-800">Nearly indestructible:</strong> Aluminium bends rather than cracks. Ideal for school tennis programmes, public courts, and situations where rackets take accidental abuse.</li>
+          <li><strong class="text-slate-800">No maintenance concerns:</strong> Unlike graphite, you don't need to worry about micro-cracks from dropping the racket or scraping it on hard courts.</li>
+          <li><strong class="text-slate-800">Widely available:</strong> Stocked at local sports shops in tier-2 and tier-3 Indian cities where premium brands may not have distribution.</li>
+        </ul>
+      </div>
+
+      <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-800 uppercase tracking-wide mb-3">Cons</h3>
+      <div class="space-y-2 text-sm text-slate-600 leading-relaxed mb-10">
+        <ul class="list-disc list-inside space-y-2">
+          <li><strong class="text-slate-800">Heavy:</strong> Most aluminium rackets weigh 290-330g, making them tiring to swing during extended sessions. This extra weight doesn't translate to more power — it just makes you slower.</li>
+          <li><strong class="text-slate-800">High vibration:</strong> The metal frame transmits significant impact shock to your wrist and elbow. Playing regularly with an aluminium racket increases tennis elbow risk substantially.</li>
+          <li><strong class="text-slate-800">Poor power transfer:</strong> The frame flexes on impact, absorbing energy that should go into the ball. You need to swing much harder to achieve the same ball speed you'd get from graphite.</li>
+          <li><strong class="text-slate-800">Limited technology:</strong> No manufacturer invests R&D in aluminium rackets. You get a basic tube frame with no aerodynamic profiling, no vibration dampening systems, and no weight distribution engineering.</li>
+          <li><strong class="text-slate-800">Growth ceiling:</strong> You will outgrow an aluminium racket within weeks of regular coaching. It becomes a barrier to technique development.</li>
+        </ul>
+      </div>
+
+      <!-- Detailed Breakdown: Graphite -->
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Graphite Rackets — The Smart Choice</h2>
+
+      <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-800 uppercase tracking-wide mb-3">Pros</h3>
+      <div class="space-y-2 text-sm text-slate-600 leading-relaxed mb-6">
+        <ul class="list-disc list-inside space-y-2">
+          <li><strong class="text-slate-800">Optimal weight range:</strong> 260-300g hits the sweet spot for most players — light enough to generate racket head speed, heavy enough for stability on contact.</li>
+          <li><strong class="text-slate-800">Excellent power transfer:</strong> The stiff frame deforms less on impact, sending more energy into the ball. You get more pace with less effort.</li>
+          <li><strong class="text-slate-800">Good vibration dampening:</strong> Graphite naturally absorbs vibration better than metal, reducing arm fatigue and injury risk.</li>
+          <li><strong class="text-slate-800">Wide price range in India:</strong> From ₹2,500 for basic graphite composite (HEAD Titanium Tour Pro) to ₹15,000 for mid-range performance frames (HEAD Speed MP, Wilson Clash). Something for every budget.</li>
+          <li><strong class="text-slate-800">Engineering variety:</strong> Graphite can be moulded into aerodynamic beam profiles, variable stiffness zones, and optimised weight distributions. Every major technology from HEAD, Wilson, Babolat, and Yonex is built on a graphite platform.</li>
+          <li><strong class="text-slate-800">Long-term value:</strong> A good graphite racket in the ₹5,000-₹10,000 range will serve you from beginner through intermediate level — potentially 2-3 years of regular play.</li>
+        </ul>
+      </div>
+
+      <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-800 uppercase tracking-wide mb-3">Cons</h3>
+      <div class="space-y-2 text-sm text-slate-600 leading-relaxed mb-10">
+        <ul class="list-disc list-inside space-y-2">
+          <li><strong class="text-slate-800">Can crack on impact:</strong> Dropping a graphite racket on hard court or hitting the frame against the ground can cause micro-cracks that weaken the structure over time. Handle with reasonable care.</li>
+          <li><strong class="text-slate-800">Higher minimum cost:</strong> The cheapest decent graphite racket in India costs ₹2,500-₹3,000 — not accessible for everyone.</li>
+          <li><strong class="text-slate-800">Quality varies widely:</strong> Not all graphite is equal. A ₹2,500 graphite composite has a very different feel from a ₹10,000 pure graphite frame. Budget graphite rackets may include significant fibreglass content.</li>
+        </ul>
+      </div>
+
+      <img src="/images/guides/tennis/vibration-dampening-diagram.png" alt="Technical illustration of a tennis racket showing vibration waves travelling from ball impact at the head (red) fading to green at the handle, demonstrating dampening" class="rounded-xl w-full my-8" width="1200" height="675" loading="lazy" />
+
+      <!-- Detailed Breakdown: Carbon Fibre -->
+      <img src="/images/guides/tennis/carbon-fibre-weave-closeup.png" alt="Extreme macro close-up of carbon fibre weave pattern showing the cross-hatch basket weave texture with glossy resin finish" class="rounded-xl w-full my-8" width="1200" height="675" loading="lazy" />
+
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Carbon Fibre (Premium) Rackets — The Performance Tier</h2>
+
+      <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-800 uppercase tracking-wide mb-3">Pros</h3>
+      <div class="space-y-2 text-sm text-slate-600 leading-relaxed mb-6">
+        <ul class="list-disc list-inside space-y-2">
+          <li><strong class="text-slate-800">Superior vibration filtering:</strong> Technologies like Wilson's Countervail and HEAD's Auxetic genuinely reduce vibration beyond what standard graphite achieves. If you have arm issues, this matters.</li>
+          <li><strong class="text-slate-800">Tunable flex profiles:</strong> Premium carbon fibre allows manufacturers to engineer different flex characteristics in different parts of the frame — stiffer in the throat for power, more flexible at the tip for comfort.</li>
+          <li><strong class="text-slate-800">Lighter weight with more stability:</strong> Higher-modulus carbon achieves the same stiffness with less material, allowing for frames that are both light and stable — a combination that standard graphite struggles with.</li>
+          <li><strong class="text-slate-800">Precision feel:</strong> Advanced players describe premium carbon frames as more "connected" — you can feel the ball on the strings better, which translates to improved shot-making at high levels.</li>
+          <li><strong class="text-slate-800">Tour pedigree:</strong> The exact or very similar frames are used by professional players on tour, which means extensive R&D has gone into their design.</li>
+        </ul>
+      </div>
+
+      <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-800 uppercase tracking-wide mb-3">Cons</h3>
+      <div class="space-y-2 text-sm text-slate-600 leading-relaxed mb-10">
+        <ul class="list-disc list-inside space-y-2">
+          <li><strong class="text-slate-800">Expensive in India:</strong> Premium carbon fibre rackets start at ₹12,000 and go up to ₹30,000+. With import duties and limited competition, Indian prices are 20-40% higher than US prices.</li>
+          <li><strong class="text-slate-800">Diminishing returns:</strong> The performance difference between a ₹8,000 graphite racket and a ₹20,000 carbon fibre racket is far smaller than the difference between a ₹2,000 aluminium racket and a ₹5,000 graphite one. You pay 2-3x more for maybe a 10-15% improvement.</li>
+          <li><strong class="text-slate-800">Often sold unstrung:</strong> Many premium rackets in the ₹15,000+ range come unstrung, adding ₹800-₹2,000 for strings and ₹300-₹500 for stringing. Your total cost is higher than the sticker price.</li>
+          <li><strong class="text-slate-800">Wasted on beginners:</strong> The precision engineering of a premium carbon fibre frame requires advanced technique to exploit. A beginner hitting with a ₹25,000 Babolat Pure Aero won't play better than with a ₹5,000 HEAD — their technique is the limiting factor, not the racket.</li>
+          <li><strong class="text-slate-800">Availability in India:</strong> Full colour and grip size ranges may not be stocked by Indian retailers. You might need to import or wait for restocks.</li>
+        </ul>
+      </div>
+
+      <!-- Price Implications in India -->
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Price Implications in the Indian Market</h2>
+      <div class="space-y-4 text-sm text-slate-600 leading-relaxed mb-6">
+        <p>Understanding the Indian pricing landscape helps you make a smarter buying decision:</p>
+      </div>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border border-slate-200 rounded-xl overflow-hidden">
+          <thead>
+            <tr class="bg-slate-50">
+              <th class="text-left px-4 py-3 font-semibold text-slate-700 border-b border-slate-200">Price Bracket</th>
+              <th class="text-left px-4 py-3 font-semibold text-slate-700 border-b border-slate-200">Material</th>
+              <th class="text-left px-4 py-3 font-semibold text-slate-700 border-b border-slate-200">Example Models</th>
+              <th class="text-left px-4 py-3 font-semibold text-slate-700 border-b border-slate-200">Player Level</th>
+            </tr>
+          </thead>
+          <tbody class="text-slate-600">
+            <tr class="border-b border-slate-100">
+              <td class="px-4 py-3 font-medium text-slate-800">₹800–₹2,000</td>
+              <td class="px-4 py-3">Aluminium</td>
+              <td class="px-4 py-3">Cosco Ace, Nivia Pro Drive</td>
+              <td class="px-4 py-3">Casual / School</td>
+            </tr>
+            <tr class="border-b border-slate-100 bg-slate-50/50">
+              <td class="px-4 py-3 font-medium text-slate-800">₹2,000–₹3,500</td>
+              <td class="px-4 py-3">Graphite-Aluminium Composite</td>
+              <td class="px-4 py-3">Cosco Action 3000, HEAD Titanium Tour</td>
+              <td class="px-4 py-3">Beginner</td>
+            </tr>
+            <tr class="border-b border-slate-100">
+              <td class="px-4 py-3 font-medium text-green-700 bg-green-50">₹3,500–₹8,000</td>
+              <td class="px-4 py-3 bg-green-50">Graphite Composite</td>
+              <td class="px-4 py-3 bg-green-50">HEAD TI S6, Wilson Tour Slam</td>
+              <td class="px-4 py-3 bg-green-50">Beginner–Intermediate</td>
+            </tr>
+            <tr class="border-b border-slate-100 bg-slate-50/50">
+              <td class="px-4 py-3 font-medium text-slate-800">₹8,000–₹15,000</td>
+              <td class="px-4 py-3">Full Graphite</td>
+              <td class="px-4 py-3">HEAD Speed MP, Babolat Boost</td>
+              <td class="px-4 py-3">Intermediate</td>
+            </tr>
+            <tr class="border-b border-slate-100">
+              <td class="px-4 py-3 font-medium text-slate-800">₹15,000–₹25,000</td>
+              <td class="px-4 py-3">Premium Carbon Fibre</td>
+              <td class="px-4 py-3">HEAD Radical Pro, Wilson Clash 100</td>
+              <td class="px-4 py-3">Intermediate–Advanced</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3 font-medium text-slate-800">₹25,000+</td>
+              <td class="px-4 py-3">Tour-Grade Carbon Fibre</td>
+              <td class="px-4 py-3">Babolat Pure Aero, Wilson Pro Staff</td>
+              <td class="px-4 py-3">Advanced / Competitive</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="space-y-4 text-sm text-slate-600 leading-relaxed mb-10">
+        <p><strong class="text-slate-800">The value sweet spot in India is ₹3,500-₹8,000.</strong> At this price point, you get genuine graphite composite frames from reputable brands — a massive upgrade from aluminium in every performance metric, at a fraction of what premium carbon fibre costs.</p>
+        <p>Indian import duties and GST add 18-28% to the cost of international tennis products. This price inflation hits the premium segment hardest: a racket that costs $150 (roughly ₹12,500) in the US might retail for ₹16,000-₹18,000 in India. Budget and mid-range rackets are less affected because they're often manufactured closer to or within India.</p>
+      </div>
+
+      <!-- When to Upgrade -->
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">When to Upgrade From Aluminium</h2>
+      <div class="space-y-4 text-sm text-slate-600 leading-relaxed mb-6">
+        <p>If you're currently playing with an aluminium racket, here are the signs it's time to move to graphite:</p>
+        <ul class="list-disc list-inside space-y-3">
+          <li><strong class="text-slate-800">You play once a week or more.</strong> At this frequency, the comfort and performance benefits of graphite are worth the investment.</li>
+          <li><strong class="text-slate-800">You're taking coaching.</strong> A good coach will quickly notice that your racket is holding back your technique. Aluminium rackets are too heavy for proper swing mechanics.</li>
+          <li><strong class="text-slate-800">You feel arm pain after playing.</strong> Vibration from aluminium is the most common culprit. Switching to graphite often resolves this immediately.</li>
+          <li><strong class="text-slate-800">You're hitting the ball cleanly but lack pace.</strong> If your technique has improved but your shots feel sluggish, the frame material is likely the bottleneck.</li>
+          <li><strong class="text-slate-800">You've been playing for 3+ months consistently.</strong> By this point, tennis is clearly a hobby worth investing in. A ₹3,000-₹5,000 graphite racket will transform your playing experience.</li>
+        </ul>
+      </div>
+
+      <div class="bg-green-50 border border-green-200 rounded-xl p-5 mb-10">
+        <p class="text-sm text-green-800"><strong>Our honest advice:</strong> If your budget allows ₹3,000+, skip aluminium entirely and start with graphite. The learning experience is better from day one, and you won't need to buy another racket for 1-2 years. Check our <a href="/guides/how-to-choose-tennis-racket-beginners" class="text-green-700 underline hover:text-green-800">beginner's guide</a> for specific recommendations.</p>
+      </div>
+
+      <!-- Titanium Note -->
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">A Note on Titanium Rackets</h2>
+      <div class="space-y-4 text-sm text-slate-600 leading-relaxed mb-10">
+        <p>You'll see many rackets in India labelled "titanium" — especially from HEAD (the Titanium Tour Pro, TI S6, etc.). These are not made of pure titanium. They're graphite composite frames with titanium mesh woven into the layup for added durability and marginal stiffness.</p>
+        <p>These titanium-graphite composites are excellent value rackets. They play like graphite (because they mostly are graphite) with slightly better impact resistance. In the Indian market, they occupy the ₹2,500-₹6,000 price range and are some of the best options for beginners. Don't confuse them with aluminium — they're a completely different class of racket.</p>
+      </div>
+
+      <!-- Related Reviews -->
+      <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8 mb-10">
+        <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">See Our Tested Rackets</h2>
+        <p class="text-sm text-slate-600 mb-4">We've tested rackets across all three material categories. Find the best options in your budget:</p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <a href="/reviews/best-tennis-rackets-under-5000-india" class="block bg-white border border-slate-200 rounded-xl p-4 hover:shadow-md hover:border-green-300 transition-all">
+            <p class="font-semibold text-slate-900 text-sm">Best Under ₹5,000</p>
+            <p class="text-xs text-slate-500 mt-1">Graphite composites at budget prices</p>
+          </a>
+          <a href="/reviews/best-tennis-rackets-under-10000-india" class="block bg-white border border-slate-200 rounded-xl p-4 hover:shadow-md hover:border-green-300 transition-all">
+            <p class="font-semibold text-slate-900 text-sm">Best Under ₹10,000</p>
+            <p class="text-xs text-slate-500 mt-1">Full graphite mid-range</p>
+          </a>
+          <a href="/reviews/best-tennis-rackets-under-20000-india" class="block bg-white border border-slate-200 rounded-xl p-4 hover:shadow-md hover:border-green-300 transition-all">
+            <p class="font-semibold text-slate-900 text-sm">Best Under ₹20,000</p>
+            <p class="text-xs text-slate-500 mt-1">Premium carbon fibre options</p>
+          </a>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <section id="faq" class="scroll-mt-24">
+        <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">Frequently Asked Questions</h2>
+        <div class="space-y-4" itemscope itemtype="https://schema.org/FAQPage">
+          {faqs.map(item => (
+            <div class="border border-slate-200 rounded-xl overflow-hidden" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+              <div class="bg-slate-50 px-5 py-3.5">
+                <h3 class="font-semibold text-slate-900 text-sm" itemprop="name">{item.q}</h3>
+              </div>
+              <div class="px-5 py-3.5" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <p class="text-sm text-slate-600 leading-relaxed" itemprop="text">{item.a}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+    </div>
+  </div>
+</BaseLayout>

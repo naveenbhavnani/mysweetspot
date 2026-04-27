@@ -1,0 +1,342 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { webPageSchema, breadcrumbSchema, faqSchema } from "../../utils/schema";
+
+const title = "How to Choose a Table Tennis Table for Home Use in India";
+const description = "Guide to choosing a table tennis table for home use in India. Covers full-size vs mini, indoor vs outdoor, table thickness, foldability, and space requirements.";
+const url = "/guides/how-to-choose-table-tennis-table";
+
+const faqs = [
+  { q: "What size table tennis table do I need for home use?", a: "A full-size table (9x5 ft / 274x152.5 cm) is the standard for proper play. If space is tight, a 3/4 size table (7x4 ft) is a reasonable compromise. Mini tables (5x3 ft or smaller) are for casual fun only — you cannot develop proper technique on them." },
+  { q: "How much space do I need around a table tennis table?", a: "For recreational play, you need at least 4 feet of clearance on each end and 3 feet on each side — so a room of roughly 17x13 feet minimum for a full-size table. For competitive practice, ITTF recommends 19x10 feet of clear playing area beyond the table itself." },
+  { q: "Is a thicker table top always better?", a: "Yes, within reason. Thicker tops (19-25 mm) provide a more consistent, higher bounce that feels closer to professional tables. Tables under 15 mm thick often have uneven bounce and a dead feel. For serious home practice, aim for at least 18 mm." },
+  { q: "Can I keep a table tennis table outdoors in India?", a: "Only if it is specifically designed for outdoor use. Outdoor tables use aluminium composite or melamine-coated tops that resist moisture and UV damage. Standard MDF indoor tables will warp, swell, and degrade quickly in Indian outdoor conditions, especially during monsoon season." },
+  { q: "Which Indian brands make good table tennis tables?", a: "Stag is the most established Indian table tennis table brand with models from INR 10,000 to over INR 1,00,000. Donic (through their Indian distributor) and Butterfly also have good options. For budget tables, Koxtons and Gymnco offer functional tables under INR 15,000." },
+  { q: "Is a foldable table tennis table worth it?", a: "Absolutely, especially for Indian homes where dedicated game rooms are rare. A foldable table with wheels lets you store it upright when not in use, freeing up the room for other purposes. Most foldable tables also support playback mode where you fold up one half to practise solo." },
+];
+
+const jsonLd = { "@graph": [
+  webPageSchema({ url, name: title, description }),
+  breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Table Tennis", url: "/table-tennis" },
+    { name: "How to Choose a Table Tennis Table", url },
+  ]),
+  faqSchema(faqs),
+] } as Record<string, unknown>;
+---
+
+<BaseLayout title={title} description={description} jsonLd={jsonLd}>
+  <article class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+    <!-- Breadcrumbs -->
+    <nav class="text-xs text-slate-500 mb-6" aria-label="Breadcrumb">
+      <a href="/" class="hover:text-slate-800">Home</a> ›
+      <a href="/table-tennis" class="hover:text-slate-800">Table Tennis</a> ›
+      <span class="text-slate-700 font-medium">How to Choose a Table Tennis Table</span>
+    </nav>
+
+    <!-- Hero -->
+    <header class="max-w-4xl mb-12">
+      <h1 class="font-[Barlow_Condensed] text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-4">How to Choose a Table Tennis Table for Home Use in India</h1>
+      <p class="text-lg text-slate-600 leading-relaxed">A table tennis table is a significant investment — it needs to fit your space, survive Indian weather conditions (if going outdoors), and deliver a bounce quality that makes practice worthwhile. This guide covers every factor: sizes, materials, thickness, foldability, Indian brands, and realistic budgets so you make the right choice for your home.</p>
+    </header>
+
+    <div class="max-w-4xl">
+
+      <div class="bg-slate-100 rounded-xl aspect-video flex items-center justify-center text-slate-400 text-sm my-8"><span>IMAGE: Table tennis table in a typical Indian home setup showing space clearance around the table</span></div>
+
+      <!-- Section: Table Sizes -->
+      <section class="mb-12">
+        <h2 class="font-[Barlow_Condensed] text-3xl font-bold text-slate-900 mb-4">Table Sizes: Full-Size, 3/4, and Mini</h2>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">Table tennis tables come in three broad size categories. Your choice depends on available space, how seriously you play, and whether the table needs to share a room with other activities.</p>
+
+        <h3 class="font-[Barlow_Condensed] text-xl font-semibold text-slate-800 mb-2">Full-Size (9 x 5 ft / 274 x 152.5 cm)</h3>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">The regulation size used in all official competitions. If you want to develop proper technique, footwork, and match-realistic play, a full-size table is non-negotiable. The table stands 76 cm (2.5 ft) high. Full-size tables require a room that is at least 17 feet long and 13 feet wide for comfortable recreational play — more if you plan to practise seriously with full stroke movement.</p>
+
+        <h3 class="font-[Barlow_Condensed] text-xl font-semibold text-slate-800 mb-2">3/4 Size (7 x 4 ft / 213 x 122 cm)</h3>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">A practical compromise for Indian apartments and smaller homes. The 3/4 size table fits in rooms where a full-size table would be too cramped. The playing experience is noticeably different from full-size — angles are compressed and footwork patterns do not translate directly — but for family recreation and basic skill development, it works well. Some schools and corporate offices in India use 3/4 size tables in common areas.</p>
+
+        <h3 class="font-[Barlow_Condensed] text-xl font-semibold text-slate-800 mb-2">Mini Tables (5 x 3 ft and smaller)</h3>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">Mini tables are toys, not training equipment. They are fun for children, dorm rooms, and office break rooms, but you cannot develop real table tennis skills on them. The bounce is inconsistent, the playing area is too small for proper strokes, and the net height relative to the table proportions is off. Buy a mini table only if entertainment value is your sole criterion.</p>
+
+        <div class="overflow-x-auto my-8">
+          <table class="w-full text-sm border border-slate-200 rounded-lg overflow-hidden">
+            <thead>
+              <tr class="bg-green-600 text-white">
+                <th class="text-left px-4 py-3 font-[Barlow_Condensed] font-semibold">Size</th>
+                <th class="text-left px-4 py-3 font-[Barlow_Condensed] font-semibold">Dimensions</th>
+                <th class="text-left px-4 py-3 font-[Barlow_Condensed] font-semibold">Min Room Size</th>
+                <th class="text-left px-4 py-3 font-[Barlow_Condensed] font-semibold">Suitable For</th>
+                <th class="text-left px-4 py-3 font-[Barlow_Condensed] font-semibold">Price Range (INR)</th>
+              </tr>
+            </thead>
+            <tbody class="text-slate-600">
+              <tr class="border-t border-slate-200">
+                <td class="px-4 py-3 font-medium text-slate-800">Full-Size</td>
+                <td class="px-4 py-3">274 x 152.5 cm</td>
+                <td class="px-4 py-3">17 x 13 ft</td>
+                <td class="px-4 py-3">Serious practice, competition</td>
+                <td class="px-4 py-3">12,000 - 2,00,000+</td>
+              </tr>
+              <tr class="border-t border-slate-200 bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-800">3/4 Size</td>
+                <td class="px-4 py-3">213 x 122 cm</td>
+                <td class="px-4 py-3">14 x 11 ft</td>
+                <td class="px-4 py-3">Family recreation, small homes</td>
+                <td class="px-4 py-3">8,000 - 25,000</td>
+              </tr>
+              <tr class="border-t border-slate-200">
+                <td class="px-4 py-3 font-medium text-slate-800">Mini</td>
+                <td class="px-4 py-3">~150 x 80 cm</td>
+                <td class="px-4 py-3">10 x 8 ft</td>
+                <td class="px-4 py-3">Casual fun, children</td>
+                <td class="px-4 py-3">3,000 - 10,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Section: Indoor vs Outdoor -->
+      <section class="mb-12">
+        <h2 class="font-[Barlow_Condensed] text-3xl font-bold text-slate-900 mb-4">Indoor vs Outdoor Tables</h2>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">This distinction is critical in India, where monsoon humidity, extreme summer heat, and dust can destroy an unsuitable table within a single season.</p>
+
+        <h3 class="font-[Barlow_Condensed] text-xl font-semibold text-slate-800 mb-2">Indoor Tables</h3>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">Indoor tables use MDF (Medium Density Fibreboard) or particleboard tops. MDF provides better bounce consistency and is the standard for all competition tables. However, MDF is highly susceptible to moisture — a few hours in humid outdoor conditions can cause warping. Indoor tables must stay in climate-controlled or at least covered, dry environments. In Indian cities, this typically means an air-conditioned room, a covered hall, or at minimum a well-ventilated indoor space away from rain exposure.</p>
+
+        <h3 class="font-[Barlow_Condensed] text-xl font-semibold text-slate-800 mb-2">Outdoor Tables</h3>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">Outdoor tables use aluminium composite tops or melamine-resin coated surfaces that resist moisture, UV fading, and temperature changes. The bounce on outdoor tables is slightly different from indoor — generally a bit lower and faster — but modern outdoor tables from brands like Stag, Donic, and Cornilleau have closed this gap significantly. Outdoor tables have steel or galvanised undercarriages to prevent rust. If your plan is to put the table on a terrace, balcony, or in a garden, an outdoor table is the only viable option.</p>
+
+        <div class="bg-slate-100 rounded-xl aspect-video flex items-center justify-center text-slate-400 text-sm my-8"><span>IMAGE: Indoor MDF table in a living room vs outdoor aluminium-top table on a terrace</span></div>
+      </section>
+
+      <!-- Section: Table Top Thickness -->
+      <section class="mb-12">
+        <h2 class="font-[Barlow_Condensed] text-3xl font-bold text-slate-900 mb-4">Table Top Thickness Guide</h2>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">Table top thickness is the single best indicator of bounce quality. Thicker tops produce a higher, more consistent bounce. Here is what each thickness tier delivers:</p>
+
+        <div class="overflow-x-auto my-8">
+          <table class="w-full text-sm border border-slate-200 rounded-lg overflow-hidden">
+            <thead>
+              <tr class="bg-green-600 text-white">
+                <th class="text-left px-4 py-3 font-[Barlow_Condensed] font-semibold">Thickness</th>
+                <th class="text-left px-4 py-3 font-[Barlow_Condensed] font-semibold">Bounce Quality</th>
+                <th class="text-left px-4 py-3 font-[Barlow_Condensed] font-semibold">Use Case</th>
+                <th class="text-left px-4 py-3 font-[Barlow_Condensed] font-semibold">Price Impact</th>
+              </tr>
+            </thead>
+            <tbody class="text-slate-600">
+              <tr class="border-t border-slate-200">
+                <td class="px-4 py-3 font-medium text-slate-800">12 mm</td>
+                <td class="px-4 py-3">Low, uneven, dead spots</td>
+                <td class="px-4 py-3">Budget recreation only</td>
+                <td class="px-4 py-3">Cheapest</td>
+              </tr>
+              <tr class="border-t border-slate-200 bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-800">15 mm</td>
+                <td class="px-4 py-3">Acceptable, slightly inconsistent</td>
+                <td class="px-4 py-3">Casual home play</td>
+                <td class="px-4 py-3">Budget-friendly</td>
+              </tr>
+              <tr class="border-t border-slate-200">
+                <td class="px-4 py-3 font-medium text-slate-800">18 mm</td>
+                <td class="px-4 py-3">Good, consistent across surface</td>
+                <td class="px-4 py-3">Serious home practice</td>
+                <td class="px-4 py-3">Mid-range</td>
+              </tr>
+              <tr class="border-t border-slate-200 bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-800">19 mm</td>
+                <td class="px-4 py-3">Very good, near-tournament feel</td>
+                <td class="px-4 py-3">Home training, club use</td>
+                <td class="px-4 py-3">Mid to high</td>
+              </tr>
+              <tr class="border-t border-slate-200">
+                <td class="px-4 py-3 font-medium text-slate-800">22-25 mm</td>
+                <td class="px-4 py-3">Excellent, competition-standard</td>
+                <td class="px-4 py-3">Tournament, professional training</td>
+                <td class="px-4 py-3">Premium</td>
+              </tr>
+              <tr class="border-t border-slate-200 bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-800">25+ mm</td>
+                <td class="px-4 py-3">ITTF-approved, perfect bounce</td>
+                <td class="px-4 py-3">ITTF-sanctioned events</td>
+                <td class="px-4 py-3">Highest</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">Our recommendation: 18 mm is the minimum for any player who wants to improve their game. Below 18 mm, the bounce inconsistencies will actively hinder your development. If your budget allows, 19 mm offers a noticeable step up in feel.</p>
+      </section>
+
+      <!-- Section: Foldability and Storage -->
+      <section class="mb-12">
+        <h2 class="font-[Barlow_Condensed] text-3xl font-bold text-slate-900 mb-4">Foldability, Wheels, and Storage</h2>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">Indian homes rarely have dedicated game rooms. A foldable table tennis table is not a luxury — it is a necessity for most buyers.</p>
+
+        <h3 class="font-[Barlow_Condensed] text-xl font-semibold text-slate-800 mb-2">Two-Piece Foldable Design</h3>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">The most common design splits the table into two halves, each with its own set of legs and wheels. You fold each half upright and roll them to a wall or corner. This design also enables "playback mode" — fold up one half and practise solo by hitting against the vertical surface. When folded, a full-size table typically occupies a space of roughly 155 x 76 x 160 cm (width x depth x height), which fits against most walls.</p>
+
+        <h3 class="font-[Barlow_Condensed] text-xl font-semibold text-slate-800 mb-2">One-Piece Fold Design</h3>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">Some tables fold in one piece — the two halves fold together like a book. These are quicker to set up and store but are heavier to move and do not support playback mode. They are less common in India.</p>
+
+        <h3 class="font-[Barlow_Condensed] text-xl font-semibold text-slate-800 mb-2">Wheels and Locking Mechanisms</h3>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">Good wheels matter more than you think. A full-size table weighs 60-100 kg, and you will be moving it regularly. Look for tables with at least four swivel casters (ideally rubber-coated to protect flooring) and reliable locking brakes. The folding mechanism should have a safety lock to prevent the table from collapsing during play — especially important if children are around.</p>
+
+        <div class="bg-slate-100 rounded-xl aspect-video flex items-center justify-center text-slate-400 text-sm my-8"><span>IMAGE: Foldable table tennis table in storage position and in playback mode for solo practice</span></div>
+      </section>
+
+      <!-- Section: Space Requirements -->
+      <section class="mb-12">
+        <h2 class="font-[Barlow_Condensed] text-3xl font-bold text-slate-900 mb-4">Space Requirements for Indian Homes</h2>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">Space is the number-one constraint for Indian buyers. Here is a realistic breakdown:</p>
+
+        <ul class="list-disc pl-6 text-sm text-slate-600 leading-relaxed mb-4 space-y-2">
+          <li><strong class="text-slate-800">Minimum for full-size (recreational):</strong> 17 x 13 ft (5.2 x 4 m). This gives you 4 ft behind each end and 3 ft on each side. Tight but playable for casual rallies.</li>
+          <li><strong class="text-slate-800">Comfortable for full-size:</strong> 20 x 14 ft (6 x 4.3 m). Enough room for proper footwork and backswing without hitting walls.</li>
+          <li><strong class="text-slate-800">ITTF recommended (competition):</strong> 33 x 16.5 ft (10 x 5 m) playing area. Not realistic for home use but useful to know if you are setting up a club or coaching academy.</li>
+          <li><strong class="text-slate-800">Ceiling height:</strong> Minimum 9 ft (2.7 m). Most Indian homes have 9-10 ft ceilings, which is adequate. Lobbying high balls needs more headroom — 10 ft is ideal.</li>
+        </ul>
+
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">Common Indian home spaces that work: a large living room (when furniture is moved aside), a covered terrace or balcony (with an outdoor table), a garage or parking area (if covered), or a dedicated multipurpose room. Measure your space before buying — it is the most common source of regret among Indian buyers.</p>
+      </section>
+
+      <!-- Section: Surface Types -->
+      <section class="mb-12">
+        <h2 class="font-[Barlow_Condensed] text-3xl font-bold text-slate-900 mb-4">Surface Finish and Coating</h2>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">The playing surface has a specific blue or green matte coating that determines ball grip, visibility, and glare reduction. Here is what to look for:</p>
+
+        <h3 class="font-[Barlow_Condensed] text-xl font-semibold text-slate-800 mb-2">Blue vs Green</h3>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">Blue is the modern ITTF standard for competition tables and the preferred colour for TV broadcasts. Green is the traditional colour and still widely used in clubs and homes. Performance-wise, there is no difference — it is purely about visibility and preference. Blue tables look more contemporary; green tables have a classic feel.</p>
+
+        <h3 class="font-[Barlow_Condensed] text-xl font-semibold text-slate-800 mb-2">Anti-Glare Coating</h3>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">Quality tables have a matte anti-glare coating that prevents light reflections from obscuring the ball. This is especially important if your playing area has overhead tube lights or windows that let in direct sunlight — both common in Indian homes. Budget tables sometimes have a semi-gloss finish that creates annoying glare spots.</p>
+      </section>
+
+      <!-- Section: Assembly -->
+      <section class="mb-12">
+        <h2 class="font-[Barlow_Condensed] text-3xl font-bold text-slate-900 mb-4">Assembly and Installation</h2>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">Most table tennis tables arrive partially assembled — the top halves are complete, and you need to attach the legs, wheel assemblies, and net. Budget 1-2 hours for assembly with two people. Some tips specific to Indian buyers:</p>
+        <ul class="list-disc pl-6 text-sm text-slate-600 leading-relaxed mb-4 space-y-2">
+          <li><strong class="text-slate-800">Check for delivery damage:</strong> Large items shipped across India often arrive with minor cosmetic damage. Inspect all edges and corners before the delivery person leaves.</li>
+          <li><strong class="text-slate-800">Keep the packaging:</strong> If you might need warranty service, the original packaging makes return shipping much easier.</li>
+          <li><strong class="text-slate-800">Level the table:</strong> Indian floors are not always perfectly level. Use the adjustable leg levellers (most tables have them) to ensure the playing surface is flat. Place a ball on the table — it should not roll in any direction.</li>
+          <li><strong class="text-slate-800">Net quality:</strong> Most bundled nets are basic. Upgrading to a screw-clamp net from Stag or Butterfly (INR 400-800) is a worthwhile improvement.</li>
+        </ul>
+      </section>
+
+      <!-- Section: Indian Brands -->
+      <section class="mb-12">
+        <h2 class="font-[Barlow_Condensed] text-3xl font-bold text-slate-900 mb-4">Indian Brands and Where to Buy</h2>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">The Indian table tennis table market is served by a mix of domestic manufacturers and imported brands. Here are the key names:</p>
+
+        <h3 class="font-[Barlow_Condensed] text-xl font-semibold text-slate-800 mb-2">Stag</h3>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">The most established Indian TT brand. Stag manufactures tables across the entire price spectrum, from recreational models at INR 10,000 to ITTF-approved competition tables used in national championships. Their Club, Championship, and International lines are well-regarded. Stag tables are widely available on Amazon.in, Flipkart, and through sports distributors.</p>
+
+        <h3 class="font-[Barlow_Condensed] text-xl font-semibold text-slate-800 mb-2">Donic</h3>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">German brand with strong Indian distribution. Donic tables offer excellent build quality in the mid to premium range (INR 20,000-80,000). Their Waldner Highschool and Persson series are popular in Indian clubs and academies.</p>
+
+        <h3 class="font-[Barlow_Condensed] text-xl font-semibold text-slate-800 mb-2">Butterfly</h3>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">Japanese brand that produces the gold standard in professional tables. Butterfly tables are expensive (INR 50,000+) but deliver unmatched bounce quality and durability. The Butterfly Centrefold and Europa series are used in international competitions. Available through specialist dealers and online.</p>
+
+        <h3 class="font-[Barlow_Condensed] text-xl font-semibold text-slate-800 mb-2">Budget Options: Koxtons, Gymnco</h3>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">For buyers on a tight budget, Indian brands like Koxtons and Gymnco offer functional tables in the INR 8,000-15,000 range. Bounce quality and build are a step below Stag, but they serve the recreational market adequately. Explore our <a href="/reviews/best-table-tennis-tables-india" class="text-green-600 font-medium hover:underline">best table tennis tables in India</a> review for detailed comparisons.</p>
+      </section>
+
+      <!-- Section: Budget Ranges -->
+      <section class="mb-12">
+        <h2 class="font-[Barlow_Condensed] text-3xl font-bold text-slate-900 mb-4">Budget Ranges for Table Tennis Tables in India</h2>
+
+        <div class="overflow-x-auto my-8">
+          <table class="w-full text-sm border border-slate-200 rounded-lg overflow-hidden">
+            <thead>
+              <tr class="bg-green-600 text-white">
+                <th class="text-left px-4 py-3 font-[Barlow_Condensed] font-semibold">Budget (INR)</th>
+                <th class="text-left px-4 py-3 font-[Barlow_Condensed] font-semibold">What You Get</th>
+                <th class="text-left px-4 py-3 font-[Barlow_Condensed] font-semibold">Top Thickness</th>
+                <th class="text-left px-4 py-3 font-[Barlow_Condensed] font-semibold">Brands</th>
+              </tr>
+            </thead>
+            <tbody class="text-slate-600">
+              <tr class="border-t border-slate-200">
+                <td class="px-4 py-3 font-medium text-slate-800">8,000 - 15,000</td>
+                <td class="px-4 py-3">Basic foldable, recreational</td>
+                <td class="px-4 py-3">12-15 mm</td>
+                <td class="px-4 py-3">Koxtons, Gymnco, Stag (basic)</td>
+              </tr>
+              <tr class="border-t border-slate-200 bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-800">15,000 - 30,000</td>
+                <td class="px-4 py-3">Good foldable, decent bounce</td>
+                <td class="px-4 py-3">15-18 mm</td>
+                <td class="px-4 py-3">Stag, Donic (entry)</td>
+              </tr>
+              <tr class="border-t border-slate-200">
+                <td class="px-4 py-3 font-medium text-slate-800">30,000 - 60,000</td>
+                <td class="px-4 py-3">Club-quality, excellent bounce</td>
+                <td class="px-4 py-3">18-22 mm</td>
+                <td class="px-4 py-3">Stag Championship, Donic</td>
+              </tr>
+              <tr class="border-t border-slate-200 bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-800">60,000 - 1,50,000+</td>
+                <td class="px-4 py-3">Competition-grade, ITTF-approved</td>
+                <td class="px-4 py-3">22-30 mm</td>
+                <td class="px-4 py-3">Butterfly, Stag International, Donic</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">For most Indian home buyers, the INR 15,000-30,000 range offers the best balance of quality, features (foldability, wheels), and bounce consistency. Below INR 15,000, you are making significant compromises. Above INR 30,000, improvements become incremental unless you need competition-standard specifications.</p>
+      </section>
+
+      <!-- Section: What to Check Before Buying -->
+      <section class="mb-12">
+        <h2 class="font-[Barlow_Condensed] text-3xl font-bold text-slate-900 mb-4">Checklist Before You Buy</h2>
+        <ul class="list-disc pl-6 text-sm text-slate-600 leading-relaxed space-y-2">
+          <li><strong class="text-slate-800">Measure your room</strong> — including door widths (can the table fit through?) and ceiling height.</li>
+          <li><strong class="text-slate-800">Decide indoor vs outdoor</strong> — this narrows your options significantly.</li>
+          <li><strong class="text-slate-800">Check the top thickness</strong> — aim for 18 mm minimum if you want realistic bounce.</li>
+          <li><strong class="text-slate-800">Verify foldability</strong> — confirm the table supports playback mode if you want solo practice.</li>
+          <li><strong class="text-slate-800">Read the net situation</strong> — most tables include a basic net. Budget INR 400-800 for an upgrade if needed.</li>
+          <li><strong class="text-slate-800">Factor in delivery</strong> — these are large, heavy items. Confirm that the seller delivers to your floor (especially important for apartment dwellers).</li>
+          <li><strong class="text-slate-800">Check the warranty</strong> — Stag and Donic offer 1-2 year warranties on frame and surface. Verify terms before purchasing.</li>
+        </ul>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="mb-12">
+        <h2 class="font-[Barlow_Condensed] text-3xl font-bold text-slate-900 mb-8">Frequently Asked Questions</h2>
+        <div class="space-y-6">
+          {faqs.map((faq) => (
+            <div class="border-b border-slate-200 pb-6">
+              <h3 class="font-[Barlow_Condensed] text-lg font-semibold text-slate-800 mb-2">{faq.q}</h3>
+              <p class="text-sm text-slate-600 leading-relaxed">{faq.a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <!-- Related Reviews -->
+      <section class="mb-12">
+        <h2 class="font-[Barlow_Condensed] text-3xl font-bold text-slate-900 mb-4">Related Table Tennis Reviews</h2>
+        <div class="grid sm:grid-cols-3 gap-4">
+          <a href="/reviews/best-table-tennis-tables-india" class="block border border-slate-200 rounded-lg p-4 hover:border-green-600 transition-colors">
+            <p class="font-[Barlow_Condensed] font-semibold text-slate-800">Best Table Tennis Tables in India</p>
+            <p class="text-xs text-slate-500 mt-1">Top picks across all budgets</p>
+          </a>
+          <a href="/reviews/best-table-tennis-rackets-under-2000-india" class="block border border-slate-200 rounded-lg p-4 hover:border-green-600 transition-colors">
+            <p class="font-[Barlow_Condensed] font-semibold text-slate-800">Best TT Rackets Under INR 2,000</p>
+            <p class="text-xs text-slate-500 mt-1">Beginner racket picks</p>
+          </a>
+          <a href="/reviews/best-table-tennis-rackets-under-5000-india" class="block border border-slate-200 rounded-lg p-4 hover:border-green-600 transition-colors">
+            <p class="font-[Barlow_Condensed] font-semibold text-slate-800">Best TT Rackets Under INR 5,000</p>
+            <p class="text-xs text-slate-500 mt-1">Mid-range competitive rackets</p>
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </article>
+</BaseLayout>

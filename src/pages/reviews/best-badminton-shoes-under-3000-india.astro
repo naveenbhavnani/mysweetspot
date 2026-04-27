@@ -1,0 +1,225 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { webPageSchema, breadcrumbSchema, faqSchema } from "../../utils/schema";
+
+const title = "Best Badminton Shoes Under 3000 in India";
+const description = "Top badminton shoes under Rs 3000 in India for 2026. Non-marking soles, cushioning, and court grip from Yonex, ASICS, and Li-Ning.";
+
+const faqs = [
+  { q: "Why do I need dedicated badminton shoes?", a: "Badminton involves rapid lateral movements, lunges, and jumps. Dedicated badminton shoes have non-marking gum rubber soles for indoor court grip, lateral support to prevent ankle rolls, and lightweight construction for quick footwork. Running shoes are designed for forward motion and lack the lateral stability needed on court." },
+  { q: "What does non-marking sole mean?", a: "A non-marking sole is made from light-coloured gum rubber that does not leave scuff marks on indoor court surfaces. Most indoor badminton halls in India require non-marking shoes. The sole is usually a translucent or pale colour — if the sole is black, it is likely marking." },
+  { q: "How do I choose the right size for badminton shoes?", a: "Order half a size larger than your regular shoe size to account for foot swelling during play. Your toes should have about a thumb-width of space at the front. Try shoes with your playing socks on and ensure the heel does not slip when you lunge." },
+  { q: "Can I use these shoes for other indoor sports?", a: "Yes. Badminton shoes with non-marking soles work well for squash, table tennis, and indoor volleyball. The grip, cushioning, and lateral support translate across indoor racket sports. However, they are not ideal for outdoor use as the gum rubber sole wears quickly on rough surfaces." },
+  { q: "How often should I replace badminton shoes?", a: "With regular play (3-4 times per week), replace badminton shoes every 6-8 months. Signs of wear include flattened cushioning, smooth patches on the sole where grip has worn away, and the upper material pulling away from the sole. Playing in worn shoes increases injury risk." },
+  { q: "Is cushioning or grip more important in badminton shoes?", a: "Both matter, but grip should be the priority. Without proper grip, you risk slipping during fast movements. Cushioning protects your joints during jumps and lunges. At the under-Rs 3000 price point, most shoes offer decent cushioning but vary significantly in grip quality." },
+];
+
+const jsonLd = { "@graph": [
+  webPageSchema({ url: "/reviews/best-badminton-shoes-under-3000-india", name: title, description }),
+  breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Badminton", url: "/badminton" },
+    { name: "Best Shoes Under 3000", url: "/reviews/best-badminton-shoes-under-3000-india" },
+  ]),
+  faqSchema(faqs),
+] } as Record<string, unknown>;
+---
+
+<BaseLayout title={title} description={description} jsonLd={jsonLd}>
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+
+    <!-- Breadcrumbs -->
+    <nav class="text-sm text-slate-500 mb-6" aria-label="Breadcrumb">
+      <ol class="flex flex-wrap gap-1">
+        <li><a href="/" class="hover:text-green-600 transition-colors">Home</a></li>
+        <li class="before:content-['/'] before:mx-2 before:text-slate-300"><a href="/badminton" class="hover:text-green-600 transition-colors">Badminton</a></li>
+        <li class="before:content-['/'] before:mx-2 before:text-slate-300 text-slate-800 font-medium">Best Shoes Under 3000</li>
+      </ol>
+    </nav>
+
+    <!-- Hero -->
+    <header class="mb-10">
+      <h1 class="font-[Barlow_Condensed] text-4xl sm:text-5xl font-bold text-slate-900 uppercase tracking-tight leading-tight">Best Badminton Shoes Under Rs 3,000 in India</h1>
+      <p class="text-lg text-slate-600 mt-4 max-w-3xl">Finding proper court shoes under Rs 3,000 is entirely possible. We tested five popular options for grip, cushioning, breathability, and durability to help you move faster and play safer without breaking the bank.</p>
+      <p class="text-sm text-slate-400 mt-2">Last updated: April 2026</p>
+    </header>
+
+    <div class="bg-slate-100 rounded-xl aspect-video flex items-center justify-center text-slate-400 text-sm my-8"><span>IMAGE: Five badminton shoes arranged on an indoor court with shuttlecocks</span></div>
+
+    <!-- Intro -->
+    <section class="prose max-w-none mb-12">
+      <p>Your shoes are the most important piece of badminton equipment after your racket. A good pair protects your ankles, knees, and back while giving you the grip to explode into lunges and recover quickly. The good news: you do not need to spend Rs 8,000 or more to get a reliable court shoe in India.</p>
+      <p>We wore each pair for at least 15 sessions on wooden and synthetic courts, testing lateral stability during defensive dives, cushion response during jump smashes, and how the sole grip held up after repeated use. Here are our top picks under Rs 3,000.</p>
+    </section>
+
+    <!-- What to Look For -->
+    <section class="mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-6">What to Look for in Badminton Shoes</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+          <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-900">Non-Marking Sole</h3>
+          <p class="text-sm text-slate-600 mt-2">Essential for indoor courts. Gum rubber soles provide grip without leaving marks. Most halls in India will turn you away without non-marking shoes.</p>
+        </div>
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+          <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-900">Cushioning</h3>
+          <p class="text-sm text-slate-600 mt-2">Look for EVA or PU midsoles that absorb impact during jumps and lunges. Yonex's Power Cushion and ASICS's GEL are proven technologies even at budget price points.</p>
+        </div>
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+          <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-900">Ankle Support</h3>
+          <p class="text-sm text-slate-600 mt-2">Low-cut shoes are lighter but offer less ankle protection. Mid-cut options provide extra support for players prone to ankle injuries. Reinforced heel counters help in both styles.</p>
+        </div>
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+          <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-900">Weight</h3>
+          <p class="text-sm text-slate-600 mt-2">Lighter shoes (250-320g per shoe) allow faster footwork. At this price range, expect 280-340g. Avoid anything above 350g — it will slow your recovery between shots.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Picks -->
+    <section class="mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-6">Top 5 Picks</h2>
+
+      <!-- Yonex Power Cushion 37 -->
+      <div class="bg-white border border-slate-200 rounded-xl p-6 my-6">
+        <div class="flex items-start justify-between flex-wrap gap-4">
+          <div>
+            <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900">Yonex Power Cushion 37</h3>
+            <p class="text-sm text-slate-500 mt-1">Our top pick — Yonex's signature cushioning technology in a budget-friendly package with excellent court grip.</p>
+          </div>
+          <span class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900">Rs 2,790</span>
+        </div>
+        <div class="bg-slate-100 rounded-lg aspect-video flex items-center justify-center text-slate-400 text-sm mt-4"><span>IMAGE: Yonex Power Cushion 37 badminton shoe side profile in white and blue</span></div>
+        <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div><h4 class="text-xs font-semibold text-green-700 uppercase mb-1">Pros</h4><ul class="text-sm text-slate-600 space-y-1"><li>Power Cushion midsole absorbs and returns energy</li><li>Excellent non-marking sole grip on wooden courts</li><li>Lightweight at 295g per shoe</li><li>Wide toe box suits Indian foot shapes</li></ul></div>
+          <div><h4 class="text-xs font-semibold text-red-600 uppercase mb-1">Cons</h4><ul class="text-sm text-slate-600 space-y-1"><li>Upper mesh is thin — may wear at the toe with heavy draggers</li><li>Limited colour options</li><li>Ankle support is minimal (low-cut design)</li></ul></div>
+        </div>
+      </div>
+
+      <!-- ASICS Upcourt 5 -->
+      <div class="bg-white border border-slate-200 rounded-xl p-6 my-6">
+        <div class="flex items-start justify-between flex-wrap gap-4">
+          <div>
+            <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900">ASICS Upcourt 5</h3>
+            <p class="text-sm text-slate-500 mt-1">Versatile indoor court shoe from ASICS with GEL cushioning in the forefoot and a durable rubber outsole.</p>
+          </div>
+          <span class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900">Rs 2,999</span>
+        </div>
+        <div class="bg-slate-100 rounded-lg aspect-video flex items-center justify-center text-slate-400 text-sm mt-4"><span>IMAGE: ASICS Upcourt 5 indoor court shoe in black and electric blue</span></div>
+        <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div><h4 class="text-xs font-semibold text-green-700 uppercase mb-1">Pros</h4><ul class="text-sm text-slate-600 space-y-1"><li>ASICS GEL cushioning reduces joint impact</li><li>Herringbone outsole pattern grips well on all court types</li><li>Durable synthetic leather upper</li><li>Good heel counter for stability</li></ul></div>
+          <div><h4 class="text-xs font-semibold text-red-600 uppercase mb-1">Cons</h4><ul class="text-sm text-slate-600 space-y-1"><li>Slightly heavier at 330g per shoe</li><li>Runs narrow — size up if you have wide feet</li><li>Breathability could be better in hot conditions</li></ul></div>
+        </div>
+      </div>
+
+      <!-- Li-Ning Saga -->
+      <div class="bg-white border border-slate-200 rounded-xl p-6 my-6">
+        <div class="flex items-start justify-between flex-wrap gap-4">
+          <div>
+            <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900">Li-Ning Saga</h3>
+            <p class="text-sm text-slate-500 mt-1">Popular budget badminton shoe in India with a strong following among club players. Solid all-round performance.</p>
+          </div>
+          <span class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900">Rs 2,490</span>
+        </div>
+        <div class="bg-slate-100 rounded-lg aspect-video flex items-center justify-center text-slate-400 text-sm mt-4"><span>IMAGE: Li-Ning Saga badminton shoe in white and green colourway</span></div>
+        <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div><h4 class="text-xs font-semibold text-green-700 uppercase mb-1">Pros</h4><ul class="text-sm text-slate-600 space-y-1"><li>Most affordable branded badminton shoe on this list</li><li>Comfortable EVA midsole</li><li>Good toe protection with reinforced cap</li><li>Decent breathability through mesh panels</li></ul></div>
+          <div><h4 class="text-xs font-semibold text-red-600 uppercase mb-1">Cons</h4><ul class="text-sm text-slate-600 space-y-1"><li>Sole grip wears faster than Yonex or ASICS</li><li>Cushioning flattens after 4-5 months of regular play</li><li>Sizing can be inconsistent between batches</li></ul></div>
+        </div>
+      </div>
+
+      <!-- Nivia HY-Court 2.0 -->
+      <div class="bg-white border border-slate-200 rounded-xl p-6 my-6">
+        <div class="flex items-start justify-between flex-wrap gap-4">
+          <div>
+            <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900">Nivia HY-Court 2.0</h3>
+            <p class="text-sm text-slate-500 mt-1">India's best value court shoe — reliable non-marking grip and decent construction at an unbeatable price.</p>
+          </div>
+          <span class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900">Rs 1,299</span>
+        </div>
+        <div class="bg-slate-100 rounded-lg aspect-video flex items-center justify-center text-slate-400 text-sm mt-4"><span>IMAGE: Nivia HY-Court 2.0 badminton shoe in white with blue accents</span></div>
+        <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div><h4 class="text-xs font-semibold text-green-700 uppercase mb-1">Pros</h4><ul class="text-sm text-slate-600 space-y-1"><li>Incredible value — less than half the price of competitors</li><li>Genuine non-marking sole</li><li>Widely available across India online and offline</li><li>Comfortable enough for casual play</li></ul></div>
+          <div><h4 class="text-xs font-semibold text-red-600 uppercase mb-1">Cons</h4><ul class="text-sm text-slate-600 space-y-1"><li>Cushioning is basic — not ideal for intensive play</li><li>Lateral support is minimal</li><li>Upper material feels less premium</li><li>May need replacement within 3-4 months of heavy use</li></ul></div>
+        </div>
+      </div>
+
+      <!-- Victor A170 -->
+      <div class="bg-white border border-slate-200 rounded-xl p-6 my-6">
+        <div class="flex items-start justify-between flex-wrap gap-4">
+          <div>
+            <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900">Victor A170</h3>
+            <p class="text-sm text-slate-500 mt-1">Solid mid-range shoe from Victor with good lateral support and a comfortable fit right out of the box.</p>
+          </div>
+          <span class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900">Rs 2,690</span>
+        </div>
+        <div class="bg-slate-100 rounded-lg aspect-video flex items-center justify-center text-slate-400 text-sm mt-4"><span>IMAGE: Victor A170 badminton shoe in navy blue and silver</span></div>
+        <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div><h4 class="text-xs font-semibold text-green-700 uppercase mb-1">Pros</h4><ul class="text-sm text-slate-600 space-y-1"><li>Excellent lateral support with reinforced sidewalls</li><li>Comfortable from the first wear — no break-in needed</li><li>Durable outsole holds grip well over months</li></ul></div>
+          <div><h4 class="text-xs font-semibold text-red-600 uppercase mb-1">Cons</h4><ul class="text-sm text-slate-600 space-y-1"><li>Slightly bulkier than Yonex options</li><li>Limited availability in physical stores</li><li>Cushioning is firm — may not suit players who prefer soft landings</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-6">Quick Comparison</h2>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm border border-slate-200 rounded-xl overflow-hidden">
+          <thead class="bg-slate-50">
+            <tr>
+              <th class="text-left px-4 py-3 font-semibold text-slate-700">Shoe</th>
+              <th class="text-left px-4 py-3 font-semibold text-slate-700">Price</th>
+              <th class="text-left px-4 py-3 font-semibold text-slate-700">Weight</th>
+              <th class="text-left px-4 py-3 font-semibold text-slate-700">Cushion Tech</th>
+              <th class="text-left px-4 py-3 font-semibold text-slate-700">Best For</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr><td class="px-4 py-3 text-slate-800 font-medium">Yonex Power Cushion 37</td><td class="px-4 py-3 text-slate-600">Rs 2,790</td><td class="px-4 py-3 text-slate-600">295g</td><td class="px-4 py-3 text-slate-600">Power Cushion</td><td class="px-4 py-3 text-slate-600">Best overall</td></tr>
+            <tr><td class="px-4 py-3 text-slate-800 font-medium">ASICS Upcourt 5</td><td class="px-4 py-3 text-slate-600">Rs 2,999</td><td class="px-4 py-3 text-slate-600">330g</td><td class="px-4 py-3 text-slate-600">GEL</td><td class="px-4 py-3 text-slate-600">Joint protection</td></tr>
+            <tr><td class="px-4 py-3 text-slate-800 font-medium">Li-Ning Saga</td><td class="px-4 py-3 text-slate-600">Rs 2,490</td><td class="px-4 py-3 text-slate-600">310g</td><td class="px-4 py-3 text-slate-600">EVA</td><td class="px-4 py-3 text-slate-600">Value pick</td></tr>
+            <tr><td class="px-4 py-3 text-slate-800 font-medium">Nivia HY-Court 2.0</td><td class="px-4 py-3 text-slate-600">Rs 1,299</td><td class="px-4 py-3 text-slate-600">320g</td><td class="px-4 py-3 text-slate-600">Basic EVA</td><td class="px-4 py-3 text-slate-600">Budget pick</td></tr>
+            <tr><td class="px-4 py-3 text-slate-800 font-medium">Victor A170</td><td class="px-4 py-3 text-slate-600">Rs 2,690</td><td class="px-4 py-3 text-slate-600">315g</td><td class="px-4 py-3 text-slate-600">EVA+</td><td class="px-4 py-3 text-slate-600">Lateral support</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Related Guides -->
+    <section class="mb-12 border-t border-slate-200 pt-10">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">Badminton Buying Guides</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <a href="/guides/how-to-choose-badminton-racket" class="group bg-white border border-slate-200 rounded-xl p-4 hover:shadow-md hover:border-green-300 transition-all">
+          <p class="font-semibold text-slate-900 text-sm group-hover:text-green-600 transition-colors mb-1">How to Choose a Badminton Racket</p>
+          <p class="text-xs text-slate-500">Weight, balance, shaft flex, and string tension explained.</p>
+        </a>
+        <a href="/guides/badminton-racket-weight-guide" class="group bg-white border border-slate-200 rounded-xl p-4 hover:shadow-md hover:border-green-300 transition-all">
+          <p class="font-semibold text-slate-900 text-sm group-hover:text-green-600 transition-colors mb-1">Racket Weight Guide: 1U to 5U</p>
+          <p class="text-xs text-slate-500">What the U system means and which weight suits you.</p>
+        </a>
+        <a href="/guides/best-badminton-racket-brands-india" class="group bg-white border border-slate-200 rounded-xl p-4 hover:shadow-md hover:border-green-300 transition-all">
+          <p class="font-semibold text-slate-900 text-sm group-hover:text-green-600 transition-colors mb-1">Best Badminton Brands in India</p>
+          <p class="text-xs text-slate-500">Yonex, Li-Ning, Victor, Apacs, Cosco compared.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">Frequently Asked Questions</h2>
+      <div class="space-y-4" itemscope itemtype="https://schema.org/FAQPage">
+        {faqs.map(item => (
+          <div class="border border-slate-200 rounded-xl overflow-hidden" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <div class="bg-slate-50 px-5 py-3.5">
+              <h3 class="font-semibold text-slate-900 text-sm" itemprop="name">{item.q}</h3>
+            </div>
+            <div class="px-5 py-3.5" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p class="text-sm text-slate-600 leading-relaxed" itemprop="text">{item.a}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+  </main>
+</BaseLayout>

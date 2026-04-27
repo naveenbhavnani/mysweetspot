@@ -1,0 +1,190 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { webPageSchema, breadcrumbSchema, faqSchema } from "../../utils/schema";
+
+const faqs = [
+  { q: "Is Yonex better than Li-Ning for badminton?", a: "Yonex is generally considered the gold standard for badminton rackets worldwide, with deeper R&D and wider professional adoption. However, Li-Ning has closed the gap significantly in the last decade — especially in power-oriented rackets. The best choice depends on your play style, budget, and preferences." },
+  { q: "Are Li-Ning badminton rackets good quality in India?", a: "Yes. Li-Ning rackets sold through authorised Indian channels are manufactured to high standards. Their Windstorm, Turbo Charging, and Axforce series offer excellent build quality. Always buy from authorised dealers or verified Amazon/Flipkart listings to avoid counterfeits." },
+  { q: "Which Yonex racket is best for beginners in India?", a: "The Yonex Nanoray Light 18i and Yonex Astrox Lite 27i are popular beginner-friendly options under Rs 2,000. Both are lightweight, head-light, and easy to manoeuvre — ideal for developing your swing technique." },
+  { q: "Why are Yonex rackets more expensive than Li-Ning?", a: "Yonex invests heavily in proprietary technologies like Nanomesh Neo, Isometric head shape, and Rotational Generator System. Their premium Japanese engineering and decades of brand equity command higher prices. Li-Ning offers competitive technology at slightly lower price points, making them excellent value." },
+  { q: "Can I use Li-Ning strings on a Yonex racket?", a: "Yes, badminton strings are universally compatible regardless of brand. Many players mix brands — using a Yonex racket with Li-Ning No.1 string or vice versa. Choose strings based on your playing needs, not brand matching." },
+];
+
+const jsonLd = { "@graph": [
+  webPageSchema({ url: "/compare/yonex-vs-li-ning-badminton-rackets", name: "Yonex vs Li-Ning Badminton Rackets — Which Brand Is Better?", description: "Compare Yonex and Li-Ning badminton rackets in India. Price ranges, technology, popular models, and which brand suits your play style." }),
+  breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Badminton", url: "/badminton" },
+    { name: "Yonex vs Li-Ning", url: "/compare/yonex-vs-li-ning-badminton-rackets" },
+  ]),
+  faqSchema(faqs),
+] } as Record<string, unknown>;
+---
+<BaseLayout title="Yonex vs Li-Ning Badminton Rackets — Which Brand Is Better?" description="Compare Yonex and Li-Ning badminton rackets in India. Price ranges, technology, popular models, and which brand suits your play style." jsonLd={jsonLd}>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+    <!-- Breadcrumb -->
+    <nav class="text-xs text-slate-500 mb-6" aria-label="Breadcrumb">
+      <a href="/" class="hover:text-slate-800">Home</a> ›
+      <a href="/badminton" class="hover:text-slate-800">Badminton</a> ›
+      <span class="text-slate-700 font-medium">Yonex vs Li-Ning</span>
+    </nav>
+
+    <!-- Hero -->
+    <h1 class="font-[Barlow_Condensed] text-4xl sm:text-5xl font-bold text-slate-900 mb-4 uppercase tracking-wide">Yonex vs Li-Ning Badminton Rackets — Which Brand Is Better?</h1>
+    <p class="text-lg text-slate-600 leading-relaxed max-w-3xl mb-8">Two of the biggest names in badminton go head-to-head. We compare Yonex and Li-Ning across price, technology, model range, and Indian availability to help you pick the right brand for your game.</p>
+
+    <div class="bg-slate-100 rounded-xl aspect-video flex items-center justify-center text-slate-400 text-sm my-8"><span>IMAGE: Yonex and Li-Ning badminton rackets side by side on court</span></div>
+
+    <!-- Brand Overview -->
+    <h2 class="font-[Barlow_Condensed] text-2xl sm:text-3xl font-bold text-slate-900 mt-12 mb-4 uppercase tracking-wide">Brand Overview</h2>
+
+    <div class="grid md:grid-cols-2 gap-8 my-8">
+      <div class="bg-white border border-slate-200 rounded-xl p-6">
+        <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 mb-3 uppercase">Yonex</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">Founded in 1946 in Japan, Yonex is the undisputed patriarch of badminton equipment. They've been making rackets since the 1960s and supply more BWF World Tour players than any other brand. In India, Yonex rackets dominate club play from beginner to national level. Their Indian operations include a manufacturing facility in Faridabad, which keeps entry-level models competitively priced.</p>
+        <p class="text-sm text-slate-600 leading-relaxed mt-3">Yonex's reputation rests on precision engineering, consistent quality control, and a racket for every conceivable play style. PV Sindhu, Kidambi Srikanth, and Lakshya Sen have all wielded Yonex frames on the international stage.</p>
+      </div>
+      <div class="bg-white border border-slate-200 rounded-xl p-6">
+        <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 mb-3 uppercase">Li-Ning</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">Li-Ning, the Chinese sportswear giant founded by the legendary gymnast, entered badminton seriously in 2009 by signing a BWF partnership. They've since built an impressive stable of athletes including Viktor Axelsen, Chen Long, and the entire Chinese national team. In India, Li-Ning has grown steadily — particularly after becoming visible through Indian Super League players.</p>
+        <p class="text-sm text-slate-600 leading-relaxed mt-3">Li-Ning's approach is boldly innovative. They invest heavily in aerodynamic frame shapes, TB Nano technology, and distinctive designs that stand out on court. Their rackets tend to offer excellent value, often undercutting Yonex by 10-20% at comparable performance levels.</p>
+      </div>
+    </div>
+
+    <!-- Technology Comparison -->
+    <h2 class="font-[Barlow_Condensed] text-2xl sm:text-3xl font-bold text-slate-900 mt-12 mb-4 uppercase tracking-wide">Technology Comparison</h2>
+    <p class="text-sm text-slate-600 leading-relaxed mb-6">Both brands pour significant R&D into proprietary technologies. Here's how their flagship innovations stack up.</p>
+
+    <div class="grid md:grid-cols-2 gap-6 my-6">
+      <div>
+        <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-900 mb-2 uppercase">Yonex Key Technologies</h3>
+        <ul class="space-y-2 text-sm text-slate-600">
+          <li><strong class="text-slate-800">Isometric Head Shape:</strong> Yonex's signature — a square-ish head that enlarges the sweet spot by 7% compared to conventional oval shapes. Present across nearly all models.</li>
+          <li><strong class="text-slate-800">Nanomesh Neo:</strong> Carbon nanotube integration at the shaft for improved flex and repulsion. Found in Astrox and Nanoflare series.</li>
+          <li><strong class="text-slate-800">Rotational Generator System:</strong> Strategic weight distribution that allows quick racket rotation. Particularly effective in the Astrox lineup for steep smashes.</li>
+          <li><strong class="text-slate-800">Aero Frame:</strong> Reduced air resistance through frame cross-section design. Key feature in the Nanoflare speed series.</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-900 mb-2 uppercase">Li-Ning Key Technologies</h3>
+        <ul class="space-y-2 text-sm text-slate-600">
+          <li><strong class="text-slate-800">TB Nano:</strong> Li-Ning's carbon nanotube technology that increases shaft strength by 20%. Comparable to Yonex's Nanomesh in purpose and performance.</li>
+          <li><strong class="text-slate-800">Aerotec Beam System:</strong> Wind-cutting frame geometry that reduces drag. Li-Ning was among the first to adopt aggressive aerodynamic frame profiles.</li>
+          <li><strong class="text-slate-800">Dynamic Optimum Frame:</strong> An enlarged sweet spot technology — Li-Ning's answer to the Isometric head. Effective, though slightly less proven at the highest level.</li>
+          <li><strong class="text-slate-800">UHB Shaft:</strong> Ultra-high-modulus graphite shaft for explosive power transfer. Found in the Axforce and Turbo Charging series.</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="text-sm text-slate-600 leading-relaxed my-4">In terms of raw technology, the brands are closer than most players realise. Yonex has the edge in refinement — decades of incremental improvement in the Isometric head geometry, for example. Li-Ning compensates with aggressive innovation and willingness to experiment with unconventional frame shapes.</p>
+
+    <!-- Price Range Comparison -->
+    <h2 class="font-[Barlow_Condensed] text-2xl sm:text-3xl font-bold text-slate-900 mt-12 mb-4 uppercase tracking-wide">Price Range Comparison</h2>
+    <p class="text-sm text-slate-600 leading-relaxed mb-6">Here's how the two brands line up across budget categories on Indian retail platforms (Amazon.in, Flipkart, Sports365).</p>
+
+    <div class="overflow-x-auto my-8">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr class="bg-slate-800 text-white">
+            <th class="text-left p-3 font-[Barlow_Condensed] uppercase tracking-wide">Budget Segment</th>
+            <th class="text-left p-3 font-[Barlow_Condensed] uppercase tracking-wide">Yonex Models</th>
+            <th class="text-left p-3 font-[Barlow_Condensed] uppercase tracking-wide">Li-Ning Models</th>
+            <th class="text-left p-3 font-[Barlow_Condensed] uppercase tracking-wide">Edge</th>
+          </tr>
+        </thead>
+        <tbody class="text-slate-600">
+          <tr class="border-b border-slate-200 bg-white">
+            <td class="p-3 font-semibold text-slate-800">Under Rs 1,000</td>
+            <td class="p-3">GR-303, Mavis 350 combo</td>
+            <td class="p-3">XP-80 IV, G-Force 1500i</td>
+            <td class="p-3 text-green-600 font-semibold">Yonex</td>
+          </tr>
+          <tr class="border-b border-slate-200 bg-slate-50">
+            <td class="p-3 font-semibold text-slate-800">Rs 1,000 – Rs 2,000</td>
+            <td class="p-3">Nanoray Light 18i, Astrox Lite 27i</td>
+            <td class="p-3">Windstorm 72, XP-2020</td>
+            <td class="p-3 text-green-600 font-semibold">Tie</td>
+          </tr>
+          <tr class="border-b border-slate-200 bg-white">
+            <td class="p-3 font-semibold text-slate-800">Rs 2,000 – Rs 5,000</td>
+            <td class="p-3">Astrox Lite 45i, Nanoflare 001 Ability</td>
+            <td class="p-3">3D Calibar 300, Turbo Charging 20</td>
+            <td class="p-3 text-green-600 font-semibold">Li-Ning</td>
+          </tr>
+          <tr class="border-b border-slate-200 bg-slate-50">
+            <td class="p-3 font-semibold text-slate-800">Rs 5,000 – Rs 10,000</td>
+            <td class="p-3">Astrox 22, Nanoflare 370 Speed</td>
+            <td class="p-3">Axforce 80, Bladex 200</td>
+            <td class="p-3 text-green-600 font-semibold">Li-Ning</td>
+          </tr>
+          <tr class="border-b border-slate-200 bg-white">
+            <td class="p-3 font-semibold text-slate-800">Rs 10,000+</td>
+            <td class="p-3">Astrox 88D Pro, Nanoflare 800</td>
+            <td class="p-3">Axforce 90 Tiger, Halbertec 9000</td>
+            <td class="p-3 text-green-600 font-semibold">Yonex</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-sm text-slate-600 leading-relaxed">The pattern is clear: Yonex dominates at the entry level (under Rs 1,000) thanks to local manufacturing, and at the premium end where decades of tour-level validation matter. Li-Ning offers the strongest value in the crucial Rs 2,000–Rs 10,000 mid-range — the sweet spot for most serious club players in India.</p>
+
+    <!-- Popular Models Head-to-Head -->
+    <h2 class="font-[Barlow_Condensed] text-2xl sm:text-3xl font-bold text-slate-900 mt-12 mb-4 uppercase tracking-wide">Popular Models: Head-to-Head</h2>
+
+    <div class="space-y-6 my-8">
+      <div class="bg-white border border-slate-200 rounded-xl p-6">
+        <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-900 mb-2 uppercase">Power Player: Yonex Astrox 88D Pro vs Li-Ning Axforce 80</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">Both are head-heavy attack rackets designed for dominant doubles rear-court play. The Astrox 88D Pro offers Yonex's refined Rotational Generator System for steep smash angles, while the Axforce 80 counters with Li-Ning's UHB shaft for raw power. The Astrox feels more controlled; the Axforce hits harder but demands better technique. At roughly Rs 5,000–7,000 for the Axforce vs Rs 12,000+ for the Astrox 88D Pro, the Li-Ning offers significantly better value if power is your priority.</p>
+      </div>
+      <div class="bg-white border border-slate-200 rounded-xl p-6">
+        <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-900 mb-2 uppercase">Speed Player: Yonex Nanoflare 370 vs Li-Ning Windstorm 72</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">For quick-reaction players who rely on net play and deception, these head-light rackets trade blows effectively. The Nanoflare 370 at around Rs 5,500 delivers Yonex's signature feel and refined sweet spot. The Windstorm 72, priced under Rs 2,000, is arguably the best value proposition in Indian badminton — astonishingly light at 72g with solid construction. If budget matters, the Windstorm wins by a mile.</p>
+      </div>
+      <div class="bg-white border border-slate-200 rounded-xl p-6">
+        <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-900 mb-2 uppercase">Beginner: Yonex Nanoray Light 18i vs Li-Ning XP-2020</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">Under Rs 1,500, both rackets serve beginners well. The Nanoray Light 18i benefits from Yonex's Isometric head and Indian manufacturing quality. The XP-2020 offers a slightly stiffer shaft that some beginners prefer for developing power. We'd give a slight nod to Yonex here for the larger sweet spot — crucial when you're still finding your stroke timing.</p>
+      </div>
+    </div>
+
+    <div class="bg-slate-100 rounded-xl aspect-video flex items-center justify-center text-slate-400 text-sm my-8"><span>IMAGE: Comparison chart showing Yonex and Li-Ning racket model positioning by price and play style</span></div>
+
+    <!-- Indian Availability -->
+    <h2 class="font-[Barlow_Condensed] text-2xl sm:text-3xl font-bold text-slate-900 mt-12 mb-4 uppercase tracking-wide">Availability in India</h2>
+    <p class="text-sm text-slate-600 leading-relaxed mb-4">Yonex has a significant distribution advantage in India. With a manufacturing unit in Faridabad and a well-established dealer network, genuine Yonex rackets are available in virtually every sports shop in metro and tier-2 cities. Amazon.in and Flipkart both carry extensive Yonex catalogues with reliable authenticity.</p>
+    <p class="text-sm text-slate-600 leading-relaxed mb-4">Li-Ning's Indian presence has grown steadily but remains more patchy. Their official India website stocks most models, and they're well-represented on Amazon.in. However, physical retail availability is weaker outside major metros. Counterfeits are also a concern — always verify the hologram sticker and buy from authorised channels.</p>
+    <p class="text-sm text-slate-600 leading-relaxed mb-4">For warranty and after-sales service, Yonex leads. Their Indian service centres handle restringing and warranty claims efficiently. Li-Ning's after-sales infrastructure is improving but still trails behind. If you live in a smaller city, Yonex's availability alone can be a deciding factor.</p>
+
+    <!-- Verdict -->
+    <div class="bg-green-50 border border-green-200 rounded-xl p-6 my-8">
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-green-800 mb-3 uppercase">Our Verdict</h3>
+      <p class="text-sm text-slate-700 leading-relaxed mb-3"><strong>Choose Yonex if:</strong> You want the safest, most proven option with the widest model range, best Indian availability, and strongest after-sales support. Yonex is the default recommendation for beginners and for premium players who want tour-validated performance.</p>
+      <p class="text-sm text-slate-700 leading-relaxed mb-3"><strong>Choose Li-Ning if:</strong> You want the best bang for your buck in the Rs 2,000–Rs 10,000 range, you're an intermediate-to-advanced player who values raw power, or you simply want something different from the Yonex-dominated club scene. Li-Ning punches above its weight in the mid-range.</p>
+      <p class="text-sm text-slate-700 leading-relaxed"><strong>Bottom line:</strong> Neither brand is categorically "better." Yonex wins on heritage, availability, and sweet spot consistency. Li-Ning wins on mid-range value and aggressive power technology. Your play style and budget should decide.</p>
+    </div>
+
+    <!-- Related Links -->
+    <h2 class="font-[Barlow_Condensed] text-2xl sm:text-3xl font-bold text-slate-900 mt-12 mb-4 uppercase tracking-wide">Related Reads</h2>
+    <ul class="space-y-2 text-sm">
+      <li><a href="/reviews/best-badminton-rackets-under-2000-india" class="text-green-600 hover:text-green-800 underline underline-offset-2">Best Badminton Rackets Under Rs 2,000 in India</a></li>
+      <li><a href="/reviews/best-badminton-rackets-under-5000-india" class="text-green-600 hover:text-green-800 underline underline-offset-2">Best Badminton Rackets Under Rs 5,000 in India</a></li>
+      <li><a href="/guides/best-badminton-racket-brands-india" class="text-green-600 hover:text-green-800 underline underline-offset-2">Best Badminton Racket Brands in India</a></li>
+    </ul>
+
+    <!-- FAQ -->
+    <h2 class="font-[Barlow_Condensed] text-2xl sm:text-3xl font-bold text-slate-900 mt-12 mb-6 uppercase tracking-wide">Frequently Asked Questions</h2>
+    <div class="space-y-4">
+      {faqs.map(faq => (
+        <details class="group bg-white border border-slate-200 rounded-xl">
+          <summary class="cursor-pointer p-4 text-sm font-semibold text-slate-800 flex justify-between items-center">
+            {faq.q}
+            <span class="text-slate-400 group-open:rotate-45 transition-transform text-lg">+</span>
+          </summary>
+          <div class="px-4 pb-4 text-sm text-slate-600 leading-relaxed">{faq.a}</div>
+        </details>
+      ))}
+    </div>
+
+  </div>
+</BaseLayout>

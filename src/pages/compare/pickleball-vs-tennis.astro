@@ -1,0 +1,226 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { webPageSchema, breadcrumbSchema, faqSchema } from "../../utils/schema";
+
+const faqs = [
+  { q: "Is pickleball easier than tennis?", a: "Yes, pickleball is generally easier to learn than tennis. The smaller court, lighter paddle, and slower ball speed mean beginners can rally within their first session. Tennis has a steeper learning curve — most beginners struggle with consistent groundstrokes for weeks or months. However, competitive pickleball has its own depth and complexity, especially at the net." },
+  { q: "Is pickleball cheaper than tennis in India?", a: "Significantly cheaper to start. A decent pickleball paddle costs Rs 1,500–Rs 5,000 versus Rs 2,000–Rs 10,000+ for a tennis racket. Pickleballs cost around Rs 150–300 each versus Rs 300–600 for tennis balls. Court costs are comparable where both are available, though pickleball courts are still free at many Indian parks and community centres." },
+  { q: "Can I play pickleball on a tennis court?", a: "Yes. A standard tennis court can accommodate 2-4 pickleball courts with temporary lines and a portable net. Many Indian clubs and parks are doing exactly this — using tape or chalk to mark pickleball dimensions on existing tennis courts. This is one reason pickleball is growing so quickly in India." },
+  { q: "Which sport is better for fitness — pickleball or tennis?", a: "Tennis burns more calories per hour (400-600 vs 250-400 for pickleball) due to the larger court and more intense running. However, pickleball sessions tend to last longer because the sport is less physically exhausting. Both are excellent for cardiovascular health, hand-eye coordination, and agility. Pickleball is easier on joints, making it better for older players or those recovering from injuries." },
+  { q: "Is pickleball popular in India?", a: "Pickleball is the fastest-growing racket sport in India. The All India Pickleball Association (AIPA) was formed in 2008, and the sport has exploded since 2020. Major cities like Bangalore, Mumbai, Delhi, and Hyderabad have active communities. Several state-level and national tournaments are held annually. It's particularly popular among 30-60 year olds." },
+  { q: "Which sport should I choose if I'm over 40?", a: "Pickleball is typically the better choice for players starting after 40. Lower impact on joints, shorter court means less running, and the social doubles format is engaging. That said, plenty of 40+ players enjoy recreational tennis — especially if you have prior racket sport experience. Consider your fitness level, any joint issues, and whether you prefer a more intense or more social playing experience." },
+];
+
+const jsonLd = { "@graph": [
+  webPageSchema({ url: "/compare/pickleball-vs-tennis", name: "Pickleball vs Tennis — Cost, Fitness, and Fun Compared", description: "Compare pickleball and tennis: equipment cost in India, court availability, physical demands, social aspect, and which sport to choose." }),
+  breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Compare", url: "/compare/pickleball-vs-tennis" },
+    { name: "Pickleball vs Tennis", url: "/compare/pickleball-vs-tennis" },
+  ]),
+  faqSchema(faqs),
+] } as Record<string, unknown>;
+---
+<BaseLayout title="Pickleball vs Tennis — Cost, Fitness, and Fun Compared" description="Compare pickleball and tennis: equipment cost in India, court availability, physical demands, social aspect, and which sport to choose." jsonLd={jsonLd}>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+    <!-- Breadcrumb -->
+    <nav class="text-xs text-slate-500 mb-6" aria-label="Breadcrumb">
+      <a href="/" class="hover:text-slate-800">Home</a> ›
+      <span class="text-slate-500">Compare</span> ›
+      <span class="text-slate-700 font-medium">Pickleball vs Tennis</span>
+    </nav>
+
+    <!-- Hero -->
+    <h1 class="font-[Barlow_Condensed] text-4xl sm:text-5xl font-bold text-slate-900 mb-4 uppercase tracking-wide">Pickleball vs Tennis — Cost, Fitness, and Fun Compared</h1>
+    <p class="text-lg text-slate-600 leading-relaxed max-w-3xl mb-8">Two racket sports, very different vibes. Whether you're picking up your first paddle or wondering if pickleball is worth switching from tennis, this in-depth comparison covers everything from equipment costs to fitness benefits — all in the Indian context.</p>
+
+    <div class="bg-slate-100 rounded-xl aspect-video flex items-center justify-center text-slate-400 text-sm my-8"><span>IMAGE: Split image showing pickleball game on left and tennis match on right, both on Indian courts</span></div>
+
+    <!-- Overview -->
+    <h2 class="font-[Barlow_Condensed] text-2xl sm:text-3xl font-bold text-slate-900 mt-12 mb-4 uppercase tracking-wide">Sport Overview</h2>
+
+    <div class="grid md:grid-cols-2 gap-8 my-8">
+      <div class="bg-white border border-slate-200 rounded-xl p-6">
+        <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 mb-3 uppercase">Pickleball</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">Pickleball combines elements of tennis, badminton, and table tennis on a smaller court (20x44 feet for doubles). Players use solid paddles to hit a perforated polymer ball over a 34-inch net. The non-volley zone (the "kitchen") creates a unique tactical dimension. Games are played to 11 points, win by 2.</p>
+        <p class="text-sm text-slate-600 leading-relaxed mt-3">In India, pickleball has seen explosive growth since 2018. The AIPA (All India Pickleball Association) organises national championships, and cities like Bangalore and Mumbai have dedicated pickleball facilities. The sport attracts a wide age range — from college students to retirees — thanks to its gentle learning curve and social format.</p>
+      </div>
+      <div class="bg-white border border-slate-200 rounded-xl p-6">
+        <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 mb-3 uppercase">Tennis</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">Tennis needs no introduction. Played on a 78x36-foot court (doubles), it's one of the world's most established sports. Players use strung rackets to hit a pressurised felt ball over a 36-inch net. Scoring uses the traditional love-15-30-40 system, with sets and tiebreaks.</p>
+        <p class="text-sm text-slate-600 leading-relaxed mt-3">India has a strong tennis tradition, from Ramanathan Krishnan to Sania Mirza to the current Davis Cup squad. Tennis courts are available in most Indian cities through clubs, public facilities, and residential complexes. The AITA (All India Tennis Association) oversees competitive play at all levels.</p>
+      </div>
+    </div>
+
+    <!-- Equipment Cost Comparison -->
+    <h2 class="font-[Barlow_Condensed] text-2xl sm:text-3xl font-bold text-slate-900 mt-12 mb-4 uppercase tracking-wide">Equipment Cost Comparison (INR)</h2>
+    <p class="text-sm text-slate-600 leading-relaxed mb-6">One of the biggest factors for anyone starting a new sport. Here's what you'll spend to get started and maintain each sport in India.</p>
+
+    <div class="overflow-x-auto my-8">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr class="bg-slate-800 text-white">
+            <th class="text-left p-3 font-[Barlow_Condensed] uppercase tracking-wide">Item</th>
+            <th class="text-left p-3 font-[Barlow_Condensed] uppercase tracking-wide">Pickleball (Rs)</th>
+            <th class="text-left p-3 font-[Barlow_Condensed] uppercase tracking-wide">Tennis (Rs)</th>
+            <th class="text-left p-3 font-[Barlow_Condensed] uppercase tracking-wide">Notes</th>
+          </tr>
+        </thead>
+        <tbody class="text-slate-600">
+          <tr class="border-b border-slate-200 bg-white">
+            <td class="p-3 font-semibold text-slate-800">Beginner racket/paddle</td>
+            <td class="p-3">1,500 – 3,000</td>
+            <td class="p-3">2,000 – 5,000</td>
+            <td class="p-3">Tennis rackets need stringing</td>
+          </tr>
+          <tr class="border-b border-slate-200 bg-slate-50">
+            <td class="p-3 font-semibold text-slate-800">Intermediate racket/paddle</td>
+            <td class="p-3">3,000 – 8,000</td>
+            <td class="p-3">5,000 – 15,000</td>
+            <td class="p-3">Tennis restringing costs Rs 300-800/session</td>
+          </tr>
+          <tr class="border-b border-slate-200 bg-white">
+            <td class="p-3 font-semibold text-slate-800">Balls (per dozen)</td>
+            <td class="p-3">1,200 – 2,400</td>
+            <td class="p-3">1,500 – 4,000</td>
+            <td class="p-3">Pickleballs last longer than pressurised tennis balls</td>
+          </tr>
+          <tr class="border-b border-slate-200 bg-slate-50">
+            <td class="p-3 font-semibold text-slate-800">Shoes</td>
+            <td class="p-3">2,000 – 5,000</td>
+            <td class="p-3">3,000 – 8,000</td>
+            <td class="p-3">Tennis shoes need more lateral support</td>
+          </tr>
+          <tr class="border-b border-slate-200 bg-white">
+            <td class="p-3 font-semibold text-slate-800">Court fees (per hour)</td>
+            <td class="p-3">0 – 500</td>
+            <td class="p-3">200 – 1,000</td>
+            <td class="p-3">Many pickleball courts are free</td>
+          </tr>
+          <tr class="border-b border-slate-200 bg-slate-50">
+            <td class="p-3 font-semibold text-slate-800">Coaching (per month)</td>
+            <td class="p-3">2,000 – 5,000</td>
+            <td class="p-3">3,000 – 10,000</td>
+            <td class="p-3">Tennis coaching more established</td>
+          </tr>
+          <tr class="border-b border-slate-200 bg-white">
+            <td class="p-3 font-semibold text-green-700 text-base">Total startup cost</td>
+            <td class="p-3 font-semibold text-green-700">~5,000 – 10,000</td>
+            <td class="p-3 font-semibold text-slate-800">~8,000 – 20,000</td>
+            <td class="p-3">Pickleball is 40-50% cheaper to start</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-sm text-slate-600 leading-relaxed">The cost difference is substantial, especially at the entry level. Pickleball's lower startup cost is a major reason it's attracting new players in India — particularly those who might find tennis intimidating or expensive to begin.</p>
+
+    <!-- Court Availability -->
+    <h2 class="font-[Barlow_Condensed] text-2xl sm:text-3xl font-bold text-slate-900 mt-12 mb-4 uppercase tracking-wide">Court Availability in India</h2>
+    <p class="text-sm text-slate-600 leading-relaxed mb-4"><strong class="text-slate-800">Tennis:</strong> Well-established court infrastructure. Most cities have public and club tennis courts. DLTA in Delhi, KSLTA in Bangalore, CCI in Mumbai, and SDAT in Chennai are prominent venues. Residential complexes in metro cities increasingly include tennis courts. However, prime-time slots are often booked out, and club memberships can be expensive (Rs 10,000–Rs 1,00,000 annually depending on the city and club).</p>
+    <p class="text-sm text-slate-600 leading-relaxed mb-4"><strong class="text-slate-800">Pickleball:</strong> Dedicated pickleball courts are still relatively rare, but the situation is improving rapidly. Bangalore leads with venues like Pickle Social Club, Pickleball Zone, and numerous converted tennis courts. Mumbai, Delhi-NCR, Hyderabad, and Pune all have active communities with regular playing sessions. Many players set up temporary courts in parks, parking lots, or on badminton courts — the small footprint (you can fit four pickleball courts on a single tennis court) makes this practical.</p>
+    <p class="text-sm text-slate-600 leading-relaxed mb-4">If you live in a metro city, both sports are accessible. In tier-2 and tier-3 cities, tennis courts are more commonly available, but pickleball communities are forming fast via WhatsApp groups and social media.</p>
+
+    <div class="bg-slate-100 rounded-xl aspect-video flex items-center justify-center text-slate-400 text-sm my-8"><span>IMAGE: Map of India highlighting major cities with pickleball and tennis facilities</span></div>
+
+    <!-- Physical Demands -->
+    <h2 class="font-[Barlow_Condensed] text-2xl sm:text-3xl font-bold text-slate-900 mt-12 mb-4 uppercase tracking-wide">Fitness and Physical Demands</h2>
+
+    <div class="overflow-x-auto my-8">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr class="bg-slate-800 text-white">
+            <th class="text-left p-3 font-[Barlow_Condensed] uppercase tracking-wide">Factor</th>
+            <th class="text-left p-3 font-[Barlow_Condensed] uppercase tracking-wide">Pickleball</th>
+            <th class="text-left p-3 font-[Barlow_Condensed] uppercase tracking-wide">Tennis</th>
+          </tr>
+        </thead>
+        <tbody class="text-slate-600">
+          <tr class="border-b border-slate-200 bg-white">
+            <td class="p-3 font-semibold text-slate-800">Calories burned/hour</td>
+            <td class="p-3">250–400</td>
+            <td class="p-3">400–600</td>
+          </tr>
+          <tr class="border-b border-slate-200 bg-slate-50">
+            <td class="p-3 font-semibold text-slate-800">Running distance/match</td>
+            <td class="p-3">Low–Medium</td>
+            <td class="p-3">High</td>
+          </tr>
+          <tr class="border-b border-slate-200 bg-white">
+            <td class="p-3 font-semibold text-slate-800">Joint impact</td>
+            <td class="p-3">Low</td>
+            <td class="p-3">Medium–High</td>
+          </tr>
+          <tr class="border-b border-slate-200 bg-slate-50">
+            <td class="p-3 font-semibold text-slate-800">Upper body demand</td>
+            <td class="p-3">Moderate</td>
+            <td class="p-3">High</td>
+          </tr>
+          <tr class="border-b border-slate-200 bg-white">
+            <td class="p-3 font-semibold text-slate-800">Injury risk</td>
+            <td class="p-3">Low</td>
+            <td class="p-3">Moderate</td>
+          </tr>
+          <tr class="border-b border-slate-200 bg-slate-50">
+            <td class="p-3 font-semibold text-slate-800">Typical session length</td>
+            <td class="p-3">60–120 minutes</td>
+            <td class="p-3">60–90 minutes</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-sm text-slate-600 leading-relaxed mb-4">Tennis is the more physically demanding sport. The larger court requires more running, the heavier racket and faster ball demand more upper body strength, and the impact forces on knees and ankles are significantly higher — particularly on hard courts, which dominate in India. Common tennis injuries include tennis elbow, shoulder impingement, and knee strain.</p>
+    <p class="text-sm text-slate-600 leading-relaxed mb-4">Pickleball is gentler on the body. The smaller court reduces running, the lighter paddle minimises arm strain, and the slower ball speed gives more reaction time. However, the quick lateral movements can still challenge knees, and the bent-over posture at the kitchen line can cause lower back discomfort over long sessions.</p>
+    <p class="text-sm text-slate-600 leading-relaxed">For pure fitness, tennis wins. For sustainable, low-impact exercise that you can maintain for decades, pickleball has the edge — especially in India's hot climate where a 90-minute tennis session can be brutal during summer months.</p>
+
+    <!-- Learning Curve -->
+    <h2 class="font-[Barlow_Condensed] text-2xl sm:text-3xl font-bold text-slate-900 mt-12 mb-4 uppercase tracking-wide">Learning Curve</h2>
+    <p class="text-sm text-slate-600 leading-relaxed mb-4"><strong class="text-slate-800">Pickleball:</strong> You can play a competent game within 1-2 sessions. The basic skills — dinking, serving underhand, volleying — are intuitive for anyone who has held a racket or paddle before. The strategic depth (kitchen play, third-shot drops, stacking) takes months to develop, but you'll be having fun immediately. Most Indian pickleball communities are beginner-friendly and will teach you informally.</p>
+    <p class="text-sm text-slate-600 leading-relaxed mb-4"><strong class="text-slate-800">Tennis:</strong> Expect 2-4 weeks of regular coaching before you can sustain a rally. The serve alone is a complex motion that takes months to groove. Topspin, slice, and net play add layers of technical difficulty. Tennis rewards patience and practice — the journey from beginner to intermediate is longer but deeply satisfying. Professional coaching, which is widely available in Indian cities, significantly accelerates the learning process.</p>
+
+    <!-- Social Aspect -->
+    <h2 class="font-[Barlow_Condensed] text-2xl sm:text-3xl font-bold text-slate-900 mt-12 mb-4 uppercase tracking-wide">Social Aspect</h2>
+    <p class="text-sm text-slate-600 leading-relaxed mb-4">This is where pickleball truly shines. The doubles format is inherently social — four players chatting between points, rotating partners, sharing laughs. Indian pickleball communities are famously welcoming, with many groups organising weekly meetups that function as much as social gatherings as athletic events. The sport attracts families, corporate groups, and friend circles.</p>
+    <p class="text-sm text-slate-600 leading-relaxed mb-4">Tennis has a strong social tradition too — the club culture, post-match chai, weekend mixed doubles — but it's inherently more competitive and isolated. Singles tennis can feel lonely. Doubles tennis is social but requires a higher collective skill level for an enjoyable game. Tennis clubs in India also carry a certain exclusivity that can be off-putting for newcomers.</p>
+
+    <!-- Age Suitability -->
+    <h2 class="font-[Barlow_Condensed] text-2xl sm:text-3xl font-bold text-slate-900 mt-12 mb-4 uppercase tracking-wide">Age Suitability</h2>
+    <p class="text-sm text-slate-600 leading-relaxed mb-4"><strong class="text-slate-800">Children (6-15):</strong> Tennis is the better developmental choice. The technical complexity builds coordination, discipline, and athletic skills. Junior tennis programmes are well-established in India, and the competitive pathway (AITA rankings, state championships) is clear. Pickleball is fun for kids but lacks structured developmental pathways in India so far.</p>
+    <p class="text-sm text-slate-600 leading-relaxed mb-4"><strong class="text-slate-800">Young adults (16-35):</strong> Either sport works beautifully. Choose based on personality — tennis for competitive intensity, pickleball for social fun. Many young Indians play both.</p>
+    <p class="text-sm text-slate-600 leading-relaxed mb-4"><strong class="text-slate-800">Middle age (35-55):</strong> This is pickleball's sweet spot. Lower injury risk, easier on the body, and the social format is ideal for busy professionals looking for an active hobby. Tennis is great if you already play, but starting from scratch at 45 is challenging.</p>
+    <p class="text-sm text-slate-600 leading-relaxed"><strong class="text-slate-800">Seniors (55+):</strong> Pickleball is strongly recommended. The reduced physical demands make it sustainable, and the community aspect provides valuable social engagement. Many Indian senior communities and residential complexes are adding pickleball facilities for this reason.</p>
+
+    <!-- Verdict -->
+    <div class="bg-green-50 border border-green-200 rounded-xl p-6 my-8">
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-green-800 mb-3 uppercase">Our Verdict</h3>
+      <p class="text-sm text-slate-700 leading-relaxed mb-3"><strong>Choose pickleball if:</strong> You want a social, accessible sport that's easy to learn, gentle on your body, and affordable to start. It's perfect for families, beginners over 35, and anyone who values community and fun over intense competition.</p>
+      <p class="text-sm text-slate-700 leading-relaxed mb-3"><strong>Choose tennis if:</strong> You want a deeper technical challenge, a more intense physical workout, and a sport with a long competitive tradition. Tennis is ideal for children developing athletic skills, competitive-minded adults, and anyone who enjoys mastering a complex craft.</p>
+      <p class="text-sm text-slate-700 leading-relaxed"><strong>Bottom line:</strong> These are complementary, not competing sports. Many Indian players enjoy both. If forced to pick one, let your age, fitness level, budget, and social preferences guide you. Neither choice is wrong — any racket sport that gets you moving and smiling is the right one.</p>
+    </div>
+
+    <!-- Related Links -->
+    <h2 class="font-[Barlow_Condensed] text-2xl sm:text-3xl font-bold text-slate-900 mt-12 mb-4 uppercase tracking-wide">Related Reads</h2>
+    <ul class="space-y-2 text-sm">
+      <li><a href="/tennis" class="text-green-600 hover:text-green-800 underline underline-offset-2">Tennis Hub — Reviews, Guides & More</a></li>
+      <li><a href="/pickleball" class="text-green-600 hover:text-green-800 underline underline-offset-2">Pickleball Hub — Reviews, Guides & More</a></li>
+      <li><a href="/guides/pickleball-rules-beginners-india" class="text-green-600 hover:text-green-800 underline underline-offset-2">Pickleball Rules for Beginners in India</a></li>
+    </ul>
+
+    <!-- FAQ -->
+    <h2 class="font-[Barlow_Condensed] text-2xl sm:text-3xl font-bold text-slate-900 mt-12 mb-6 uppercase tracking-wide">Frequently Asked Questions</h2>
+    <div class="space-y-4">
+      {faqs.map(faq => (
+        <details class="group bg-white border border-slate-200 rounded-xl">
+          <summary class="cursor-pointer p-4 text-sm font-semibold text-slate-800 flex justify-between items-center">
+            {faq.q}
+            <span class="text-slate-400 group-open:rotate-45 transition-transform text-lg">+</span>
+          </summary>
+          <div class="px-4 pb-4 text-sm text-slate-600 leading-relaxed">{faq.a}</div>
+        </details>
+      ))}
+    </div>
+
+  </div>
+</BaseLayout>

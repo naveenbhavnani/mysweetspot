@@ -1,0 +1,300 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { webPageSchema, breadcrumbSchema, faqSchema } from "../../utils/schema";
+
+const faqs = [
+  { q: "What grip size do most Indian adult men use?", a: "Most Indian adult men fall in the grip size 2 (4 1/4 inches or 108 mm) to grip size 3 (4 3/8 inches or 111 mm) range. If you're between sizes, go with the smaller one and add an overgrip." },
+  { q: "Can I change my tennis racket grip size?", a: "You can increase grip size by 1/16 inch with an overgrip, or up to 1/8 inch with a heat-shrink sleeve. Reducing grip size is harder — you'd need to remove the base grip and replace it with a thinner one, which is not always practical." },
+  { q: "What happens if my grip is too big?", a: "An oversized grip limits wrist snap on serves, makes it harder to generate topspin, and can cause elbow strain. You'll feel like you're fighting the racket on every shot." },
+  { q: "What happens if my grip is too small?", a: "A grip that's too small forces you to squeeze harder, which fatigues the forearm quickly and increases the risk of tennis elbow. The racket may also twist in your hand on off-centre hits." },
+  { q: "Should beginners in India use an overgrip?", a: "Yes. An overgrip adds cushioning and sweat absorption — essential in India's humid conditions. It also bumps the grip size up slightly, so if you're between sizes, buy the smaller grip and add an overgrip." },
+  { q: "How often should I replace my overgrip?", a: "Replace your overgrip every 6 to 10 hours of play, or sooner if it becomes slick. In hot, sweaty Indian summers, you may need to change it after every 2-3 sessions." },
+  { q: "Is grip size the same for all brands?", a: "Grip sizes follow a universal standard (sizes 0 through 5), but the actual feel can vary slightly between brands because of grip shape — HEAD rackets tend to feel more rectangular, while Wilson grips feel rounder. Always test in hand if possible." },
+];
+
+const jsonLd = { "@graph": [
+  webPageSchema({ url: "/guides/tennis-racket-grip-size-guide", name: "Tennis Racket Grip Size Guide — How to Measure and Choose", description: "Find your perfect tennis racket grip size. Covers the ruler method, index finger test, grip size chart, and what happens with the wrong grip size for Indian players." }),
+  breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Tennis", url: "/tennis" }, { name: "Grip Size Guide", url: "/guides/tennis-racket-grip-size-guide" }]),
+  faqSchema(faqs),
+] } as Record<string, unknown>;
+---
+
+<BaseLayout
+  title="Tennis Racket Grip Size Guide — How to Measure and Choose"
+  description="Find your perfect tennis racket grip size. Covers the ruler method, index finger test, grip size chart, and what happens with the wrong grip size for Indian players."
+  jsonLd={jsonLd}
+>
+  <!-- Hero -->
+  <div class="bg-lime-50 border-b border-lime-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <nav class="text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-slate-800">Home</a> ›
+        <a href="/tennis" class="hover:text-slate-800">Tennis</a> ›
+        <span class="text-slate-700 font-medium">Grip Size Guide</span>
+      </nav>
+      <div class="flex items-center gap-3 mb-3">
+        <span class="w-3 h-3 rounded-full bg-lime-500" aria-hidden="true"></span>
+        <span class="text-xs font-semibold text-lime-700 uppercase tracking-widest">Guide</span>
+      </div>
+      <h1 class="font-[Barlow_Condensed] text-4xl sm:text-5xl font-bold text-slate-900">Tennis Racket Grip Size Guide</h1>
+      <p class="mt-3 text-slate-500 text-base max-w-2xl">How to measure your hand, what each grip size means, and why getting it right prevents injury and improves your game.</p>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="max-w-3xl mx-auto">
+
+      <!-- Intro -->
+      <div class="space-y-4 text-sm text-slate-600 leading-relaxed mb-10">
+        <p>Grip size is one of the most overlooked specs when buying a tennis racket in India. Players will agonise over head size and weight, then grab whatever grip comes on the racket. That's a mistake. The wrong grip size leads to discomfort, poor shot control, and — in the worst case — chronic elbow injuries.</p>
+        <p>This guide walks you through two proven methods to find your ideal grip size, explains the universal sizing chart, and covers practical fixes if you end up between sizes. Everything is written with Indian players in mind — hand sizes, humidity considerations, and locally available solutions.</p>
+      </div>
+
+      <img src="/images/guides/tennis/tennis-grip-size-guide-hero.png" alt="Close-up of a hand gripping a tennis racket handle showing proper grip technique with shallow depth of field" class="rounded-xl w-full my-8" width="1200" height="675" loading="eager" />
+
+      <!-- Why Grip Size Matters -->
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Why Grip Size Matters</h2>
+      <div class="space-y-4 text-sm text-slate-600 leading-relaxed mb-10">
+        <p>Your grip is the only physical connection between you and your racket. Every ounce of power, every degree of spin, and every adjustment in angle passes through it. When the grip fits your hand correctly, the racket becomes an extension of your arm. When it doesn't, three things go wrong:</p>
+        <ul class="list-disc list-inside space-y-2">
+          <li><strong class="text-slate-800">Loss of control:</strong> A loose grip forces compensating muscle tension, which reduces wrist mobility and makes touch shots inconsistent.</li>
+          <li><strong class="text-slate-800">Fatigue and injury:</strong> Squeezing too hard to compensate for a wrong-sized grip strains the forearm tendons — the classic path to tennis elbow (lateral epicondylitis).</li>
+          <li><strong class="text-slate-800">Reduced spin:</strong> An oversized grip limits wrist snap, which directly reduces your ability to generate topspin and slice.</li>
+        </ul>
+      </div>
+
+      <!-- Method 1: Ruler Method -->
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Method 1: The Ruler Method</h2>
+      <div class="space-y-4 text-sm text-slate-600 leading-relaxed mb-6">
+        <p>This is the most accurate way to measure your grip size at home. All you need is a ruler or measuring tape.</p>
+        <ol class="list-decimal list-inside space-y-3">
+          <li><strong class="text-slate-800">Open your dominant hand</strong> and extend your fingers fully, with your palm facing up.</li>
+          <li><strong class="text-slate-800">Align the ruler</strong> with the bottom lateral crease of your palm (the line that runs horizontally across the middle of your palm).</li>
+          <li><strong class="text-slate-800">Measure to the tip of your ring finger.</strong> Place the end of the ruler at the crease and read the measurement at the tip of your ring finger.</li>
+          <li><strong class="text-slate-800">Match to the chart below.</strong> Your measurement in inches corresponds directly to a grip size.</li>
+        </ol>
+      </div>
+
+      <img src="/images/guides/tennis/tennis-grip-size-ruler-method.png" alt="Open palm with a silver ruler measuring from the middle palm crease to the ring finger tip on a white background" class="rounded-xl w-full my-8" width="1200" height="675" loading="lazy" />
+
+      <div class="bg-green-50 border border-green-200 rounded-xl p-5 mb-10">
+        <p class="text-sm text-green-800"><strong>Pro tip:</strong> If your measurement falls between two sizes, always choose the smaller size. You can easily add an overgrip to increase the circumference by about 1/16 inch, but reducing grip size is much harder.</p>
+      </div>
+
+      <!-- Method 2: Index Finger Test -->
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Method 2: The Index Finger Test</h2>
+      <div class="space-y-4 text-sm text-slate-600 leading-relaxed mb-10">
+        <p>This method requires you to hold an actual racket, so it's best done at a sports shop. It's quick and gives an immediate feel-based confirmation.</p>
+        <ol class="list-decimal list-inside space-y-3">
+          <li><strong class="text-slate-800">Hold the racket</strong> with an Eastern forehand grip (the "shake hands" grip).</li>
+          <li><strong class="text-slate-800">Look at the gap</strong> between your fingertips and the base of your palm.</li>
+          <li><strong class="text-slate-800">Slide your index finger</strong> of your non-dominant hand into that gap.</li>
+          <li><strong class="text-slate-800">Check the fit:</strong> Your index finger should fit snugly. If there's extra space, the grip is too large. If your finger doesn't fit at all, the grip is too small.</li>
+        </ol>
+        <p>This test is especially useful in Indian sports shops where you may not have a ruler handy but can try multiple rackets on the spot.</p>
+      </div>
+
+      <img src="/images/guides/tennis/tennis-grip-size-finger-test.png" alt="Close-up of two hands demonstrating the index finger gap test on a tennis racket grip" class="rounded-xl w-full my-8" width="1200" height="675" loading="lazy" />
+
+      <!-- Grip Size Chart -->
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Complete Grip Size Chart</h2>
+      <p class="text-sm text-slate-600 leading-relaxed mb-4">Below is the universal grip size chart used by all major brands (HEAD, Wilson, Babolat, Yonex). The European size number is what you'll see printed on the racket butt cap.</p>
+
+      <img src="/images/guides/tennis/tennis-grip-size-chart.png" alt="Infographic showing six grip sizes from smallest to largest using green gradient horizontal bars and circles" class="rounded-xl w-full my-8" width="1200" height="675" loading="lazy" />
+
+      <div class="overflow-x-auto mb-10">
+        <table class="w-full text-sm border border-slate-200 rounded-xl overflow-hidden">
+          <thead>
+            <tr class="bg-slate-50">
+              <th class="text-left px-4 py-3 font-semibold text-slate-700 border-b border-slate-200">European Size</th>
+              <th class="text-left px-4 py-3 font-semibold text-slate-700 border-b border-slate-200">US Size (inches)</th>
+              <th class="text-left px-4 py-3 font-semibold text-slate-700 border-b border-slate-200">Circumference (mm)</th>
+              <th class="text-left px-4 py-3 font-semibold text-slate-700 border-b border-slate-200">Best For</th>
+            </tr>
+          </thead>
+          <tbody class="text-slate-600">
+            <tr class="border-b border-slate-100">
+              <td class="px-4 py-3 font-medium text-slate-800">0</td>
+              <td class="px-4 py-3">4 inches</td>
+              <td class="px-4 py-3">100 mm</td>
+              <td class="px-4 py-3">Junior players, very small hands</td>
+            </tr>
+            <tr class="border-b border-slate-100 bg-slate-50/50">
+              <td class="px-4 py-3 font-medium text-slate-800">1</td>
+              <td class="px-4 py-3">4 1/8 inches</td>
+              <td class="px-4 py-3">103 mm</td>
+              <td class="px-4 py-3">Junior players, small adult hands</td>
+            </tr>
+            <tr class="border-b border-slate-100">
+              <td class="px-4 py-3 font-medium text-slate-800">2</td>
+              <td class="px-4 py-3">4 1/4 inches</td>
+              <td class="px-4 py-3">108 mm</td>
+              <td class="px-4 py-3">Most women, smaller men's hands</td>
+            </tr>
+            <tr class="border-b border-slate-100 bg-slate-50/50">
+              <td class="px-4 py-3 font-medium text-slate-800">3</td>
+              <td class="px-4 py-3">4 3/8 inches</td>
+              <td class="px-4 py-3">111 mm</td>
+              <td class="px-4 py-3">Most Indian men — the most common size</td>
+            </tr>
+            <tr class="border-b border-slate-100">
+              <td class="px-4 py-3 font-medium text-slate-800">4</td>
+              <td class="px-4 py-3">4 1/2 inches</td>
+              <td class="px-4 py-3">114 mm</td>
+              <td class="px-4 py-3">Larger hands</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3 font-medium text-slate-800">5</td>
+              <td class="px-4 py-3">4 5/8 inches</td>
+              <td class="px-4 py-3">118 mm</td>
+              <td class="px-4 py-3">Very large hands — rare in Indian market</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Indian Context -->
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Grip Sizes in the Indian Market</h2>
+      <div class="space-y-4 text-sm text-slate-600 leading-relaxed mb-10">
+        <p>If you're shopping for rackets in India, here's what to expect:</p>
+        <ul class="list-disc list-inside space-y-2">
+          <li><strong class="text-slate-800">Most budget rackets (under ₹5,000)</strong> come in grip size 2 or 3 only. Brands like Cosco and Nivia rarely offer size options — what you see is what you get.</li>
+          <li><strong class="text-slate-800">Mid-range rackets (₹5,000–₹15,000)</strong> from HEAD, Wilson, and Babolat on Amazon.in usually offer a choice of 2, 3, or 4.</li>
+          <li><strong class="text-slate-800">Premium rackets (₹15,000+)</strong> are available in the full range (1 through 5), but stock of extreme sizes may be limited online.</li>
+          <li><strong class="text-slate-800">Humidity matters:</strong> Indian summers cause hands to swell slightly and sweat more. Many Indian coaches recommend buying one size smaller and adding a sweat-absorbing overgrip.</li>
+        </ul>
+      </div>
+
+      <!-- Overgrip Solutions -->
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Overgrip and Replacement Grip Solutions</h2>
+      <div class="space-y-4 text-sm text-slate-600 leading-relaxed mb-6">
+        <p>If your racket's grip isn't perfect, you have practical options:</p>
+      </div>
+
+      <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-800 uppercase tracking-wide mb-3">Overgrips</h3>
+      <div class="space-y-4 text-sm text-slate-600 leading-relaxed mb-6">
+        <p>An overgrip is a thin wrap applied over the existing grip. It adds roughly 1/16 inch (1.5 mm) to the circumference and provides a fresh, tacky surface. Key points:</p>
+        <ul class="list-disc list-inside space-y-2">
+          <li><strong class="text-slate-800">Cost:</strong> ₹150–₹400 for a pack of 3 (Wilson Pro Overgrip and Yonex Super Grap are popular in India).</li>
+          <li><strong class="text-slate-800">Sweat absorption:</strong> Essential in India's heat. Dry-feel overgrips (like Tourna Grip) are excellent for heavy sweaters.</li>
+          <li><strong class="text-slate-800">Replacement frequency:</strong> Every 6–10 hours of play, or when the surface becomes shiny and slick.</li>
+        </ul>
+      </div>
+
+      <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-800 uppercase tracking-wide mb-3">Replacement Grips</h3>
+      <div class="space-y-4 text-sm text-slate-600 leading-relaxed mb-6">
+        <p>A replacement grip replaces the original base grip entirely. It's thicker than an overgrip and can change the feel more significantly:</p>
+        <ul class="list-disc list-inside space-y-2">
+          <li><strong class="text-slate-800">To increase size:</strong> Use a thicker replacement grip (like Wilson Premium Leather Grip) to add up to 1/8 inch.</li>
+          <li><strong class="text-slate-800">To decrease size:</strong> Replace the stock grip with a thinner synthetic grip. This is uncommon but possible.</li>
+          <li><strong class="text-slate-800">Cost:</strong> ₹300–₹1,200 depending on material (synthetic vs leather).</li>
+        </ul>
+      </div>
+
+      <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-800 uppercase tracking-wide mb-3">Heat-Shrink Sleeves</h3>
+      <div class="space-y-4 text-sm text-slate-600 leading-relaxed mb-10">
+        <p>For a more permanent increase, heat-shrink sleeves fit under the grip and add about 1/8 inch to the circumference. They require a heat gun to apply and are best done by a racket technician. In India, most pro shops in metro cities offer this service for ₹200–₹500.</p>
+      </div>
+
+      <!-- Effects of Wrong Grip Size -->
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">What Happens With the Wrong Grip Size</h2>
+      <div class="space-y-4 text-sm text-slate-600 leading-relaxed mb-6">
+        <p>Understanding the consequences of a poorly sized grip helps you diagnose problems you might already be experiencing on court.</p>
+      </div>
+
+      <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-800 uppercase tracking-wide mb-3">Grip Too Small</h3>
+      <div class="space-y-4 text-sm text-slate-600 leading-relaxed mb-6">
+        <ul class="list-disc list-inside space-y-2">
+          <li>Racket twists on off-centre hits, especially on returns and volleys.</li>
+          <li>You unconsciously grip harder to compensate, leading to forearm fatigue within 30 minutes.</li>
+          <li>Increased risk of tennis elbow due to repetitive strain on the extensor tendons.</li>
+          <li>Wrist pronation becomes excessive, which can cause wrist pain over time.</li>
+        </ul>
+      </div>
+
+      <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-800 uppercase tracking-wide mb-3">Grip Too Large</h3>
+      <div class="space-y-4 text-sm text-slate-600 leading-relaxed mb-10">
+        <ul class="list-disc list-inside space-y-2">
+          <li>Limited wrist snap reduces serve speed and spin potential.</li>
+          <li>Difficulty switching grips quickly between forehand and backhand — a major problem for intermediate players working on their technique.</li>
+          <li>Hand cramps after extended rallies.</li>
+          <li>Reduced feel and touch on drop shots and volleys.</li>
+        </ul>
+      </div>
+
+      <!-- Quick Decision Guide -->
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Quick Decision Guide</h2>
+      <div class="overflow-x-auto mb-10">
+        <table class="w-full text-sm border border-slate-200 rounded-xl overflow-hidden">
+          <thead>
+            <tr class="bg-slate-50">
+              <th class="text-left px-4 py-3 font-semibold text-slate-700 border-b border-slate-200">Scenario</th>
+              <th class="text-left px-4 py-3 font-semibold text-slate-700 border-b border-slate-200">Recommended Action</th>
+            </tr>
+          </thead>
+          <tbody class="text-slate-600">
+            <tr class="border-b border-slate-100">
+              <td class="px-4 py-3">Between two sizes</td>
+              <td class="px-4 py-3">Choose the smaller size + overgrip</td>
+            </tr>
+            <tr class="border-b border-slate-100 bg-slate-50/50">
+              <td class="px-4 py-3">Playing in Indian summer heat</td>
+              <td class="px-4 py-3">Go one size down + dry-feel overgrip (Tourna Grip)</td>
+            </tr>
+            <tr class="border-b border-slate-100">
+              <td class="px-4 py-3">Beginner, unsure of size</td>
+              <td class="px-4 py-3">Start with size 2 (women) or size 3 (men) — most common in India</td>
+            </tr>
+            <tr class="border-b border-slate-100 bg-slate-50/50">
+              <td class="px-4 py-3">Experiencing tennis elbow</td>
+              <td class="px-4 py-3">Check grip size immediately — it's a leading cause</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3">Buying online, can't test</td>
+              <td class="px-4 py-3">Use the ruler method + order one size smaller as a safety margin</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Related Reviews -->
+      <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8 mb-10">
+        <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">Find Your Next Racket</h2>
+        <p class="text-sm text-slate-600 mb-4">Now that you know your grip size, find the perfect racket in your budget:</p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <a href="/reviews/best-tennis-rackets-under-5000-india" class="block bg-white border border-slate-200 rounded-xl p-4 hover:shadow-md hover:border-green-300 transition-all">
+            <p class="font-semibold text-slate-900 text-sm">Best Under ₹5,000</p>
+            <p class="text-xs text-slate-500 mt-1">Budget picks for beginners</p>
+          </a>
+          <a href="/reviews/best-tennis-rackets-under-10000-india" class="block bg-white border border-slate-200 rounded-xl p-4 hover:shadow-md hover:border-green-300 transition-all">
+            <p class="font-semibold text-slate-900 text-sm">Best Under ₹10,000</p>
+            <p class="text-xs text-slate-500 mt-1">Mid-range for improvers</p>
+          </a>
+          <a href="/reviews/best-tennis-rackets-under-20000-india" class="block bg-white border border-slate-200 rounded-xl p-4 hover:shadow-md hover:border-green-300 transition-all">
+            <p class="font-semibold text-slate-900 text-sm">Best Under ₹20,000</p>
+            <p class="text-xs text-slate-500 mt-1">Performance rackets</p>
+          </a>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <section id="faq" class="scroll-mt-24">
+        <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">Frequently Asked Questions</h2>
+        <div class="space-y-4" itemscope itemtype="https://schema.org/FAQPage">
+          {faqs.map(item => (
+            <div class="border border-slate-200 rounded-xl overflow-hidden" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+              <div class="bg-slate-50 px-5 py-3.5">
+                <h3 class="font-semibold text-slate-900 text-sm" itemprop="name">{item.q}</h3>
+              </div>
+              <div class="px-5 py-3.5" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <p class="text-sm text-slate-600 leading-relaxed" itemprop="text">{item.a}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+    </div>
+  </div>
+</BaseLayout>

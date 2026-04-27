@@ -1,0 +1,248 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { webPageSchema, breadcrumbSchema, faqSchema } from "../../utils/schema";
+
+const faqs = [
+  { q: "Is Dunlop better than Tecnifibre for squash?", a: "Neither brand is categorically better. Dunlop has the longer squash heritage and a wider model range across all price points. Tecnifibre offers superior string technology and arguably the best build quality in the mid-to-premium segment. Your choice should depend on play style — Dunlop for power-oriented players, Tecnifibre for control and touch players." },
+  { q: "Which Dunlop squash racket is best for beginners in India?", a: "The Dunlop Blaze Inferno series (around Rs 3,000–5,000) is excellent for beginners. It offers a large head size, forgiving sweet spot, and lightweight construction. The Dunlop Sonic Core Revelation 135 is another beginner-friendly option with good power assistance." },
+  { q: "Which Tecnifibre squash racket is best for beginners in India?", a: "The Tecnifibre Carboflex 130 X-Speed is a popular entry point. It's lightweight, well-balanced, and offers enough power for developing players. The Tecnifibre Suprem series also has beginner-friendly models in the Rs 4,000–7,000 range." },
+  { q: "Are Dunlop or Tecnifibre squash rackets cheaper in India?", a: "Dunlop generally offers better value at the budget end (under Rs 5,000) due to wider availability and more entry-level models. Tecnifibre's pricing starts higher — their cheapest rackets are around Rs 4,000–5,000. In the Rs 8,000–15,000 mid-range, pricing is comparable. At the premium end (Rs 15,000+), Tecnifibre tends to be slightly more expensive." },
+  { q: "Where can I buy Dunlop and Tecnifibre squash rackets in India?", a: "Both brands are available on Amazon.in and Flipkart. Sports365.in and Racquetpoint.com carry good selections of both brands. For physical retail, major sports stores in metros stock Dunlop; Tecnifibre availability is more limited to specialist racket sport shops. Always check for authorised dealer status to ensure genuine products." },
+  { q: "Do professional squash players use Dunlop or Tecnifibre?", a: "Both brands have significant pro presence. Dunlop sponsors Ali Farag (former World No.1), Mohamed ElShorbagy, and several top women's players. Tecnifibre backs Mohamed Abouelghar, Camille Serme, and is the official ball supplier for the PSA World Tour. At the very top, the split is roughly even." },
+];
+
+const jsonLd = { "@graph": [
+  webPageSchema({ url: "/compare/dunlop-vs-tecnifibre-squash-rackets", name: "Dunlop vs Tecnifibre Squash Rackets — Which Brand Wins?", description: "Compare Dunlop and Tecnifibre squash rackets in India. Model lineups, price positioning, technology differences, and our recommendation." }),
+  breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Squash", url: "/squash" },
+    { name: "Dunlop vs Tecnifibre", url: "/compare/dunlop-vs-tecnifibre-squash-rackets" },
+  ]),
+  faqSchema(faqs),
+] } as Record<string, unknown>;
+---
+<BaseLayout title="Dunlop vs Tecnifibre Squash Rackets — Which Brand Wins?" description="Compare Dunlop and Tecnifibre squash rackets in India. Model lineups, price positioning, technology differences, and our recommendation." jsonLd={jsonLd}>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+    <!-- Breadcrumb -->
+    <nav class="text-xs text-slate-500 mb-6" aria-label="Breadcrumb">
+      <a href="/" class="hover:text-slate-800">Home</a> ›
+      <a href="/squash" class="hover:text-slate-800">Squash</a> ›
+      <span class="text-slate-700 font-medium">Dunlop vs Tecnifibre</span>
+    </nav>
+
+    <!-- Hero -->
+    <h1 class="font-[Barlow_Condensed] text-4xl sm:text-5xl font-bold text-slate-900 mb-4 uppercase tracking-wide">Dunlop vs Tecnifibre Squash Rackets — Which Brand Wins?</h1>
+    <p class="text-lg text-slate-600 leading-relaxed max-w-3xl mb-8">The two dominant forces in modern squash equipment. We compare Dunlop and Tecnifibre on every metric that matters — model range, technology, pricing in India, and which brand suits different playing styles.</p>
+
+    <div class="bg-slate-100 rounded-xl aspect-video flex items-center justify-center text-slate-400 text-sm my-8"><span>IMAGE: Dunlop and Tecnifibre squash rackets displayed against a squash court glass wall</span></div>
+
+    <!-- Brand History -->
+    <h2 class="font-[Barlow_Condensed] text-2xl sm:text-3xl font-bold text-slate-900 mt-12 mb-4 uppercase tracking-wide">Brand History</h2>
+
+    <div class="grid md:grid-cols-2 gap-8 my-8">
+      <div class="bg-white border border-slate-200 rounded-xl p-6">
+        <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 mb-3 uppercase">Dunlop</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">Dunlop's squash legacy stretches back to the 1920s. The British brand (now owned by Sports Direct/Frasers Group) has been synonymous with squash for nearly a century. They made the first mass-produced squash racket, pioneered graphite construction, and created the iconic Dunlop Maxply — a racket that defined an era.</p>
+        <p class="text-sm text-slate-600 leading-relaxed mt-3">Modern Dunlop squash is built on the Sonic Core and Hyperfibre+ platform. Their rackets are used by Ali Farag, Mohamed ElShorbagy, and Joelle King. In India, Dunlop is the most widely available premium squash brand — a legacy of the sport's British colonial roots that still resonates in Indian squash clubs.</p>
+        <p class="text-sm text-slate-600 leading-relaxed mt-3">Dunlop's philosophy: offer something for everyone. Their catalogue spans from Rs 2,000 recreational rackets to Rs 20,000+ pro-level frames, making them the one-stop brand for Indian squash players at every level.</p>
+      </div>
+      <div class="bg-white border border-slate-200 rounded-xl p-6">
+        <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 mb-3 uppercase">Tecnifibre</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">Tecnifibre is the French challenger. Founded in 1979 primarily as a string manufacturer, they brought a string-maker's DNA to racket design — and it shows. Tecnifibre entered squash rackets in the 2000s and has climbed rapidly to become the second most popular brand on the PSA World Tour.</p>
+        <p class="text-sm text-slate-600 leading-relaxed mt-3">Their breakthrough was the Carboflex series, which combined carbon flex technology with precision engineering to create rackets renowned for feel and touch. Tecnifibre is also the official ball supplier for the PSA World Tour — their double yellow dot ball is the gold standard for competitive play.</p>
+        <p class="text-sm text-slate-600 leading-relaxed mt-3">Tecnifibre's philosophy: quality over quantity. They have a smaller model range than Dunlop but arguably higher average build quality. In India, Tecnifibre is less widely stocked but has a devoted following among serious club players, particularly in cities like Chennai, Mumbai, and Delhi with strong squash traditions.</p>
+      </div>
+    </div>
+
+    <!-- Model Lineup Comparison -->
+    <h2 class="font-[Barlow_Condensed] text-2xl sm:text-3xl font-bold text-slate-900 mt-12 mb-4 uppercase tracking-wide">Model Lineup Comparison</h2>
+    <p class="text-sm text-slate-600 leading-relaxed mb-6">Here's how each brand structures its racket range, mapped to playing levels.</p>
+
+    <div class="overflow-x-auto my-8">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr class="bg-slate-800 text-white">
+            <th class="text-left p-3 font-[Barlow_Condensed] uppercase tracking-wide">Category</th>
+            <th class="text-left p-3 font-[Barlow_Condensed] uppercase tracking-wide">Dunlop Series</th>
+            <th class="text-left p-3 font-[Barlow_Condensed] uppercase tracking-wide">Tecnifibre Series</th>
+            <th class="text-left p-3 font-[Barlow_Condensed] uppercase tracking-wide">Target Player</th>
+          </tr>
+        </thead>
+        <tbody class="text-slate-600">
+          <tr class="border-b border-slate-200 bg-white">
+            <td class="p-3 font-semibold text-slate-800">Entry Level</td>
+            <td class="p-3">Blaze Inferno, Force series</td>
+            <td class="p-3">Suprem (lower models)</td>
+            <td class="p-3">Beginners, casual players</td>
+          </tr>
+          <tr class="border-b border-slate-200 bg-slate-50">
+            <td class="p-3 font-semibold text-slate-800">Intermediate</td>
+            <td class="p-3">Sonic Core Revelation, Tempo Pro</td>
+            <td class="p-3">Carboflex X-Speed, Suprem (upper)</td>
+            <td class="p-3">Regular club players</td>
+          </tr>
+          <tr class="border-b border-slate-200 bg-white">
+            <td class="p-3 font-semibold text-slate-800">Advanced</td>
+            <td class="p-3">Sonic Core Ultimate, Hyperfibre+ Revelation</td>
+            <td class="p-3">Carboflex 125, Carboflex 130 S</td>
+            <td class="p-3">Competitive club/league</td>
+          </tr>
+          <tr class="border-b border-slate-200 bg-slate-50">
+            <td class="p-3 font-semibold text-slate-800">Pro Level</td>
+            <td class="p-3">Sonic Core Aero, Hyperfibre+ Precision</td>
+            <td class="p-3">Carboflex Airshaft, Dynergy series</td>
+            <td class="p-3">Tournament, state/national</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-sm text-slate-600 leading-relaxed">Dunlop has a wider and deeper catalogue — roughly 20+ current models versus Tecnifibre's 12-15. This gives Dunlop the edge for players who want to try different weights and balance points within a single brand ecosystem. Tecnifibre's tighter range means each model is more carefully positioned, but you have fewer options if you're between categories.</p>
+
+    <!-- Technology Differences -->
+    <h2 class="font-[Barlow_Condensed] text-2xl sm:text-3xl font-bold text-slate-900 mt-12 mb-4 uppercase tracking-wide">Technology Differences</h2>
+
+    <div class="grid md:grid-cols-2 gap-6 my-8">
+      <div>
+        <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-900 mb-2 uppercase">Dunlop Technologies</h3>
+        <ul class="space-y-3 text-sm text-slate-600">
+          <li><strong class="text-slate-800">Sonic Core (Infinergy):</strong> Dunlop's headline tech — Infinergy foam from BASF embedded in the frame. It provides energy return on impact, effectively giving you free power. The foam absorbs vibration and then releases energy back into the ball. It's a genuine performance differentiator that you can feel on court.</li>
+          <li><strong class="text-slate-800">Hyperfibre+:</strong> A material technology that places high-modulus fibres at strategic frame locations for improved stiffness-to-weight ratio. Results in more responsive frames without weight penalty.</li>
+          <li><strong class="text-slate-800">PowerMax:</strong> An enlarged string bed area achieved through optimised frame geometry. Comparable to the "Isometric" concept in badminton — a larger sweet spot for more consistent power.</li>
+          <li><strong class="text-slate-800">Glide Polymer:</strong> A low-friction surface treatment on the bumper guard that reduces wall drag during lets and retrieval shots. A small but appreciated detail for competitive players.</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-900 mb-2 uppercase">Tecnifibre Technologies</h3>
+        <ul class="space-y-3 text-sm text-slate-600">
+          <li><strong class="text-slate-800">Carboflex:</strong> Tecnifibre's signature carbon flex frame construction. Multiple layers of carbon are woven at specific angles to create a frame that flexes on impact for power but returns to true for accuracy. The feel is distinct — more "connected" than Dunlop's bouncier Sonic Core sensation.</li>
+          <li><strong class="text-slate-800">Airshaft:</strong> A hollow shaft construction found in premium models. It reduces weight in the handle area, shifting balance towards the head for more power without increasing overall mass. The shaft also acts as a vibration dampener.</li>
+          <li><strong class="text-slate-800">X-Top:</strong> A bumper design that extends the string bed upwards, effectively increasing the hitting zone without changing the frame dimensions. Particularly helpful for off-centre shots.</li>
+          <li><strong class="text-slate-800">DNAMX String:</strong> Tecnifibre's background as a string manufacturer pays dividends. Their rackets come factory-strung with DNAMX — a multifilament string far superior to the generic strings on most competitor rackets. This matters because many players at the club level never restring.</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="text-sm text-slate-600 leading-relaxed my-4">The technological philosophies diverge meaningfully. Dunlop's Sonic Core approach adds energy return — the racket actively helps generate power. Tecnifibre's Carboflex approach prioritises feel and precision — the racket faithfully transmits your input. Power players tend to gravitate to Dunlop; touch players to Tecnifibre. This is a generalisation, of course, but it holds true across most of the model range.</p>
+
+    <div class="bg-slate-100 rounded-xl aspect-video flex items-center justify-center text-slate-400 text-sm my-8"><span>IMAGE: Close-up comparison of Dunlop Sonic Core frame cross-section vs Tecnifibre Carboflex frame cross-section</span></div>
+
+    <!-- Price Comparison -->
+    <h2 class="font-[Barlow_Condensed] text-2xl sm:text-3xl font-bold text-slate-900 mt-12 mb-4 uppercase tracking-wide">Price Comparison (INR)</h2>
+    <p class="text-sm text-slate-600 leading-relaxed mb-6">Real Indian retail prices from Amazon.in, Sports365, and specialist squash retailers.</p>
+
+    <div class="overflow-x-auto my-8">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr class="bg-slate-800 text-white">
+            <th class="text-left p-3 font-[Barlow_Condensed] uppercase tracking-wide">Price Range (Rs)</th>
+            <th class="text-left p-3 font-[Barlow_Condensed] uppercase tracking-wide">Dunlop Options</th>
+            <th class="text-left p-3 font-[Barlow_Condensed] uppercase tracking-wide">Tecnifibre Options</th>
+            <th class="text-left p-3 font-[Barlow_Condensed] uppercase tracking-wide">Value Edge</th>
+          </tr>
+        </thead>
+        <tbody class="text-slate-600">
+          <tr class="border-b border-slate-200 bg-white">
+            <td class="p-3 font-semibold text-slate-800">Under 3,000</td>
+            <td class="p-3">Force, Blaze Inferno (3-4 models)</td>
+            <td class="p-3">Limited/none</td>
+            <td class="p-3 text-green-600 font-semibold">Dunlop</td>
+          </tr>
+          <tr class="border-b border-slate-200 bg-slate-50">
+            <td class="p-3 font-semibold text-slate-800">3,000 – 7,000</td>
+            <td class="p-3">Sonic Core Revelation 135, Tempo Pro (4-5 models)</td>
+            <td class="p-3">Suprem series, Carboflex 130 X-Speed (2-3 models)</td>
+            <td class="p-3 text-green-600 font-semibold">Dunlop (more choice)</td>
+          </tr>
+          <tr class="border-b border-slate-200 bg-white">
+            <td class="p-3 font-semibold text-slate-800">7,000 – 12,000</td>
+            <td class="p-3">Hyperfibre+ Revelation, Sonic Core Ultimate (3-4 models)</td>
+            <td class="p-3">Carboflex 125, Carboflex 130 S (2-3 models)</td>
+            <td class="p-3 text-green-600 font-semibold">Tie</td>
+          </tr>
+          <tr class="border-b border-slate-200 bg-slate-50">
+            <td class="p-3 font-semibold text-slate-800">12,000 – 20,000</td>
+            <td class="p-3">Sonic Core Aero, Hyperfibre+ Precision (2-3 models)</td>
+            <td class="p-3">Carboflex Airshaft 125/130, Dynergy (3-4 models)</td>
+            <td class="p-3 text-green-600 font-semibold">Tecnifibre</td>
+          </tr>
+          <tr class="border-b border-slate-200 bg-white">
+            <td class="p-3 font-semibold text-slate-800">20,000+</td>
+            <td class="p-3">Signature/limited editions</td>
+            <td class="p-3">Carboflex Airshaft 125 NS (Nour El Sherbini)</td>
+            <td class="p-3 text-green-600 font-semibold">Tecnifibre</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-sm text-slate-600 leading-relaxed">The pricing pattern tells a story: Dunlop wins the value game at the entry and mid-levels, while Tecnifibre dominates at the premium end where build quality and factory stringing justify the higher price. For Indian players spending Rs 5,000–10,000 on their first serious racket, both brands offer compelling options.</p>
+
+    <!-- Indian Availability -->
+    <h2 class="font-[Barlow_Condensed] text-2xl sm:text-3xl font-bold text-slate-900 mt-12 mb-4 uppercase tracking-wide">Indian Availability</h2>
+    <p class="text-sm text-slate-600 leading-relaxed mb-4"><strong class="text-slate-800">Dunlop:</strong> Widely available across India. Most sports shops in cities with squash courts stock Dunlop rackets. Online availability is excellent on Amazon.in, Flipkart, and Sports365.in. Dunlop's entry-level range is particularly easy to find — important for beginners who want to see and hold a racket before buying.</p>
+    <p class="text-sm text-slate-600 leading-relaxed mb-4"><strong class="text-slate-800">Tecnifibre:</strong> More limited distribution in India. Available online through Amazon.in and specialist retailers like Racquetpoint.com. Physical retail is restricted mainly to squash-specific shops in metros with strong squash cultures — Chennai (home of Indian squash), Mumbai, Delhi, and Kolkata. For specific models and sizes, online ordering is often the only reliable option.</p>
+    <p class="text-sm text-slate-600 leading-relaxed mb-4">For stringing services, Dunlop replacement strings are widely available. Tecnifibre strings — while excellent — require ordering from specialist retailers. If you play at a club with an in-house stringer, check which brands they carry before committing to either.</p>
+
+    <!-- Pro Endorsements -->
+    <h2 class="font-[Barlow_Condensed] text-2xl sm:text-3xl font-bold text-slate-900 mt-12 mb-4 uppercase tracking-wide">Pro Player Endorsements</h2>
+    <div class="grid md:grid-cols-2 gap-6 my-8">
+      <div class="bg-white border border-slate-200 rounded-xl p-6">
+        <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-900 mb-2 uppercase">Dunlop Ambassadors</h3>
+        <ul class="text-sm text-slate-600 space-y-1">
+          <li><strong>Ali Farag</strong> — Former World No.1 (Egypt)</li>
+          <li><strong>Mohamed ElShorbagy</strong> — Multiple-time World Champion (Egypt)</li>
+          <li><strong>Joelle King</strong> — World No.3 (New Zealand)</li>
+          <li><strong>Saurav Ghosal</strong> — India's top-ranked player (uses Dunlop)</li>
+          <li><strong>Joshna Chinappa</strong> — India's top women's player</li>
+        </ul>
+        <p class="text-sm text-slate-500 mt-3">Dunlop's Indian connections through Ghosal and Chinappa give the brand extra credibility in the domestic market.</p>
+      </div>
+      <div class="bg-white border border-slate-200 rounded-xl p-6">
+        <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-900 mb-2 uppercase">Tecnifibre Ambassadors</h3>
+        <ul class="text-sm text-slate-600 space-y-1">
+          <li><strong>Mohamed Abouelghar</strong> — Top 10 PSA player (Egypt)</li>
+          <li><strong>Camille Serme</strong> — Former World No.3 (France)</li>
+          <li><strong>Gregoire Marche</strong> — French National Champion</li>
+          <li><strong>Nour El Sherbini</strong> — Multiple World Champion (Egypt, signature racket)</li>
+          <li><strong>PSA Official Ball</strong> — Tecnifibre supplies the tour ball</li>
+        </ul>
+        <p class="text-sm text-slate-500 mt-3">Tecnifibre's role as PSA ball supplier gives them unique tour visibility. Nour El Sherbini's signature Airshaft is one of the most aspirational rackets in the sport.</p>
+      </div>
+    </div>
+
+    <p class="text-sm text-slate-600 leading-relaxed">For Indian squash fans, Dunlop's sponsorship of Saurav Ghosal and Joshna Chinappa is a significant advantage. Seeing India's top players use Dunlop builds trust and makes it the default aspirational brand for young Indian squash players.</p>
+
+    <!-- Verdict -->
+    <div class="bg-green-50 border border-green-200 rounded-xl p-6 my-8">
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-green-800 mb-3 uppercase">Our Verdict</h3>
+      <p class="text-sm text-slate-700 leading-relaxed mb-3"><strong>Choose Dunlop if:</strong> You're a beginner or intermediate player, you want the widest model selection, you value easy availability in India, or you play a power-oriented game. Dunlop's Sonic Core technology genuinely adds free power, and their Indian ambassador connections make after-sales support more accessible. Best for: beginners, power hitters, and anyone outside metro cities.</p>
+      <p class="text-sm text-slate-700 leading-relaxed mb-3"><strong>Choose Tecnifibre if:</strong> You're an intermediate-to-advanced player who prioritises feel and control, you appreciate superior factory stringing, or you're investing in a premium racket (Rs 12,000+). Tecnifibre's Carboflex construction rewards players with refined technique, and their rackets hold up beautifully over time. Best for: control players, touch specialists, and serious competitive players.</p>
+      <p class="text-sm text-slate-700 leading-relaxed"><strong>Bottom line:</strong> Dunlop is the safer, more accessible choice — and genuinely excellent at every price point. Tecnifibre is the connoisseur's brand — fewer options but arguably higher peak performance. For most Indian squash players, Dunlop makes the most practical sense. For those willing to seek out Tecnifibre and invest in the premium range, the reward is exceptional racket feel.</p>
+    </div>
+
+    <!-- Related Links -->
+    <h2 class="font-[Barlow_Condensed] text-2xl sm:text-3xl font-bold text-slate-900 mt-12 mb-4 uppercase tracking-wide">Related Reads</h2>
+    <ul class="space-y-2 text-sm">
+      <li><a href="/reviews/best-squash-rackets-under-10000-india" class="text-green-600 hover:text-green-800 underline underline-offset-2">Best Squash Rackets Under Rs 10,000 in India</a></li>
+      <li><a href="/reviews/best-squash-rackets-under-20000" class="text-green-600 hover:text-green-800 underline underline-offset-2">Best Squash Rackets Under Rs 20,000</a></li>
+      <li><a href="/guides/best-squash-racket-brands-india" class="text-green-600 hover:text-green-800 underline underline-offset-2">Best Squash Racket Brands in India</a></li>
+    </ul>
+
+    <!-- FAQ -->
+    <h2 class="font-[Barlow_Condensed] text-2xl sm:text-3xl font-bold text-slate-900 mt-12 mb-6 uppercase tracking-wide">Frequently Asked Questions</h2>
+    <div class="space-y-4">
+      {faqs.map(faq => (
+        <details class="group bg-white border border-slate-200 rounded-xl">
+          <summary class="cursor-pointer p-4 text-sm font-semibold text-slate-800 flex justify-between items-center">
+            {faq.q}
+            <span class="text-slate-400 group-open:rotate-45 transition-transform text-lg">+</span>
+          </summary>
+          <div class="px-4 pb-4 text-sm text-slate-600 leading-relaxed">{faq.a}</div>
+        </details>
+      ))}
+    </div>
+
+  </div>
+</BaseLayout>

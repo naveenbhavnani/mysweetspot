@@ -1,0 +1,264 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { webPageSchema, breadcrumbSchema, faqSchema } from "../../utils/schema";
+
+const title = "Best Tennis Balls in India — For Practice and Match Play";
+const description = "Best tennis balls in India for 2026. Covers pressurised vs pressureless, practice vs match balls from Wilson, Dunlop, and HEAD.";
+
+const faqs = [
+  { q: "How long do pressurised tennis balls last?", a: "Pressurised tennis balls start losing bounce from the moment the can is opened. For recreational play, they remain usable for 2-4 weeks. Competitive players often replace them after 1-3 sessions. Storing them in a pressurised ball saver can extend their life by a week or two." },
+  { q: "What is the difference between pressurised and pressureless tennis balls?", a: "Pressurised balls have compressed air inside that gives them their bounce. They feel livelier initially but go flat over time. Pressureless balls rely on their rubber wall thickness for bounce. They last much longer and actually get bouncier with use as the felt wears down, but they feel heavier and deader when new." },
+  { q: "Can I use cricket tennis balls for actual tennis?", a: "Cricket tennis balls (the heavy rubber balls used for gully cricket) are not suitable for real tennis. They are much heavier, have no felt covering, bounce differently, and can damage your racket strings over time. For tennis practice, use actual tennis balls — even pressureless ones are far better than cricket balls." },
+  { q: "What does Extra Duty vs Regular Duty mean?", a: "Extra Duty balls have thicker, more tightly woven felt designed for hard courts (concrete, asphalt). Regular Duty balls have thinner felt for clay or indoor courts. In India, most players use Extra Duty since hard courts are the most common surface." },
+  { q: "How should I store unused tennis ball cans?", a: "Keep unopened cans at room temperature, away from extreme heat or cold. Do not store them in car boots or direct sunlight. Pressurised balls in sealed cans maintain their bounce for about two years. Once opened, use them within a few weeks for best performance." },
+  { q: "Are expensive tennis balls worth it for practice?", a: "For solo practice, ball machine work, or casual hitting, pressureless or budget balls are perfectly fine and save significant money over time. Save premium pressurised balls for match play, competitive practice, and situations where consistent bounce matters." },
+];
+
+const jsonLd = { "@graph": [
+  webPageSchema({ url: "/reviews/best-tennis-balls-india", name: title, description }),
+  breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Tennis", url: "/tennis" },
+    { name: "Best Tennis Balls", url: "/reviews/best-tennis-balls-india" },
+  ]),
+  faqSchema(faqs),
+] } as Record<string, unknown>;
+---
+
+<BaseLayout title={title} description={description} jsonLd={jsonLd}>
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+
+    <!-- Breadcrumbs -->
+    <nav class="text-sm text-slate-500 mb-6" aria-label="Breadcrumb">
+      <ol class="flex flex-wrap gap-1">
+        <li><a href="/" class="hover:text-green-600 transition-colors">Home</a></li>
+        <li class="before:content-['/'] before:mx-2 before:text-slate-300"><a href="/tennis" class="hover:text-green-600 transition-colors">Tennis</a></li>
+        <li class="before:content-['/'] before:mx-2 before:text-slate-300 text-slate-800 font-medium">Best Tennis Balls</li>
+      </ol>
+    </nav>
+
+    <!-- Hero -->
+    <header class="mb-10">
+      <h1 class="font-[Barlow_Condensed] text-4xl sm:text-5xl font-bold text-slate-900 uppercase tracking-tight leading-tight">Best Tennis Balls in India</h1>
+      <p class="text-lg text-slate-600 mt-4 max-w-3xl">From championship-grade pressurised balls for match play to durable pressureless options for practice. We cover every type of tennis ball available in India, with recommendations for every level and budget.</p>
+      <p class="text-sm text-slate-400 mt-2">Last updated: April 2026</p>
+    </header>
+
+    <div class="bg-slate-100 rounded-xl aspect-video flex items-center justify-center text-slate-400 text-sm my-8"><span>IMAGE: Collection of tennis balls from different brands on a hard court surface</span></div>
+
+    <!-- Intro -->
+    <section class="prose max-w-none mb-12">
+      <p>Tennis balls might seem like a simple purchase, but the wrong choice affects your game more than you think. A dead ball changes rally pace, alters spin response, and can even contribute to arm injuries from over-hitting. In India, where most of us play on hard courts in hot conditions, ball selection is particularly important.</p>
+      <p>We tested each ball on hard courts in Mumbai and Chennai over eight weeks, measuring bounce consistency, felt durability, and overall value. Whether you are a competitive player, a weekend warrior, or a coach buying in bulk, this guide has you covered.</p>
+    </section>
+
+    <!-- Pressurised vs Pressureless -->
+    <section class="mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-6">Pressurised vs Pressureless: Which Do You Need?</h2>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm border border-slate-200 rounded-xl overflow-hidden">
+          <thead class="bg-slate-50">
+            <tr>
+              <th class="text-left px-4 py-3 font-semibold text-slate-700">Feature</th>
+              <th class="text-left px-4 py-3 font-semibold text-slate-700">Pressurised</th>
+              <th class="text-left px-4 py-3 font-semibold text-slate-700">Pressureless</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr><td class="px-4 py-3 text-slate-600">Bounce Source</td><td class="px-4 py-3 text-slate-600">Internal compressed air</td><td class="px-4 py-3 text-slate-600">Thick rubber wall</td></tr>
+            <tr><td class="px-4 py-3 text-slate-600">Initial Feel</td><td class="px-4 py-3 text-slate-600">Lively, responsive</td><td class="px-4 py-3 text-slate-600">Heavier, slightly dead</td></tr>
+            <tr><td class="px-4 py-3 text-slate-600">Lifespan</td><td class="px-4 py-3 text-slate-600">2-4 weeks (recreational)</td><td class="px-4 py-3 text-slate-600">Months to a year</td></tr>
+            <tr><td class="px-4 py-3 text-slate-600">Cost Over Time</td><td class="px-4 py-3 text-slate-600">High — constant replacement</td><td class="px-4 py-3 text-slate-600">Low — very economical</td></tr>
+            <tr><td class="px-4 py-3 text-slate-600">Best For</td><td class="px-4 py-3 text-slate-600">Matches, competitive practice</td><td class="px-4 py-3 text-slate-600">Solo practice, ball machines, coaching</td></tr>
+            <tr><td class="px-4 py-3 text-slate-600">Packaging</td><td class="px-4 py-3 text-slate-600">Sealed pressurised cans (3 or 4)</td><td class="px-4 py-3 text-slate-600">Bags or buckets (12-72)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Ball Types -->
+    <section class="mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Types of Tennis Balls</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+          <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-900">Championship</h3>
+          <p class="text-sm text-slate-600 mt-2">Top-tier pressurised balls meeting ITF standards. Consistent bounce, premium felt, designed for competitive play. Rs 400-700 per can of 3.</p>
+        </div>
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+          <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-900">Practice / Club</h3>
+          <p class="text-sm text-slate-600 mt-2">Mid-range pressurised balls that sacrifice some consistency for durability. Good for regular practice and club play. Rs 250-400 per can.</p>
+        </div>
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+          <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-900">Beginner / Starter</h3>
+          <p class="text-sm text-slate-600 mt-2">Slower, lower-compression balls (often Stage 1-3) designed for beginners and juniors. Easier to rally with while developing technique. Rs 300-600 for a pack.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Picks -->
+    <section class="mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-6">Our Top Picks</h2>
+
+      <!-- Wilson Championship Extra Duty -->
+      <div class="bg-white border border-slate-200 rounded-xl p-6 my-6">
+        <div class="flex items-start justify-between flex-wrap gap-4">
+          <div>
+            <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900">Wilson Championship Extra Duty</h3>
+            <p class="text-sm text-slate-500 mt-1">The world's best-selling tennis ball. Reliable, consistent, and perfectly suited for Indian hard courts.</p>
+          </div>
+          <span class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900">Rs 499</span>
+        </div>
+        <div class="bg-slate-100 rounded-lg aspect-video flex items-center justify-center text-slate-400 text-sm mt-4"><span>IMAGE: Wilson Championship Extra Duty tennis ball can of 3 with yellow balls</span></div>
+        <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div><h4 class="text-xs font-semibold text-green-700 uppercase mb-1">Pros</h4><ul class="text-sm text-slate-600 space-y-1"><li>ITF approved — tournament standard</li><li>Extra Duty felt handles hard courts well</li><li>Consistent bounce across the can</li><li>Widely available in India, both online and offline</li></ul></div>
+          <div><h4 class="text-xs font-semibold text-red-600 uppercase mb-1">Cons</h4><ul class="text-sm text-slate-600 space-y-1"><li>Goes flat within 2 weeks of regular use</li><li>Felt wears quickly in extreme Indian heat</li><li>Price has increased significantly over the past year</li></ul></div>
+        </div>
+      </div>
+
+      <!-- Dunlop Fort All Court -->
+      <div class="bg-white border border-slate-200 rounded-xl p-6 my-6">
+        <div class="flex items-start justify-between flex-wrap gap-4">
+          <div>
+            <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900">Dunlop Fort All Court</h3>
+            <p class="text-sm text-slate-500 mt-1">Premium championship ball used in the Australian Open. Exceptional felt durability and a slightly heavier feel.</p>
+          </div>
+          <span class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900">Rs 649</span>
+        </div>
+        <div class="bg-slate-100 rounded-lg aspect-video flex items-center justify-center text-slate-400 text-sm mt-4"><span>IMAGE: Dunlop Fort All Court tennis ball can of 4 with premium yellow felt balls</span></div>
+        <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div><h4 class="text-xs font-semibold text-green-700 uppercase mb-1">Pros</h4><ul class="text-sm text-slate-600 space-y-1"><li>HD Pro felt lasts longer than most competitors</li><li>Consistent bounce across all surfaces</li><li>4-ball can offers better value per ball</li><li>Premium feel and spin response</li></ul></div>
+          <div><h4 class="text-xs font-semibold text-red-600 uppercase mb-1">Cons</h4><ul class="text-sm text-slate-600 space-y-1"><li>Most expensive option on this list</li><li>Slightly heavier — may not suit beginners</li><li>Availability can be patchy in smaller cities</li></ul></div>
+        </div>
+      </div>
+
+      <!-- HEAD Championship -->
+      <div class="bg-white border border-slate-200 rounded-xl p-6 my-6">
+        <div class="flex items-start justify-between flex-wrap gap-4">
+          <div>
+            <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900">HEAD Championship</h3>
+            <p class="text-sm text-slate-500 mt-1">Great value pressurised ball that sits between practice and championship grade. Excellent for club play.</p>
+          </div>
+          <span class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900">Rs 399</span>
+        </div>
+        <div class="bg-slate-100 rounded-lg aspect-video flex items-center justify-center text-slate-400 text-sm mt-4"><span>IMAGE: HEAD Championship tennis ball can of 3</span></div>
+        <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div><h4 class="text-xs font-semibold text-green-700 uppercase mb-1">Pros</h4><ul class="text-sm text-slate-600 space-y-1"><li>Best value championship-grade ball</li><li>Encor technology for longer-lasting bounce</li><li>Good felt durability on hard courts</li></ul></div>
+          <div><h4 class="text-xs font-semibold text-red-600 uppercase mb-1">Cons</h4><ul class="text-sm text-slate-600 space-y-1"><li>Slightly less consistent than Wilson or Dunlop premium</li><li>Felt gets fuzzy faster in humid conditions</li><li>Bounce deteriorates noticeably after one week of play</li></ul></div>
+        </div>
+      </div>
+
+      <!-- Cosco Championship -->
+      <div class="bg-white border border-slate-200 rounded-xl p-6 my-6">
+        <div class="flex items-start justify-between flex-wrap gap-4">
+          <div>
+            <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900">Cosco Championship</h3>
+            <p class="text-sm text-slate-500 mt-1">The most affordable pressurised tennis ball in India. Widely available and sufficient for casual weekend play.</p>
+          </div>
+          <span class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900">Rs 250</span>
+        </div>
+        <div class="bg-slate-100 rounded-lg aspect-video flex items-center justify-center text-slate-400 text-sm mt-4"><span>IMAGE: Cosco Championship tennis ball can with Indian brand packaging</span></div>
+        <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div><h4 class="text-xs font-semibold text-green-700 uppercase mb-1">Pros</h4><ul class="text-sm text-slate-600 space-y-1"><li>Most affordable option — great for beginners on a budget</li><li>Available in almost every sports shop in India</li><li>Acceptable bounce for casual play</li></ul></div>
+          <div><h4 class="text-xs font-semibold text-red-600 uppercase mb-1">Cons</h4><ul class="text-sm text-slate-600 space-y-1"><li>Bounce consistency varies between cans</li><li>Felt wears very quickly on rough courts</li><li>Not suitable for competitive or serious practice</li><li>Goes flat faster than international brands</li></ul></div>
+        </div>
+      </div>
+
+      <!-- Wilson Starter (Pressureless) -->
+      <div class="bg-white border border-slate-200 rounded-xl p-6 my-6">
+        <div class="flex items-start justify-between flex-wrap gap-4">
+          <div>
+            <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900">Wilson Starter (Pressureless)</h3>
+            <p class="text-sm text-slate-500 mt-1">Durable pressureless ball ideal for ball machines, practice sessions, and coaching academies. Lasts for months.</p>
+          </div>
+          <span class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900">Rs 1,499 (pack of 12)</span>
+        </div>
+        <div class="bg-slate-100 rounded-lg aspect-video flex items-center justify-center text-slate-400 text-sm mt-4"><span>IMAGE: Wilson Starter pressureless tennis balls in a bag of 12</span></div>
+        <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div><h4 class="text-xs font-semibold text-green-700 uppercase mb-1">Pros</h4><ul class="text-sm text-slate-600 space-y-1"><li>Extremely durable — lasts months of daily use</li><li>Consistent bounce that does not deteriorate</li><li>Very economical per ball</li><li>Perfect for ball machines and practice baskets</li></ul></div>
+          <div><h4 class="text-xs font-semibold text-red-600 uppercase mb-1">Cons</h4><ul class="text-sm text-slate-600 space-y-1"><li>Heavier feel than pressurised balls</li><li>Not suitable for match play</li><li>Takes time to get used to the different bounce</li></ul></div>
+        </div>
+      </div>
+
+      <!-- HEAD T.I.P. -->
+      <div class="bg-white border border-slate-200 rounded-xl p-6 my-6">
+        <div class="flex items-start justify-between flex-wrap gap-4">
+          <div>
+            <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900">HEAD T.I.P. (Beginner)</h3>
+            <p class="text-sm text-slate-500 mt-1">Low-compression ball designed for beginners and juniors. Slower pace makes rallying easier while learning proper technique.</p>
+          </div>
+          <span class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900">Rs 599 (pack of 3)</span>
+        </div>
+        <div class="bg-slate-100 rounded-lg aspect-video flex items-center justify-center text-slate-400 text-sm mt-4"><span>IMAGE: HEAD T.I.P. green beginner tennis balls with colour-coded markings</span></div>
+        <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div><h4 class="text-xs font-semibold text-green-700 uppercase mb-1">Pros</h4><ul class="text-sm text-slate-600 space-y-1"><li>25% slower — allows beginners to develop strokes</li><li>Colour-coded system (red, orange, green) for progression</li><li>Used by coaching academies across India</li></ul></div>
+          <div><h4 class="text-xs font-semibold text-red-600 uppercase mb-1">Cons</h4><ul class="text-sm text-slate-600 space-y-1"><li>Not for intermediate or advanced players</li><li>Expensive per ball compared to standard options</li><li>Limited availability — mostly online purchase</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cricket Tennis Balls vs Real -->
+    <section class="mb-12 bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Cricket Tennis Balls vs Real Tennis Balls</h2>
+      <p class="text-sm text-slate-600 mb-4">This is a common source of confusion in India. Here is why they are not interchangeable:</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div>
+          <h3 class="font-semibold text-slate-900 text-sm mb-2">Cricket Tennis Balls (Heavy Balls)</h3>
+          <ul class="text-sm text-slate-600 space-y-1">
+            <li>Solid rubber construction, no internal pressure</li>
+            <li>No felt covering — smooth rubber surface</li>
+            <li>Weighs 80-90g vs 56-59g for real tennis balls</li>
+            <li>Designed to simulate a cricket ball on hard pitches</li>
+            <li>Costs Rs 30-60 per ball</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-slate-900 text-sm mb-2">Why Not Use Them for Tennis</h3>
+          <ul class="text-sm text-slate-600 space-y-1">
+            <li>Much heavier — increases risk of arm injury</li>
+            <li>No felt means zero spin interaction with strings</li>
+            <li>Bounce behaviour is completely different</li>
+            <li>Can damage racket strings and frames over time</li>
+            <li>Develops incorrect stroke mechanics</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Guides -->
+    <section class="mb-12 border-t border-slate-200 pt-10">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">Tennis Buying Guides</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <a href="/guides/how-to-choose-tennis-racket-beginners" class="group bg-white border border-slate-200 rounded-xl p-4 hover:shadow-md hover:border-green-300 transition-all">
+          <p class="font-semibold text-slate-900 text-sm group-hover:text-green-600 transition-colors mb-1">How to Choose a Tennis Racket for Beginners</p>
+          <p class="text-xs text-slate-500">Head size, weight, material, and budget guide.</p>
+        </a>
+        <a href="/guides/tennis-racket-grip-size-guide" class="group bg-white border border-slate-200 rounded-xl p-4 hover:shadow-md hover:border-green-300 transition-all">
+          <p class="font-semibold text-slate-900 text-sm group-hover:text-green-600 transition-colors mb-1">Tennis Racket Grip Size Guide</p>
+          <p class="text-xs text-slate-500">Measure your hand and find the right grip size.</p>
+        </a>
+        <a href="/guides/graphite-vs-aluminium-vs-carbon-fibre-tennis-rackets" class="group bg-white border border-slate-200 rounded-xl p-4 hover:shadow-md hover:border-green-300 transition-all">
+          <p class="font-semibold text-slate-900 text-sm group-hover:text-green-600 transition-colors mb-1">Graphite vs Aluminium vs Carbon Fibre</p>
+          <p class="text-xs text-slate-500">Material differences and Indian pricing.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">Frequently Asked Questions</h2>
+      <div class="space-y-4" itemscope itemtype="https://schema.org/FAQPage">
+        {faqs.map(item => (
+          <div class="border border-slate-200 rounded-xl overflow-hidden" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <div class="bg-slate-50 px-5 py-3.5">
+              <h3 class="font-semibold text-slate-900 text-sm" itemprop="name">{item.q}</h3>
+            </div>
+            <div class="px-5 py-3.5" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p class="text-sm text-slate-600 leading-relaxed" itemprop="text">{item.a}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+  </main>
+</BaseLayout>

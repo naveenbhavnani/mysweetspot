@@ -1,0 +1,453 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { webPageSchema, breadcrumbSchema, faqSchema } from "../../utils/schema";
+
+const title = "How to Choose a Pickleball Paddle: Beginner's Guide";
+const description = "Complete guide to choosing a pickleball paddle. Covers core material, face material, weight, grip circumference, and USAPA approval for Indian players.";
+
+const faqs = [
+  { q: "What is the best core material for a pickleball paddle?", a: "Polymer (polypropylene) honeycomb is the best core material for most players. It offers the best combination of control, power, and quietness. Nomex cores are louder and stiffer, suited to power players, while aluminium cores provide maximum control but less pop. Around 90% of paddles sold in India use polymer cores." },
+  { q: "What weight pickleball paddle should a beginner use?", a: "Beginners should start with a midweight paddle between 7.3-8.0 oz (207-227 g). This range provides a good balance of power and control without causing arm fatigue. Players with tennis or badminton experience who are used to heavier rackets may prefer 8.0-8.5 oz, while older players or those with joint issues should consider lightweight paddles under 7.3 oz." },
+  { q: "What is the difference between graphite and carbon fibre paddle faces?", a: "Graphite faces are thin, lightweight, and provide excellent touch and feel — ideal for control-oriented players. Carbon fibre (often marketed as carbon or raw carbon) is stiffer and more durable, offering more pop and spin potential. For beginners, either works well. Carbon fibre faces tend to cost more in India, typically Rs 3,000+ for a carbon fibre paddle vs Rs 1,500+ for graphite." },
+  { q: "Does USAPA approval matter for paddles in India?", a: "USAPA (USA Pickleball Association) approval matters if you plan to play in sanctioned tournaments. Most national-level tournaments in India organised by AIPA follow USA Pickleball rules and require approved paddles. For recreational play, it is not strictly necessary, but buying a USAPA-approved paddle ensures it meets quality and dimension standards." },
+  { q: "What grip size do I need for a pickleball paddle?", a: "Most pickleball paddles come with a 4-inch to 4.5-inch grip circumference. The standard test: hold the paddle with an Eastern grip, and you should be able to fit your index finger of the opposite hand in the gap between your fingertips and palm. If in doubt, go smaller — you can always add an overgrip to increase the size by 1/16 inch." },
+  { q: "How much should I spend on my first pickleball paddle in India?", a: "For your first paddle, spending Rs 1,500-3,000 is sensible. This range gets you a polymer-core paddle with a graphite or fiberglass face that will serve you well through your first 6-12 months. Avoid paddles under Rs 800 — they often use inferior wood cores. Once you develop your playing style, consider upgrading to a Rs 5,000-10,000 paddle." },
+  { q: "What is the difference between elongated and standard paddle shapes?", a: "Standard paddles (approx. 16 inches long, 8 inches wide) have a larger sweet spot, making them more forgiving — ideal for beginners. Elongated paddles (16.5 inches long, 7.5 inches wide) offer more reach and leverage for spin but have a smaller sweet spot. Most Indian beginners should start with a standard shape." },
+  { q: "How long does a pickleball paddle last?", a: "A quality pickleball paddle lasts 1-3 years with regular play (3-4 times per week). Signs it needs replacing include a dead spot in the centre (less pop), visible delamination of the face, cracks in the edge guard, or a change in sound when hitting. Budget paddles may wear out faster, within 6-12 months of heavy use." },
+];
+
+const jsonLd = {
+  "@graph": [
+    webPageSchema({ url: "/guides/how-to-choose-pickleball-paddle", name: title, description }),
+    breadcrumbSchema([
+      { name: "Home", url: "/" },
+      { name: "Pickleball", url: "/pickleball" },
+      { name: "How to Choose a Paddle", url: "/guides/how-to-choose-pickleball-paddle" },
+    ]),
+    faqSchema(faqs),
+  ],
+} as Record<string, unknown>;
+---
+
+<BaseLayout title={title} description={description} jsonLd={jsonLd}>
+  <article class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+
+    <!-- Breadcrumb -->
+    <nav aria-label="Breadcrumb" class="mb-8">
+      <ol class="flex flex-wrap items-center gap-1.5 text-sm text-slate-500">
+        <li><a href="/" class="hover:text-green-600 transition-colors">Home</a></li>
+        <li class="before:content-['/'] before:mx-1.5 before:text-slate-300"><a href="/pickleball" class="hover:text-green-600 transition-colors">Pickleball</a></li>
+        <li class="before:content-['/'] before:mx-1.5 before:text-slate-300 text-slate-900 font-medium">How to Choose a Paddle</li>
+      </ol>
+    </nav>
+
+    <!-- Hero -->
+    <header class="mb-10">
+      <h1 class="font-[Barlow_Condensed] text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 uppercase tracking-wide leading-tight mb-4">
+        How to Choose a Pickleball Paddle
+      </h1>
+      <p class="text-lg text-slate-600 max-w-3xl leading-relaxed">
+        Choosing the right pickleball paddle can feel overwhelming with dozens of brands flooding the Indian market. This guide explains every factor that matters — core material, face material, weight, grip size, shape, and certification — so you can make a confident, informed decision without overspending.
+      </p>
+    </header>
+
+    <div class="bg-slate-100 rounded-xl aspect-video flex items-center justify-center text-slate-400 text-sm my-8">
+      <span>IMAGE: Comparison photo of different pickleball paddles showing various shapes, sizes, and face materials</span>
+    </div>
+
+    <!-- Table of Contents -->
+    <nav class="bg-slate-50 border border-slate-200 rounded-2xl p-6 mb-10">
+      <h2 class="font-[Barlow_Condensed] text-lg font-bold text-slate-900 uppercase tracking-wide mb-3">In This Guide</h2>
+      <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
+        <li><a href="#core-materials" class="text-green-600 hover:text-green-700 hover:underline">Core Materials</a></li>
+        <li><a href="#face-materials" class="text-green-600 hover:text-green-700 hover:underline">Face Materials</a></li>
+        <li><a href="#weight" class="text-green-600 hover:text-green-700 hover:underline">Weight Categories</a></li>
+        <li><a href="#grip-size" class="text-green-600 hover:text-green-700 hover:underline">Grip Sizing</a></li>
+        <li><a href="#paddle-shape" class="text-green-600 hover:text-green-700 hover:underline">Paddle Shapes</a></li>
+        <li><a href="#usapa" class="text-green-600 hover:text-green-700 hover:underline">USAPA Approval</a></li>
+        <li><a href="#budget" class="text-green-600 hover:text-green-700 hover:underline">Budget Recommendations</a></li>
+        <li><a href="#faq" class="text-green-600 hover:text-green-700 hover:underline">FAQ</a></li>
+      </ul>
+    </nav>
+
+    <!-- Core Materials -->
+    <section id="core-materials" class="scroll-mt-24 mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Core Materials — The Heart of Your Paddle</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        The core is the internal honeycomb structure sandwiched between the two face layers. It determines your paddle's feel, power, control, and noise level. There are three main core materials you will encounter in the Indian market.
+      </p>
+
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 uppercase tracking-wide mb-3">Polymer (Polypropylene) Core</h3>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Polymer is the <strong>most popular core material</strong> and the one we recommend for the vast majority of players. It uses a polypropylene honeycomb structure that delivers a soft, controlled feel with good power. Polymer cores are the quietest option — an important consideration if you play in residential areas in Indian cities where noise complaints are common. About 90% of paddles available on Amazon India and Flipkart use polymer cores.
+      </p>
+
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 uppercase tracking-wide mb-3">Nomex Core</h3>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Nomex is a rigid, aramid fibre-based honeycomb material originally developed for aerospace applications. Nomex cores are <strong>hard, loud, and powerful</strong>. They provide excellent pop and drive but sacrifice touch and control. The loud "crack" sound when hitting is distinctive. Nomex paddles are less common in India but appeal to aggressive power players. They are not ideal for beginners as they are less forgiving on off-centre hits.
+      </p>
+
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 uppercase tracking-wide mb-3">Aluminium Core</h3>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Aluminium honeycomb cores are the <strong>control specialist's choice</strong>. They offer the softest feel and the most precise ball placement. However, they generate the least power — you will need to generate your own pace through swing mechanics. Aluminium cores are also the heaviest. They are rarely found in budget Indian paddles but appear in some mid-range imports.
+      </p>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border border-slate-200 rounded-xl overflow-hidden">
+          <thead>
+            <tr class="bg-slate-50">
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Property</th>
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Polymer</th>
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Nomex</th>
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Aluminium</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Power</td><td class="px-4 py-3 text-slate-700">Medium-High</td><td class="px-4 py-3 text-slate-700">High</td><td class="px-4 py-3 text-slate-700">Low</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Control</td><td class="px-4 py-3 text-slate-700">High</td><td class="px-4 py-3 text-slate-700">Medium</td><td class="px-4 py-3 text-slate-700">Very High</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Touch / Feel</td><td class="px-4 py-3 text-slate-700">Soft</td><td class="px-4 py-3 text-slate-700">Hard / Stiff</td><td class="px-4 py-3 text-slate-700">Very Soft</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Noise Level</td><td class="px-4 py-3 text-slate-700">Quiet</td><td class="px-4 py-3 text-slate-700">Loud</td><td class="px-4 py-3 text-slate-700">Moderate</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Durability</td><td class="px-4 py-3 text-slate-700">Good</td><td class="px-4 py-3 text-slate-700">Excellent</td><td class="px-4 py-3 text-slate-700">Good</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Price (India)</td><td class="px-4 py-3 text-slate-700">Rs 1,000-15,000</td><td class="px-4 py-3 text-slate-700">Rs 3,000-12,000</td><td class="px-4 py-3 text-slate-700">Rs 2,500-10,000</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Best For</td><td class="px-4 py-3 text-slate-700">All-round players</td><td class="px-4 py-3 text-slate-700">Power players</td><td class="px-4 py-3 text-slate-700">Control / finesse</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Availability in India</td><td class="px-4 py-3 text-slate-700">Very Common</td><td class="px-4 py-3 text-slate-700">Uncommon</td><td class="px-4 py-3 text-slate-700">Rare</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="bg-green-50 border border-green-200 rounded-xl p-6 mb-6">
+        <h3 class="font-[Barlow_Condensed] text-lg font-bold text-green-800 uppercase tracking-wide mb-2">Our Recommendation</h3>
+        <p class="text-green-900 text-sm leading-relaxed">
+          Choose a <strong>polymer core</strong> for your first paddle. It is the most versatile, widely available in India, and offers the best learning experience. You can always specialise later once you understand your playing style.
+        </p>
+      </div>
+    </section>
+
+    <!-- Face Materials -->
+    <section id="face-materials" class="scroll-mt-24 mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Face Materials — What Hits the Ball</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        The face (or surface) of the paddle is the outer layer that contacts the ball. It determines spin potential, power transfer, and durability. Three materials dominate the market.
+      </p>
+
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 uppercase tracking-wide mb-3">Graphite</h3>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Graphite faces are <strong>thin, lightweight, and responsive</strong>. They provide excellent touch and feel, making them ideal for players who prioritise control and soft game (dinking). Graphite paddles are the most popular choice in the mid-price segment in India (Rs 2,000-6,000). The face is typically a single thin layer of graphite composite, which keeps the paddle light but responsive.
+      </p>
+
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 uppercase tracking-wide mb-3">Carbon Fibre</h3>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Carbon fibre (also marketed as "raw carbon" or "T700/T300 carbon") faces are <strong>stiffer and more textured</strong> than graphite. The rougher surface generates more spin, which is a significant advantage in competitive play. Carbon fibre paddles tend to have more pop and durability. In India, quality carbon fibre paddles start around Rs 3,500 and can go up to Rs 15,000+ for imported brands like Selkirk or Joola.
+      </p>
+
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 uppercase tracking-wide mb-3">Fiberglass (Composite)</h3>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Fiberglass faces offer the <strong>most power</strong> of the three materials. The surface has a slight flex that creates a trampoline effect, generating more ball speed with less effort. Fiberglass paddles are typically the most affordable option and are common in the under-Rs 2,500 segment. They are an excellent choice for beginners who want forgiving power, though they sacrifice some control compared to graphite.
+      </p>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border border-slate-200 rounded-xl overflow-hidden">
+          <thead>
+            <tr class="bg-slate-50">
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Property</th>
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Graphite</th>
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Carbon Fibre</th>
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Fiberglass</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Power</td><td class="px-4 py-3 text-slate-700">Medium</td><td class="px-4 py-3 text-slate-700">Medium-High</td><td class="px-4 py-3 text-slate-700">High</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Control</td><td class="px-4 py-3 text-slate-700">High</td><td class="px-4 py-3 text-slate-700">High</td><td class="px-4 py-3 text-slate-700">Medium</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Spin</td><td class="px-4 py-3 text-slate-700">Medium</td><td class="px-4 py-3 text-slate-700">High</td><td class="px-4 py-3 text-slate-700">Low-Medium</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Weight Contribution</td><td class="px-4 py-3 text-slate-700">Light</td><td class="px-4 py-3 text-slate-700">Light-Medium</td><td class="px-4 py-3 text-slate-700">Medium</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Durability</td><td class="px-4 py-3 text-slate-700">Good</td><td class="px-4 py-3 text-slate-700">Excellent</td><td class="px-4 py-3 text-slate-700">Good</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Price Range (India)</td><td class="px-4 py-3 text-slate-700">Rs 2,000-8,000</td><td class="px-4 py-3 text-slate-700">Rs 3,500-15,000</td><td class="px-4 py-3 text-slate-700">Rs 1,000-5,000</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Best For</td><td class="px-4 py-3 text-slate-700">Touch / finesse</td><td class="px-4 py-3 text-slate-700">Spin / all-round</td><td class="px-4 py-3 text-slate-700">Power / beginners</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="bg-slate-100 rounded-xl aspect-video flex items-center justify-center text-slate-400 text-sm my-8">
+        <span>IMAGE: Close-up comparison of graphite, carbon fibre, and fiberglass paddle face textures</span>
+      </div>
+    </section>
+
+    <!-- Weight -->
+    <section id="weight" class="scroll-mt-24 mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Weight Categories</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Paddle weight is one of the most impactful factors in how a paddle plays. It affects power, control, manoeuvrability, and arm fatigue. Paddles are grouped into three weight categories.
+      </p>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border border-slate-200 rounded-xl overflow-hidden">
+          <thead>
+            <tr class="bg-slate-50">
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Category</th>
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Weight Range</th>
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Characteristics</th>
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Best For</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr>
+              <td class="px-4 py-3 text-slate-700 font-medium">Lightweight</td>
+              <td class="px-4 py-3 text-slate-700">Under 7.3 oz (207 g)</td>
+              <td class="px-4 py-3 text-slate-700">Quick hands, less fatigue, less power</td>
+              <td class="px-4 py-3 text-slate-700">Seniors, players with joint issues, fast-hands players</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3 text-slate-700 font-medium">Midweight</td>
+              <td class="px-4 py-3 text-slate-700">7.3-8.4 oz (207-238 g)</td>
+              <td class="px-4 py-3 text-slate-700">Balanced power and control</td>
+              <td class="px-4 py-3 text-slate-700">Most players, especially beginners</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3 text-slate-700 font-medium">Heavyweight</td>
+              <td class="px-4 py-3 text-slate-700">Over 8.4 oz (238 g)</td>
+              <td class="px-4 py-3 text-slate-700">Maximum power and stability, slower swings</td>
+              <td class="px-4 py-3 text-slate-700">Power players, singles players, former tennis players</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="text-slate-700 leading-relaxed mb-4">
+        <strong>For Indian beginners</strong>, we strongly recommend starting in the midweight range (7.3-8.0 oz). If you come from a badminton background, you may be used to much lighter rackets (80-90 g), so even a midweight paddle will feel substantial. Give yourself 2-3 weeks to adapt before judging the weight.
+      </p>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Players from a tennis background often prefer heavier paddles (8.0-8.5 oz) since they are accustomed to racket weights of 280-330 g. The heavier paddle provides stability on volleys and adds natural power to drives.
+      </p>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        A useful tip: you can always <strong>add weight</strong> to a lightweight paddle using lead tape (available for Rs 200-400 on Amazon India), but you cannot remove weight from a heavy paddle. When in doubt, go lighter.
+      </p>
+    </section>
+
+    <!-- Grip Size -->
+    <section id="grip-size" class="scroll-mt-24 mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Grip Sizing</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Grip circumference affects comfort, control, and injury prevention. Most pickleball paddles sold in India come with a grip circumference between <strong>4 inches and 4.5 inches</strong>. Getting the right size matters more than many beginners realise.
+      </p>
+
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 uppercase tracking-wide mb-3">How to Measure Your Grip Size</h3>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        There are two reliable methods:
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2 mb-4">
+        <li><strong>Index finger test:</strong> Hold the paddle in an Eastern grip (like shaking hands with it). If you can comfortably fit the index finger of your other hand between your fingertips and the base of your palm, the grip is correct. Too much space means it is too big; no space means it is too small.</li>
+        <li><strong>Ruler method:</strong> Measure from the tip of your ring finger to the middle crease of your palm. This measurement in inches corresponds to your ideal grip circumference. Most Indian adults fall between 4.0 and 4.25 inches.</li>
+      </ul>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border border-slate-200 rounded-xl overflow-hidden">
+          <thead>
+            <tr class="bg-slate-50">
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Hand Size</th>
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Grip Circumference</th>
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Common For</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr><td class="px-4 py-3 text-slate-700">Small</td><td class="px-4 py-3 text-slate-700">4.0 inches</td><td class="px-4 py-3 text-slate-700">Women, teens, smaller hands</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700">Medium</td><td class="px-4 py-3 text-slate-700">4.25 inches</td><td class="px-4 py-3 text-slate-700">Most Indian adults</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700">Large</td><td class="px-4 py-3 text-slate-700">4.5 inches</td><td class="px-4 py-3 text-slate-700">Larger hands</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="text-slate-700 leading-relaxed mb-4">
+        <strong>Pro tip:</strong> A slightly smaller grip allows more wrist action, which helps with spin and dinking. A larger grip reduces wrist movement but improves stability on drives. If you are between sizes, choose the smaller option and wrap an overgrip (Rs 100-200) to fine-tune the thickness.
+      </p>
+
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 uppercase tracking-wide mb-3">Grip Length</h3>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Handle length typically ranges from 4.5 to 5.5 inches. Longer handles (5.25-5.5 inches) allow two-handed backhands and provide more leverage. Shorter handles (4.5-5 inches) shift weight towards the paddle face for more manoeuvrability. If you use a two-handed backhand (common among tennis converts), prioritise a handle length of at least 5.25 inches.
+      </p>
+
+      <div class="bg-slate-100 rounded-xl aspect-video flex items-center justify-center text-slate-400 text-sm my-8">
+        <span>IMAGE: Diagram showing how to measure grip size using the index finger test method</span>
+      </div>
+    </section>
+
+    <!-- Paddle Shape -->
+    <section id="paddle-shape" class="scroll-mt-24 mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Paddle Shapes</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Paddle shape affects reach, sweet spot size, and manoeuvrability. Three primary shapes are available in the Indian market.
+      </p>
+
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 uppercase tracking-wide mb-3">Standard / Classic Shape</h3>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Dimensions of approximately <strong>15.5-16 inches long by 7.5-8 inches wide</strong>. This shape offers the largest sweet spot and is the most forgiving on off-centre hits. We recommend this shape for all beginners. Most paddles under Rs 3,000 in India come in this shape.
+      </p>
+
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 uppercase tracking-wide mb-3">Elongated Shape</h3>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Dimensions of approximately <strong>16.5 inches long by 7-7.5 inches wide</strong>. The extra length provides more reach (useful in singles) and a longer lever arm for generating spin. The tradeoff is a smaller sweet spot and slightly less manoeuvrability at the net. Popular among intermediate and advanced players who have consistent shot-making.
+      </p>
+
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 uppercase tracking-wide mb-3">Wide Body Shape</h3>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Dimensions of approximately <strong>15.5 inches long by 8-8.25 inches wide</strong>. The widest face provides the largest sweet spot of any shape, making it extremely forgiving. However, US regulations cap the combined length plus width at 24 inches, so wider paddles are shorter. This shape is excellent for doubles players focused on kitchen play and blocking.
+      </p>
+
+      <div class="bg-slate-100 rounded-xl aspect-video flex items-center justify-center text-slate-400 text-sm my-8">
+        <span>IMAGE: Side-by-side silhouettes of standard, elongated, and wide body paddle shapes with dimensions</span>
+      </div>
+    </section>
+
+    <!-- USAPA Approval -->
+    <section id="usapa" class="scroll-mt-24 mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">USAPA Approval — Does It Matter in India?</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        USA Pickleball (formerly USAPA) maintains an <strong>Approved Paddle List</strong> that certifies paddles meeting specific standards for dimensions, surface roughness, deflection, and construction. But should Indian players care about this?
+      </p>
+
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 uppercase tracking-wide mb-3">When You Need It</h3>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2 mb-4">
+        <li><strong>Tournament play:</strong> Most AIPA-sanctioned tournaments and state-level competitions in India require USAPA-approved paddles. If you plan to compete, this is non-negotiable.</li>
+        <li><strong>Quality assurance:</strong> USAPA approval acts as a baseline quality guarantee. Approved paddles must meet specific standards for surface roughness (affects spin), deflection (affects power), and dimensions. Buying an approved paddle ensures you are getting a legitimate product.</li>
+        <li><strong>Future-proofing:</strong> As pickleball governance in India matures, approved paddles will likely become the standard at all organised levels.</li>
+      </ul>
+
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 uppercase tracking-wide mb-3">When It Does Not Matter</h3>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2 mb-4">
+        <li><strong>Casual / recreational play:</strong> If you are playing with friends at a local court and have no tournament ambitions, any decent paddle will do.</li>
+        <li><strong>Budget constraints:</strong> Many excellent beginner paddles under Rs 2,000 are not on the approved list simply because the manufacturer did not submit them for testing. This does not mean they are bad paddles.</li>
+      </ul>
+
+      <p class="text-slate-700 leading-relaxed mb-4">
+        You can check if a paddle is approved on the official <strong>USA Pickleball equipment list</strong> at usapickleball.org. Look for "USAPA Approved" or "USA Pickleball Approved" markings on the paddle or packaging.
+      </p>
+    </section>
+
+    <!-- Budget Recommendations -->
+    <section id="budget" class="scroll-mt-24 mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Budget Recommendations for Indian Players</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        The Indian pickleball paddle market has expanded dramatically, with options at every price point. Here is what to expect at each budget level.
+      </p>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border border-slate-200 rounded-xl overflow-hidden">
+          <thead>
+            <tr class="bg-slate-50">
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Budget</th>
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">What You Get</th>
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Best For</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr>
+              <td class="px-4 py-3 text-slate-700 font-medium">Under Rs 1,000</td>
+              <td class="px-4 py-3 text-slate-700">Wood or basic composite paddles. Heavy, small sweet spot, no edge guard. Fine for trying the sport once.</td>
+              <td class="px-4 py-3 text-slate-700">One-time casual play</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3 text-slate-700 font-medium">Rs 1,000-2,500</td>
+              <td class="px-4 py-3 text-slate-700">Polymer core, fiberglass or basic graphite face, edge guard. Good for learning.</td>
+              <td class="px-4 py-3 text-slate-700">Beginners</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3 text-slate-700 font-medium">Rs 2,500-5,000</td>
+              <td class="px-4 py-3 text-slate-700">Quality polymer core, graphite or carbon fibre face, better grip, USAPA approved options.</td>
+              <td class="px-4 py-3 text-slate-700">Regular players, club level</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3 text-slate-700 font-medium">Rs 5,000-10,000</td>
+              <td class="px-4 py-3 text-slate-700">Premium construction, raw carbon faces, thermoformed edges, excellent spin and control.</td>
+              <td class="px-4 py-3 text-slate-700">Intermediate, tournament players</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3 text-slate-700 font-medium">Rs 10,000+</td>
+              <td class="px-4 py-3 text-slate-700">Imported premium brands (Selkirk, Joola, CRBN), pro-level technology and materials.</td>
+              <td class="px-4 py-3 text-slate-700">Advanced, competitive players</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="text-slate-700 leading-relaxed mb-4">
+        We have tested dozens of paddles at each price point. For detailed reviews and specific product recommendations, see our dedicated guides:
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2 mb-4">
+        <li><a href="/reviews/best-pickleball-paddles-under-2500-india" class="text-green-600 hover:text-green-700 hover:underline font-medium">Best Pickleball Paddles Under Rs 2,500 in India</a></li>
+        <li><a href="/reviews/best-pickleball-paddles-under-5000-india" class="text-green-600 hover:text-green-700 hover:underline font-medium">Best Pickleball Paddles Under Rs 5,000 in India</a></li>
+        <li><a href="/reviews/best-pickleball-paddles-under-10000-india" class="text-green-600 hover:text-green-700 hover:underline font-medium">Best Pickleball Paddles Under Rs 10,000 in India</a></li>
+      </ul>
+    </section>
+
+    <!-- Quick Decision Guide -->
+    <section class="scroll-mt-24 mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Quick Decision Guide</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        If you want a simple recommendation without reading everything above, here is your checklist:
+      </p>
+      <div class="bg-green-50 border border-green-200 rounded-xl p-6">
+        <ul class="space-y-3 text-green-900 text-sm">
+          <li class="flex gap-3">
+            <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span><strong>Core:</strong> Polymer (polypropylene) honeycomb</span>
+          </li>
+          <li class="flex gap-3">
+            <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span><strong>Face:</strong> Graphite (control) or Fiberglass (power)</span>
+          </li>
+          <li class="flex gap-3">
+            <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span><strong>Weight:</strong> 7.3-8.0 oz (midweight)</span>
+          </li>
+          <li class="flex gap-3">
+            <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span><strong>Shape:</strong> Standard (not elongated)</span>
+          </li>
+          <li class="flex gap-3">
+            <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span><strong>Budget:</strong> Rs 1,500-3,000 for your first paddle</span>
+          </li>
+          <li class="flex gap-3">
+            <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span><strong>USAPA:</strong> Preferred if you plan to compete, optional otherwise</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="scroll-mt-24 mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-6">Frequently Asked Questions</h2>
+      <div class="space-y-4">
+        {faqs.map((faq) => (
+          <details class="group bg-slate-50 border border-slate-200 rounded-xl">
+            <summary class="flex items-center justify-between cursor-pointer px-6 py-4 font-semibold text-slate-900 text-sm sm:text-base">
+              {faq.q}
+              <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform flex-shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-6 pb-4 text-slate-600 text-sm leading-relaxed">{faq.a}</div>
+          </details>
+        ))}
+      </div>
+    </section>
+
+    <!-- Related Links -->
+    <section class="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8">
+      <h2 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 uppercase tracking-wide mb-4">Related Guides & Reviews</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <a href="/guides/pickleball-rules-beginners-india" class="block bg-white border border-slate-200 rounded-xl p-4 hover:border-green-300 hover:shadow-sm transition-all">
+          <h3 class="font-semibold text-slate-900 text-sm mb-1">Pickleball Rules for Beginners</h3>
+          <p class="text-xs text-slate-500">Court dimensions, scoring, kitchen rules, and more.</p>
+        </a>
+        <a href="/guides/pickleball-vs-badminton" class="block bg-white border border-slate-200 rounded-xl p-4 hover:border-green-300 hover:shadow-sm transition-all">
+          <h3 class="font-semibold text-slate-900 text-sm mb-1">Pickleball vs Badminton</h3>
+          <p class="text-xs text-slate-500">Which sport suits you? Side-by-side comparison.</p>
+        </a>
+        <a href="/reviews/best-pickleball-paddles-under-5000-india" class="block bg-white border border-slate-200 rounded-xl p-4 hover:border-green-300 hover:shadow-sm transition-all">
+          <h3 class="font-semibold text-slate-900 text-sm mb-1">Best Paddles Under Rs 5,000</h3>
+          <p class="text-xs text-slate-500">Our top mid-range picks with detailed reviews.</p>
+        </a>
+      </div>
+    </section>
+
+  </article>
+</BaseLayout>

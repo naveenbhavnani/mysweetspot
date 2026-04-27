@@ -1,0 +1,386 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { webPageSchema, breadcrumbSchema, faqSchema } from "../../utils/schema";
+
+const faqs = [
+  { q: "What is the best tennis racket for a complete beginner in India?", a: "For most beginners in India, a pre-strung racket with a head size of 100-110 sq inches, weight around 270-290g, and a budget of ₹2,000-₹5,000 is ideal. The HEAD Titanium Tour Pro is our top pick in this category — lightweight, forgiving, and widely available on Amazon.in." },
+  { q: "Should I buy a pre-strung racket or get one strung separately?", a: "Beginners should buy pre-strung. The factory strings are perfectly adequate for learning, and buying unstrung adds ₹800-₹2,000 for strings plus ₹300-₹500 for stringing labour. Save that money until your technique develops enough to notice the difference." },
+  { q: "What head size should a beginner choose?", a: "Go for 100-110 sq inches (oversize). A larger head gives you a bigger sweet spot, which is forgiving on off-centre hits — exactly what beginners need. Avoid midsize (85-97 sq in) rackets; those are for advanced players." },
+  { q: "Is a lighter or heavier racket better for beginners?", a: "Lighter is better for beginners (260-285g unstrung). A light racket is easier to swing and manoeuvre, reducing fatigue during longer practice sessions. As your technique improves, you can move to heavier frames for more stability and power." },
+  { q: "Do I need different rackets for clay and hard courts in India?", a: "No. At the beginner level, one racket works on all surfaces. Court surface matters more for shoe choice and string selection than racket choice. Focus on finding a comfortable racket first." },
+  { q: "How much should I spend on my first tennis racket in India?", a: "Between ₹2,000 and ₹5,000 for a recreational beginner. Below ₹2,000, quality drops significantly. Above ₹5,000, you're paying for features that beginners can't yet utilise. If you're serious about learning, ₹3,000-₹5,000 is the sweet spot." },
+  { q: "What brand should a beginner pick in India?", a: "HEAD, Cosco, and Wilson offer the best beginner options in India. HEAD dominates the budget segment with excellent quality-to-price ratio. Cosco is the most affordable but quality varies. Wilson has strong mid-range options. Avoid unknown brands on Amazon with no reviews." },
+  { q: "Can I use a badminton racket for tennis?", a: "Absolutely not. Tennis balls are far heavier than shuttlecocks, and a badminton racket will break on contact or cause wrist injury. Tennis rackets are specifically engineered for the weight and impact of tennis balls." },
+];
+
+const jsonLd = { "@graph": [
+  webPageSchema({ url: "/guides/how-to-choose-tennis-racket-beginners", name: "How to Choose a Tennis Racket for Beginners in India", description: "Complete beginner's guide to choosing a tennis racket in India. Covers head size, weight, balance, frame material, pre-strung vs unstrung, and Indian court surfaces." }),
+  breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Tennis", url: "/tennis" }, { name: "Beginner Racket Guide", url: "/guides/how-to-choose-tennis-racket-beginners" }]),
+  faqSchema(faqs),
+] } as Record<string, unknown>;
+---
+
+<BaseLayout
+  title="How to Choose a Tennis Racket for Beginners in India"
+  description="Complete beginner's guide to choosing a tennis racket in India. Covers head size, weight, balance, frame material, pre-strung vs unstrung, and Indian court surfaces."
+  jsonLd={jsonLd}
+>
+  <!-- Hero -->
+  <div class="bg-lime-50 border-b border-lime-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <nav class="text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-slate-800">Home</a> ›
+        <a href="/tennis" class="hover:text-slate-800">Tennis</a> ›
+        <span class="text-slate-700 font-medium">Beginner Racket Guide</span>
+      </nav>
+      <div class="flex items-center gap-3 mb-3">
+        <span class="w-3 h-3 rounded-full bg-lime-500" aria-hidden="true"></span>
+        <span class="text-xs font-semibold text-lime-700 uppercase tracking-widest">Guide</span>
+      </div>
+      <h1 class="font-[Barlow_Condensed] text-4xl sm:text-5xl font-bold text-slate-900">How to Choose a Tennis Racket for Beginners in India</h1>
+      <p class="mt-3 text-slate-500 text-base max-w-2xl">Everything you need to know before buying your first racket — head size, weight, material, budget, and what actually matters at the beginner level.</p>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="max-w-3xl mx-auto">
+
+      <!-- Intro -->
+      <div class="space-y-4 text-sm text-slate-600 leading-relaxed mb-10">
+        <p>Buying your first tennis racket in India can feel overwhelming. Walk into any sports shop or browse Amazon.in and you'll find dozens of options ranging from ₹800 to ₹25,000+. The spec sheets list head sizes, swing weights, balance points, and beam widths — numbers that mean nothing to someone who just wants to start playing.</p>
+        <p>Here's the good news: as a beginner, you only need to get a few things right. This guide cuts through the jargon and tells you exactly what to look for, what to ignore, and how much to spend. We've written it specifically for the Indian market — covering local brands, Indian court surfaces, and real prices you'll find online.</p>
+      </div>
+
+      <img src="/images/guides/tennis/choose-tennis-racket-beginners-hero.png" alt="Tennis racket leaning against a net post on a sun-drenched hard court with golden hour warm lighting" class="rounded-xl w-full my-8" width="1200" height="675" loading="eager" />
+
+      <!-- Head Size -->
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Head Size — The Most Important Spec for Beginners</h2>
+      <div class="space-y-4 text-sm text-slate-600 leading-relaxed mb-4">
+        <p>Head size refers to the area of the racket face, measured in square inches. It directly determines two things: the size of your sweet spot and the amount of power the racket generates. For beginners, bigger is better.</p>
+      </div>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border border-slate-200 rounded-xl overflow-hidden">
+          <thead>
+            <tr class="bg-slate-50">
+              <th class="text-left px-4 py-3 font-semibold text-slate-700 border-b border-slate-200">Category</th>
+              <th class="text-left px-4 py-3 font-semibold text-slate-700 border-b border-slate-200">Head Size</th>
+              <th class="text-left px-4 py-3 font-semibold text-slate-700 border-b border-slate-200">Sweet Spot</th>
+              <th class="text-left px-4 py-3 font-semibold text-slate-700 border-b border-slate-200">Power</th>
+              <th class="text-left px-4 py-3 font-semibold text-slate-700 border-b border-slate-200">Control</th>
+              <th class="text-left px-4 py-3 font-semibold text-slate-700 border-b border-slate-200">Best For</th>
+            </tr>
+          </thead>
+          <tbody class="text-slate-600">
+            <tr class="border-b border-slate-100">
+              <td class="px-4 py-3 font-medium text-slate-800">Midsize</td>
+              <td class="px-4 py-3">85–97 sq in</td>
+              <td class="px-4 py-3">Small</td>
+              <td class="px-4 py-3">Low</td>
+              <td class="px-4 py-3">High</td>
+              <td class="px-4 py-3">Advanced players</td>
+            </tr>
+            <tr class="border-b border-slate-100 bg-slate-50/50">
+              <td class="px-4 py-3 font-medium text-slate-800">Midplus</td>
+              <td class="px-4 py-3">98–104 sq in</td>
+              <td class="px-4 py-3">Medium</td>
+              <td class="px-4 py-3">Medium</td>
+              <td class="px-4 py-3">Medium-High</td>
+              <td class="px-4 py-3">Intermediate players</td>
+            </tr>
+            <tr class="border-b border-slate-100">
+              <td class="px-4 py-3 font-medium text-green-700 bg-green-50">Oversize</td>
+              <td class="px-4 py-3 bg-green-50">105–110 sq in</td>
+              <td class="px-4 py-3 bg-green-50">Large</td>
+              <td class="px-4 py-3 bg-green-50">High</td>
+              <td class="px-4 py-3 bg-green-50">Medium</td>
+              <td class="px-4 py-3 bg-green-50">Beginners (recommended)</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3 font-medium text-slate-800">Super Oversize</td>
+              <td class="px-4 py-3">111–135 sq in</td>
+              <td class="px-4 py-3">Very Large</td>
+              <td class="px-4 py-3">Very High</td>
+              <td class="px-4 py-3">Low</td>
+              <td class="px-4 py-3">Seniors, rehab players</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="bg-green-50 border border-green-200 rounded-xl p-5 mb-6">
+        <p class="text-sm text-green-800"><strong>Our recommendation:</strong> Start with 100–110 sq inches. You'll mishit often as a beginner, and a larger head compensates for imprecise timing and contact point. As your technique improves over 6-12 months, you can move to a midplus frame if you want more control.</p>
+      </div>
+
+      <img src="/images/guides/tennis/choose-tennis-racket-head-size-comparison.png" alt="Three tennis rackets with different head sizes arranged side by side on a white background showing clear size progression from small to large" class="rounded-xl w-full my-8" width="1200" height="675" loading="lazy" />
+
+      <!-- Weight -->
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Weight — Lighter Is Better for Learning</h2>
+      <div class="space-y-4 text-sm text-slate-600 leading-relaxed mb-6">
+        <p>Racket weight is listed in grams, usually unstrung. Stringing adds roughly 15-20g. Here's how to think about weight as a beginner:</p>
+      </div>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border border-slate-200 rounded-xl overflow-hidden">
+          <thead>
+            <tr class="bg-slate-50">
+              <th class="text-left px-4 py-3 font-semibold text-slate-700 border-b border-slate-200">Category</th>
+              <th class="text-left px-4 py-3 font-semibold text-slate-700 border-b border-slate-200">Weight (unstrung)</th>
+              <th class="text-left px-4 py-3 font-semibold text-slate-700 border-b border-slate-200">Feel</th>
+              <th class="text-left px-4 py-3 font-semibold text-slate-700 border-b border-slate-200">Best For</th>
+            </tr>
+          </thead>
+          <tbody class="text-slate-600">
+            <tr class="border-b border-slate-100">
+              <td class="px-4 py-3 font-medium text-slate-800">Ultra-Light</td>
+              <td class="px-4 py-3">230–260g</td>
+              <td class="px-4 py-3">Very easy to swing, less stable</td>
+              <td class="px-4 py-3">Juniors, seniors, players with arm issues</td>
+            </tr>
+            <tr class="border-b border-slate-100 bg-slate-50/50">
+              <td class="px-4 py-3 font-medium text-green-700 bg-green-50">Light</td>
+              <td class="px-4 py-3 bg-green-50">260–285g</td>
+              <td class="px-4 py-3 bg-green-50">Easy to manoeuvre, decent stability</td>
+              <td class="px-4 py-3 bg-green-50">Beginners (recommended)</td>
+            </tr>
+            <tr class="border-b border-slate-100">
+              <td class="px-4 py-3 font-medium text-slate-800">Medium</td>
+              <td class="px-4 py-3">285–310g</td>
+              <td class="px-4 py-3">Good balance of power and control</td>
+              <td class="px-4 py-3">Intermediate to advanced</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3 font-medium text-slate-800">Heavy</td>
+              <td class="px-4 py-3">310–340g</td>
+              <td class="px-4 py-3">Maximum stability and plow-through</td>
+              <td class="px-4 py-3">Advanced, competitive players</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="space-y-4 text-sm text-slate-600 leading-relaxed mb-10">
+        <p>A common mistake Indian beginners make is buying a heavy racket thinking it'll give them more power. In reality, racket head speed generates power — and you can swing a lighter racket faster. A 270g racket swung with proper technique will outperform a 310g racket swung with a stiff arm every time.</p>
+        <p>Most budget rackets available in India (Cosco, HEAD Titanium series) fall in the 260-285g range, which is perfect for beginners.</p>
+      </div>
+
+      <!-- Balance -->
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Balance Point — Head-Heavy vs Head-Light</h2>
+      <div class="space-y-4 text-sm text-slate-600 leading-relaxed mb-10">
+        <p>Balance describes where the weight is concentrated along the racket's length. It's measured in centimetres from the butt cap, or described as points head-heavy (HH) or head-light (HL).</p>
+        <ul class="list-disc list-inside space-y-3">
+          <li><strong class="text-slate-800">Head-heavy (balance &gt; 33cm):</strong> More mass in the head generates free power on groundstrokes. This is common in lightweight beginner rackets — the head-heavy balance compensates for the low overall weight. Good for beginners who don't have full swing technique yet.</li>
+          <li><strong class="text-slate-800">Even balance (balance ~33cm):</strong> A middle ground. Versatile but not exceptional in any area.</li>
+          <li><strong class="text-slate-800">Head-light (balance &lt; 33cm):</strong> Weight concentrated in the handle makes the racket easier to manoeuvre at the net. Preferred by advanced players who serve-and-volley. Not ideal for beginners.</li>
+        </ul>
+        <p><strong class="text-slate-800">Beginner recommendation:</strong> Look for head-heavy or even balance. Most budget Indian rackets are slightly head-heavy by design, so this takes care of itself if you buy in the ₹2,000-₹5,000 range.</p>
+      </div>
+
+      <!-- Frame Material -->
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Frame Material</h2>
+      <div class="space-y-4 text-sm text-slate-600 leading-relaxed mb-6">
+        <p>The material your racket is made from affects weight, vibration, durability, and price. Here's a quick overview (we have a <a href="/guides/graphite-vs-aluminium-vs-carbon-fibre-tennis-rackets" class="text-green-600 hover:text-green-700 underline">detailed material comparison guide</a> if you want to go deeper):</p>
+        <ul class="list-disc list-inside space-y-3">
+          <li><strong class="text-slate-800">Aluminium:</strong> Cheapest option (₹800-₹2,500). Heavy, high vibration, durable. Fine for absolute beginners who are testing whether they enjoy tennis. Not recommended if you plan to play regularly.</li>
+          <li><strong class="text-slate-800">Graphite composite:</strong> The standard for serious rackets (₹2,500-₹25,000+). Lightweight, low vibration, excellent power transfer. This is what you should buy if you're committed to learning.</li>
+          <li><strong class="text-slate-800">Carbon fibre:</strong> Marketing term often used interchangeably with graphite. Premium carbon fibre layups offer marginal gains over standard graphite at a higher price. Not worth the premium for beginners.</li>
+        </ul>
+      </div>
+
+      <div class="bg-green-50 border border-green-200 rounded-xl p-5 mb-10">
+        <p class="text-sm text-green-800"><strong>Bottom line:</strong> Buy a graphite or graphite composite racket. At the ₹3,000-₹5,000 price point in India, you'll find excellent graphite options from HEAD and Wilson that will last you through your entire beginner phase and well into intermediate play.</p>
+      </div>
+
+      <!-- Pre-strung vs Unstrung -->
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Pre-Strung vs Unstrung: The Indian Debate</h2>
+      <div class="space-y-4 text-sm text-slate-600 leading-relaxed mb-10">
+        <p>This comes up constantly in Indian tennis forums, and the answer is simpler than people make it:</p>
+        <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-800 uppercase tracking-wide mt-6 mb-3">Pre-Strung Rackets</h3>
+        <ul class="list-disc list-inside space-y-2">
+          <li>Come ready to play out of the box.</li>
+          <li>Factory strings are basic synthetic gut — adequate for beginners.</li>
+          <li>Available at every price point on Amazon.in and Flipkart.</li>
+          <li>No additional cost for strings (₹500-₹2,000) or stringing labour (₹300-₹500).</li>
+          <li><strong class="text-slate-800">Verdict: Perfect for beginners.</strong> You won't notice the difference between factory strings and premium strings until you've been playing 6+ months regularly.</li>
+        </ul>
+        <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-800 uppercase tracking-wide mt-6 mb-3">Unstrung Rackets</h3>
+        <ul class="list-disc list-inside space-y-2">
+          <li>Sold as frame only — you choose and install strings separately.</li>
+          <li>Allows customisation of string type, gauge, and tension.</li>
+          <li>Common in the ₹10,000+ segment.</li>
+          <li>Requires access to a stringing machine — available at pro shops in metro cities, harder to find in tier-2 and tier-3 cities.</li>
+          <li><strong class="text-slate-800">Verdict: Skip this as a beginner.</strong> Save the extra cost for coaching instead.</li>
+        </ul>
+      </div>
+
+      <!-- Indian Court Surfaces -->
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Indian Court Surfaces — What You'll Play On</h2>
+      <div class="space-y-4 text-sm text-slate-600 leading-relaxed mb-6">
+        <p>India has a mix of court surfaces, and where you play can influence your racket choice slightly — though at the beginner level, it matters much less than people think.</p>
+      </div>
+
+      <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-800 uppercase tracking-wide mb-3">Hard Courts (Concrete/Acrylic)</h3>
+      <div class="space-y-4 text-sm text-slate-600 leading-relaxed mb-6">
+        <p>The most common surface in Indian cities. Found at public parks, housing societies, and most coaching academies. The ball bounces high and fast. Hard courts are tough on the body — a lighter racket with good shock absorption (graphite) helps reduce joint stress.</p>
+      </div>
+
+      <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-800 uppercase tracking-wide mb-3">Clay Courts (Red Clay)</h3>
+      <div class="space-y-4 text-sm text-slate-600 leading-relaxed mb-6">
+        <p>Found at traditional tennis clubs, especially in cities like Chennai, Delhi, Mumbai, and Kolkata. The ball bounces slower and higher. Clay rewards patience and topspin. Any beginner racket works fine on clay — the surface is forgiving on both the player and the equipment.</p>
+      </div>
+
+      <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-800 uppercase tracking-wide mb-3">Synthetic Courts (Artificial Turf/Carpet)</h3>
+      <div class="space-y-4 text-sm text-slate-600 leading-relaxed mb-10">
+        <p>Increasingly popular at modern sports complexes. These surfaces offer a medium-paced game. Racket choice is not significantly affected by synthetic surfaces at the beginner level.</p>
+      </div>
+
+      <img src="/images/guides/tennis/choose-tennis-racket-court-surfaces.png" alt="Three-panel image showing close-up textures of red clay court, blue hard court, and green synthetic grass tennis court surfaces" class="rounded-xl w-full my-8" width="1200" height="675" loading="lazy" />
+
+      <!-- Budget Guide -->
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Budget Guide — What to Spend in India</h2>
+      <div class="space-y-4 text-sm text-slate-600 leading-relaxed mb-6">
+        <p>Here's a realistic breakdown of what your money buys you in the Indian tennis racket market:</p>
+      </div>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border border-slate-200 rounded-xl overflow-hidden">
+          <thead>
+            <tr class="bg-slate-50">
+              <th class="text-left px-4 py-3 font-semibold text-slate-700 border-b border-slate-200">Budget Range</th>
+              <th class="text-left px-4 py-3 font-semibold text-slate-700 border-b border-slate-200">What You Get</th>
+              <th class="text-left px-4 py-3 font-semibold text-slate-700 border-b border-slate-200">Brands Available</th>
+              <th class="text-left px-4 py-3 font-semibold text-slate-700 border-b border-slate-200">Our Take</th>
+            </tr>
+          </thead>
+          <tbody class="text-slate-600">
+            <tr class="border-b border-slate-100">
+              <td class="px-4 py-3 font-medium text-slate-800">Under ₹2,000</td>
+              <td class="px-4 py-3">Aluminium frames, basic strings, limited size options</td>
+              <td class="px-4 py-3">Cosco, Nivia, generic</td>
+              <td class="px-4 py-3">Only for casual, once-a-month play</td>
+            </tr>
+            <tr class="border-b border-slate-100 bg-green-50">
+              <td class="px-4 py-3 font-medium text-green-700">₹2,000–₹5,000</td>
+              <td class="px-4 py-3">Graphite composite, decent strings, good head sizes</td>
+              <td class="px-4 py-3">HEAD, Cosco, Wilson</td>
+              <td class="px-4 py-3 font-medium text-green-700">Best value for beginners</td>
+            </tr>
+            <tr class="border-b border-slate-100">
+              <td class="px-4 py-3 font-medium text-slate-800">₹5,000–₹10,000</td>
+              <td class="px-4 py-3">Full graphite, better dampening, more size options</td>
+              <td class="px-4 py-3">HEAD, Wilson, Babolat</td>
+              <td class="px-4 py-3">Good if you're committed and want to skip upgrading later</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3 font-medium text-slate-800">₹10,000–₹20,000</td>
+              <td class="px-4 py-3">Premium graphite, advanced tech, unstrung options</td>
+              <td class="px-4 py-3">HEAD, Wilson, Babolat, Yonex</td>
+              <td class="px-4 py-3">Overkill for beginners — save it for your second racket</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Checklist -->
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">The Beginner's Checklist</h2>
+      <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8 mb-10">
+        <p class="text-sm text-slate-600 mb-4">Before you click "Add to Cart," make sure your racket meets these criteria:</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div class="flex gap-3">
+            <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-slate-900 text-sm mb-1">Head Size: 100-110 sq in</h3>
+              <p class="text-sm text-slate-500 leading-relaxed">Bigger sweet spot, more forgiveness.</p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-slate-900 text-sm mb-1">Weight: 260-285g unstrung</h3>
+              <p class="text-sm text-slate-500 leading-relaxed">Light enough to swing comfortably for an hour.</p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-slate-900 text-sm mb-1">Material: Graphite composite</h3>
+              <p class="text-sm text-slate-500 leading-relaxed">Skip aluminium unless you're under ₹2,000.</p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-slate-900 text-sm mb-1">Pre-strung: Yes</h3>
+              <p class="text-sm text-slate-500 leading-relaxed">Don't spend extra on custom stringing yet.</p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-slate-900 text-sm mb-1">Grip Size: Measured correctly</h3>
+              <p class="text-sm text-slate-500 leading-relaxed">See our <a href="/guides/tennis-racket-grip-size-guide" class="text-green-600 hover:underline">grip size guide</a>.</p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-slate-900 text-sm mb-1">Budget: ₹2,000-₹5,000</h3>
+              <p class="text-sm text-slate-500 leading-relaxed">The sweet spot for quality vs price.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Related Reviews -->
+      <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8 mb-10">
+        <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">Ready to Buy? Check Our Reviews</h2>
+        <p class="text-sm text-slate-600 mb-4">We've tested and rated the best tennis rackets at every price point in India:</p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <a href="/reviews/best-tennis-rackets-under-5000-india" class="block bg-white border border-slate-200 rounded-xl p-4 hover:shadow-md hover:border-green-300 transition-all">
+            <p class="font-semibold text-slate-900 text-sm">Best Under ₹5,000</p>
+            <p class="text-xs text-slate-500 mt-1">Top picks for beginners</p>
+          </a>
+          <a href="/reviews/best-tennis-rackets-under-10000-india" class="block bg-white border border-slate-200 rounded-xl p-4 hover:shadow-md hover:border-green-300 transition-all">
+            <p class="font-semibold text-slate-900 text-sm">Best Under ₹10,000</p>
+            <p class="text-xs text-slate-500 mt-1">Mid-range for committed learners</p>
+          </a>
+          <a href="/reviews/best-tennis-rackets-under-20000-india" class="block bg-white border border-slate-200 rounded-xl p-4 hover:shadow-md hover:border-green-300 transition-all">
+            <p class="font-semibold text-slate-900 text-sm">Best Under ₹20,000</p>
+            <p class="text-xs text-slate-500 mt-1">Performance upgrades</p>
+          </a>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <section id="faq" class="scroll-mt-24">
+        <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">Frequently Asked Questions</h2>
+        <div class="space-y-4" itemscope itemtype="https://schema.org/FAQPage">
+          {faqs.map(item => (
+            <div class="border border-slate-200 rounded-xl overflow-hidden" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+              <div class="bg-slate-50 px-5 py-3.5">
+                <h3 class="font-semibold text-slate-900 text-sm" itemprop="name">{item.q}</h3>
+              </div>
+              <div class="px-5 py-3.5" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <p class="text-sm text-slate-600 leading-relaxed" itemprop="text">{item.a}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+    </div>
+  </div>
+</BaseLayout>

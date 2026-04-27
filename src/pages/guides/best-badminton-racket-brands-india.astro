@@ -1,0 +1,349 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { webPageSchema, breadcrumbSchema, faqSchema } from "../../utils/schema";
+
+const title = "Best Badminton Racket Brands in India — Ranked and Compared";
+const description = "Compare the best badminton racket brands in India including Yonex, Li-Ning, Victor, Apacs, Cosco, and Carlton. History, price ranges, and best models from each brand.";
+const url = "/guides/best-badminton-racket-brands-india";
+
+const faqItems = [
+  { q: "Is Yonex really worth the premium price in India?", a: "For intermediate to advanced players, yes. Yonex consistently delivers superior frame construction, shaft technology, and quality control. Their rackets hold string tension better and last longer than most competitors. However, for absolute beginners who might outgrow their first racket within a year, a budget Li-Ning or Cosco model offers better value. Yonex's sub-Rs 2,000 range (like the GR 303) is competitive, but the real advantage shows in the Rs 3,000+ segment." },
+  { q: "Are Li-Ning rackets good quality or just cheap alternatives?", a: "Li-Ning is far from a cheap alternative — they are a legitimate premium brand that sponsors top players like PV Sindhu and the Chinese national team. Their high-end rackets (Axforce, Bladex series) are on par with Yonex in quality and technology. Where Li-Ning excels is in the mid-range (Rs 2,000-5,000), where they often offer better specifications per rupee than Yonex. Quality control on their India-specific models is excellent." },
+  { q: "Which brand is best for beginners in India?", a: "For absolute beginners on a tight budget (under Rs 1,500), Cosco and Li-Ning offer the best value. Cosco rackets are widely available at local sports shops across India and are priced very affordably. For beginners willing to spend Rs 1,500-3,000, Li-Ning's XP series and Yonex's budget line (GR series) are excellent starting points that offer room to grow." },
+  { q: "Are Apacs rackets worth buying in India?", a: "Apacs offers some of the best value-for-money rackets in the mid-range segment. Their rackets are popular in Southeast Asia and have a growing following in India. The Finapi and Lethal series are well-regarded for their performance at competitive prices. The main drawback is limited offline availability in India — you'll mostly find them online. If you're an intermediate player looking for maximum specs per rupee, Apacs is worth considering." },
+  { q: "Why are Victor rackets more expensive than similar Yonex models in India?", a: "Victor rackets aren't inherently more expensive, but their India distribution network is smaller than Yonex's. Lower sales volume means less competitive pricing. Additionally, some Victor models are imported rather than manufactured locally, adding to costs. That said, Victor's technology and build quality are excellent — they sponsor Malaysia's and Indonesia's national teams. If you find a Victor racket in your budget, it's a solid choice." },
+  { q: "Can I trust badminton racket brands I find only on Amazon India?", a: "Be cautious with unknown brands sold exclusively on Amazon.in or Flipkart. Many are white-label products from Chinese factories with no quality control or after-sales support. They may look impressive in photos but often have poor frame durability, inconsistent weight, and can break under normal string tension. Stick to established brands (Yonex, Li-Ning, Victor, Apacs, Cosco, Carlton) purchased from authorised sellers." },
+];
+
+const jsonLd = { "@graph": [
+  webPageSchema({ url, name: title, description }),
+  breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Badminton", url: "/badminton" },
+    { name: "Best Brands in India", url },
+  ]),
+  faqSchema(faqItems),
+] } as Record<string, unknown>;
+---
+<BaseLayout title={title} description={description} jsonLd={jsonLd}>
+  <div class="bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+      <!-- Breadcrumb -->
+      <nav aria-label="Breadcrumb" class="mb-4">
+        <ol class="flex items-center gap-1.5 text-xs text-slate-500">
+          <li><a href="/" class="hover:text-slate-800 transition-colors">Home</a></li>
+          <li aria-hidden="true">&rsaquo;</li>
+          <li><a href="/badminton" class="hover:text-slate-800 transition-colors">Badminton</a></li>
+          <li aria-hidden="true">&rsaquo;</li>
+          <li class="text-slate-700 font-medium" aria-current="page">Best Brands in India</li>
+        </ol>
+      </nav>
+
+      <h1 class="font-[Barlow_Condensed] text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 uppercase tracking-wide mb-4">Best Badminton Racket Brands in India &mdash; Ranked and Compared</h1>
+      <p class="text-slate-600 text-sm sm:text-base max-w-3xl leading-relaxed">A no-nonsense look at every major badminton brand available in India &mdash; their history, strengths, price ranges, and which models to buy from each.</p>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+    <div class="max-w-3xl mx-auto space-y-12">
+
+      <!-- Intro -->
+      <section class="space-y-4 text-sm text-slate-600 leading-relaxed">
+        <p>The Indian badminton market has exploded over the past decade. Fuelled by PV Sindhu's Olympic medals, Saina Nehwal's trailblazing career, and the success of HS Prannoy and Lakshya Sen, badminton is now one of the most popular participation sports in India. And brands have followed the money.</p>
+        <p>Walk into any sports store in an Indian metro, and you'll see rackets from Yonex, Li-Ning, Victor, Cosco, and more. Online, the options multiply further with brands like Apacs and Carlton. But which brand actually delivers the best rackets at different price points? Which ones are worth the premium, and which are overpriced?</p>
+        <p>We've tested rackets from every major brand available in India. Here's our honest, brand-by-brand breakdown.</p>
+      </section>
+
+      <img src="/images/guides/badminton/best-badminton-brands-hero.png" alt="Five badminton rackets from different brands arranged in a radial star pattern on a white marble surface" class="rounded-xl w-full my-8" width="1200" height="675" loading="eager" />
+
+      <!-- Comparison Table -->
+      <section id="comparison-table" class="scroll-mt-24">
+        <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">Quick Brand Comparison</h2>
+
+        <div class="overflow-x-auto my-6">
+          <table class="w-full text-sm border border-slate-200 rounded-xl overflow-hidden">
+            <thead>
+              <tr class="bg-slate-50 text-left">
+                <th class="px-4 py-3 font-semibold text-slate-900 border-b border-slate-200">Brand</th>
+                <th class="px-4 py-3 font-semibold text-slate-900 border-b border-slate-200">Price Range</th>
+                <th class="px-4 py-3 font-semibold text-slate-900 border-b border-slate-200">Best For</th>
+                <th class="px-4 py-3 font-semibold text-slate-900 border-b border-slate-200">Top Model</th>
+                <th class="px-4 py-3 font-semibold text-slate-900 border-b border-slate-200">Availability</th>
+              </tr>
+            </thead>
+            <tbody class="text-slate-600">
+              <tr class="border-b border-slate-100">
+                <td class="px-4 py-3 font-medium text-slate-900">Yonex</td>
+                <td class="px-4 py-3">Rs 500 - Rs 25,000+</td>
+                <td class="px-4 py-3">All levels, especially advanced</td>
+                <td class="px-4 py-3">Astrox 88D Pro</td>
+                <td class="px-4 py-3">Excellent (offline + online)</td>
+              </tr>
+              <tr class="border-b border-slate-100 bg-slate-50/50">
+                <td class="px-4 py-3 font-medium text-slate-900">Li-Ning</td>
+                <td class="px-4 py-3">Rs 600 - Rs 20,000+</td>
+                <td class="px-4 py-3">Best value mid-range, competitive players</td>
+                <td class="px-4 py-3">Axforce 80</td>
+                <td class="px-4 py-3">Good (online + select stores)</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-4 py-3 font-medium text-slate-900">Victor</td>
+                <td class="px-4 py-3">Rs 1,500 - Rs 22,000+</td>
+                <td class="px-4 py-3">Advanced players, doubles specialists</td>
+                <td class="px-4 py-3">Thruster K Falcon</td>
+                <td class="px-4 py-3">Moderate (mostly online)</td>
+              </tr>
+              <tr class="border-b border-slate-100 bg-slate-50/50">
+                <td class="px-4 py-3 font-medium text-slate-900">Apacs</td>
+                <td class="px-4 py-3">Rs 1,000 - Rs 8,000</td>
+                <td class="px-4 py-3">Value seekers, intermediate players</td>
+                <td class="px-4 py-3">Lethal Light Power</td>
+                <td class="px-4 py-3">Online only (mostly)</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-4 py-3 font-medium text-slate-900">Cosco</td>
+                <td class="px-4 py-3">Rs 300 - Rs 2,500</td>
+                <td class="px-4 py-3">Absolute beginners, casual play</td>
+                <td class="px-4 py-3">CBX 450</td>
+                <td class="px-4 py-3">Excellent (everywhere)</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-medium text-slate-900">Carlton</td>
+                <td class="px-4 py-3">Rs 800 - Rs 10,000</td>
+                <td class="px-4 py-3">Budget to mid-range all-rounders</td>
+                <td class="px-4 py-3">Kinesis Ultra</td>
+                <td class="px-4 py-3">Moderate (online + select stores)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <img src="/images/guides/badminton/best-badminton-brands-logos-grid.png" alt="Grid of six geometric brand icon placeholders in green and slate colours representing badminton racket brands" class="rounded-xl w-full my-8" width="1200" height="675" loading="lazy" />
+
+      <!-- Yonex -->
+      <section id="yonex" class="scroll-mt-24">
+        <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">1. Yonex &mdash; The Undisputed Market Leader</h2>
+        <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+          <p>If badminton rackets had a default brand, it would be Yonex. The Japanese company has dominated the sport since the 1970s and currently sponsors more professional players than any other brand. In India, Yonex is practically synonymous with badminton &mdash; ask anyone to name a racket brand and Yonex will be the first (and often only) answer.</p>
+
+          <h3 class="font-semibold text-slate-900 text-base mt-6 mb-2">Brief History</h3>
+          <p>Founded in 1946 in Tokyo, Yonex started as a fishing net manufacturer before pivoting to badminton equipment in the 1950s. They invented the isometric head shape in 1992, which expanded the sweet spot and became the industry standard. Today, they sponsor players like Viktor Axelsen, Tai Tzu-ying, and (until recently) PV Sindhu.</p>
+
+          <h3 class="font-semibold text-slate-900 text-base mt-6 mb-2">Price Range in India</h3>
+          <p>Yonex covers the entire spectrum. The GR series starts at Rs 500-800 (basic aluminium recreational rackets), the Astrox/Nanoflare/Arcsaber India-specific models sit between Rs 1,500-5,000, and the premium international models go from Rs 5,000 to Rs 25,000+. Their India-made rackets (identifiable by the "i" suffix, like Astrox Lite 27i) offer excellent value in the Rs 2,000-5,000 range.</p>
+
+          <h3 class="font-semibold text-slate-900 text-base mt-6 mb-2">Best Models</h3>
+          <p><strong>Budget:</strong> Yonex GR 303 (Rs 600-800) &mdash; the best-selling beginner racket in India, period. It's durable, has a comfortable grip, and is available in every sports shop across the country.</p>
+          <p><strong>Mid-range:</strong> Yonex Astrox Lite 27i (Rs 2,500-3,500) &mdash; an India-specific model that offers real Astrox technology at an accessible price. Head-heavy balance with medium flex, perfect for developing attacking play.</p>
+          <p><strong>Premium:</strong> Yonex Astrox 88D Pro (Rs 12,000-15,000) &mdash; the weapon of choice for power players. Used by professionals worldwide, this racket delivers devastating smash power with its Rotational Generator System.</p>
+
+          <h3 class="font-semibold text-slate-900 text-base mt-6 mb-2">Who Should Buy Yonex?</h3>
+          <p>Everyone can find a Yonex racket that suits them. But Yonex truly shines in the mid-to-premium segment where their engineering and quality control advantages are most apparent. If you're spending Rs 3,000 or more, Yonex should be your first consideration. For our detailed budget picks, see the <a href="/reviews/best-badminton-rackets-under-2000-india" class="text-green-600 hover:text-green-700 underline underline-offset-2">best rackets under Rs 2,000</a> and <a href="/reviews/best-badminton-rackets-under-5000-india" class="text-green-600 hover:text-green-700 underline underline-offset-2">under Rs 5,000</a> reviews.</p>
+        </div>
+      </section>
+
+      <!-- Li-Ning -->
+      <section id="li-ning" class="scroll-mt-24">
+        <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">2. Li-Ning &mdash; The Value King with Premium Ambitions</h2>
+        <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+          <p>Li-Ning has transformed from a "budget Yonex alternative" to a serious contender in just a decade. Their aggressive expansion into India &mdash; headlined by signing PV Sindhu in 2019 &mdash; has made them the second most popular brand in the country.</p>
+
+          <h3 class="font-semibold text-slate-900 text-base mt-6 mb-2">Brief History</h3>
+          <p>Founded in 1990 by Li Ning, a Chinese Olympic gymnastics champion, the company entered badminton equipment in the 2000s. They secured a game-changing deal to sponsor the Chinese national badminton team in 2009 and haven't looked back. Their R&D has produced genuine innovations, particularly in aerodynamic frame design and shaft materials.</p>
+
+          <h3 class="font-semibold text-slate-900 text-base mt-6 mb-2">Price Range in India</h3>
+          <p>Li-Ning's India range starts at Rs 600 for the basic XP series and goes up to Rs 20,000+ for international competition models like the Axforce 80. The sweet spot is the Rs 1,500-4,000 range, where Li-Ning arguably offers the best specifications-per-rupee of any brand in India.</p>
+
+          <h3 class="font-semibold text-slate-900 text-base mt-6 mb-2">Best Models</h3>
+          <p><strong>Budget:</strong> Li-Ning XP 901 (Rs 800-1,200) &mdash; a full-width body frame with decent graphite construction. A step above the Yonex GR series in playability, and priced competitively.</p>
+          <p><strong>Mid-range:</strong> Li-Ning G-Force Superlite 3600 (Rs 2,500-3,500) &mdash; lightweight, manoeuvrable, and built with genuine carbon fibre. One of the best value rackets available in India at any price.</p>
+          <p><strong>Premium:</strong> Li-Ning Axforce 80 (Rs 12,000-16,000) &mdash; PV Sindhu's current racket of choice. Dynamic Optimum Frame technology for maximum repulsion power. A genuine rival to Yonex's best.</p>
+
+          <h3 class="font-semibold text-slate-900 text-base mt-6 mb-2">Who Should Buy Li-Ning?</h3>
+          <p>Li-Ning is the brand for smart shoppers. If you want more racket for your rupee, especially in the Rs 1,500-5,000 range, Li-Ning consistently delivers. They're also excellent for players transitioning from beginner to intermediate who need a meaningful upgrade without a massive price jump.</p>
+        </div>
+      </section>
+
+      <!-- Victor -->
+      <section id="victor" class="scroll-mt-24">
+        <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">3. Victor &mdash; The Underrated Premium Choice</h2>
+        <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+          <p>Victor is the brand that every serious badminton player respects but most Indian recreational players overlook. Founded in Taiwan in 1968, Victor has been making badminton equipment for over 55 years and sponsors national teams from Malaysia, Indonesia, South Korea, and Denmark.</p>
+
+          <h3 class="font-semibold text-slate-900 text-base mt-6 mb-2">Brief History</h3>
+          <p>Victor started as a shuttlecock manufacturer before expanding into rackets. They pioneered several frame technologies, including the multi-layered carbon fibre construction that's now standard across the industry. In the professional circuit, Victor rackets are used by legends like Lee Zii Jia, Tai Tzu-ying, and the Minions doubles pair (Marcus/Kevin).</p>
+
+          <h3 class="font-semibold text-slate-900 text-base mt-6 mb-2">Price Range in India</h3>
+          <p>Victor's India pricing starts at around Rs 1,500 for entry-level graphite rackets and goes up to Rs 22,000+ for their flagship models. They don't compete in the sub-Rs 1,000 budget segment, which means every Victor racket you buy is a "real" racket with decent construction. The mid-range (Rs 3,000-7,000) is where they offer the most competitive options.</p>
+
+          <h3 class="font-semibold text-slate-900 text-base mt-6 mb-2">Best Models</h3>
+          <p><strong>Entry:</strong> Victor Brave Sword 12 (Rs 2,000-3,000) &mdash; an even-balance all-rounder with a medium-stiff shaft. Excellent for intermediate players who want a no-nonsense, well-built racket.</p>
+          <p><strong>Mid-range:</strong> Victor Auraspeed 90K (Rs 5,000-7,000) &mdash; a speed-oriented racket with an aerodynamic frame. Outstanding for doubles players who value quick exchanges.</p>
+          <p><strong>Premium:</strong> Victor Thruster K Falcon (Rs 12,000-18,000) &mdash; a power beast used by Kento Momota (when he was with Victor). Delivers thunderous smashes with its enhanced frame stiffness and weight distribution.</p>
+
+          <h3 class="font-semibold text-slate-900 text-base mt-6 mb-2">Who Should Buy Victor?</h3>
+          <p>Victor is ideal for intermediate-to-advanced players who want premium quality without the "everyone has it" factor. If you're tired of seeing five Yonex Astrox rackets at your club and want something equally good but distinctive, Victor is your answer. Their doubles-oriented rackets are particularly strong.</p>
+        </div>
+      </section>
+
+      <!-- Apacs -->
+      <section id="apacs" class="scroll-mt-24">
+        <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">4. Apacs &mdash; The Malaysian Value Disruptor</h2>
+        <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+          <p>Apacs is a Malaysian brand that has built a cult following across Southeast Asia and is steadily gaining fans in India. Their proposition is simple: competition-grade materials and construction at significantly lower prices than the "Big Three" (Yonex, Li-Ning, Victor).</p>
+
+          <h3 class="font-semibold text-slate-900 text-base mt-6 mb-2">Brief History</h3>
+          <p>Founded in Malaysia in 2006, Apacs focuses exclusively on badminton and has grown rapidly by offering high-spec rackets at disruptive prices. They manufacture their own rackets (rather than outsourcing), which keeps costs down. While they don't sponsor top international players, their rackets are popular among club-level and state-level players across Asia.</p>
+
+          <h3 class="font-semibold text-slate-900 text-base mt-6 mb-2">Price Range in India</h3>
+          <p>Apacs rackets in India range from Rs 1,000 to about Rs 8,000. The bulk of their popular models sit in the Rs 2,000-5,000 range, where they compete directly with Yonex and Li-Ning's mid-range offerings but often at a lower price for comparable specifications.</p>
+
+          <h3 class="font-semibold text-slate-900 text-base mt-6 mb-2">Best Models</h3>
+          <p><strong>Budget:</strong> Apacs Finapi 232 (Rs 1,500-2,000) &mdash; a lightweight 5U racket with a flexible shaft. Excellent for beginners who want something lighter than the typical 4U budget offerings.</p>
+          <p><strong>Mid-range:</strong> Apacs Lethal Light Power (Rs 3,000-4,500) &mdash; full carbon construction with impressive power transfer. Competes with rackets costing Rs 5,000+ from Yonex.</p>
+          <p><strong>Top-end:</strong> Apacs Z-Ziggler (Rs 5,000-7,000) &mdash; their flagship power racket. Popular among Indian club players who want premium performance without the premium price tag.</p>
+
+          <h3 class="font-semibold text-slate-900 text-base mt-6 mb-2">Who Should Buy Apacs?</h3>
+          <p>Apacs is for the value-conscious player who has done their research. If you understand racket specifications and want the most performance per rupee, Apacs delivers. The main drawback is limited offline availability in India &mdash; you'll need to buy online, and after-sales support can be inconsistent.</p>
+        </div>
+      </section>
+
+      <!-- Cosco -->
+      <section id="cosco" class="scroll-mt-24">
+        <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">5. Cosco &mdash; India's Budget Champion</h2>
+        <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+          <p>Cosco holds a special place in Indian sport. For millions of Indians, a Cosco racket was their first introduction to badminton. The brand is ubiquitous &mdash; available at general stores, stationery shops, and sports retailers in every city and town across the country.</p>
+
+          <h3 class="font-semibold text-slate-900 text-base mt-6 mb-2">Brief History</h3>
+          <p>Cosco (India) Limited was established in 1980 and manufactures a wide range of sporting goods domestically. Their badminton rackets are made in India, keeping prices extremely competitive. While they don't compete in the premium segment, their budget rackets have introduced more Indians to badminton than any other brand.</p>
+
+          <h3 class="font-semibold text-slate-900 text-base mt-6 mb-2">Price Range in India</h3>
+          <p>Cosco's range runs from Rs 300 for basic steel-shaft rackets to about Rs 2,500 for their top graphite models. The sweet spot is Rs 500-1,500, where you get functional, durable rackets that are perfect for casual play and learning the basics.</p>
+
+          <h3 class="font-semibold text-slate-900 text-base mt-6 mb-2">Best Models</h3>
+          <p><strong>Entry:</strong> Cosco CB 85 (Rs 300-500) &mdash; a basic aluminium-steel racket. Not for serious play, but perfectly fine for backyard badminton and introducing kids to the game.</p>
+          <p><strong>Mid-range:</strong> Cosco CBX 450 (Rs 800-1,200) &mdash; their best-selling graphite racket. Surprisingly playable at its price, with a decent sweet spot and comfortable grip. Featured in our <a href="/reviews/best-badminton-rackets-under-2000-india" class="text-green-600 hover:text-green-700 underline underline-offset-2">under Rs 2,000 review</a>.</p>
+          <p><strong>Top-end:</strong> Cosco CBX 750 (Rs 1,500-2,500) &mdash; their premium offering with full graphite construction. Competes with budget options from Yonex and Li-Ning.</p>
+
+          <h3 class="font-semibold text-slate-900 text-base mt-6 mb-2">Who Should Buy Cosco?</h3>
+          <p>Cosco is for absolute beginners, casual players, and anyone buying a racket for occasional weekend play. They're also great for kids &mdash; affordable enough that you won't worry when the racket inevitably gets mishandled. Don't buy Cosco if you play regularly (3+ times a week) and want to improve &mdash; upgrade to Li-Ning or Yonex in the Rs 1,500-3,000 range instead.</p>
+        </div>
+      </section>
+
+      <!-- Carlton -->
+      <section id="carlton" class="scroll-mt-24">
+        <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">6. Carlton &mdash; The British Heritage Brand</h2>
+        <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+          <p>Carlton is a brand with a rich badminton heritage that often gets overlooked in the Indian market. Owned by Yonex since 1999, Carlton operates as a separate brand targeting the budget-to-mid-range segment &mdash; essentially filling the space between Cosco and premium Yonex.</p>
+
+          <h3 class="font-semibold text-slate-900 text-base mt-6 mb-2">Brief History</h3>
+          <p>Founded in England in 1946, Carlton was one of the pioneers of modern badminton equipment. They introduced the first steel-shaft racket in 1958 and the first graphite racket in 1981. After acquisition by Yonex, Carlton was repositioned as a more affordable brand while retaining access to Yonex's manufacturing expertise.</p>
+
+          <h3 class="font-semibold text-slate-900 text-base mt-6 mb-2">Price Range in India</h3>
+          <p>Carlton rackets in India range from Rs 800 to about Rs 10,000. Most of their popular models sit between Rs 1,500-5,000. Because they share manufacturing resources with Yonex, the build quality punches above the price point.</p>
+
+          <h3 class="font-semibold text-slate-900 text-base mt-6 mb-2">Best Models</h3>
+          <p><strong>Budget:</strong> Carlton Aeroblade 600 (Rs 1,000-1,500) &mdash; a lightweight aluminium-graphite blend that's surprisingly playable for its price.</p>
+          <p><strong>Mid-range:</strong> Carlton Kinesis Ultra (Rs 3,000-5,000) &mdash; their flagship model with full graphite construction and a well-tuned flex profile. A hidden gem in the Indian market.</p>
+          <p><strong>Premium:</strong> Carlton Powerblade Superlite (Rs 5,000-8,000) &mdash; a lightweight racket with advanced frame geometry, suitable for competitive club play.</p>
+
+          <h3 class="font-semibold text-slate-900 text-base mt-6 mb-2">Who Should Buy Carlton?</h3>
+          <p>Carlton is for players who want Yonex-adjacent quality without the Yonex price tag. If you're an intermediate player who finds Yonex's mid-range too expensive but Cosco too basic, Carlton fills the gap nicely. The main limitation is availability &mdash; not as widely stocked as Yonex or Li-Ning in India.</p>
+        </div>
+      </section>
+
+      <!-- Where to Buy -->
+      <section id="where-to-buy" class="scroll-mt-24">
+        <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">Where to Buy Badminton Rackets in India</h2>
+        <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+          <p>Knowing the brands is half the battle; knowing where to buy them (without getting counterfeits) is the other half.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 my-6">
+          <div class="flex gap-3">
+            <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-slate-900 text-sm mb-1">Amazon.in and Flipkart</h3>
+              <p class="text-sm text-slate-500 leading-relaxed">The most convenient option for most Indians. Both platforms carry Yonex, Li-Ning, Victor, and Cosco. Always buy from "Sold by" the brand's official store or an authorised retailer. Beware of suspiciously low prices &mdash; counterfeits are common, especially for Yonex.</p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-slate-900 text-sm mb-1">Decathlon</h3>
+              <p class="text-sm text-slate-500 leading-relaxed">Decathlon stores across India carry their own Perfly brand (decent quality for beginners) along with select Yonex models. Great for trying rackets in-hand before buying.</p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-slate-900 text-sm mb-1">Brand Official Stores</h3>
+              <p class="text-sm text-slate-500 leading-relaxed">Yonex Sunrise (yonexsunrise.in) and Li-Ning India's official site offer guaranteed authentic products. Prices are usually MRP, but you get warranty support and confidence in authenticity.</p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-slate-900 text-sm mb-1">Local Sports Shops</h3>
+              <p class="text-sm text-slate-500 leading-relaxed">Still the best way to hold a racket before buying. Established shops in metros typically carry Yonex, Li-Ning, and Cosco. Ask for the hologram sticker on Yonex rackets to verify authenticity.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+          <p><strong>Counterfeit warning:</strong> Fake Yonex rackets are rampant in India. Always check for the hologram security sticker, verify the serial number on Yonex's website, and be suspicious of prices that seem too good to be true. A genuine Yonex Astrox 88D will never sell for Rs 2,000 &mdash; if you see that price, it's a fake.</p>
+        </div>
+      </section>
+
+      <img src="/images/guides/badminton/best-badminton-brands-price-range.png" alt="Horizontal bar chart infographic showing price ranges for six badminton brands using a green gradient colour scheme" class="rounded-xl w-full my-8" width="1200" height="675" loading="lazy" />
+
+      <!-- Final Verdict -->
+      <section id="verdict" class="scroll-mt-24">
+        <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">Our Final Brand Recommendations</h2>
+        <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+          <p>If you want to keep it simple, here are our recommendations by player type:</p>
+          <p><strong>Absolute beginner on a budget:</strong> Cosco CBX 450 or Li-Ning XP 901. Spend your savings on shuttlecocks and court time instead.</p>
+          <p><strong>Intermediate player wanting the best value:</strong> Li-Ning in the Rs 2,000-4,000 range. More specs per rupee than any other brand at this level.</p>
+          <p><strong>Advanced player wanting proven quality:</strong> Yonex Astrox/Nanoflare series or Victor Thruster/Jetspeed series. Both brands deliver at the highest level.</p>
+          <p><strong>Value-conscious player who knows what they want:</strong> Apacs in the Rs 2,000-5,000 range. Competition-grade materials at mid-range prices.</p>
+          <p>For specific racket-by-racket comparisons with detailed reviews, check our <a href="/reviews/best-badminton-rackets-under-2000-india" class="text-green-600 hover:text-green-700 underline underline-offset-2">best badminton rackets under Rs 2,000</a> and <a href="/reviews/best-badminton-rackets-under-5000-india" class="text-green-600 hover:text-green-700 underline underline-offset-2">best badminton rackets under Rs 5,000</a> reviews. And to understand the technical specifications behind your purchase, our <a href="/guides/how-to-choose-badminton-racket" class="text-green-600 hover:text-green-700 underline underline-offset-2">how to choose a badminton racket</a> guide covers everything from weight to string tension.</p>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="scroll-mt-24">
+        <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">Frequently Asked Questions</h2>
+        <div class="space-y-4" itemscope itemtype="https://schema.org/FAQPage">
+          {faqItems.map(item => (
+            <div class="border border-slate-200 rounded-xl overflow-hidden" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+              <div class="bg-slate-50 px-5 py-3.5">
+                <h3 class="font-semibold text-slate-900 text-sm" itemprop="name">{item.q}</h3>
+              </div>
+              <div class="px-5 py-3.5" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <p class="text-sm text-slate-600 leading-relaxed" itemprop="text">{item.a}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+    </div>
+  </div>
+</BaseLayout>

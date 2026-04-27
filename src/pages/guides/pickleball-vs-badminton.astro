@@ -1,0 +1,431 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { webPageSchema, breadcrumbSchema, faqSchema } from "../../utils/schema";
+
+const title = "Pickleball vs Badminton — Which Sport Should You Pick?";
+const description = "Compare pickleball and badminton: court size, fitness level, equipment cost, availability in India, and learning curve. Find which sport suits you best.";
+
+const faqs = [
+  { q: "Is pickleball easier than badminton?", a: "Yes, pickleball has a gentler learning curve than badminton. The underhand serve, slower ball speed, and smaller court make it easier to rally within minutes. Badminton requires more technical skill to execute overhead clears, drops, and smashes effectively. Most beginners can play a competitive pickleball game within 30 minutes of learning the rules." },
+  { q: "Is pickleball cheaper than badminton in India?", a: "Initial costs are comparable. A beginner pickleball paddle costs Rs 1,500-2,500, while a decent badminton racket costs Rs 1,000-3,000. However, badminton shuttlecocks are consumable (Rs 800-1,500 per tube of feather shuttles that last a few sessions), while pickleballs last much longer (Rs 500-800 for a set of 6 that lasts months). Long-term, pickleball is slightly cheaper." },
+  { q: "Can I use a badminton court for pickleball?", a: "Yes. A standard badminton doubles court (20x44 ft) is the same size as a pickleball court. You only need to lower the net to 34 inches at the centre, add kitchen lines 7 feet from the net, and you are ready to play. Many clubs in India use the same court for both sports." },
+  { q: "Which sport burns more calories — pickleball or badminton?", a: "Badminton singles burns more calories per hour (approximately 400-550 calories) compared to pickleball doubles (250-350 calories). However, pickleball singles can burn 400-500 calories per hour. The actual calorie burn depends on intensity, skill level, and whether you play singles or doubles." },
+  { q: "Is pickleball better for older adults than badminton?", a: "Generally, yes. Pickleball is lower impact due to the smaller court, slower ball speed, and less jumping. The underhand serve eliminates shoulder strain. Many Indian players over 50 have switched from badminton to pickleball to stay active with reduced injury risk. However, badminton doubles is also a viable low-impact option." },
+  { q: "Can badminton skills transfer to pickleball?", a: "Absolutely. Badminton players typically excel at pickleball because of their net awareness, hand-eye coordination, and understanding of angles. The soft game (dinking) in pickleball is similar to net play in badminton. The main adjustments are adapting to the paddle (no strings), the different bounce characteristics, and the underhand serve." },
+  { q: "Which sport has better infrastructure in India?", a: "Badminton has far more infrastructure in India, with thousands of indoor courts, established academies, and a well-funded national federation (BAI). Pickleball infrastructure is growing rapidly — especially in Bangalore, Mumbai, Delhi, and Hyderabad — but is still a fraction of badminton's. This gap is closing fast as new dedicated pickleball facilities open monthly." },
+  { q: "Can I play both pickleball and badminton?", a: "Yes, many Indian players play both sports. The skills are complementary, and alternating between them provides variety and well-rounded fitness. The main adjustment is the serve mechanic (overhead in badminton, underhand in pickleball) and the weight of the equipment. Playing both can actually accelerate your improvement in each sport." },
+];
+
+const jsonLd = {
+  "@graph": [
+    webPageSchema({ url: "/guides/pickleball-vs-badminton", name: title, description }),
+    breadcrumbSchema([
+      { name: "Home", url: "/" },
+      { name: "Pickleball", url: "/pickleball" },
+      { name: "Pickleball vs Badminton", url: "/guides/pickleball-vs-badminton" },
+    ]),
+    faqSchema(faqs),
+  ],
+} as Record<string, unknown>;
+---
+
+<BaseLayout title={title} description={description} jsonLd={jsonLd}>
+  <article class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+
+    <!-- Breadcrumb -->
+    <nav aria-label="Breadcrumb" class="mb-8">
+      <ol class="flex flex-wrap items-center gap-1.5 text-sm text-slate-500">
+        <li><a href="/" class="hover:text-green-600 transition-colors">Home</a></li>
+        <li class="before:content-['/'] before:mx-1.5 before:text-slate-300"><a href="/pickleball" class="hover:text-green-600 transition-colors">Pickleball</a></li>
+        <li class="before:content-['/'] before:mx-1.5 before:text-slate-300 text-slate-900 font-medium">Pickleball vs Badminton</li>
+      </ol>
+    </nav>
+
+    <!-- Hero -->
+    <header class="mb-10">
+      <h1 class="font-[Barlow_Condensed] text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 uppercase tracking-wide leading-tight mb-4">
+        Pickleball vs Badminton — Which Sport Should You Pick?
+      </h1>
+      <p class="text-lg text-slate-600 max-w-3xl leading-relaxed">
+        India has long been a badminton nation — from Saina Nehwal to PV Sindhu, the sport is woven into our sporting culture. But pickleball is surging. Courts are popping up in every metro city, and players of all ages are making the switch. So how do these two racket sports actually compare? This comprehensive breakdown helps you decide which one (or both) is right for you.
+      </p>
+    </header>
+
+    <div class="bg-slate-100 rounded-xl aspect-video flex items-center justify-center text-slate-400 text-sm my-8">
+      <span>IMAGE: Split image showing a pickleball court on the left and a badminton court on the right with players in action</span>
+    </div>
+
+    <!-- Table of Contents -->
+    <nav class="bg-slate-50 border border-slate-200 rounded-2xl p-6 mb-10">
+      <h2 class="font-[Barlow_Condensed] text-lg font-bold text-slate-900 uppercase tracking-wide mb-3">In This Guide</h2>
+      <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
+        <li><a href="#comparison-table" class="text-green-600 hover:text-green-700 hover:underline">Quick Comparison Table</a></li>
+        <li><a href="#court-and-equipment" class="text-green-600 hover:text-green-700 hover:underline">Court & Equipment</a></li>
+        <li><a href="#gameplay" class="text-green-600 hover:text-green-700 hover:underline">Gameplay Differences</a></li>
+        <li><a href="#fitness" class="text-green-600 hover:text-green-700 hover:underline">Fitness & Physical Demands</a></li>
+        <li><a href="#cost" class="text-green-600 hover:text-green-700 hover:underline">Cost Comparison (INR)</a></li>
+        <li><a href="#availability" class="text-green-600 hover:text-green-700 hover:underline">Availability in India</a></li>
+        <li><a href="#learning-curve" class="text-green-600 hover:text-green-700 hover:underline">Learning Curve</a></li>
+        <li><a href="#which-sport" class="text-green-600 hover:text-green-700 hover:underline">Which Sport for You?</a></li>
+        <li><a href="#play-both" class="text-green-600 hover:text-green-700 hover:underline">Can You Play Both?</a></li>
+        <li><a href="#faq" class="text-green-600 hover:text-green-700 hover:underline">FAQ</a></li>
+      </ul>
+    </nav>
+
+    <!-- Quick Comparison Table -->
+    <section id="comparison-table" class="scroll-mt-24 mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Quick Comparison Table</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Here is a side-by-side snapshot of the key differences between pickleball and badminton. Each factor is explored in detail in the sections below.
+      </p>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border border-slate-200 rounded-xl overflow-hidden">
+          <thead>
+            <tr class="bg-slate-50">
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Factor</th>
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Pickleball</th>
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Badminton</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Court Size (Doubles)</td><td class="px-4 py-3 text-slate-700">20 x 44 ft</td><td class="px-4 py-3 text-slate-700">20 x 44 ft</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Net Height (Centre)</td><td class="px-4 py-3 text-slate-700">34 inches (86 cm)</td><td class="px-4 py-3 text-slate-700">5 ft (152 cm)</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Equipment</td><td class="px-4 py-3 text-slate-700">Solid paddle + polymer ball</td><td class="px-4 py-3 text-slate-700">Stringed racket + shuttlecock</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Ball/Shuttle Speed</td><td class="px-4 py-3 text-slate-700">25-40 mph typical</td><td class="px-4 py-3 text-slate-700">60-200+ mph (smash)</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Serve Type</td><td class="px-4 py-3 text-slate-700">Underhand only</td><td class="px-4 py-3 text-slate-700">Below waist (overhead in older rules)</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Scoring</td><td class="px-4 py-3 text-slate-700">11 or 21 points</td><td class="px-4 py-3 text-slate-700">21 points (best of 3 games)</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Starter Equipment Cost</td><td class="px-4 py-3 text-slate-700">Rs 2,000-3,500</td><td class="px-4 py-3 text-slate-700">Rs 2,000-4,000</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Monthly Running Cost</td><td class="px-4 py-3 text-slate-700">Rs 500-1,000</td><td class="px-4 py-3 text-slate-700">Rs 1,500-3,000</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Fitness Level Required</td><td class="px-4 py-3 text-slate-700">Low-Medium</td><td class="px-4 py-3 text-slate-700">Medium-High</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Learning Curve</td><td class="px-4 py-3 text-slate-700">Gentle — rally in minutes</td><td class="px-4 py-3 text-slate-700">Steep — weeks to rally consistently</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Injury Risk</td><td class="px-4 py-3 text-slate-700">Low (lower impact)</td><td class="px-4 py-3 text-slate-700">Medium (shoulder, knee, ankle)</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Olympic Status</td><td class="px-4 py-3 text-slate-700">Not yet (targeting 2032)</td><td class="px-4 py-3 text-slate-700">Yes (since 1992)</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Courts in India</td><td class="px-4 py-3 text-slate-700">Growing rapidly (500+)</td><td class="px-4 py-3 text-slate-700">Thousands nationwide</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Indoor/Outdoor</td><td class="px-4 py-3 text-slate-700">Both (mostly outdoor in India)</td><td class="px-4 py-3 text-slate-700">Primarily indoor</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Court & Equipment -->
+    <section id="court-and-equipment" class="scroll-mt-24 mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Court & Equipment Differences</h2>
+
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 uppercase tracking-wide mb-3">The Court</h3>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Both sports use a <strong>20 x 44 foot court</strong> for doubles, which is why conversion between the two is so simple. The critical difference is the net: badminton nets are <strong>5 feet (152 cm)</strong> at the centre, while pickleball nets are only <strong>34 inches (86 cm)</strong>. This lower net fundamentally changes the game — pickleball is played more horizontally, while badminton has a strong vertical element with overhead clears and steep smashes.
+      </p>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Pickleball has a unique <strong>non-volley zone (kitchen)</strong> extending 7 feet from the net on each side. Badminton has no equivalent restricted zone. This kitchen rule creates a distinctive strategic layer in pickleball that has no parallel in badminton.
+      </p>
+
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 uppercase tracking-wide mb-3">The Equipment</h3>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        A pickleball paddle is <strong>solid</strong> — no strings, typically 15-17 inches long, weighing 200-240 g. A badminton racket is <strong>strung</strong>, about 26 inches long, and weighs 80-100 g. The difference in feel is substantial. If you are used to the flick of a badminton racket, a pickleball paddle will feel sluggish at first. You compensate with body mechanics rather than wrist snap.
+      </p>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        The projectiles are entirely different. A pickleball is a <strong>perforated polymer ball</strong> (similar to a wiffle ball) that bounces on the court surface. A badminton shuttlecock is a <strong>feathered or synthetic cone</strong> that decelerates rapidly due to its aerodynamic drag. The shuttle does not bounce — once it hits the ground, the rally is over. This makes badminton rallies inherently more fragile and fast-paced.
+      </p>
+
+      <div class="bg-slate-100 rounded-xl aspect-video flex items-center justify-center text-slate-400 text-sm my-8">
+        <span>IMAGE: Side-by-side comparison of pickleball paddle and ball vs badminton racket and shuttlecock with dimensions labelled</span>
+      </div>
+    </section>
+
+    <!-- Gameplay -->
+    <section id="gameplay" class="scroll-mt-24 mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Gameplay Differences</h2>
+
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 uppercase tracking-wide mb-3">Pace & Rhythm</h3>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Badminton is a <strong>speed sport</strong>. Professional smashes exceed 400 km/h, and even club-level smashes regularly hit 200 km/h. Rallies alternate between slow, floating clears and explosive, fast-twitch smashes. The game rewards reflexes and explosive movement.
+      </p>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Pickleball is a <strong>strategy sport</strong>. Ball speeds rarely exceed 60 km/h in recreational play. Rallies are built around patience, placement, and the "soft game" — gentle dinks over the net that probe for openings. The game rewards anticipation, court positioning, and touch. Hard drives and smashes exist in pickleball, but the kitchen rule means brute force alone does not win games.
+      </p>
+
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 uppercase tracking-wide mb-3">Serving</h3>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        In pickleball, the serve is <strong>underhand only</strong> and must clear the non-volley zone. It is primarily a way to start the rally, not a weapon. In badminton, serves can be short, flick, or driven, and at advanced levels, the serve is a tactical weapon that sets up the third shot.
+      </p>
+
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 uppercase tracking-wide mb-3">Rally Structure</h3>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        A typical pickleball doubles rally follows this pattern: serve, return (both must bounce), then both teams work to reach the kitchen line and engage in a dinking battle. The point is won when someone pops the ball up too high, allowing the opponent to attack.
+      </p>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        A typical badminton rally involves a mix of clears (deep shots to the baseline), drops (soft shots near the net), drives (flat, fast shots), and smashes (steep downward attacks). Movement covers the full court in all directions — forward, backward, and laterally.
+      </p>
+    </section>
+
+    <!-- Fitness & Physical Demands -->
+    <section id="fitness" class="scroll-mt-24 mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Fitness & Physical Demands</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        This is one of the most important considerations for Indian players, especially those choosing a sport for long-term recreational fitness.
+      </p>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border border-slate-200 rounded-xl overflow-hidden">
+          <thead>
+            <tr class="bg-slate-50">
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Physical Aspect</th>
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Pickleball</th>
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Badminton</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Calories/Hour (Doubles)</td><td class="px-4 py-3 text-slate-700">250-350</td><td class="px-4 py-3 text-slate-700">350-500</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Calories/Hour (Singles)</td><td class="px-4 py-3 text-slate-700">400-500</td><td class="px-4 py-3 text-slate-700">400-550</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Court Coverage</td><td class="px-4 py-3 text-slate-700">Moderate — less ground to cover</td><td class="px-4 py-3 text-slate-700">High — full court movement</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Jumping Required</td><td class="px-4 py-3 text-slate-700">Minimal</td><td class="px-4 py-3 text-slate-700">Frequent (smashes, clears)</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Shoulder Stress</td><td class="px-4 py-3 text-slate-700">Low (underhand strokes)</td><td class="px-4 py-3 text-slate-700">High (overhead strokes)</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Knee Impact</td><td class="px-4 py-3 text-slate-700">Low-Medium</td><td class="px-4 py-3 text-slate-700">Medium-High</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Playable Age Range</td><td class="px-4 py-3 text-slate-700">8-80+</td><td class="px-4 py-3 text-slate-700">10-65</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Common Injuries</td><td class="px-4 py-3 text-slate-700">Elbow strain, ankle sprains</td><td class="px-4 py-3 text-slate-700">Shoulder injury, knee, Achilles</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="text-slate-700 leading-relaxed mb-4">
+        <strong>Badminton is the more physically demanding sport</strong>, especially in singles. It requires explosive footwork, jumping ability, overhead power, and sustained cardiovascular endurance. The rapid deceleration and direction changes put significant stress on knees and ankles.
+      </p>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        <strong>Pickleball is gentler on the body</strong>. The smaller effective playing area (since you do not run to the back court), absence of overhead strokes, and slower ball speed make it accessible to a wider age range. In India, this is a major reason pickleball has attracted many 40+ and 50+ players who found badminton too taxing on their joints.
+      </p>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        That said, competitive pickleball singles is no joke. The lateral movement, quick reflexes at the kitchen line, and sustained rallying provide an excellent cardio workout. Do not assume pickleball is "easy" because it is lower impact.
+      </p>
+    </section>
+
+    <!-- Cost Comparison -->
+    <section id="cost" class="scroll-mt-24 mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Cost Comparison in India (INR)</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Let us break down the actual costs of playing each sport in India, from initial equipment to ongoing expenses.
+      </p>
+
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 uppercase tracking-wide mb-3">Initial Equipment Cost</h3>
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border border-slate-200 rounded-xl overflow-hidden">
+          <thead>
+            <tr class="bg-slate-50">
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Item</th>
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Pickleball</th>
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Badminton</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Racket / Paddle (Beginner)</td><td class="px-4 py-3 text-slate-700">Rs 1,500-2,500</td><td class="px-4 py-3 text-slate-700">Rs 1,500-3,000</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Balls / Shuttles</td><td class="px-4 py-3 text-slate-700">Rs 500-800 (6 balls)</td><td class="px-4 py-3 text-slate-700">Rs 800-1,500 (1 tube feather)</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Court Shoes</td><td class="px-4 py-3 text-slate-700">Rs 2,000-4,000</td><td class="px-4 py-3 text-slate-700">Rs 2,000-5,000</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Bag</td><td class="px-4 py-3 text-slate-700">Rs 500-1,500</td><td class="px-4 py-3 text-slate-700">Rs 800-2,000</td></tr>
+            <tr class="bg-green-50">
+              <td class="px-4 py-3 text-slate-900 font-semibold">Total Starter Kit</td>
+              <td class="px-4 py-3 text-green-700 font-semibold">Rs 4,500-8,800</td>
+              <td class="px-4 py-3 text-green-700 font-semibold">Rs 5,100-11,500</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 uppercase tracking-wide mb-3">Monthly Running Costs (Playing 3x per Week)</h3>
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border border-slate-200 rounded-xl overflow-hidden">
+          <thead>
+            <tr class="bg-slate-50">
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Expense</th>
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Pickleball</th>
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Badminton</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Court Rental (shared)</td><td class="px-4 py-3 text-slate-700">Rs 300-800/month</td><td class="px-4 py-3 text-slate-700">Rs 500-2,000/month</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Consumables</td><td class="px-4 py-3 text-slate-700">Rs 100-200 (balls last months)</td><td class="px-4 py-3 text-slate-700">Rs 800-2,000 (shuttles)</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Restringing</td><td class="px-4 py-3 text-slate-700">N/A (solid paddle)</td><td class="px-4 py-3 text-slate-700">Rs 300-800 (every 2-3 months)</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Grip Replacement</td><td class="px-4 py-3 text-slate-700">Rs 100-200</td><td class="px-4 py-3 text-slate-700">Rs 100-200</td></tr>
+            <tr class="bg-green-50">
+              <td class="px-4 py-3 text-slate-900 font-semibold">Monthly Total</td>
+              <td class="px-4 py-3 text-green-700 font-semibold">Rs 500-1,200</td>
+              <td class="px-4 py-3 text-green-700 font-semibold">Rs 1,700-5,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="text-slate-700 leading-relaxed mb-4">
+        The biggest ongoing cost difference is <strong>consumables</strong>. Feather shuttlecocks are expensive and fragile — a tube of Yonex Mavis 350 nylon shuttles costs Rs 800-1,000 and lasts a few sessions, while feather shuttles (Li-Ning A+60 or Yonex AS-30) cost Rs 1,200-2,000 per tube and last even less. Pickleballs, by contrast, are durable and a set of 6 can last several months of regular play.
+      </p>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        For paddle and racket recommendations at every budget, see our detailed reviews:
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2 mb-4">
+        <li><a href="/reviews/best-pickleball-paddles-under-2500-india" class="text-green-600 hover:text-green-700 hover:underline font-medium">Best Pickleball Paddles Under Rs 2,500</a></li>
+        <li><a href="/reviews/best-pickleball-paddles-under-5000-india" class="text-green-600 hover:text-green-700 hover:underline font-medium">Best Pickleball Paddles Under Rs 5,000</a></li>
+        <li><a href="/reviews/best-pickleball-paddles-under-10000-india" class="text-green-600 hover:text-green-700 hover:underline font-medium">Best Pickleball Paddles Under Rs 10,000</a></li>
+      </ul>
+    </section>
+
+    <!-- Availability in India -->
+    <section id="availability" class="scroll-mt-24 mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Availability in India</h2>
+
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 uppercase tracking-wide mb-3">Badminton Infrastructure</h3>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Badminton has <strong>decades of infrastructure</strong> in India. Every city has multiple indoor courts, coaching academies are established from grassroots to elite level, and the Badminton Association of India (BAI) is a well-funded federation. You can find a badminton court within a few kilometres in virtually any Indian city or large town. Equipment is widely available from brands like Yonex, Li-Ning, Victor, and Cosco at every price point.
+      </p>
+
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 uppercase tracking-wide mb-3">Pickleball Infrastructure</h3>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Pickleball infrastructure in India is <strong>growing explosively but still young</strong>. As of 2026, dedicated pickleball courts exist in Bangalore, Mumbai, Delhi NCR, Hyderabad, Chennai, Pune, and Kolkata. Many more cities have converted badminton or tennis courts for dual use. The All India Pickleball Association (AIPA) organises national tournaments, and state-level associations are active in 20+ states.
+      </p>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Finding a place to play pickleball is easiest in Tier-1 cities. In Tier-2 and Tier-3 cities, you may need to set up your own net on a flat surface or convert a badminton court. The good news: portable pickleball nets are available on Amazon India for Rs 3,000-6,000, and you can draw temporary court lines with chalk or tape.
+      </p>
+
+      <div class="bg-slate-100 rounded-xl aspect-video flex items-center justify-center text-slate-400 text-sm my-8">
+        <span>IMAGE: Map of India highlighting major cities with dedicated pickleball facilities</span>
+      </div>
+    </section>
+
+    <!-- Learning Curve -->
+    <section id="learning-curve" class="scroll-mt-24 mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Learning Curve</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        This is where the two sports diverge most dramatically.
+      </p>
+
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 uppercase tracking-wide mb-3">Pickleball: Minutes to Rally, Months to Master</h3>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Pickleball is famously easy to pick up. The underhand serve is intuitive, the ball travels slowly enough to track, and the paddle's solid surface means you make contact on almost every swing. A complete beginner can sustain rallies within <strong>15-30 minutes</strong> of picking up a paddle. Within a few sessions, you will understand positioning and basic strategy.
+      </p>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        However, reaching an intermediate level takes real effort. The soft game (dinking), third shot drops, strategic lobbing, and point construction require months of deliberate practice. The gap between a 3.0 and 5.0 player (on the standard rating scale) is enormous.
+      </p>
+
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 uppercase tracking-wide mb-3">Badminton: Weeks to Rally, Years to Master</h3>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Badminton has a steeper initial learning curve. The shuttlecock's aerodynamics are unintuitive — it decelerates rapidly and requires precise timing to hit cleanly. Overhead strokes (clears, smashes, drops) require significant technique to execute consistently. Most beginners need <strong>several weeks of regular practice</strong> before they can sustain rallies reliably.
+      </p>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        The skill ceiling in badminton is also very high. Proper footwork patterns, advanced deception (slicing, holding shots), and tactical awareness take years to develop. This depth is part of badminton's appeal — there is always something new to learn.
+      </p>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border border-slate-200 rounded-xl overflow-hidden">
+          <thead>
+            <tr class="bg-slate-50">
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Milestone</th>
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Pickleball</th>
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Badminton</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">First Rally</td><td class="px-4 py-3 text-slate-700">15-30 minutes</td><td class="px-4 py-3 text-slate-700">1-3 sessions</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Comfortable in Games</td><td class="px-4 py-3 text-slate-700">2-4 weeks</td><td class="px-4 py-3 text-slate-700">1-3 months</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Intermediate Level</td><td class="px-4 py-3 text-slate-700">3-6 months</td><td class="px-4 py-3 text-slate-700">6-18 months</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700 font-medium">Advanced / Tournament</td><td class="px-4 py-3 text-slate-700">1-2 years</td><td class="px-4 py-3 text-slate-700">2-5 years</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Which Sport for You -->
+    <section id="which-sport" class="scroll-mt-24 mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Which Sport Suits Your Personality?</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Your ideal sport depends on what you value most. Here is a guide based on personality and preferences.
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6">
+          <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-900 uppercase tracking-wide mb-3">Choose Pickleball If You...</h3>
+          <ul class="space-y-2 text-sm text-slate-700">
+            <li class="flex gap-2"><span class="text-green-600 font-bold">+</span> Want a sport you can enjoy from day one</li>
+            <li class="flex gap-2"><span class="text-green-600 font-bold">+</span> Are over 40 or have joint concerns</li>
+            <li class="flex gap-2"><span class="text-green-600 font-bold">+</span> Enjoy strategic, chess-like gameplay</li>
+            <li class="flex gap-2"><span class="text-green-600 font-bold">+</span> Want to play with family across age groups</li>
+            <li class="flex gap-2"><span class="text-green-600 font-bold">+</span> Prefer a social, community-driven sport</li>
+            <li class="flex gap-2"><span class="text-green-600 font-bold">+</span> Want lower ongoing equipment costs</li>
+            <li class="flex gap-2"><span class="text-green-600 font-bold">+</span> Like being part of a growing, new movement</li>
+          </ul>
+        </div>
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6">
+          <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-900 uppercase tracking-wide mb-3">Choose Badminton If You...</h3>
+          <ul class="space-y-2 text-sm text-slate-700">
+            <li class="flex gap-2"><span class="text-green-600 font-bold">+</span> Want an intense cardiovascular workout</li>
+            <li class="flex gap-2"><span class="text-green-600 font-bold">+</span> Enjoy speed, power, and explosive movement</li>
+            <li class="flex gap-2"><span class="text-green-600 font-bold">+</span> Have Olympic or professional aspirations</li>
+            <li class="flex gap-2"><span class="text-green-600 font-bold">+</span> Want established coaching infrastructure</li>
+            <li class="flex gap-2"><span class="text-green-600 font-bold">+</span> Prefer a sport with deep technical mastery</li>
+            <li class="flex gap-2"><span class="text-green-600 font-bold">+</span> Need easy access to courts anywhere in India</li>
+            <li class="flex gap-2"><span class="text-green-600 font-bold">+</span> Want to follow Indian players on the world stage</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Can You Play Both -->
+    <section id="play-both" class="scroll-mt-24 mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Can You Play Both?</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        <strong>Absolutely — and many Indian players do.</strong> In fact, playing both sports can make you better at each one. Here is why:
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2 mb-4">
+        <li><strong>Badminton improves your pickleball</strong> by developing net awareness, hand-eye coordination, footwork, and the ability to read your opponent's body language. Badminton players typically have excellent reflexes that translate directly to the kitchen line.</li>
+        <li><strong>Pickleball improves your badminton</strong> by sharpening your soft game, patience, and strategic shot placement. The dinking game develops touch that translates to better net shots in badminton.</li>
+        <li><strong>Cross-training benefits:</strong> Alternating between sports reduces repetitive strain injuries by varying the movement patterns and muscle groups used. Badminton emphasises overhead motion; pickleball emphasises lateral and low movement.</li>
+      </ul>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        The main adjustment when switching between sports is the <strong>serve mechanic</strong> (overhead vs underhand) and the <strong>weight of equipment</strong>. Give yourself a few minutes of warm-up to recalibrate your timing when switching sports.
+      </p>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Many clubs in Bangalore, Mumbai, and Delhi now offer both badminton and pickleball sessions on the same courts at different time slots. This makes it practical to play both in the same facility, often on the same day.
+      </p>
+
+      <div class="bg-green-50 border border-green-200 rounded-xl p-6">
+        <h3 class="font-[Barlow_Condensed] text-lg font-bold text-green-800 uppercase tracking-wide mb-2">Our Take</h3>
+        <p class="text-green-900 text-sm leading-relaxed">
+          If you are under 35 and athletic, try both and see which resonates. If you are over 40 or want a sport the whole family can play together, start with pickleball — you will be playing rallies on your very first day. If intense physical competition is what drives you, badminton's speed and power are hard to beat.
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="scroll-mt-24 mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-6">Frequently Asked Questions</h2>
+      <div class="space-y-4">
+        {faqs.map((faq) => (
+          <details class="group bg-slate-50 border border-slate-200 rounded-xl">
+            <summary class="flex items-center justify-between cursor-pointer px-6 py-4 font-semibold text-slate-900 text-sm sm:text-base">
+              {faq.q}
+              <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform flex-shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-6 pb-4 text-slate-600 text-sm leading-relaxed">{faq.a}</div>
+          </details>
+        ))}
+      </div>
+    </section>
+
+    <!-- Related Links -->
+    <section class="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8">
+      <h2 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 uppercase tracking-wide mb-4">Related Guides & Reviews</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <a href="/guides/pickleball-rules-beginners-india" class="block bg-white border border-slate-200 rounded-xl p-4 hover:border-green-300 hover:shadow-sm transition-all">
+          <h3 class="font-semibold text-slate-900 text-sm mb-1">Pickleball Rules for Beginners</h3>
+          <p class="text-xs text-slate-500">Complete rules guide with court dimensions and scoring.</p>
+        </a>
+        <a href="/guides/how-to-choose-pickleball-paddle" class="block bg-white border border-slate-200 rounded-xl p-4 hover:border-green-300 hover:shadow-sm transition-all">
+          <h3 class="font-semibold text-slate-900 text-sm mb-1">How to Choose a Paddle</h3>
+          <p class="text-xs text-slate-500">Core materials, face types, weight, and grip sizing.</p>
+        </a>
+        <a href="/reviews/best-pickleball-paddles-under-2500-india" class="block bg-white border border-slate-200 rounded-xl p-4 hover:border-green-300 hover:shadow-sm transition-all">
+          <h3 class="font-semibold text-slate-900 text-sm mb-1">Best Paddles Under Rs 2,500</h3>
+          <p class="text-xs text-slate-500">Budget-friendly paddles reviewed with full specs.</p>
+        </a>
+      </div>
+    </section>
+
+  </article>
+</BaseLayout>

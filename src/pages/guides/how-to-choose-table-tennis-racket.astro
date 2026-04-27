@@ -1,0 +1,283 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { webPageSchema, breadcrumbSchema, faqSchema } from "../../utils/schema";
+
+const title = "How to Choose a Table Tennis Racket: Blade, Rubber, and Rating Systems Explained";
+const description = "Complete guide to choosing a table tennis racket in India. Covers pre-made vs custom, star ratings, blade types, rubber types, and grip styles.";
+const url = "/guides/how-to-choose-table-tennis-racket";
+
+const faqs = [
+  { q: "What star rating table tennis racket should a beginner buy?", a: "Beginners should start with a 2-star or 3-star pre-made racket. These offer decent spin and control without overwhelming speed. A 1-star racket is too basic for learning proper technique, while 4-star and above can be too fast for new players to control." },
+  { q: "Is a pre-made or custom table tennis racket better?", a: "For beginners and casual players, pre-made rackets are better — they are affordable, ready to use, and well-balanced. Custom setups (separate blade + rubbers) are better for intermediate and advanced players who know their playing style and want to optimise specific characteristics." },
+  { q: "What is the difference between pimple-in and pimple-out rubber?", a: "Pimple-in (inverted) rubber has a smooth surface that grips the ball for maximum spin. Pimple-out rubber has raised pips on the surface, reducing spin sensitivity and producing flatter, faster shots. Most players use inverted rubber; pimple-out is favoured by close-to-table blockers and defenders." },
+  { q: "Should I choose penhold or shakehand grip?", a: "In India, shakehand grip is far more common and most coaching is taught in this style. Penhold grip offers wrist flexibility for serves but limits backhand options (unless you use reverse penhold backhand). Beginners should start with shakehand unless they have a specific reason to learn penhold." },
+  { q: "How much should I spend on my first table tennis racket in India?", a: "A good beginner racket costs INR 500-1,500. For intermediate players looking to improve, INR 1,500-3,000 gets you a significant upgrade in rubber quality and blade feel. Competitive players typically spend INR 3,000-5,000+ on pre-made or invest in custom setups." },
+  { q: "Does ITTF approval matter for a table tennis racket?", a: "If you plan to play in any official tournament, yes — ITTF-approved rubbers are mandatory. For casual play, it does not matter. Most branded rackets from Butterfly, Stag, and DHS use ITTF-approved rubbers from 3-star and above." },
+];
+
+const jsonLd = { "@graph": [
+  webPageSchema({ url, name: title, description }),
+  breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Table Tennis", url: "/table-tennis" },
+    { name: "How to Choose a Table Tennis Racket", url },
+  ]),
+  faqSchema(faqs),
+] } as Record<string, unknown>;
+---
+
+<BaseLayout title={title} description={description} jsonLd={jsonLd}>
+  <article class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+    <!-- Breadcrumbs -->
+    <nav class="text-xs text-slate-500 mb-6" aria-label="Breadcrumb">
+      <a href="/" class="hover:text-slate-800">Home</a> ›
+      <a href="/table-tennis" class="hover:text-slate-800">Table Tennis</a> ›
+      <span class="text-slate-700 font-medium">How to Choose a Table Tennis Racket</span>
+    </nav>
+
+    <!-- Hero -->
+    <header class="max-w-4xl mb-12">
+      <h1 class="font-[Barlow_Condensed] text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-4">How to Choose a Table Tennis Racket: Blade, Rubber, and Rating Systems Explained</h1>
+      <p class="text-lg text-slate-600 leading-relaxed">A table tennis racket is not just a paddle — it is a precision instrument where the blade, rubber, and sponge work together to define your game. Whether you are buying your first racket from a sports shop in India or assembling a custom setup, this guide walks you through every decision point so you spend your money wisely.</p>
+    </header>
+
+    <div class="max-w-4xl">
+
+      <div class="bg-slate-100 rounded-xl aspect-video flex items-center justify-center text-slate-400 text-sm my-8"><span>IMAGE: Exploded diagram of a table tennis racket showing blade, sponge, rubber layers, and handle</span></div>
+
+      <!-- Section: Pre-made vs Custom -->
+      <section class="mb-12">
+        <h2 class="font-[Barlow_Condensed] text-3xl font-bold text-slate-900 mb-4">Pre-Made vs Custom Rackets</h2>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">The first decision every table tennis buyer faces is whether to buy a pre-made (ready-to-play) racket or assemble a custom setup by choosing a blade and rubbers separately.</p>
+
+        <h3 class="font-[Barlow_Condensed] text-xl font-semibold text-slate-800 mb-2">Pre-Made Rackets</h3>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">Pre-made rackets come with rubbers already glued to the blade. They are rated on a star system (1-star to 6-star) and are sold by brands like Stag, GKI, Butterfly, Donic, and DHS. The advantage is simplicity — pick a star rating, buy it, and start playing. Pre-made rackets are ideal for beginners, recreational players, and anyone who does not want to deal with gluing rubbers. Our <a href="/reviews/best-table-tennis-rackets-under-2000-india" class="text-green-600 font-medium hover:underline">best table tennis rackets under INR 2,000</a> roundup covers the best pre-made options for new players.</p>
+
+        <h3 class="font-[Barlow_Condensed] text-xl font-semibold text-slate-800 mb-2">Custom Rackets</h3>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">A custom setup lets you pair any blade with any rubbers (one for forehand, one for backhand — they can be different). This allows fine-tuning for your playing style: an offensive blade with a spinny forehand rubber and a controlled backhand rubber, for example. Custom setups start making sense once you have been playing for 6-12 months and understand what aspects of your game need support. For premium pre-assembled options that approach custom quality, see our <a href="/reviews/best-table-tennis-rackets-under-5000-india" class="text-green-600 font-medium hover:underline">best table tennis rackets under INR 5,000</a> guide.</p>
+
+        <div class="bg-slate-100 rounded-xl aspect-video flex items-center justify-center text-slate-400 text-sm my-8"><span>IMAGE: Side-by-side comparison of a pre-made star-rated racket and a custom blade with separate rubber sheets</span></div>
+      </section>
+
+      <!-- Section: Star Rating System -->
+      <section class="mb-12">
+        <h2 class="font-[Barlow_Condensed] text-3xl font-bold text-slate-900 mb-4">Understanding the Star Rating System</h2>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">Most Indian sports shops sell pre-made table tennis rackets rated from 1 star to 6 stars. This system is brand-specific — a Stag 4-star is not the same as a Butterfly 4-star — but the general tier progression holds across brands.</p>
+
+        <div class="overflow-x-auto my-8">
+          <table class="w-full text-sm border border-slate-200 rounded-lg overflow-hidden">
+            <thead>
+              <tr class="bg-green-600 text-white">
+                <th class="text-left px-4 py-3 font-[Barlow_Condensed] font-semibold">Star Rating</th>
+                <th class="text-left px-4 py-3 font-[Barlow_Condensed] font-semibold">Rubber Quality</th>
+                <th class="text-left px-4 py-3 font-[Barlow_Condensed] font-semibold">Speed</th>
+                <th class="text-left px-4 py-3 font-[Barlow_Condensed] font-semibold">Spin</th>
+                <th class="text-left px-4 py-3 font-[Barlow_Condensed] font-semibold">Best For</th>
+                <th class="text-left px-4 py-3 font-[Barlow_Condensed] font-semibold">Price (INR)</th>
+              </tr>
+            </thead>
+            <tbody class="text-slate-600">
+              <tr class="border-t border-slate-200">
+                <td class="px-4 py-3 font-medium text-slate-800">1-Star</td>
+                <td class="px-4 py-3">Basic pimple rubber, thin sponge</td>
+                <td class="px-4 py-3">Low</td>
+                <td class="px-4 py-3">Minimal</td>
+                <td class="px-4 py-3">Absolute beginners, casual fun</td>
+                <td class="px-4 py-3">200-500</td>
+              </tr>
+              <tr class="border-t border-slate-200 bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-800">2-Star</td>
+                <td class="px-4 py-3">Improved rubber, standard sponge</td>
+                <td class="px-4 py-3">Moderate</td>
+                <td class="px-4 py-3">Some</td>
+                <td class="px-4 py-3">Beginners learning technique</td>
+                <td class="px-4 py-3">400-800</td>
+              </tr>
+              <tr class="border-t border-slate-200">
+                <td class="px-4 py-3 font-medium text-slate-800">3-Star</td>
+                <td class="px-4 py-3">Good inverted rubber, decent sponge</td>
+                <td class="px-4 py-3">Good</td>
+                <td class="px-4 py-3">Good</td>
+                <td class="px-4 py-3">Developing players, club use</td>
+                <td class="px-4 py-3">600-1,500</td>
+              </tr>
+              <tr class="border-t border-slate-200 bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-800">4-Star</td>
+                <td class="px-4 py-3">High-grip rubber, quality sponge</td>
+                <td class="px-4 py-3">High</td>
+                <td class="px-4 py-3">High</td>
+                <td class="px-4 py-3">Intermediate competitive players</td>
+                <td class="px-4 py-3">1,000-2,500</td>
+              </tr>
+              <tr class="border-t border-slate-200">
+                <td class="px-4 py-3 font-medium text-slate-800">5-Star</td>
+                <td class="px-4 py-3">Premium rubber, optimised sponge</td>
+                <td class="px-4 py-3">Very High</td>
+                <td class="px-4 py-3">Very High</td>
+                <td class="px-4 py-3">Advanced players, tournament use</td>
+                <td class="px-4 py-3">2,000-4,000</td>
+              </tr>
+              <tr class="border-t border-slate-200 bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-800">6-Star</td>
+                <td class="px-4 py-3">Top-tier rubber, ITTF approved</td>
+                <td class="px-4 py-3">Extreme</td>
+                <td class="px-4 py-3">Extreme</td>
+                <td class="px-4 py-3">Competitive / semi-pro</td>
+                <td class="px-4 py-3">3,000-6,000+</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">A common mistake is jumping straight to a 5-star or 6-star racket. High-star rackets are fast and spinny, which sounds good — but that speed makes it harder to control the ball when you are still developing consistent strokes. Start at 2-3 stars and upgrade once your control outgrows the racket.</p>
+      </section>
+
+      <!-- Section: Blade Types -->
+      <section class="mb-12">
+        <h2 class="font-[Barlow_Condensed] text-3xl font-bold text-slate-900 mb-4">Blade Types: All-Wood vs Carbon-Composite</h2>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">The blade is the wooden (or composite) core of the racket. It determines the fundamental feel, speed, and control characteristics that rubber then modifies.</p>
+
+        <h3 class="font-[Barlow_Condensed] text-xl font-semibold text-slate-800 mb-2">All-Wood Blades (5-Ply and 7-Ply)</h3>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">Traditional blades are made entirely of wood, with layers (plies) of different timber glued together. A 5-ply blade is softer and more flexible, offering better feel and dwell time — the ball sits on the rubber slightly longer, giving you more spin and control. A 7-ply blade is stiffer and faster, with a more direct response. Most coaching professionals in India recommend 5-ply all-wood blades for players up to the intermediate level.</p>
+
+        <h3 class="font-[Barlow_Condensed] text-xl font-semibold text-slate-800 mb-2">Carbon-Composite Blades</h3>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">Carbon blades add layers of carbon fibre (or similar materials like Arylate-Carbon, ZLC, or Kevlar) between the wood plies. This increases stiffness and speed without adding weight. The trade-off is a harder feel with less dwell time, which demands better timing and technique. Carbon blades are for advanced players who need extra pace in their game. Brands like Butterfly (Viscaria, Timo Boll ALC) and Donic (Waldner Senso Carbon) produce legendary carbon blades available in India.</p>
+
+        <div class="bg-slate-100 rounded-xl aspect-video flex items-center justify-center text-slate-400 text-sm my-8"><span>IMAGE: Cross-section comparison of a 5-ply wood blade and a carbon-composite blade showing layer structure</span></div>
+      </section>
+
+      <!-- Section: Rubber Types -->
+      <section class="mb-12">
+        <h2 class="font-[Barlow_Condensed] text-3xl font-bold text-slate-900 mb-4">Rubber Types Explained</h2>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">The rubber is where the ball meets the racket, and it has more influence on your playing style than any other component. Table tennis rubbers consist of a topsheet (the surface) and a sponge layer underneath.</p>
+
+        <h3 class="font-[Barlow_Condensed] text-xl font-semibold text-slate-800 mb-2">Inverted (Pimple-In) Rubber</h3>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">The smooth surface faces outward, with pimples glued inward against the sponge. This is the most common rubber type worldwide and in India. The smooth surface grips the ball, allowing maximum spin generation. Sponge thickness matters: thicker sponge (2.0-2.2 mm) gives more speed and spin; thinner sponge (1.5-1.8 mm) provides better control. Beginners should start with 1.8-2.0 mm sponge thickness.</p>
+
+        <h3 class="font-[Barlow_Condensed] text-xl font-semibold text-slate-800 mb-2">Short Pimple-Out Rubber</h3>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">Pimples face outward, with short, broad pips. This rubber is less sensitive to incoming spin, making it excellent for blocking and hitting flat shots close to the table. It produces less spin than inverted rubber but offers a direct, punchy feel. Some Indian players use short pips on the backhand for quick blocks and push-attacks.</p>
+
+        <h3 class="font-[Barlow_Condensed] text-xl font-semibold text-slate-800 mb-2">Long Pimple-Out Rubber</h3>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">Long, thin pips that bend on contact, reversing the spin of incoming shots. This is a specialist defensive rubber used by choppers and disruptive players. It creates awkward, unpredictable returns that can frustrate aggressive opponents. Not recommended for beginners — it requires specific technique to use effectively.</p>
+
+        <h3 class="font-[Barlow_Condensed] text-xl font-semibold text-slate-800 mb-2">Anti-Spin Rubber</h3>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">A smooth, slick surface with very low friction. Anti-spin rubber deadens the ball, removing spin almost entirely. It is a niche choice for defensive players who want to nullify opponents' spin games. Rarely used at high levels but can be effective in club play where opponents are not used to reading dead balls.</p>
+      </section>
+
+      <!-- Section: Grip Styles -->
+      <section class="mb-12">
+        <h2 class="font-[Barlow_Condensed] text-3xl font-bold text-slate-900 mb-4">Penhold vs Shakehand Grip</h2>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">Grip style determines how you hold the racket, which in turn affects your stroke mechanics, reach, and shot variety.</p>
+
+        <h3 class="font-[Barlow_Condensed] text-xl font-semibold text-slate-800 mb-2">Shakehand Grip</h3>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">The dominant grip style worldwide and in India. You hold the racket as if shaking hands — thumb on one side of the blade, index finger on the other, remaining fingers wrapped around the handle. Shakehand blades come in three handle shapes: straight (ST), flared (FL), and anatomic (AN). Flared handles are the most popular in India because they prevent the racket from slipping out of sweaty hands — a real concern in Indian climate conditions. Shakehand grip offers balanced forehand and backhand play, making it the natural choice for beginners.</p>
+
+        <h3 class="font-[Barlow_Condensed] text-xl font-semibold text-slate-800 mb-2">Penhold Grip</h3>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">You hold the racket between thumb and index finger, like holding a pen. Chinese penhold uses a shorter handle; Japanese penhold uses a longer, protruding handle. Penhold offers excellent wrist flexibility for deceptive serves and forehand loops. The traditional weakness was the backhand, but the Reverse Penhold Backhand (RPB) technique — popularised by Chinese players like Wang Hao and Xu Xin — has largely solved this. Penhold is uncommon in Indian coaching circles, so finding a coach who teaches it well can be challenging.</p>
+
+        <div class="bg-slate-100 rounded-xl aspect-video flex items-center justify-center text-slate-400 text-sm my-8"><span>IMAGE: Shakehand grip (flared handle) and Chinese penhold grip demonstration</span></div>
+      </section>
+
+      <!-- Section: ITTF Approval -->
+      <section class="mb-12">
+        <h2 class="font-[Barlow_Condensed] text-3xl font-bold text-slate-900 mb-4">ITTF Approval: Does It Matter?</h2>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">The International Table Tennis Federation (ITTF) maintains a list of approved rubbers that are legal for tournament play. ITTF-approved rubbers have the manufacturer's logo and the ITTF emblem on the rubber sheet. If you play in any state-level, national, or TTFI-sanctioned tournament in India, your rubbers must be ITTF-approved.</p>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">For casual and club play, ITTF approval is not strictly necessary, but approved rubbers are generally higher quality because they meet manufacturing standards. Most pre-made rackets rated 3-star and above from reputable brands use ITTF-approved rubbers.</p>
+      </section>
+
+      <!-- Section: Budget Guide -->
+      <section class="mb-12">
+        <h2 class="font-[Barlow_Condensed] text-3xl font-bold text-slate-900 mb-4">Budget Guide for Indian Players</h2>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">Here is a practical spending guide based on your level and commitment to the sport:</p>
+
+        <div class="overflow-x-auto my-8">
+          <table class="w-full text-sm border border-slate-200 rounded-lg overflow-hidden">
+            <thead>
+              <tr class="bg-green-600 text-white">
+                <th class="text-left px-4 py-3 font-[Barlow_Condensed] font-semibold">Level</th>
+                <th class="text-left px-4 py-3 font-[Barlow_Condensed] font-semibold">Budget (INR)</th>
+                <th class="text-left px-4 py-3 font-[Barlow_Condensed] font-semibold">Racket Type</th>
+                <th class="text-left px-4 py-3 font-[Barlow_Condensed] font-semibold">What to Expect</th>
+              </tr>
+            </thead>
+            <tbody class="text-slate-600">
+              <tr class="border-t border-slate-200">
+                <td class="px-4 py-3 font-medium text-slate-800">Casual / Recreational</td>
+                <td class="px-4 py-3">300-800</td>
+                <td class="px-4 py-3">1-2 star pre-made</td>
+                <td class="px-4 py-3">Basic rubber, functional for fun play</td>
+              </tr>
+              <tr class="border-t border-slate-200 bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-800">Beginner (learning)</td>
+                <td class="px-4 py-3">800-2,000</td>
+                <td class="px-4 py-3">2-3 star pre-made</td>
+                <td class="px-4 py-3">Good rubber, decent spin, suitable for coaching</td>
+              </tr>
+              <tr class="border-t border-slate-200">
+                <td class="px-4 py-3 font-medium text-slate-800">Intermediate</td>
+                <td class="px-4 py-3">2,000-5,000</td>
+                <td class="px-4 py-3">4-5 star or entry custom</td>
+                <td class="px-4 py-3">High-quality rubber, noticeable speed and spin upgrade</td>
+              </tr>
+              <tr class="border-t border-slate-200 bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-800">Advanced / Competitive</td>
+                <td class="px-4 py-3">5,000-15,000+</td>
+                <td class="px-4 py-3">Custom blade + rubbers</td>
+                <td class="px-4 py-3">Premium feel, ITTF-approved, tournament-ready</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">For specific recommendations at each price point, check our detailed reviews: <a href="/reviews/best-table-tennis-rackets-under-2000-india" class="text-green-600 font-medium hover:underline">best table tennis rackets under INR 2,000</a> and <a href="/reviews/best-table-tennis-rackets-under-5000-india" class="text-green-600 font-medium hover:underline">best table tennis rackets under INR 5,000</a>.</p>
+      </section>
+
+      <!-- Section: Care Tips -->
+      <section class="mb-12">
+        <h2 class="font-[Barlow_Condensed] text-3xl font-bold text-slate-900 mb-4">Racket Care and Maintenance</h2>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">Indian weather — humidity in particular — can degrade rubber faster than in temperate climates. Here are practical tips to extend your racket's life:</p>
+        <ul class="list-disc pl-6 text-sm text-slate-600 leading-relaxed space-y-2">
+          <li><strong class="text-slate-800">Use a case:</strong> Always store your racket in a proper case. This protects the rubber from dust, sunlight, and accidental damage.</li>
+          <li><strong class="text-slate-800">Clean after every session:</strong> Wipe the rubber with a damp sponge or specialised rubber cleaner. Dust and sweat reduce grip over time.</li>
+          <li><strong class="text-slate-800">Use protective film:</strong> Adhesive protective sheets keep the rubber tacky between sessions. Most quality racket cases come with built-in protection.</li>
+          <li><strong class="text-slate-800">Avoid extreme heat:</strong> Never leave your racket in a car or in direct sunlight. Heat warps the blade and degrades the sponge.</li>
+          <li><strong class="text-slate-800">Replace rubber periodically:</strong> Even with good care, rubber loses its grip after 50-80 hours of play. Custom racket users should budget for new rubber sheets every 3-6 months of regular use.</li>
+        </ul>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="mb-12">
+        <h2 class="font-[Barlow_Condensed] text-3xl font-bold text-slate-900 mb-8">Frequently Asked Questions</h2>
+        <div class="space-y-6">
+          {faqs.map((faq) => (
+            <div class="border-b border-slate-200 pb-6">
+              <h3 class="font-[Barlow_Condensed] text-lg font-semibold text-slate-800 mb-2">{faq.q}</h3>
+              <p class="text-sm text-slate-600 leading-relaxed">{faq.a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <!-- Related Reviews -->
+      <section class="mb-12">
+        <h2 class="font-[Barlow_Condensed] text-3xl font-bold text-slate-900 mb-4">Related Table Tennis Reviews</h2>
+        <div class="grid sm:grid-cols-3 gap-4">
+          <a href="/reviews/best-table-tennis-rackets-under-2000-india" class="block border border-slate-200 rounded-lg p-4 hover:border-green-600 transition-colors">
+            <p class="font-[Barlow_Condensed] font-semibold text-slate-800">Best TT Rackets Under INR 2,000</p>
+            <p class="text-xs text-slate-500 mt-1">Top picks for beginners</p>
+          </a>
+          <a href="/reviews/best-table-tennis-rackets-under-5000-india" class="block border border-slate-200 rounded-lg p-4 hover:border-green-600 transition-colors">
+            <p class="font-[Barlow_Condensed] font-semibold text-slate-800">Best TT Rackets Under INR 5,000</p>
+            <p class="text-xs text-slate-500 mt-1">Mid-range for competitive players</p>
+          </a>
+          <a href="/reviews/best-table-tennis-tables-india" class="block border border-slate-200 rounded-lg p-4 hover:border-green-600 transition-colors">
+            <p class="font-[Barlow_Condensed] font-semibold text-slate-800">Best Table Tennis Tables in India</p>
+            <p class="text-xs text-slate-500 mt-1">Indoor, outdoor, and mini tables</p>
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </article>
+</BaseLayout>

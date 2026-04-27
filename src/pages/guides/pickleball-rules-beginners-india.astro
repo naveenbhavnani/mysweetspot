@@ -1,0 +1,378 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { webPageSchema, breadcrumbSchema, faqSchema } from "../../utils/schema";
+
+const title = "Pickleball Rules for Beginners in India — Complete Guide";
+const description = "Learn pickleball rules for beginners in India. Covers court dimensions, scoring, kitchen rules, singles vs doubles, and the growing Indian pickleball scene.";
+
+const faqs = [
+  { q: "What are the basic rules of pickleball for beginners?", a: "Pickleball is played on a 20x44 ft court with a solid paddle and a perforated polymer ball. The serve must be underhand and diagonal. Points are scored only by the serving team (in side-out scoring). The ball must bounce once on each side before volleys are allowed (two-bounce rule), and you cannot volley inside the 7-foot non-volley zone (kitchen)." },
+  { q: "Is pickleball popular in India?", a: "Yes, pickleball is one of the fastest-growing sports in India. The All India Pickleball Association (AIPA) organises national-level tournaments, and cities like Bangalore, Mumbai, Delhi, Hyderabad, and Chennai have dedicated pickleball courts. India has participated in the Bainbridge Cup and several international tournaments." },
+  { q: "What is the kitchen rule in pickleball?", a: "The kitchen is a 7-foot zone on each side of the net, officially called the non-volley zone (NVZ). You cannot hit a volley (a shot out of the air) while standing inside this zone or while your momentum carries you into it. You may enter the kitchen to play a ball that has bounced." },
+  { q: "What is rally scoring in pickleball?", a: "Rally scoring means a point is awarded on every rally, regardless of which team served. This contrasts with traditional side-out scoring where only the serving team can score. Major League Pickleball (MLP) uses rally scoring. Many recreational games in India still use side-out scoring to 11 points." },
+  { q: "How much does it cost to start playing pickleball in India?", a: "You can start playing pickleball in India for as little as Rs 1,500-2,500. A beginner paddle costs Rs 1,000-2,500, a set of outdoor pickleballs costs around Rs 500-800, and court shoes you may already own. Many municipal courts and clubs in India offer free or low-cost court access." },
+  { q: "Can I play pickleball on a badminton court?", a: "Yes, a standard badminton court (20x44 ft) is almost identical in size to a pickleball court. You only need to lower the net to 34 inches at the centre (from 5 ft in badminton), mark the non-volley zone lines at 7 feet from the net, and you are ready to play. This is how many Indian players get started." },
+  { q: "What is the two-bounce rule in pickleball?", a: "The two-bounce rule (also called the double-bounce rule) requires the ball to bounce once on the receiving side after the serve, and then once on the serving side after the return. After these two bounces, both teams may volley or play the ball off the bounce. This rule prevents serve-and-volley dominance." },
+  { q: "What equipment do I need to play pickleball?", a: "You need a pickleball paddle (solid, no strings), a perforated polymer ball (outdoor balls have 40 holes, indoor balls have 26), comfortable court shoes with non-marking soles, and access to a pickleball or badminton court with a net at 34 inches centre height." },
+];
+
+const jsonLd = {
+  "@graph": [
+    webPageSchema({ url: "/guides/pickleball-rules-beginners-india", name: title, description }),
+    breadcrumbSchema([
+      { name: "Home", url: "/" },
+      { name: "Pickleball", url: "/pickleball" },
+      { name: "Rules for Beginners", url: "/guides/pickleball-rules-beginners-india" },
+    ]),
+    faqSchema(faqs),
+  ],
+} as Record<string, unknown>;
+---
+
+<BaseLayout title={title} description={description} jsonLd={jsonLd}>
+  <article class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+
+    <!-- Breadcrumb -->
+    <nav aria-label="Breadcrumb" class="mb-8">
+      <ol class="flex flex-wrap items-center gap-1.5 text-sm text-slate-500">
+        <li><a href="/" class="hover:text-green-600 transition-colors">Home</a></li>
+        <li class="before:content-['/'] before:mx-1.5 before:text-slate-300"><a href="/pickleball" class="hover:text-green-600 transition-colors">Pickleball</a></li>
+        <li class="before:content-['/'] before:mx-1.5 before:text-slate-300 text-slate-900 font-medium">Rules for Beginners</li>
+      </ol>
+    </nav>
+
+    <!-- Hero -->
+    <header class="mb-10">
+      <h1 class="font-[Barlow_Condensed] text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 uppercase tracking-wide leading-tight mb-4">
+        Pickleball Rules for Beginners in India
+      </h1>
+      <p class="text-lg text-slate-600 max-w-3xl leading-relaxed">
+        Whether you just discovered pickleball at your local club or saw it trending on social media, this guide breaks down every rule you need to know — from court dimensions and serving to the infamous kitchen rule. Written specifically for Indian players navigating the sport for the first time.
+      </p>
+    </header>
+
+    <div class="bg-slate-100 rounded-xl aspect-video flex items-center justify-center text-slate-400 text-sm my-8">
+      <span>IMAGE: Overhead diagram of a pickleball court with dimensions and zone labels</span>
+    </div>
+
+    <!-- Table of Contents -->
+    <nav class="bg-slate-50 border border-slate-200 rounded-2xl p-6 mb-10">
+      <h2 class="font-[Barlow_Condensed] text-lg font-bold text-slate-900 uppercase tracking-wide mb-3">In This Guide</h2>
+      <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
+        <li><a href="#court-dimensions" class="text-green-600 hover:text-green-700 hover:underline">Court Dimensions & Layout</a></li>
+        <li><a href="#serving-rules" class="text-green-600 hover:text-green-700 hover:underline">Serving Rules</a></li>
+        <li><a href="#scoring" class="text-green-600 hover:text-green-700 hover:underline">Scoring System</a></li>
+        <li><a href="#kitchen" class="text-green-600 hover:text-green-700 hover:underline">The Kitchen (Non-Volley Zone)</a></li>
+        <li><a href="#two-bounce" class="text-green-600 hover:text-green-700 hover:underline">The Two-Bounce Rule</a></li>
+        <li><a href="#singles-vs-doubles" class="text-green-600 hover:text-green-700 hover:underline">Singles vs Doubles</a></li>
+        <li><a href="#equipment" class="text-green-600 hover:text-green-700 hover:underline">Equipment Basics</a></li>
+        <li><a href="#where-to-play" class="text-green-600 hover:text-green-700 hover:underline">Where to Play in India</a></li>
+        <li><a href="#faq" class="text-green-600 hover:text-green-700 hover:underline">FAQ</a></li>
+      </ul>
+    </nav>
+
+    <!-- Court Dimensions -->
+    <section id="court-dimensions" class="scroll-mt-24 mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Court Dimensions & Layout</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        A standard pickleball court measures <strong>20 feet wide by 44 feet long</strong> — the same footprint as a doubles badminton court. This is one of the reasons pickleball has exploded in India: existing badminton facilities can be converted with minimal effort.
+      </p>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border border-slate-200 rounded-xl overflow-hidden">
+          <thead>
+            <tr class="bg-slate-50">
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Dimension</th>
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Measurement</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr><td class="px-4 py-3 text-slate-700">Court Length</td><td class="px-4 py-3 text-slate-700">44 ft (13.41 m)</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700">Court Width</td><td class="px-4 py-3 text-slate-700">20 ft (6.10 m)</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700">Non-Volley Zone (Kitchen)</td><td class="px-4 py-3 text-slate-700">7 ft from net on each side</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700">Net Height (Centre)</td><td class="px-4 py-3 text-slate-700">34 inches (86.36 cm)</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700">Net Height (Sidelines)</td><td class="px-4 py-3 text-slate-700">36 inches (91.44 cm)</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700">Service Area Depth</td><td class="px-4 py-3 text-slate-700">15 ft (from kitchen line to baseline)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="text-slate-700 leading-relaxed mb-4">
+        The court is divided into two halves by the net. Each half has a <strong>non-volley zone</strong> (the kitchen) extending 7 feet from the net, and behind that, two <strong>service courts</strong> — the right (even) court and the left (odd) court — each measuring 10 feet wide by 15 feet deep.
+      </p>
+
+      <div class="bg-slate-100 rounded-xl aspect-video flex items-center justify-center text-slate-400 text-sm my-8">
+        <span>IMAGE: Annotated court diagram showing kitchen, service areas, centre line, and baseline</span>
+      </div>
+
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 uppercase tracking-wide mb-3">Converting a Badminton Court</h3>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        If you play at a badminton facility, you already have the correct court size. Simply lower the net to 34 inches at the centre and add kitchen lines 7 feet from the net on each side using temporary tape or chalk. The badminton singles sidelines become the pickleball sidelines, and the existing baseline works perfectly. Many sports complexes in Bangalore, Mumbai, and Delhi now keep dual markings on their courts.
+      </p>
+    </section>
+
+    <!-- Serving Rules -->
+    <section id="serving-rules" class="scroll-mt-24 mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Serving Rules</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        The serve is one of the most important aspects of pickleball, and the rules around it are strict. Understanding these rules will save you from losing points on faults.
+      </p>
+
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 uppercase tracking-wide mb-3">Underhand Serve Requirement</h3>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Every serve must be executed with an <strong>underhand motion</strong>. The paddle must contact the ball below your waist (navel level). Your arm must move in an upward arc. This is fundamentally different from tennis or badminton where overhead serves dominate. The underhand requirement keeps the game accessible and prevents serve-dominant play.
+      </p>
+
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 uppercase tracking-wide mb-3">Drop Serve Option</h3>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Since 2022, the <strong>drop serve</strong> is a permanent rule addition. You may drop the ball from any natural height (without tossing it upward) and hit it after it bounces. When using the drop serve, the waist-level and upward-arc restrictions do not apply. This is an excellent option for beginners who find the volley serve timing difficult.
+      </p>
+
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 uppercase tracking-wide mb-3">Serve Placement</h3>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2 mb-4">
+        <li>The serve must be made <strong>diagonally crosscourt</strong> — from the right service court to the opponent's right service court (your diagonal), and vice versa.</li>
+        <li>The serve must clear the net and land in the correct service court, <strong>beyond the kitchen line</strong>.</li>
+        <li>The server must stand <strong>behind the baseline</strong> and within the imaginary extension of the sideline and centre line.</li>
+        <li>Only <strong>one serve attempt</strong> is allowed (no second serve like in tennis). If the serve hits the net and lands in the correct court (a let), it is replayed.</li>
+      </ul>
+    </section>
+
+    <!-- Scoring -->
+    <section id="scoring" class="scroll-mt-24 mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Scoring System</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Pickleball scoring can be confusing for beginners, especially in doubles. There are two systems used worldwide, and you will encounter both in India depending on the format.
+      </p>
+
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 uppercase tracking-wide mb-3">Side-Out Scoring (Traditional)</h3>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        In traditional side-out scoring, <strong>only the serving team can score points</strong>. Games are played to <strong>11 points</strong>, and you must win by 2. In tournament play, games may go to 15 or 21. The score in doubles is called as three numbers — for example, "4-2-1" means the serving team has 4 points, the receiving team has 2, and the current server is server number 1.
+      </p>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        In doubles, each team gets two serves per rotation (one for each player), except at the very start of the game when the first serving team only gets one serve. This is to offset the serving advantage.
+      </p>
+
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 uppercase tracking-wide mb-3">Rally Scoring</h3>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Rally scoring awards a <strong>point on every rally</strong>, regardless of who served. Games are typically played to 21 points, win by 2. This format is used in Major League Pickleball (MLP) and is gaining popularity in Indian tournaments because it shortens match times and makes broadcasts more predictable. Many recreational players in India prefer rally scoring for its simplicity.
+      </p>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border border-slate-200 rounded-xl overflow-hidden">
+          <thead>
+            <tr class="bg-slate-50">
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Feature</th>
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Side-Out Scoring</th>
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Rally Scoring</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr><td class="px-4 py-3 text-slate-700">Who scores?</td><td class="px-4 py-3 text-slate-700">Serving team only</td><td class="px-4 py-3 text-slate-700">Either team</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700">Game to</td><td class="px-4 py-3 text-slate-700">11 (win by 2)</td><td class="px-4 py-3 text-slate-700">21 (win by 2)</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700">Score call (doubles)</td><td class="px-4 py-3 text-slate-700">Three numbers (4-2-1)</td><td class="px-4 py-3 text-slate-700">Two numbers (4-2)</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700">Avg. game duration</td><td class="px-4 py-3 text-slate-700">15-25 minutes</td><td class="px-4 py-3 text-slate-700">10-15 minutes</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700">Used in</td><td class="px-4 py-3 text-slate-700">USA Pickleball, most Indian clubs</td><td class="px-4 py-3 text-slate-700">MLP, some Indian tournaments</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 uppercase tracking-wide mb-3">Singles Scoring</h3>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Singles scoring is simpler. The score is called as two numbers (server's score first). The server serves from the right court when their score is even, and from the left court when their score is odd. There is only one serve per side-out — when you lose the rally, the serve passes to your opponent.
+      </p>
+    </section>
+
+    <!-- Kitchen -->
+    <section id="kitchen" class="scroll-mt-24 mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">The Kitchen (Non-Volley Zone) Rules</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        The kitchen is the most unique and strategically important area on a pickleball court. It is the 7-foot zone on each side of the net, officially called the <strong>non-volley zone (NVZ)</strong>. Mastering kitchen rules separates beginners from intermediate players.
+      </p>
+
+      <div class="bg-green-50 border border-green-200 rounded-xl p-6 mb-6">
+        <h3 class="font-[Barlow_Condensed] text-lg font-bold text-green-800 uppercase tracking-wide mb-2">Key Kitchen Rules</h3>
+        <ul class="list-disc pl-6 text-green-900 space-y-2 text-sm">
+          <li>You <strong>cannot volley</strong> (hit the ball out of the air) while standing in the kitchen or on the kitchen line.</li>
+          <li>If your <strong>momentum</strong> carries you into the kitchen after a volley, it is a fault — even if the ball was already dead.</li>
+          <li>You <strong>can</strong> enter the kitchen freely to play a ball that has already bounced.</li>
+          <li>You <strong>can</strong> stand in the kitchen at any time — you just cannot volley from there.</li>
+          <li>Anything that <strong>touches the kitchen</strong> during a volley — your paddle, hat, sunglasses, or anything that falls off your body — results in a fault.</li>
+          <li>Your partner <strong>cannot</strong> hold you back to prevent you from entering the kitchen after a volley. You must establish balance independently.</li>
+        </ul>
+      </div>
+
+      <p class="text-slate-700 leading-relaxed mb-4">
+        The kitchen rule exists to prevent players from standing at the net and smashing every ball. It creates a fascinating strategic element called the <strong>kitchen line rally</strong> or "dinking game," where players exchange soft shots (dinks) just over the net, waiting for their opponent to pop the ball up for an attackable shot.
+      </p>
+
+      <div class="bg-slate-100 rounded-xl aspect-video flex items-center justify-center text-slate-400 text-sm my-8">
+        <span>IMAGE: Illustration showing legal and illegal kitchen zone positions during play</span>
+      </div>
+    </section>
+
+    <!-- Two-Bounce Rule -->
+    <section id="two-bounce" class="scroll-mt-24 mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">The Two-Bounce Rule</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        The two-bounce rule (formerly called the double-bounce rule) is fundamental to pickleball and one of the first things every beginner must internalise.
+      </p>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Here is how it works: after the serve, the <strong>receiving team must let the ball bounce once</strong> before returning it. Then, the <strong>serving team must also let the return bounce once</strong> before playing it. After these two bounces have occurred, both teams may either volley or play the ball off the bounce for the remainder of the rally.
+      </p>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        This rule prevents the serving team from rushing the net immediately after serving (as in tennis). It ensures longer rallies and a more strategic game. In practice, this means: serve, let it bounce, return, let it bounce, then play freely.
+      </p>
+    </section>
+
+    <!-- Singles vs Doubles -->
+    <section id="singles-vs-doubles" class="scroll-mt-24 mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Singles vs Doubles — Key Differences</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Doubles is by far the more popular format in India, accounting for the vast majority of recreational and tournament play. However, singles is growing, especially among younger, more athletic players.
+      </p>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border border-slate-200 rounded-xl overflow-hidden">
+          <thead>
+            <tr class="bg-slate-50">
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Aspect</th>
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Singles</th>
+              <th class="px-4 py-3 text-left font-semibold text-slate-900">Doubles</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr><td class="px-4 py-3 text-slate-700">Players</td><td class="px-4 py-3 text-slate-700">1 vs 1</td><td class="px-4 py-3 text-slate-700">2 vs 2</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700">Court size</td><td class="px-4 py-3 text-slate-700">Full court (20x44 ft)</td><td class="px-4 py-3 text-slate-700">Full court (20x44 ft)</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700">Serves per side-out</td><td class="px-4 py-3 text-slate-700">1</td><td class="px-4 py-3 text-slate-700">2 (one per player)</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700">Score call</td><td class="px-4 py-3 text-slate-700">Two numbers</td><td class="px-4 py-3 text-slate-700">Three numbers</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700">Physical demand</td><td class="px-4 py-3 text-slate-700">High — covers entire court</td><td class="px-4 py-3 text-slate-700">Moderate — split coverage</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700">Strategy emphasis</td><td class="px-4 py-3 text-slate-700">Fitness, shot placement</td><td class="px-4 py-3 text-slate-700">Communication, stacking, dinking</td></tr>
+            <tr><td class="px-4 py-3 text-slate-700">Popularity in India</td><td class="px-4 py-3 text-slate-700">Growing</td><td class="px-4 py-3 text-slate-700">Dominant format</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="text-slate-700 leading-relaxed mb-4">
+        In doubles, positioning and communication are critical. Teams typically use a <strong>stacking</strong> strategy to keep their stronger forehand player in a preferred position. The "third shot drop" — a soft shot that lands in the opponent's kitchen — is the most important shot to develop in doubles.
+      </p>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        In singles, athleticism matters far more. You cover the full 20-foot width alone, so footwork, conditioning, and aggressive shot placement define success. If you come from a badminton or tennis background in India, you may find singles more familiar.
+      </p>
+    </section>
+
+    <!-- Equipment Basics -->
+    <section id="equipment" class="scroll-mt-24 mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Equipment Basics</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Pickleball requires minimal equipment, which is a major reason it has taken off across Indian cities. Here is what you need to get started.
+      </p>
+
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 uppercase tracking-wide mb-3">Paddles</h3>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Pickleball paddles are solid (no strings) and come in various materials. Beginners should look for a paddle weighing 7.3-8.0 oz with a polymer core and graphite or fiberglass face. Budget-friendly options in India start around Rs 1,000-2,500. Check out our detailed reviews:
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2 mb-4">
+        <li><a href="/reviews/best-pickleball-paddles-under-2500-india" class="text-green-600 hover:text-green-700 hover:underline font-medium">Best Pickleball Paddles Under Rs 2,500</a></li>
+        <li><a href="/reviews/best-pickleball-paddles-under-5000-india" class="text-green-600 hover:text-green-700 hover:underline font-medium">Best Pickleball Paddles Under Rs 5,000</a></li>
+        <li><a href="/reviews/best-pickleball-paddles-under-10000-india" class="text-green-600 hover:text-green-700 hover:underline font-medium">Best Pickleball Paddles Under Rs 10,000</a></li>
+      </ul>
+
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 uppercase tracking-wide mb-3">Balls</h3>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Pickleballs are perforated polymer balls, similar to wiffle balls. <strong>Outdoor balls</strong> have 40 smaller holes, are heavier, and more durable — these are the standard for most Indian play since courts are typically outdoors. <strong>Indoor balls</strong> have 26 larger holes, are lighter, and travel slower. A set of 6 outdoor balls costs Rs 500-1,000 on Amazon India.
+      </p>
+
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 uppercase tracking-wide mb-3">Footwear</h3>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        Wear court shoes with non-marking soles and good lateral support. Badminton shoes or volleyball shoes work well. Avoid running shoes — they lack lateral stability and increase the risk of ankle injuries during side-to-side movement.
+      </p>
+
+      <div class="bg-slate-100 rounded-xl aspect-video flex items-center justify-center text-slate-400 text-sm my-8">
+        <span>IMAGE: Flat lay of pickleball equipment — paddle, outdoor ball, indoor ball, court shoes</span>
+      </div>
+    </section>
+
+    <!-- Where to Play in India -->
+    <section id="where-to-play" class="scroll-mt-24 mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Where to Play Pickleball in India</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        The Indian pickleball scene has grown exponentially since 2015. The <strong>All India Pickleball Association (AIPA)</strong>, founded in 2008, organises national championships and coordinates with international bodies. Here are the key hubs:
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+          <h3 class="font-semibold text-slate-900 mb-2">Bangalore</h3>
+          <p class="text-sm text-slate-600">India's pickleball capital with the highest number of dedicated courts. Cubbon Park, KSLTA, and multiple private academies offer regular sessions and leagues.</p>
+        </div>
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+          <h3 class="font-semibold text-slate-900 mb-2">Mumbai</h3>
+          <p class="text-sm text-slate-600">Rapidly growing scene with courts in Bandra, Andheri, and Navi Mumbai. The Mumbai Pickleball League attracts hundreds of players across skill levels.</p>
+        </div>
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+          <h3 class="font-semibold text-slate-900 mb-2">Delhi NCR</h3>
+          <p class="text-sm text-slate-600">Gurgaon and Noida lead the NCR scene with dedicated pickleball facilities in residential complexes and sports clubs. DDA complexes are adding courts.</p>
+        </div>
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+          <h3 class="font-semibold text-slate-900 mb-2">Hyderabad & Chennai</h3>
+          <p class="text-sm text-slate-600">Both cities have active communities with weekly meetups. Hyderabad hosts several state-level tournaments annually. Chennai's beach pickleball sessions are uniquely popular.</p>
+        </div>
+      </div>
+
+      <p class="text-slate-700 leading-relaxed mb-4">
+        The easiest way to find courts near you is to search for local pickleball groups on Facebook or WhatsApp. Most cities have active communities that welcome beginners. Many badminton clubs and sports complexes have added pickleball time slots, so check with your nearest facility.
+      </p>
+    </section>
+
+    <!-- Common Faults -->
+    <section class="scroll-mt-24 mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Common Faults to Avoid</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        A fault ends the rally. As a beginner, most of your faults will come from these situations:
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2 mb-4">
+        <li><strong>Serving into the kitchen:</strong> The serve must clear the kitchen and land in the correct diagonal service court.</li>
+        <li><strong>Volleying in the kitchen:</strong> Hitting the ball out of the air while standing in or on the kitchen line.</li>
+        <li><strong>Violating the two-bounce rule:</strong> Volleying the serve return or the third shot before it bounces.</li>
+        <li><strong>Hitting the ball out of bounds:</strong> The ball must land within the court lines (lines are in).</li>
+        <li><strong>Hitting the ball into the net:</strong> Self-explanatory but the most common fault at every level.</li>
+        <li><strong>Serving with improper form:</strong> Overhead serves, hitting above the waist, or serving from the wrong position.</li>
+      </ul>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="scroll-mt-24 mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-6">Frequently Asked Questions</h2>
+      <div class="space-y-4">
+        {faqs.map((faq) => (
+          <details class="group bg-slate-50 border border-slate-200 rounded-xl">
+            <summary class="flex items-center justify-between cursor-pointer px-6 py-4 font-semibold text-slate-900 text-sm sm:text-base">
+              {faq.q}
+              <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform flex-shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-6 pb-4 text-slate-600 text-sm leading-relaxed">{faq.a}</div>
+          </details>
+        ))}
+      </div>
+    </section>
+
+    <!-- Related Links -->
+    <section class="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8">
+      <h2 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900 uppercase tracking-wide mb-4">Continue Your Pickleball Journey</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <a href="/guides/how-to-choose-pickleball-paddle" class="block bg-white border border-slate-200 rounded-xl p-4 hover:border-green-300 hover:shadow-sm transition-all">
+          <h3 class="font-semibold text-slate-900 text-sm mb-1">How to Choose a Paddle</h3>
+          <p class="text-xs text-slate-500">Core materials, face types, weight, and grip sizing explained.</p>
+        </a>
+        <a href="/guides/pickleball-vs-badminton" class="block bg-white border border-slate-200 rounded-xl p-4 hover:border-green-300 hover:shadow-sm transition-all">
+          <h3 class="font-semibold text-slate-900 text-sm mb-1">Pickleball vs Badminton</h3>
+          <p class="text-xs text-slate-500">Compare both sports — cost, fitness, learning curve, and more.</p>
+        </a>
+        <a href="/reviews/best-pickleball-paddles-under-2500-india" class="block bg-white border border-slate-200 rounded-xl p-4 hover:border-green-300 hover:shadow-sm transition-all">
+          <h3 class="font-semibold text-slate-900 text-sm mb-1">Best Paddles Under Rs 2,500</h3>
+          <p class="text-xs text-slate-500">Top budget picks reviewed with specs, pros, and cons.</p>
+        </a>
+      </div>
+    </section>
+
+  </article>
+</BaseLayout>

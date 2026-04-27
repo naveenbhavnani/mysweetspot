@@ -1,0 +1,371 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { webPageSchema, breadcrumbSchema, faqSchema } from "../../utils/schema";
+
+const title = "How to Choose a Badminton Racket: Complete Guide for Indian Players";
+const description = "Learn how to choose the perfect badminton racket in India. Covers weight classes (3U/4U/5U), balance points, shaft flex, head shape, string tension, and budget picks.";
+const url = "/guides/how-to-choose-badminton-racket";
+
+const faqItems = [
+  { q: "Which badminton racket weight is best for beginners in India?", a: "For most beginners in India, a 4U (80-84g) or 5U (75-79g) racket is ideal. These lighter rackets are easier to manoeuvre, reduce wrist and shoulder strain, and give you more time to react. Once your technique and strength improve over 6-12 months, you can consider moving to a heavier 3U racket." },
+  { q: "Is a head-heavy or head-light racket better for doubles?", a: "Head-light rackets are generally better for doubles because the fast exchanges at the net demand quick racket speed. A head-light balance lets you switch between forehand and backhand grips faster and react to drives and pushes at close range. Reserve head-heavy rackets for singles where you have more time to load your smash." },
+  { q: "How often should I restring my badminton racket?", a: "If you play 2-3 times a week, restring every 2-3 months. Strings lose tension gradually even if they don't break, which affects your control and power. In India's humid conditions, strings can lose tension faster, so serious players often restring monthly. A good rule of thumb: restring as many times per year as you play per week." },
+  { q: "Does shaft flexibility really matter that much?", a: "Absolutely. Shaft flexibility is arguably the single most important spec for matching a racket to your skill level. A stiff shaft rewards fast, powerful swings with precise shot placement but punishes slow or incorrect technique. A flexible shaft generates power even with a slower swing, making it far more forgiving for beginners and intermediates." },
+  { q: "What string tension should I use as an intermediate player in India?", a: "Intermediate players in India typically do well between 24-26 lbs. This range offers a good balance of power and control. Avoid going above 27 lbs unless your technique is very consistent, as higher tensions reduce the sweet spot and increase the risk of injury. Also consider that India's heat and humidity can cause strings to lose tension faster." },
+  { q: "Can I use the same racket for both singles and doubles?", a: "You can, and most club players in India do exactly that. An even-balance 4U racket with medium-stiff flex is the most versatile choice for both formats. However, if you play competitively, having a head-heavy racket for singles (bigger smashes) and a head-light racket for doubles (faster net play) does give you an edge." },
+];
+
+const jsonLd = { "@graph": [
+  webPageSchema({ url, name: title, description }),
+  breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Badminton", url: "/badminton" },
+    { name: "How to Choose a Badminton Racket", url },
+  ]),
+  faqSchema(faqItems),
+] } as Record<string, unknown>;
+---
+<BaseLayout title={title} description={description} jsonLd={jsonLd}>
+  <div class="bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+      <!-- Breadcrumb -->
+      <nav aria-label="Breadcrumb" class="mb-4">
+        <ol class="flex items-center gap-1.5 text-xs text-slate-500">
+          <li><a href="/" class="hover:text-slate-800 transition-colors">Home</a></li>
+          <li aria-hidden="true">&rsaquo;</li>
+          <li><a href="/badminton" class="hover:text-slate-800 transition-colors">Badminton</a></li>
+          <li aria-hidden="true">&rsaquo;</li>
+          <li class="text-slate-700 font-medium" aria-current="page">How to Choose a Badminton Racket</li>
+        </ol>
+      </nav>
+
+      <h1 class="font-[Barlow_Condensed] text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 uppercase tracking-wide mb-4">How to Choose a Badminton Racket: Complete Guide for Indian Players</h1>
+      <p class="text-slate-600 text-sm sm:text-base max-w-3xl leading-relaxed">Everything you need to know before buying your next badminton racket in India &mdash; weight, balance, shaft flex, head shape, string tension, and budget recommendations.</p>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+    <div class="max-w-3xl mx-auto space-y-12">
+
+      <!-- Intro -->
+      <section class="space-y-4 text-sm text-slate-600 leading-relaxed">
+        <p>Walking into a sports shop in India and picking a badminton racket can feel overwhelming. You see labels like "4U G5", "head-heavy", "stiff shaft" and wonder what any of it means. Online shopping is even worse &mdash; hundreds of options on Amazon.in and Flipkart with spec sheets that read like engineering documents.</p>
+        <p>This guide cuts through the noise. We'll explain every specification that actually matters, tell you which combinations suit different playing styles, and point you to specific rackets at every price point. Whether you're a weekend warrior at your local community court or training for district-level tournaments, by the end of this guide you'll know exactly what to look for.</p>
+      </section>
+
+      <img src="/images/guides/badminton/choose-badminton-racket-hero.png" alt="Flat lay of badminton rackets with shuttlecocks and accessories arranged in a knolling pattern on a white surface" class="rounded-xl w-full my-8" width="1200" height="675" loading="eager" />
+
+      <!-- Weight Classes -->
+      <section id="weight-classes" class="scroll-mt-24">
+        <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">Understanding Racket Weight: The U System</h2>
+        <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+          <p>Badminton rackets use a "U" classification system to denote weight. The higher the U number, the lighter the racket. This is the opposite of what most people expect, so pay attention.</p>
+          <p>Weight directly affects three things: how fast you can swing the racket, how much power you generate on contact, and how tired your arm gets over a long session. In India, where club sessions often run 90 minutes or more in warm conditions, fatigue is a real consideration.</p>
+        </div>
+
+        <div class="overflow-x-auto my-6">
+          <table class="w-full text-sm border border-slate-200 rounded-xl overflow-hidden">
+            <thead>
+              <tr class="bg-slate-50 text-left">
+                <th class="px-4 py-3 font-semibold text-slate-900 border-b border-slate-200">Class</th>
+                <th class="px-4 py-3 font-semibold text-slate-900 border-b border-slate-200">Weight Range</th>
+                <th class="px-4 py-3 font-semibold text-slate-900 border-b border-slate-200">Best For</th>
+                <th class="px-4 py-3 font-semibold text-slate-900 border-b border-slate-200">Common In India?</th>
+              </tr>
+            </thead>
+            <tbody class="text-slate-600">
+              <tr class="border-b border-slate-100">
+                <td class="px-4 py-3 font-medium text-slate-900">1U</td>
+                <td class="px-4 py-3">95-99g</td>
+                <td class="px-4 py-3">Training, heavy hitters (rare in competitive play)</td>
+                <td class="px-4 py-3">Very rare</td>
+              </tr>
+              <tr class="border-b border-slate-100 bg-slate-50/50">
+                <td class="px-4 py-3 font-medium text-slate-900">2U</td>
+                <td class="px-4 py-3">90-94g</td>
+                <td class="px-4 py-3">Power-oriented singles players</td>
+                <td class="px-4 py-3">Rare</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-4 py-3 font-medium text-slate-900">3U</td>
+                <td class="px-4 py-3">85-89g</td>
+                <td class="px-4 py-3">Advanced singles, powerful all-rounders</td>
+                <td class="px-4 py-3">Common</td>
+              </tr>
+              <tr class="border-b border-slate-100 bg-slate-50/50">
+                <td class="px-4 py-3 font-medium text-slate-900">4U</td>
+                <td class="px-4 py-3">80-84g</td>
+                <td class="px-4 py-3">All-rounders, doubles, intermediates</td>
+                <td class="px-4 py-3">Very common</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-medium text-slate-900">5U</td>
+                <td class="px-4 py-3">75-79g</td>
+                <td class="px-4 py-3">Doubles specialists, beginners, juniors</td>
+                <td class="px-4 py-3">Common</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <img src="/images/guides/badminton/choose-badminton-racket-weight-comparison.png" alt="Infographic showing three badminton rackets labelled 3U, 4U, and 5U with digital scale icons beneath each on a white background" class="rounded-xl w-full my-6" width="1200" height="675" loading="lazy" />
+
+        <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+          <p>In the Indian market, <strong>3U and 4U rackets dominate</strong>. Most Yonex, Li-Ning, and Victor rackets sold in India come in one or both of these weights. 5U options are growing but still less common, while 1U and 2U are mostly limited to training rackets or older models.</p>
+          <p>Our recommendation for most Indian club players: <strong>start with 4U</strong>. It's the Goldilocks weight &mdash; light enough for quick reactions, heavy enough for decent power, and gentle on the arm during long sessions. For a deeper dive into weight, check out our dedicated <a href="/guides/badminton-racket-weight-guide" class="text-green-600 hover:text-green-700 underline underline-offset-2">badminton racket weight guide</a>.</p>
+        </div>
+      </section>
+
+      <!-- Balance Points -->
+      <section id="balance-point" class="scroll-mt-24">
+        <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">Balance Point: Head-Heavy, Even, or Head-Light?</h2>
+        <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+          <p>The balance point tells you where the weight is concentrated along the racket's length. This single specification changes how the racket feels more dramatically than almost any other factor.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 my-6">
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+            <h3 class="font-semibold text-slate-900 text-sm mb-2">Head-Heavy (295mm+)</h3>
+            <p class="text-xs text-slate-500 leading-relaxed">Weight concentrated in the racket head. Generates massive smash power because the heavier head creates more momentum. The trade-off is slower recovery between shots and more strain on the wrist.</p>
+            <p class="text-xs text-green-600 font-medium mt-3">Best for: Singles players, aggressive smashers, power-oriented game</p>
+          </div>
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+            <h3 class="font-semibold text-slate-900 text-sm mb-2">Even Balance (285-294mm)</h3>
+            <p class="text-xs text-slate-500 leading-relaxed">Weight distributed evenly across the racket. Offers a blend of power and manoeuvrability. You won't hit the hardest smashes, but you won't be caught flat-footed at the net either.</p>
+            <p class="text-xs text-green-600 font-medium mt-3">Best for: All-rounders, players who play both singles and doubles</p>
+          </div>
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+            <h3 class="font-semibold text-slate-900 text-sm mb-2">Head-Light (&lt;285mm)</h3>
+            <p class="text-xs text-slate-500 leading-relaxed">Weight concentrated in the handle. Lightning-fast racket speed, excellent for drives and net kills. You sacrifice some smash power but gain tremendous control in fast exchanges.</p>
+            <p class="text-xs text-green-600 font-medium mt-3">Best for: Doubles specialists, defensive players, quick net play</p>
+          </div>
+        </div>
+
+        <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+          <p>A practical tip for Indian players: if you primarily play doubles at your local club (as most recreational players in India do), <strong>lean towards even or head-light balance</strong>. Doubles is won at the net with fast hands, not from the back of the court with smashes. If you're a singles player or aspire to play singles at a competitive level, a head-heavy racket will reward you once your technique is solid.</p>
+        </div>
+
+        <img src="/images/guides/badminton/choose-badminton-racket-balance-point.png" alt="Technical diagram of a badminton racket showing head-heavy and head-light balance points marked with a red indicator dot" class="rounded-xl w-full my-8" width="1200" height="675" loading="lazy" />
+      </section>
+
+      <!-- Shaft Flexibility -->
+      <section id="shaft-flexibility" class="scroll-mt-24">
+        <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">Shaft Flexibility: Matching Flex to Your Skill Level</h2>
+        <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+          <p>The shaft is the thin tube connecting the handle to the racket head. Its flexibility determines how the racket responds to your swing. This is arguably the <strong>most important specification for matching a racket to your ability level</strong>, and it's the one most beginners get wrong.</p>
+        </div>
+
+        <div class="overflow-x-auto my-6">
+          <table class="w-full text-sm border border-slate-200 rounded-xl overflow-hidden">
+            <thead>
+              <tr class="bg-slate-50 text-left">
+                <th class="px-4 py-3 font-semibold text-slate-900 border-b border-slate-200">Shaft Flex</th>
+                <th class="px-4 py-3 font-semibold text-slate-900 border-b border-slate-200">How It Feels</th>
+                <th class="px-4 py-3 font-semibold text-slate-900 border-b border-slate-200">Skill Level</th>
+                <th class="px-4 py-3 font-semibold text-slate-900 border-b border-slate-200">Why</th>
+              </tr>
+            </thead>
+            <tbody class="text-slate-600">
+              <tr class="border-b border-slate-100">
+                <td class="px-4 py-3 font-medium text-slate-900">Flexible</td>
+                <td class="px-4 py-3">Shaft bends easily, acts like a whip</td>
+                <td class="px-4 py-3">Beginner</td>
+                <td class="px-4 py-3">Generates power with slower swing speeds; very forgiving on off-centre hits</td>
+              </tr>
+              <tr class="border-b border-slate-100 bg-slate-50/50">
+                <td class="px-4 py-3 font-medium text-slate-900">Medium</td>
+                <td class="px-4 py-3">Moderate bend, balanced response</td>
+                <td class="px-4 py-3">Intermediate</td>
+                <td class="px-4 py-3">Good blend of power and control; suitable for players developing technique</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-4 py-3 font-medium text-slate-900">Medium-Stiff</td>
+                <td class="px-4 py-3">Slight bend, quicker response</td>
+                <td class="px-4 py-3">Advanced Intermediate</td>
+                <td class="px-4 py-3">More control than medium flex; rewards consistent technique</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-medium text-slate-900">Stiff / Extra Stiff</td>
+                <td class="px-4 py-3">Minimal bend, immediate feedback</td>
+                <td class="px-4 py-3">Advanced / Professional</td>
+                <td class="px-4 py-3">Maximum control and precision; requires fast, powerful swings to generate power</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <img src="/images/guides/badminton/choose-badminton-racket-shaft-flex.png" alt="Side view illustration of three badminton racket shafts showing stiff, medium, and flexible bend levels" class="rounded-xl w-full my-6" width="1200" height="675" loading="lazy" />
+
+        <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+          <p>The most common mistake we see Indian players make is buying a stiff racket too early. It's tempting &mdash; stiff rackets are often the "pro" models and come in premium colourways. But a stiff shaft with slow swing speed produces weak, inconsistent shots. Be honest about your level, and your game will improve faster.</p>
+          <p><strong>Our general recommendation:</strong> If you've been playing less than a year, go flexible. One to three years of regular play, go medium or medium-stiff. Stiff and extra-stiff are for players who train 3+ times a week and have sound technique.</p>
+        </div>
+      </section>
+
+      <!-- Head Shape -->
+      <section id="head-shape" class="scroll-mt-24">
+        <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">Head Shape: Isometric vs Oval</h2>
+        <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+          <p>Racket heads come in two main shapes, and this choice is more straightforward than the others.</p>
+          <p><strong>Isometric (square-ish):</strong> Pioneered by Yonex, this shape widens the sweet spot by making the string bed more uniformly sized. The vast majority of modern rackets use an isometric frame. For beginners and intermediates, this is the clear choice &mdash; you get more consistent shots even when you don't hit dead-centre.</p>
+          <p><strong>Oval (traditional):</strong> A smaller, more concentrated sweet spot. When you hit the centre perfectly, the feedback and power are exceptional. But miss by a centimetre and the shot quality drops noticeably. Some advanced players prefer this for the concentrated power and precise feel.</p>
+          <p>For almost every Indian player reading this guide, <strong>go isometric</strong>. The sweet spot advantage is simply too significant to pass up, especially on outdoor courts where wind can shift the shuttle slightly.</p>
+        </div>
+      </section>
+
+      <!-- String Tension -->
+      <section id="string-tension" class="scroll-mt-24">
+        <img src="/images/guides/badminton/choose-badminton-racket-string-tension.png" alt="Close-up macro photograph of a badminton racket string bed showing the interwoven string pattern" class="rounded-xl w-full my-8" width="1200" height="675" loading="lazy" />
+
+        <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">String Tension Guide for Indian Conditions</h2>
+        <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+          <p>String tension is measured in pounds (lbs) and affects the racket's power and control balance. Higher tension = more control but less power (and a smaller sweet spot). Lower tension = more power but less precision.</p>
+          <p>India's climate adds a unique variable. High humidity and heat cause nylon and multifilament strings to lose tension faster than in cooler climates. This means you may need to restring more often, and you should factor in some tension loss when choosing your starting tension.</p>
+        </div>
+
+        <div class="overflow-x-auto my-6">
+          <table class="w-full text-sm border border-slate-200 rounded-xl overflow-hidden">
+            <thead>
+              <tr class="bg-slate-50 text-left">
+                <th class="px-4 py-3 font-semibold text-slate-900 border-b border-slate-200">Level</th>
+                <th class="px-4 py-3 font-semibold text-slate-900 border-b border-slate-200">Recommended Tension</th>
+                <th class="px-4 py-3 font-semibold text-slate-900 border-b border-slate-200">Notes</th>
+              </tr>
+            </thead>
+            <tbody class="text-slate-600">
+              <tr class="border-b border-slate-100">
+                <td class="px-4 py-3 font-medium text-slate-900">Beginner</td>
+                <td class="px-4 py-3">20-23 lbs</td>
+                <td class="px-4 py-3">Larger sweet spot, more repulsion power, easier on the arm</td>
+              </tr>
+              <tr class="border-b border-slate-100 bg-slate-50/50">
+                <td class="px-4 py-3 font-medium text-slate-900">Intermediate</td>
+                <td class="px-4 py-3">24-26 lbs</td>
+                <td class="px-4 py-3">Balanced power and control; the sweet spot for most club players</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-4 py-3 font-medium text-slate-900">Advanced</td>
+                <td class="px-4 py-3">27-30 lbs</td>
+                <td class="px-4 py-3">Maximum control, precise placement; requires consistent technique</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-medium text-slate-900">Professional</td>
+                <td class="px-4 py-3">30-35 lbs</td>
+                <td class="px-4 py-3">Tournament-level control; very small sweet spot, high breakage risk</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+          <p><strong>Indian-specific tip:</strong> If you play outdoors (as many recreational players in India do), stick to the lower end of your range. Wind and feather shuttle inconsistencies are better managed with a more powerful, lower-tension setup. Indoor players can push tension slightly higher for better control.</p>
+          <p>Also, don't exceed your racket's recommended tension range. Most budget rackets (under Rs 2,000) are rated for a maximum of 24-26 lbs. Stringing them higher risks warping or cracking the frame. Premium rackets from Yonex and Li-Ning typically handle 28-33 lbs safely.</p>
+        </div>
+      </section>
+
+      <!-- Budget Recommendations -->
+      <section id="budget-recommendations" class="scroll-mt-24">
+        <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">Budget Recommendations for Indian Players</h2>
+        <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+          <p>Now that you understand the specifications, let's talk about what you can actually get at different price points in India.</p>
+        </div>
+
+        <div class="space-y-4 my-6">
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+            <h3 class="font-semibold text-slate-900 text-sm mb-2">Under Rs 2,000 &mdash; Best for Beginners</h3>
+            <p class="text-xs text-slate-500 leading-relaxed mb-2">At this price, expect aluminium-graphite or basic graphite frames with flexible shafts. These are perfectly fine for learning the game, casual play, and weekend sessions. You'll typically get 4U weight with flexible or medium flex.</p>
+            <p class="text-xs text-slate-500 leading-relaxed">Good options include the Yonex GR 303, Li-Ning XP Series, and Cosco CBX 450. See our detailed picks in the <a href="/reviews/best-badminton-rackets-under-2000-india" class="text-green-600 hover:text-green-700 underline underline-offset-2">best badminton rackets under Rs 2,000</a> guide.</p>
+          </div>
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+            <h3 class="font-semibold text-slate-900 text-sm mb-2">Rs 2,000 - Rs 5,000 &mdash; Best for Improving Players</h3>
+            <p class="text-xs text-slate-500 leading-relaxed mb-2">This is the sweet spot (pun intended) for most Indian club players. You get full graphite construction, medium to medium-stiff shafts, and choices between 3U and 4U weights. Brands like Yonex, Li-Ning, and Victor offer excellent options here.</p>
+            <p class="text-xs text-slate-500 leading-relaxed">Check out our <a href="/reviews/best-badminton-rackets-under-5000-india" class="text-green-600 hover:text-green-700 underline underline-offset-2">best badminton rackets under Rs 5,000</a> for our top picks in this range.</p>
+          </div>
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+            <h3 class="font-semibold text-slate-900 text-sm mb-2">Rs 5,000 - Rs 15,000 &mdash; Serious Players</h3>
+            <p class="text-xs text-slate-500 leading-relaxed">Premium graphite and carbon fibre frames, advanced shaft technologies, and excellent build quality. You're getting rackets used by state and national-level players. Yonex Astrox and Nanoflare series, Li-Ning Blade and Windstorm series, and Victor Thruster and Jetspeed series all have models in this range.</p>
+          </div>
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+            <h3 class="font-semibold text-slate-900 text-sm mb-2">Rs 15,000+ &mdash; Professional Grade</h3>
+            <p class="text-xs text-slate-500 leading-relaxed">Top-of-the-line rackets with the latest material technologies. These are the same models used by international players like PV Sindhu and Lakshya Sen. Only invest here if you compete regularly and have a well-developed technique that can exploit the advantages these rackets offer.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quick Decision Framework -->
+      <section id="decision-framework" class="scroll-mt-24">
+        <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">Quick Decision Framework</h2>
+        <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+          <p>Still not sure what to pick? Here's a simple framework based on the most common player profiles we see in India:</p>
+        </div>
+
+        <div class="overflow-x-auto my-6">
+          <table class="w-full text-sm border border-slate-200 rounded-xl overflow-hidden">
+            <thead>
+              <tr class="bg-slate-50 text-left">
+                <th class="px-4 py-3 font-semibold text-slate-900 border-b border-slate-200">Player Profile</th>
+                <th class="px-4 py-3 font-semibold text-slate-900 border-b border-slate-200">Weight</th>
+                <th class="px-4 py-3 font-semibold text-slate-900 border-b border-slate-200">Balance</th>
+                <th class="px-4 py-3 font-semibold text-slate-900 border-b border-slate-200">Flex</th>
+                <th class="px-4 py-3 font-semibold text-slate-900 border-b border-slate-200">Tension</th>
+              </tr>
+            </thead>
+            <tbody class="text-slate-600">
+              <tr class="border-b border-slate-100">
+                <td class="px-4 py-3 font-medium text-slate-900">Weekend casual</td>
+                <td class="px-4 py-3">4U-5U</td>
+                <td class="px-4 py-3">Even</td>
+                <td class="px-4 py-3">Flexible</td>
+                <td class="px-4 py-3">20-22 lbs</td>
+              </tr>
+              <tr class="border-b border-slate-100 bg-slate-50/50">
+                <td class="px-4 py-3 font-medium text-slate-900">Regular club doubles</td>
+                <td class="px-4 py-3">4U</td>
+                <td class="px-4 py-3">Even / Head-light</td>
+                <td class="px-4 py-3">Medium</td>
+                <td class="px-4 py-3">23-25 lbs</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-4 py-3 font-medium text-slate-900">Competitive singles</td>
+                <td class="px-4 py-3">3U</td>
+                <td class="px-4 py-3">Head-heavy</td>
+                <td class="px-4 py-3">Stiff</td>
+                <td class="px-4 py-3">26-28 lbs</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-medium text-slate-900">Junior (under 15)</td>
+                <td class="px-4 py-3">5U</td>
+                <td class="px-4 py-3">Even</td>
+                <td class="px-4 py-3">Flexible</td>
+                <td class="px-4 py-3">20-22 lbs</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+          <p>Remember, these are starting points. As you develop your game and understand your preferences, you'll naturally gravitate towards specific configurations. The most important thing is to avoid extremes when you're starting out &mdash; a moderately weighted, even-balance, medium-flex racket will serve most Indian players well for the first couple of years.</p>
+          <p>For brand-specific recommendations and to understand what each manufacturer brings to the table, read our <a href="/guides/best-badminton-racket-brands-india" class="text-green-600 hover:text-green-700 underline underline-offset-2">guide to the best badminton racket brands in India</a>.</p>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="scroll-mt-24">
+        <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">Frequently Asked Questions</h2>
+        <div class="space-y-4" itemscope itemtype="https://schema.org/FAQPage">
+          {faqItems.map(item => (
+            <div class="border border-slate-200 rounded-xl overflow-hidden" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+              <div class="bg-slate-50 px-5 py-3.5">
+                <h3 class="font-semibold text-slate-900 text-sm" itemprop="name">{item.q}</h3>
+              </div>
+              <div class="px-5 py-3.5" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <p class="text-sm text-slate-600 leading-relaxed" itemprop="text">{item.a}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+    </div>
+  </div>
+</BaseLayout>

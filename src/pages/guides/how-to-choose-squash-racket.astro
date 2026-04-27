@@ -1,0 +1,276 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { webPageSchema, breadcrumbSchema, faqSchema } from "../../utils/schema";
+
+const title = "How to Choose a Squash Racket: Weight, Balance, and Head Shape Explained";
+const description = "Learn how to choose a squash racket. Covers open vs closed throat, teardrop vs round head, weight ranges, and string patterns for Indian players.";
+const url = "/guides/how-to-choose-squash-racket";
+
+const faqs = [
+  { q: "What weight squash racket should a beginner choose?", a: "Beginners should start with a racket in the 140-155 g range. These heavier frames offer more stability on off-centre hits and help develop proper swing mechanics before moving to lighter, more demanding rackets." },
+  { q: "Is a teardrop or round head better for squash?", a: "Teardrop heads offer a larger sweet spot and more power, making them ideal for beginners and intermediate players. Round heads provide better control and manoeuvrability, suiting advanced players who generate their own power." },
+  { q: "What is the difference between open and closed throat squash rackets?", a: "Open-throat rackets have a visible gap between the shaft and the head, offering more flex and power. Closed-throat (bridge) rackets have a solid connection, providing extra stiffness and control for faster swing speeds." },
+  { q: "Which string pattern is better: 12x17 or 14x18?", a: "A 12x17 (open) pattern generates more spin and power but strings break faster. A 14x18 (dense) pattern gives better control and string durability. Most Indian club players do well with 14x18 for the balance of control and longevity." },
+  { q: "How much should I spend on a squash racket in India?", a: "Entry-level rackets from INR 1,500-3,000 are fine for beginners. Intermediate players benefit from rackets in the INR 5,000-10,000 range. Competitive players should look at INR 10,000-20,000 for premium frames with advanced materials." },
+  { q: "Does balance point matter in a squash racket?", a: "Yes, significantly. Head-heavy rackets add power to shots but feel sluggish on volleys. Head-light rackets improve racket-head speed and control at the net. Even balance offers a compromise suitable for all-round play." },
+];
+
+const jsonLd = { "@graph": [
+  webPageSchema({ url, name: title, description }),
+  breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Squash", url: "/squash" },
+    { name: "How to Choose a Squash Racket", url },
+  ]),
+  faqSchema(faqs),
+] } as Record<string, unknown>;
+---
+
+<BaseLayout title={title} description={description} jsonLd={jsonLd}>
+  <article class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+    <!-- Breadcrumbs -->
+    <nav class="text-xs text-slate-500 mb-6" aria-label="Breadcrumb">
+      <a href="/" class="hover:text-slate-800">Home</a> ›
+      <a href="/squash" class="hover:text-slate-800">Squash</a> ›
+      <span class="text-slate-700 font-medium">How to Choose a Squash Racket</span>
+    </nav>
+
+    <!-- Hero -->
+    <header class="max-w-4xl mb-12">
+      <h1 class="font-[Barlow_Condensed] text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-4">How to Choose a Squash Racket: Weight, Balance, and Head Shape Explained</h1>
+      <p class="text-lg text-slate-600 leading-relaxed">Picking the right squash racket can shave points off your opponent's score and protect your arm from injury. This guide breaks down every specification that matters — head shape, weight, balance, string pattern, and frame material — so you can walk into a shop (or browse Amazon.in) with a clear plan.</p>
+    </header>
+
+    <div class="max-w-4xl">
+
+      <div class="bg-slate-100 rounded-xl aspect-video flex items-center justify-center text-slate-400 text-sm my-8"><span>IMAGE: Labelled diagram of a squash racket showing head, throat, shaft, grip, and strings</span></div>
+
+      <!-- Section: Head Shapes -->
+      <section class="mb-12">
+        <h2 class="font-[Barlow_Condensed] text-3xl font-bold text-slate-900 mb-4">Head Shapes: Teardrop vs Round</h2>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">The head shape is the single most visible difference between squash rackets, and it has a direct impact on your game. Two dominant shapes exist on the market today — teardrop and round — each with a distinct feel on court.</p>
+
+        <h3 class="font-[Barlow_Condensed] text-xl font-semibold text-slate-800 mb-2">Teardrop Head</h3>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">Teardrop heads are elongated, with the widest point sitting higher on the frame. This geometry stretches the string bed, creating a larger sweet spot. For Indian club-level players who may not always strike the ball dead centre, that forgiveness is invaluable. Teardrop rackets tend to deliver more raw power because the longer main strings act like a trampoline. The trade-off is a slight reduction in manoeuvrability — the wider profile catches more air and can feel sluggish on rapid volleying exchanges at the front wall.</p>
+
+        <h3 class="font-[Barlow_Condensed] text-xl font-semibold text-slate-800 mb-2">Round Head</h3>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">Round (or "traditional") heads are more compact and symmetrical. The smaller head concentrates power into a tighter sweet spot, demanding precise shot-making but rewarding it with exceptional control. Advanced players who consistently hit clean, centred shots prefer round heads because they can place the ball with surgical accuracy. If you watch PSA tour matches, you'll see many professionals favouring round-headed frames for exactly this reason.</p>
+
+        <div class="bg-slate-100 rounded-xl aspect-video flex items-center justify-center text-slate-400 text-sm my-8"><span>IMAGE: Side-by-side comparison of teardrop and round squash racket head shapes</span></div>
+      </section>
+
+      <!-- Section: Open vs Closed Throat -->
+      <section class="mb-12">
+        <h2 class="font-[Barlow_Condensed] text-3xl font-bold text-slate-900 mb-4">Open Throat vs Closed Throat (Bridge)</h2>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">The throat — the area where the shaft meets the head — comes in two designs. An open-throat racket has a visible V-shaped gap. This allows the lower strings to stretch longer, adding flex and power. Most modern squash rackets use an open throat because it also enlarges the effective hitting area.</p>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">A closed-throat (or bridge) design fills that gap with a solid piece of material. The result is a stiffer frame that transmits energy more directly, giving you better feedback on every shot. Some control-oriented models still use a bridge construction, and they tend to suit players who prioritise placement over pace.</p>
+
+        <!-- Comparison Table -->
+        <div class="overflow-x-auto my-8">
+          <table class="w-full text-sm border border-slate-200 rounded-lg overflow-hidden">
+            <thead>
+              <tr class="bg-green-600 text-white">
+                <th class="text-left px-4 py-3 font-[Barlow_Condensed] font-semibold">Feature</th>
+                <th class="text-left px-4 py-3 font-[Barlow_Condensed] font-semibold">Teardrop / Open Throat</th>
+                <th class="text-left px-4 py-3 font-[Barlow_Condensed] font-semibold">Round / Closed Throat</th>
+              </tr>
+            </thead>
+            <tbody class="text-slate-600">
+              <tr class="border-t border-slate-200">
+                <td class="px-4 py-3 font-medium text-slate-800">Sweet Spot</td>
+                <td class="px-4 py-3">Larger</td>
+                <td class="px-4 py-3">Smaller, more focused</td>
+              </tr>
+              <tr class="border-t border-slate-200 bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-800">Power</td>
+                <td class="px-4 py-3">Higher inherent power</td>
+                <td class="px-4 py-3">Lower — player-generated</td>
+              </tr>
+              <tr class="border-t border-slate-200">
+                <td class="px-4 py-3 font-medium text-slate-800">Control</td>
+                <td class="px-4 py-3">Moderate</td>
+                <td class="px-4 py-3">Excellent</td>
+              </tr>
+              <tr class="border-t border-slate-200 bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-800">Manoeuvrability</td>
+                <td class="px-4 py-3">Slightly lower</td>
+                <td class="px-4 py-3">High</td>
+              </tr>
+              <tr class="border-t border-slate-200">
+                <td class="px-4 py-3 font-medium text-slate-800">Best For</td>
+                <td class="px-4 py-3">Beginners, power players</td>
+                <td class="px-4 py-3">Advanced, touch players</td>
+              </tr>
+              <tr class="border-t border-slate-200 bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-800">Frame Stiffness</td>
+                <td class="px-4 py-3">More flexible</td>
+                <td class="px-4 py-3">Stiffer</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Section: Weight Ranges -->
+      <section class="mb-12">
+        <h2 class="font-[Barlow_Condensed] text-3xl font-bold text-slate-900 mb-4">Weight Ranges and What They Mean</h2>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">Squash rackets are categorised by unstrung weight. The weight you choose affects power, control, swing speed, and fatigue over a long match. Here is the breakdown most brands follow:</p>
+
+        <div class="overflow-x-auto my-8">
+          <table class="w-full text-sm border border-slate-200 rounded-lg overflow-hidden">
+            <thead>
+              <tr class="bg-green-600 text-white">
+                <th class="text-left px-4 py-3 font-[Barlow_Condensed] font-semibold">Category</th>
+                <th class="text-left px-4 py-3 font-[Barlow_Condensed] font-semibold">Weight (Unstrung)</th>
+                <th class="text-left px-4 py-3 font-[Barlow_Condensed] font-semibold">Feel</th>
+                <th class="text-left px-4 py-3 font-[Barlow_Condensed] font-semibold">Best For</th>
+              </tr>
+            </thead>
+            <tbody class="text-slate-600">
+              <tr class="border-t border-slate-200">
+                <td class="px-4 py-3 font-medium text-slate-800">Ultra-light</td>
+                <td class="px-4 py-3">110-125 g</td>
+                <td class="px-4 py-3">Whip-fast, less stable</td>
+                <td class="px-4 py-3">Advanced players seeking racket-head speed</td>
+              </tr>
+              <tr class="border-t border-slate-200 bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-800">Light</td>
+                <td class="px-4 py-3">125-140 g</td>
+                <td class="px-4 py-3">Fast, good balance of power/control</td>
+                <td class="px-4 py-3">Intermediate to advanced players</td>
+              </tr>
+              <tr class="border-t border-slate-200">
+                <td class="px-4 py-3 font-medium text-slate-800">Medium</td>
+                <td class="px-4 py-3">140-155 g</td>
+                <td class="px-4 py-3">Stable, forgiving</td>
+                <td class="px-4 py-3">Beginners and all-rounders</td>
+              </tr>
+              <tr class="border-t border-slate-200 bg-slate-50">
+                <td class="px-4 py-3 font-medium text-slate-800">Heavy</td>
+                <td class="px-4 py-3">155-170 g</td>
+                <td class="px-4 py-3">Maximum power, less manoeuvrable</td>
+                <td class="px-4 py-3">Power-oriented players, rare in modern game</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">Most rackets sold in the Indian market sit in the 125-150 g range. If you are just getting into squash, start at the heavier end and work your way down as your technique improves. Lighter rackets reward clean technique but punish mishits with vibration and instability.</p>
+      </section>
+
+      <!-- Section: Balance Points -->
+      <section class="mb-12">
+        <h2 class="font-[Barlow_Condensed] text-3xl font-bold text-slate-900 mb-4">Balance Points: Head-Heavy, Head-Light, or Even</h2>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">Balance is measured as the distance from the butt of the handle to the point where the racket balances on a fulcrum. A standard squash racket is about 68.5 cm (27 inches) long, so the midpoint sits at roughly 34.25 cm.</p>
+
+        <h3 class="font-[Barlow_Condensed] text-xl font-semibold text-slate-800 mb-2">Head-Heavy (balance above 35 cm)</h3>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">More mass in the head means more momentum on drives and hard lengths. The downside is slower recovery between shots — you'll feel the extra weight when you need to flick the racket up for a volley off a hard serve. Head-heavy setups suit baseline-oriented players who hit from the back of the court.</p>
+
+        <h3 class="font-[Barlow_Condensed] text-xl font-semibold text-slate-800 mb-2">Head-Light (balance below 33 cm)</h3>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">Weight concentrated in the handle makes the racket feel nimble. You can whip it through tight angles for drops and volleys. Court-coverage-focused players who rely on speed and deception benefit most from head-light frames. The trade-off is that you need to generate your own power through swing speed and timing.</p>
+
+        <h3 class="font-[Barlow_Condensed] text-xl font-semibold text-slate-800 mb-2">Even Balance (33-35 cm)</h3>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">The best of both worlds — or the master of neither, depending on your perspective. Even-balance rackets are the safest choice if you are unsure of your playing style. Many coaching professionals recommend even-balance frames for developing players because they do not bias any particular shot type.</p>
+
+        <div class="bg-slate-100 rounded-xl aspect-video flex items-center justify-center text-slate-400 text-sm my-8"><span>IMAGE: Diagram showing head-heavy, even, and head-light balance points on a squash racket</span></div>
+      </section>
+
+      <!-- Section: String Patterns -->
+      <section class="mb-12">
+        <h2 class="font-[Barlow_Condensed] text-3xl font-bold text-slate-900 mb-4">String Patterns: 12x17 vs 14x18 and Beyond</h2>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">String pattern describes the number of main (vertical) and cross (horizontal) strings. The two most common patterns in squash are:</p>
+
+        <ul class="list-disc pl-6 text-sm text-slate-600 leading-relaxed mb-4 space-y-2">
+          <li><strong class="text-slate-800">12x17 (open pattern):</strong> Fewer strings means each string moves more on contact, generating extra spin and a livelier response. Power players and spin-heavy shot-makers prefer this layout. The downside is reduced string life — the increased movement causes strings to notch and break faster.</li>
+          <li><strong class="text-slate-800">14x18 (dense pattern):</strong> More strings mean a flatter, more controlled response. The ball sits on the string bed for a shorter time, so you get predictable placement. Strings last longer because movement between them is minimised. Most club-level Indian players find 14x18 the more practical choice.</li>
+          <li><strong class="text-slate-800">16x17 and other variations:</strong> Some manufacturers experiment with non-standard patterns. These are niche and not widely available in India, so unless you know exactly what you want, stick to the two main options.</li>
+        </ul>
+
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">For stringing, multifilament strings at around 26-28 lbs tension offer a good starting point. If you want more control, increase tension by 1-2 lbs. For more power, drop it by the same amount.</p>
+      </section>
+
+      <!-- Section: Frame Materials -->
+      <section class="mb-12">
+        <h2 class="font-[Barlow_Condensed] text-3xl font-bold text-slate-900 mb-4">Frame Materials</h2>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">Modern squash rackets use a range of composite materials. Understanding what goes into the frame helps you gauge durability, feel, and price.</p>
+
+        <h3 class="font-[Barlow_Condensed] text-xl font-semibold text-slate-800 mb-2">Graphite (Carbon Fibre)</h3>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">The standard for serious rackets. Graphite is light, stiff, and strong. Nearly every racket above INR 3,000 in India uses a graphite-dominant layup. Higher-modulus graphite (like Dunlop's Hyperfibre+ or HEAD's Graphene 360+) adds stiffness without adding weight, but it also increases cost.</p>
+
+        <h3 class="font-[Barlow_Condensed] text-xl font-semibold text-slate-800 mb-2">Aluminium</h3>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">Budget rackets under INR 1,500 are often aluminium or aluminium-graphite blends. They are heavier and less responsive than full-graphite frames. Fine for hitting around casually, but not suitable for competitive play.</p>
+
+        <h3 class="font-[Barlow_Condensed] text-xl font-semibold text-slate-800 mb-2">Kevlar, Basalt, and Other Composites</h3>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">Some premium rackets add Kevlar for vibration dampening, basalt fibre for shock absorption, or titanium mesh for added stiffness. These are marginal upgrades — graphite quality and layup design matter far more than exotic additives for most players.</p>
+      </section>
+
+      <!-- Section: Skill Level Recommendations -->
+      <section class="mb-12">
+        <h2 class="font-[Barlow_Condensed] text-3xl font-bold text-slate-900 mb-4">Choosing by Skill Level</h2>
+
+        <h3 class="font-[Barlow_Condensed] text-xl font-semibold text-slate-800 mb-2">Beginners (0-1 Year of Play)</h3>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">Go for a teardrop head, open throat, even or slightly head-heavy balance, 140-155 g weight, and 14x18 string pattern. At this stage, forgiveness and durability matter more than precision. Budget: INR 1,500-3,000. Check out our <a href="/reviews/best-squash-rackets-under-3000-india" class="text-green-600 font-medium hover:underline">best squash rackets under INR 3,000</a> roundup for specific recommendations.</p>
+
+        <h3 class="font-[Barlow_Condensed] text-xl font-semibold text-slate-800 mb-2">Intermediate (1-3 Years)</h3>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">You can start refining your choice. If you play an aggressive power game, stay with teardrop and head-heavy. If you are developing a control game with drops and boasts, consider moving to a round or slightly smaller head. Weight range: 125-145 g. Budget: INR 5,000-10,000. See our <a href="/reviews/best-squash-rackets-under-10000-india" class="text-green-600 font-medium hover:underline">best squash rackets under INR 10,000</a> guide.</p>
+
+        <h3 class="font-[Barlow_Condensed] text-xl font-semibold text-slate-800 mb-2">Advanced / Competitive</h3>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">At this level you know your game. Most advanced players lean towards lighter frames (110-135 g) with head-light balance for maximum court coverage. Head shape is a personal preference — some touring professionals use teardrop, others use round. Budget: INR 10,000-20,000+. Browse our <a href="/reviews/best-squash-rackets-under-20000" class="text-green-600 font-medium hover:underline">best squash rackets under INR 20,000</a> list for premium options.</p>
+
+        <div class="bg-slate-100 rounded-xl aspect-video flex items-center justify-center text-slate-400 text-sm my-8"><span>IMAGE: Infographic summarising beginner, intermediate, and advanced squash racket specs</span></div>
+      </section>
+
+      <!-- Section: Grip Size -->
+      <section class="mb-12">
+        <h2 class="font-[Barlow_Condensed] text-3xl font-bold text-slate-900 mb-4">Grip Size and Overwraps</h2>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">Squash grips are thinner than tennis grips. Most rackets ship with a standard grip that suits the majority of adult hands. If the grip feels too thin, add an overwrap — Karakal PU Super Grip and Tecnifibre X-One are popular choices in India. If it feels too thick, you can remove the base grip and apply a thinner replacement.</p>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">A proper grip should let you hold the racket firmly without squeezing. If you have to death-grip the handle to stop it from rotating, the grip is too thin. If your fingers cannot wrap around comfortably, it is too thick. Getting this right reduces the risk of wrist and elbow strain — an often-overlooked factor for Indian players who play multiple sessions per week.</p>
+      </section>
+
+      <!-- Section: What to Avoid -->
+      <section class="mb-12">
+        <h2 class="font-[Barlow_Condensed] text-3xl font-bold text-slate-900 mb-4">Common Mistakes to Avoid</h2>
+        <ul class="list-disc pl-6 text-sm text-slate-600 leading-relaxed space-y-2">
+          <li><strong class="text-slate-800">Buying the lightest racket available:</strong> Ultra-light rackets demand excellent technique. If you mishit regularly, a heavier frame will be more forgiving and more comfortable.</li>
+          <li><strong class="text-slate-800">Ignoring string tension:</strong> A racket strung at factory tension may not suit your game. Ask your stringer about your options — a small tension change can dramatically alter feel.</li>
+          <li><strong class="text-slate-800">Choosing based on brand alone:</strong> Dunlop, Tecnifibre, HEAD, and others all make excellent rackets at every price point. Focus on specs, not logos.</li>
+          <li><strong class="text-slate-800">Skipping a demo:</strong> If your local club or shop offers demo rackets, always try before you buy. Online specs only tell part of the story.</li>
+        </ul>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="mb-12">
+        <h2 class="font-[Barlow_Condensed] text-3xl font-bold text-slate-900 mb-8">Frequently Asked Questions</h2>
+        <div class="space-y-6">
+          {faqs.map((faq) => (
+            <div class="border-b border-slate-200 pb-6">
+              <h3 class="font-[Barlow_Condensed] text-lg font-semibold text-slate-800 mb-2">{faq.q}</h3>
+              <p class="text-sm text-slate-600 leading-relaxed">{faq.a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <!-- Related Reviews -->
+      <section class="mb-12">
+        <h2 class="font-[Barlow_Condensed] text-3xl font-bold text-slate-900 mb-4">Related Squash Racket Reviews</h2>
+        <div class="grid sm:grid-cols-3 gap-4">
+          <a href="/reviews/best-squash-rackets-under-3000-india" class="block border border-slate-200 rounded-lg p-4 hover:border-green-600 transition-colors">
+            <p class="font-[Barlow_Condensed] font-semibold text-slate-800">Best Squash Rackets Under INR 3,000</p>
+            <p class="text-xs text-slate-500 mt-1">Top picks for beginners and casual players</p>
+          </a>
+          <a href="/reviews/best-squash-rackets-under-10000-india" class="block border border-slate-200 rounded-lg p-4 hover:border-green-600 transition-colors">
+            <p class="font-[Barlow_Condensed] font-semibold text-slate-800">Best Squash Rackets Under INR 10,000</p>
+            <p class="text-xs text-slate-500 mt-1">Mid-range rackets for intermediate players</p>
+          </a>
+          <a href="/reviews/best-squash-rackets-under-20000" class="block border border-slate-200 rounded-lg p-4 hover:border-green-600 transition-colors">
+            <p class="font-[Barlow_Condensed] font-semibold text-slate-800">Best Squash Rackets Under INR 20,000</p>
+            <p class="text-xs text-slate-500 mt-1">Premium frames for competitive players</p>
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </article>
+</BaseLayout>

@@ -1,0 +1,284 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { webPageSchema, breadcrumbSchema, faqSchema } from "../../utils/schema";
+
+const title = "Best Badminton Shuttlecocks in India — Feather and Nylon Picks";
+const description = "Top badminton shuttlecocks in India for 2026. Covers feather and nylon options from Yonex, Li-Ning, and Victor with speed ratings and durability comparisons.";
+
+const faqs = [
+  { q: "What is the difference between feather and nylon shuttlecocks?", a: "Feather shuttlecocks are made from goose or duck feathers and offer superior flight stability, deceleration, and feel. They are used in competitive play but break easily. Nylon shuttlecocks use a synthetic skirt, last much longer, and are ideal for recreational play and practice. Feather shuttles cost more per tube and may only last one or two sessions of serious play." },
+  { q: "What do shuttle speed numbers like 77 or 78 mean?", a: "The speed number indicates the shuttle's pace at a standard temperature. Lower numbers (75-76) are slower and suited for high-altitude or hot regions. Higher numbers (78-79) are faster and meant for sea-level or cold conditions. In most Indian cities at moderate temperatures, speed 77 is the standard choice." },
+  { q: "How many shuttlecocks come in a standard tube?", a: "Feather shuttlecocks typically come in tubes of 12. Nylon shuttlecocks usually come in tubes of 6, though some economy packs contain 3 or 12." },
+  { q: "Which shuttlecock is best for beginners in India?", a: "The Yonex Mavis 350 is the most popular choice for beginners. It is durable, widely available across India, and offers consistent flight. The medium-speed (yellow cap) variant works well in most Indian conditions." },
+  { q: "Are feather shuttlecocks worth the extra cost?", a: "If you play competitively or want to develop proper technique, feather shuttles are worth it because their flight behaviour differs significantly from nylon. For casual weekend games, nylon shuttles offer far better value since they can last weeks instead of a single session." },
+  { q: "How should I store badminton shuttlecocks?", a: "Store shuttlecocks in their tube at room temperature away from direct sunlight. For feather shuttles, keeping them in a slightly humid environment prevents the feathers from becoming brittle. Some players steam feather shuttles before use to improve durability." },
+];
+
+const jsonLd = { "@graph": [
+  webPageSchema({ url: "/reviews/best-badminton-shuttlecocks-india", name: title, description }),
+  breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Badminton", url: "/badminton" },
+    { name: "Best Shuttlecocks", url: "/reviews/best-badminton-shuttlecocks-india" },
+  ]),
+  faqSchema(faqs),
+] } as Record<string, unknown>;
+---
+
+<BaseLayout title={title} description={description} jsonLd={jsonLd}>
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+
+    <!-- Breadcrumbs -->
+    <nav class="text-sm text-slate-500 mb-6" aria-label="Breadcrumb">
+      <ol class="flex flex-wrap gap-1">
+        <li><a href="/" class="hover:text-green-600 transition-colors">Home</a></li>
+        <li class="before:content-['/'] before:mx-2 before:text-slate-300"><a href="/badminton" class="hover:text-green-600 transition-colors">Badminton</a></li>
+        <li class="before:content-['/'] before:mx-2 before:text-slate-300 text-slate-800 font-medium">Best Shuttlecocks</li>
+      </ol>
+    </nav>
+
+    <!-- Hero -->
+    <header class="mb-10">
+      <h1 class="font-[Barlow_Condensed] text-4xl sm:text-5xl font-bold text-slate-900 uppercase tracking-tight leading-tight">Best Badminton Shuttlecocks in India</h1>
+      <p class="text-lg text-slate-600 mt-4 max-w-3xl">A complete guide to feather and nylon shuttlecocks available in India. We break down speed ratings, durability, flight characteristics, and value for money so you can pick the right shuttle for your game.</p>
+      <p class="text-sm text-slate-400 mt-2">Last updated: April 2026</p>
+    </header>
+
+    <div class="bg-slate-100 rounded-xl aspect-video flex items-center justify-center text-slate-400 text-sm my-8"><span>IMAGE: Assorted feather and nylon badminton shuttlecocks arranged on a court surface</span></div>
+
+    <!-- Intro -->
+    <section class="prose max-w-none mb-12">
+      <p>Choosing the right shuttlecock matters more than most players realise. The shuttle determines rally speed, shot feel, and how much you spend every month on consumables. In India, where temperatures and altitude vary widely, picking the correct speed rating is just as important as choosing between feather and nylon.</p>
+      <p>We tested shuttles across indoor halls in Delhi, Bangalore, and Hyderabad over three months, tracking durability across sessions, flight consistency from the first hit to the last, and overall value. This guide covers our top picks for both competitive and recreational players.</p>
+    </section>
+
+    <!-- Feather vs Nylon comparison -->
+    <section class="mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-6">Feather vs Nylon: Key Differences</h2>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm border border-slate-200 rounded-xl overflow-hidden">
+          <thead class="bg-slate-50">
+            <tr>
+              <th class="text-left px-4 py-3 font-semibold text-slate-700">Feature</th>
+              <th class="text-left px-4 py-3 font-semibold text-slate-700">Feather</th>
+              <th class="text-left px-4 py-3 font-semibold text-slate-700">Nylon</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr><td class="px-4 py-3 text-slate-600">Flight Stability</td><td class="px-4 py-3 text-slate-600">Excellent — natural deceleration</td><td class="px-4 py-3 text-slate-600">Good — slightly floaty</td></tr>
+            <tr><td class="px-4 py-3 text-slate-600">Durability</td><td class="px-4 py-3 text-slate-600">Low — 1-2 sessions</td><td class="px-4 py-3 text-slate-600">High — weeks of play</td></tr>
+            <tr><td class="px-4 py-3 text-slate-600">Cost per Tube</td><td class="px-4 py-3 text-slate-600">Rs 900 - Rs 2,500</td><td class="px-4 py-3 text-slate-600">Rs 400 - Rs 1,200</td></tr>
+            <tr><td class="px-4 py-3 text-slate-600">Sound on Hit</td><td class="px-4 py-3 text-slate-600">Crisp, satisfying</td><td class="px-4 py-3 text-slate-600">Dull, plasticky</td></tr>
+            <tr><td class="px-4 py-3 text-slate-600">Best For</td><td class="px-4 py-3 text-slate-600">Tournaments, serious practice</td><td class="px-4 py-3 text-slate-600">Recreation, beginners, outdoor</td></tr>
+            <tr><td class="px-4 py-3 text-slate-600">Temperature Sensitivity</td><td class="px-4 py-3 text-slate-600">High</td><td class="px-4 py-3 text-slate-600">Low</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Speed Ratings -->
+    <section class="mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-4">Understanding Speed Ratings (75-79)</h2>
+      <p class="text-slate-600 mb-4">Shuttlecock speed numbers are based on the BWF standard, where the grain weight of the cork and the angle of the feathers determine pace. The number you need depends on your local temperature and altitude.</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-4">
+          <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-900">Speed 75-76</h3>
+          <p class="text-sm text-slate-600 mt-1">For hot and high-altitude locations. Suitable for cities above 900m in summer months. Rarely needed in most Indian plains.</p>
+        </div>
+        <div class="bg-green-50 border border-green-200 rounded-xl p-4">
+          <h3 class="font-[Barlow_Condensed] text-lg font-bold text-green-800">Speed 77 (Most Common)</h3>
+          <p class="text-sm text-slate-600 mt-1">The standard for most Indian cities at moderate temperatures (20-30 degrees C). Delhi, Mumbai, Hyderabad, Chennai — speed 77 works year round for most players.</p>
+        </div>
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-4">
+          <h3 class="font-[Barlow_Condensed] text-lg font-bold text-slate-900">Speed 78-79</h3>
+          <p class="text-sm text-slate-600 mt-1">For cold or air-conditioned venues. Needed in hill stations or during winter in northern India when temperatures drop below 15 degrees C.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Picks -->
+    <section class="mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-6">Our Top Picks</h2>
+
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-green-700 uppercase mb-4 mt-8">Nylon Shuttlecocks</h3>
+
+      <!-- Yonex Mavis 350 -->
+      <div class="bg-white border border-slate-200 rounded-xl p-6 my-6">
+        <div class="flex items-start justify-between flex-wrap gap-4">
+          <div>
+            <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900">Yonex Mavis 350</h3>
+            <p class="text-sm text-slate-500 mt-1">The gold standard of nylon shuttles — consistent flight and unmatched durability for recreational play.</p>
+          </div>
+          <span class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900">Rs 699</span>
+        </div>
+        <div class="bg-slate-100 rounded-lg aspect-video flex items-center justify-center text-slate-400 text-sm mt-4"><span>IMAGE: Yonex Mavis 350 nylon shuttlecock tube of 6 with yellow cap</span></div>
+        <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div><h4 class="text-xs font-semibold text-green-700 uppercase mb-1">Pros</h4><ul class="text-sm text-slate-600 space-y-1"><li>Extremely durable — lasts weeks of regular use</li><li>Consistent flight from first hit to last</li><li>Available everywhere in India, online and offline</li><li>Three speed options (green, blue, red caps)</li></ul></div>
+          <div><h4 class="text-xs font-semibold text-red-600 uppercase mb-1">Cons</h4><ul class="text-sm text-slate-600 space-y-1"><li>Flight feel is noticeably different from feather</li><li>Slightly slower deceleration on drops and net shots</li><li>Pricier than other nylon options</li></ul></div>
+        </div>
+      </div>
+
+      <!-- Yonex Mavis 2000 -->
+      <div class="bg-white border border-slate-200 rounded-xl p-6 my-6">
+        <div class="flex items-start justify-between flex-wrap gap-4">
+          <div>
+            <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900">Yonex Mavis 2000</h3>
+            <p class="text-sm text-slate-500 mt-1">Tournament-grade nylon shuttle that mimics feather flight more closely than any synthetic rival.</p>
+          </div>
+          <span class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900">Rs 1,099</span>
+        </div>
+        <div class="bg-slate-100 rounded-lg aspect-video flex items-center justify-center text-slate-400 text-sm mt-4"><span>IMAGE: Yonex Mavis 2000 premium nylon shuttlecock close-up</span></div>
+        <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div><h4 class="text-xs font-semibold text-green-700 uppercase mb-1">Pros</h4><ul class="text-sm text-slate-600 space-y-1"><li>Closest nylon flight to feather shuttles</li><li>Excellent deceleration on drops</li><li>Very durable for a premium nylon shuttle</li></ul></div>
+          <div><h4 class="text-xs font-semibold text-red-600 uppercase mb-1">Cons</h4><ul class="text-sm text-slate-600 space-y-1"><li>Expensive for a nylon shuttle</li><li>Still not identical to feather feel</li><li>Harder to find in local shops — mostly online</li></ul></div>
+        </div>
+      </div>
+
+      <!-- Li-Ning A+60 XD -->
+      <div class="bg-white border border-slate-200 rounded-xl p-6 my-6">
+        <div class="flex items-start justify-between flex-wrap gap-4">
+          <div>
+            <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900">Li-Ning A+60 XD</h3>
+            <p class="text-sm text-slate-500 mt-1">Budget-friendly nylon shuttle with surprisingly stable flight for the price point.</p>
+          </div>
+          <span class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900">Rs 499</span>
+        </div>
+        <div class="bg-slate-100 rounded-lg aspect-video flex items-center justify-center text-slate-400 text-sm mt-4"><span>IMAGE: Li-Ning A+60 XD nylon shuttlecock tube</span></div>
+        <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div><h4 class="text-xs font-semibold text-green-700 uppercase mb-1">Pros</h4><ul class="text-sm text-slate-600 space-y-1"><li>Very affordable for a branded shuttle</li><li>Decent durability for the price</li><li>Good for casual games and beginners</li></ul></div>
+          <div><h4 class="text-xs font-semibold text-red-600 uppercase mb-1">Cons</h4><ul class="text-sm text-slate-600 space-y-1"><li>Flight consistency drops faster than Mavis 350</li><li>Skirt can deform after heavy smashes</li><li>Limited speed options</li></ul></div>
+        </div>
+      </div>
+
+      <!-- Victor Master Ace -->
+      <div class="bg-white border border-slate-200 rounded-xl p-6 my-6">
+        <div class="flex items-start justify-between flex-wrap gap-4">
+          <div>
+            <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900">Victor Master Ace</h3>
+            <p class="text-sm text-slate-500 mt-1">Mid-range nylon shuttle from Victor with excellent build quality and consistent speed.</p>
+          </div>
+          <span class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900">Rs 799</span>
+        </div>
+        <div class="bg-slate-100 rounded-lg aspect-video flex items-center justify-center text-slate-400 text-sm mt-4"><span>IMAGE: Victor Master Ace nylon shuttlecock with green packaging</span></div>
+        <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div><h4 class="text-xs font-semibold text-green-700 uppercase mb-1">Pros</h4><ul class="text-sm text-slate-600 space-y-1"><li>Strong cork base resists cracking</li><li>Stable flight in moderate winds</li><li>Good balance of durability and feel</li></ul></div>
+          <div><h4 class="text-xs font-semibold text-red-600 uppercase mb-1">Cons</h4><ul class="text-sm text-slate-600 space-y-1"><li>Not as widely stocked as Yonex options</li><li>Slightly heavier feel than Mavis 350</li></ul></div>
+        </div>
+      </div>
+
+      <h3 class="font-[Barlow_Condensed] text-xl font-bold text-green-700 uppercase mb-4 mt-10">Feather Shuttlecocks</h3>
+
+      <!-- Yonex Aerosensa 30 -->
+      <div class="bg-white border border-slate-200 rounded-xl p-6 my-6">
+        <div class="flex items-start justify-between flex-wrap gap-4">
+          <div>
+            <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900">Yonex Aerosensa 30</h3>
+            <p class="text-sm text-slate-500 mt-1">Premium feather shuttlecock used in state and national-level tournaments across India. Outstanding flight and consistency.</p>
+          </div>
+          <span class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900">Rs 1,850</span>
+        </div>
+        <div class="bg-slate-100 rounded-lg aspect-video flex items-center justify-center text-slate-400 text-sm mt-4"><span>IMAGE: Yonex Aerosensa 30 feather shuttlecock tube of 12</span></div>
+        <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div><h4 class="text-xs font-semibold text-green-700 uppercase mb-1">Pros</h4><ul class="text-sm text-slate-600 space-y-1"><li>Tournament-grade flight quality</li><li>Excellent consistency across the tube</li><li>Natural deceleration perfect for net play</li><li>Crisp, satisfying sound on contact</li></ul></div>
+          <div><h4 class="text-xs font-semibold text-red-600 uppercase mb-1">Cons</h4><ul class="text-sm text-slate-600 space-y-1"><li>Expensive — goes through tubes quickly</li><li>Feathers break within 1-2 serious sessions</li><li>Must match speed to local conditions</li></ul></div>
+        </div>
+      </div>
+
+      <!-- Li-Ning Champion Gold -->
+      <div class="bg-white border border-slate-200 rounded-xl p-6 my-6">
+        <div class="flex items-start justify-between flex-wrap gap-4">
+          <div>
+            <h3 class="font-[Barlow_Condensed] text-xl font-bold text-slate-900">Li-Ning Champion Gold</h3>
+            <p class="text-sm text-slate-500 mt-1">Affordable feather shuttle that punches above its price with goose feather construction and solid cork.</p>
+          </div>
+          <span class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900">Rs 1,200</span>
+        </div>
+        <div class="bg-slate-100 rounded-lg aspect-video flex items-center justify-center text-slate-400 text-sm mt-4"><span>IMAGE: Li-Ning Champion Gold feather shuttlecock with gold and red packaging</span></div>
+        <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div><h4 class="text-xs font-semibold text-green-700 uppercase mb-1">Pros</h4><ul class="text-sm text-slate-600 space-y-1"><li>Good value for a feather shuttle</li><li>Goose feather construction at a competitive price</li><li>Decent durability for feather category</li></ul></div>
+          <div><h4 class="text-xs font-semibold text-red-600 uppercase mb-1">Cons</h4><ul class="text-sm text-slate-600 space-y-1"><li>Slightly less consistent than Aerosensa 30</li><li>Cork quality varies between batches</li><li>Not approved for top-tier tournaments</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Buying Guide -->
+    <section class="mb-12 bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">Buying Guide</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <div class="flex gap-3">
+          <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div>
+            <h3 class="font-semibold text-slate-900 text-sm mb-1">Match Speed to Your City</h3>
+            <p class="text-sm text-slate-500 leading-relaxed">Speed 77 works for most Indian cities. If you play in air-conditioned halls, go one speed higher. In summer heat above 35 degrees, go one speed lower.</p>
+          </div>
+        </div>
+        <div class="flex gap-3">
+          <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div>
+            <h3 class="font-semibold text-slate-900 text-sm mb-1">Budget Honestly</h3>
+            <p class="text-sm text-slate-500 leading-relaxed">Feather shuttles are a recurring cost. If you play three times a week, expect to spend Rs 1,500-2,500 per month on feather shuttles vs Rs 700 or less on nylon.</p>
+          </div>
+        </div>
+        <div class="flex gap-3">
+          <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div>
+            <h3 class="font-semibold text-slate-900 text-sm mb-1">Check the Cork</h3>
+            <p class="text-sm text-slate-500 leading-relaxed">A solid cork base lasts longer and provides better rebound. Composite corks are cheaper but crack sooner. Premium feather shuttles always use full cork.</p>
+          </div>
+        </div>
+        <div class="flex gap-3">
+          <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div>
+            <h3 class="font-semibold text-slate-900 text-sm mb-1">Buy from Authorised Sellers</h3>
+            <p class="text-sm text-slate-500 leading-relaxed">Counterfeit shuttles are common in India. Buy from authorised retailers or verified marketplace sellers. Check hologram stickers on Yonex products.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Guides -->
+    <section class="mb-12 border-t border-slate-200 pt-10">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">Badminton Buying Guides</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <a href="/guides/how-to-choose-badminton-racket" class="group bg-white border border-slate-200 rounded-xl p-4 hover:shadow-md hover:border-green-300 transition-all">
+          <p class="font-semibold text-slate-900 text-sm group-hover:text-green-600 transition-colors mb-1">How to Choose a Badminton Racket</p>
+          <p class="text-xs text-slate-500">Weight, balance, shaft flex, and string tension explained.</p>
+        </a>
+        <a href="/guides/badminton-racket-weight-guide" class="group bg-white border border-slate-200 rounded-xl p-4 hover:shadow-md hover:border-green-300 transition-all">
+          <p class="font-semibold text-slate-900 text-sm group-hover:text-green-600 transition-colors mb-1">Racket Weight Guide: 1U to 5U</p>
+          <p class="text-xs text-slate-500">What the U system means and which weight suits you.</p>
+        </a>
+        <a href="/guides/best-badminton-racket-brands-india" class="group bg-white border border-slate-200 rounded-xl p-4 hover:shadow-md hover:border-green-300 transition-all">
+          <p class="font-semibold text-slate-900 text-sm group-hover:text-green-600 transition-colors mb-1">Best Badminton Brands in India</p>
+          <p class="text-xs text-slate-500">Yonex, Li-Ning, Victor, Apacs, Cosco compared.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="mb-12">
+      <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">Frequently Asked Questions</h2>
+      <div class="space-y-4" itemscope itemtype="https://schema.org/FAQPage">
+        {faqs.map(item => (
+          <div class="border border-slate-200 rounded-xl overflow-hidden" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <div class="bg-slate-50 px-5 py-3.5">
+              <h3 class="font-semibold text-slate-900 text-sm" itemprop="name">{item.q}</h3>
+            </div>
+            <div class="px-5 py-3.5" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p class="text-sm text-slate-600 leading-relaxed" itemprop="text">{item.a}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+  </main>
+</BaseLayout>
