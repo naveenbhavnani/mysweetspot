@@ -5,7 +5,8 @@ import vercel from '@astrojs/vercel';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://mysweetspot.in',
+  site: 'https://www.mysweetspot.in',
+  trailingSlash: 'never',
   output: 'static',
   adapter: vercel(),
   integrations: [
