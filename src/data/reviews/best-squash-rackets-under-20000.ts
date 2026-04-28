@@ -2,7 +2,7 @@ import type { ReviewData } from '../../types/review';
 
 const review: ReviewData = {
   meta: {
-    title: 'Best Squash Rackets Under ₹20,000 in India 2026',
+    title: 'Best Squash Rackets Under 20000 in India 2026',
     description: 'We tested 5 premium squash rackets priced ₹10,000–₹20,000. Here are the best for Indian club players — with full specs, ratings, and honest verdicts.',
     sport: 'squash',
     level: 'Intermediate–Advanced',
