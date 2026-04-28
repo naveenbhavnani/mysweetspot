@@ -5,7 +5,7 @@ import ComparisonTable from "../../components/ComparisonTable.astro";
 import ProductReview from "../../components/ProductReview.astro";
 import RatingMethodology from "../../components/RatingMethodology.astro";
 import RelatedArticles from "../../components/RelatedArticles.astro";
-import review from "../../data/reviews/best-badminton-rackets-under-5000-india";
+import review from "../../data/reviews/best-badminton-rackets-under-20000-india";
 import { buildReviewPageNodes } from "../../utils/schema";
 
 const jsonLdNodes = buildReviewPageNodes(review);
@@ -49,11 +49,11 @@ const tocItems = [
     <ComparisonTable
       products={review.comparisonProducts}
       columns={[
-        { key: "material", label: "Frame Material" },
-        { key: "weight", label: "Weight" },
-        { key: "Max Tension", label: "Max Tension" },
-        { key: "balance", label: "Balance" },
-        { key: "Strung", label: "Strung" },
+        { key: "Frame Material", label: "Frame" },
+        { key: "Weight Class", label: "Weight" },
+        { key: "Balance", label: "Balance" },
+        { key: "Max String Tension", label: "Max Tension" },
+        { key: "Flexibility", label: "Flex" },
       ]}
     />
   </section>

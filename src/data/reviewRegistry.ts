@@ -46,9 +46,9 @@ const reviews: ReviewSummary[] = [
     sport: 'badminton',
     level: 'Beginner',
     priceRange: 2,
-    topPickName: 'Yonex Nanoray Light 18i',
+    topPickName: 'TANSO Arashi 2.0 Full Graphite Ultra Light Weight Carbon Fibre Strung Badminton Racket',
     topPickRating: 9.0,
-    topPickPrice: '₹1,799',
+    topPickPrice: '₹1,299',
   },
   {
     slug: 'best-badminton-rackets-under-5000-india',
@@ -56,9 +56,9 @@ const reviews: ReviewSummary[] = [
     sport: 'badminton',
     level: 'Intermediate',
     priceRange: 5,
-    topPickName: 'Yonex Astrox 77 Play',
-    topPickRating: 9.5,
-    topPickPrice: '₹2,890',
+    topPickName: 'YONEX Astrox 99 Play Badminton Racquet (Black/Green)',
+    topPickRating: 9.1,
+    topPickPrice: '₹3,619',
   },
   {
     slug: 'best-pickleball-paddles-under-2500-india',
@@ -140,6 +140,16 @@ const reviews: ReviewSummary[] = [
     topPickPrice: '₹17,299',
   },
   {
+    slug: 'best-badminton-rackets-under-10000-india',
+    title: 'Best Badminton Rackets Under 10000 in India 2026',
+    sport: 'badminton',
+    level: 'Intermediate',
+    priceRange: 10,
+    topPickName: 'Li-Ning Windstorm Nano 790 Lite Professional Badminton Racquet',
+    topPickRating: 9.2,
+    topPickPrice: '₹5,490',
+  },
+  {
     slug: 'best-table-tennis-rackets-under-5000-india',
     title: 'Best Table Tennis Rackets Under 5000 in India 2026',
     sport: 'table-tennis',
@@ -148,6 +158,16 @@ const reviews: ReviewSummary[] = [
     topPickName: 'TANSO Black X Blade Pro',
     topPickRating: 9.4,
     topPickPrice: '₹2,199',
+  },
+  {
+    slug: 'best-badminton-rackets-under-20000-india',
+    title: 'Best Badminton Rackets Under 20000 in India 2026',
+    sport: 'badminton',
+    level: 'Intermediate–Advanced',
+    priceRange: 20,
+    topPickName: 'Yonex ArcSaber 11 Pro',
+    topPickRating: 9.3,
+    topPickPrice: '₹14,687',
   },
 ];
 
