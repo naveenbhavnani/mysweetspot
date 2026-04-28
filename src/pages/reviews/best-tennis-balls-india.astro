@@ -246,14 +246,14 @@ const jsonLd = { "@graph": [
     <!-- FAQ -->
     <section class="mb-12">
       <h2 class="font-[Barlow_Condensed] text-2xl font-bold text-slate-900 uppercase tracking-wide mb-5">Frequently Asked Questions</h2>
-      <div class="space-y-4" itemscope itemtype="https://schema.org/FAQPage">
+      <div class="space-y-4">
         {faqs.map(item => (
-          <div class="border border-slate-200 rounded-xl overflow-hidden" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <div class="border border-slate-200 rounded-xl overflow-hidden">
             <div class="bg-slate-50 px-5 py-3.5">
-              <h3 class="font-semibold text-slate-900 text-sm" itemprop="name">{item.q}</h3>
+              <h3 class="font-semibold text-slate-900 text-sm">{item.q}</h3>
             </div>
-            <div class="px-5 py-3.5" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-              <p class="text-sm text-slate-600 leading-relaxed" itemprop="text">{item.a}</p>
+            <div class="px-5 py-3.5">
+              <p class="text-sm text-slate-600 leading-relaxed">{item.a}</p>
             </div>
           </div>
         ))}
