@@ -80,57 +80,46 @@ const sports = [
         <p class="mt-5 text-slate-500 text-lg leading-relaxed">
           India's independent racket review site — tennis, badminton, pickleball, squash, and table tennis. We dig into the specs, test on court, and give honest ratings with real Indian pricing.
         </p>
-        <div class="mt-8 flex flex-wrap gap-3">
-          <a
-            href="/tennis"
-            class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-semibold px-5 py-3 rounded-xl transition-colors text-sm"
-          >
-            Browse Reviews
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
-              <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
-            </svg>
-          </a>
+        <div class="mt-10">
+          <p class="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-4">Browse by sport</p>
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+            {sports.map(sport => (
+              <a
+                href={sport.href}
+                class="group relative flex flex-col gap-1 px-4 py-3.5 rounded-xl border border-slate-200 bg-white hover:border-green-300 hover:shadow-md text-slate-700 hover:text-green-700 transition-all duration-200"
+              >
+                <span class={`absolute top-3 right-3 w-2 h-2 rounded-full ${sport.color} opacity-80`} aria-hidden="true"></span>
+                <span class="text-sm font-bold">{sport.name}</span>
+                <span class="text-xs text-slate-400 group-hover:text-green-600 transition-colors">{sport.count} {sport.count === 1 ? 'review' : 'reviews'}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <div class="mt-10 flex flex-wrap items-center gap-3">
           <a
             href="/methodology"
-            class="inline-flex items-center gap-2 border border-slate-200 hover:border-slate-300 text-slate-700 font-semibold px-5 py-3 rounded-xl transition-colors text-sm bg-white"
+            class="inline-flex items-center gap-2 border border-slate-200 hover:border-green-300 hover:bg-green-50 text-slate-700 hover:text-green-700 font-semibold px-5 py-3 rounded-xl transition-all duration-200 text-sm bg-white shadow-sm"
           >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="m9 14 2 2 4-4"/></svg>
             How We Test
           </a>
+          <span class="hidden sm:inline text-slate-300">|</span>
+          <div class="flex flex-wrap gap-5 text-xs text-slate-400">
+            <span class="flex items-center gap-1.5 font-medium">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              11 reviews
+            </span>
+            <span class="flex items-center gap-1.5 font-medium">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              10-point scale
+            </span>
+            <span class="flex items-center gap-1.5 font-medium">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              No sponsors
+            </span>
+          </div>
         </div>
-
-        <div class="mt-10 flex flex-wrap gap-6 text-sm text-slate-400">
-          <span class="flex items-center gap-1.5 font-medium">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-            11 reviews published
-          </span>
-          <span class="flex items-center gap-1.5 font-medium">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-            10-point rating system
-          </span>
-          <span class="flex items-center gap-1.5 font-medium">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-            No sponsored posts
-          </span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sports nav -->
-  <section class="bg-slate-50 border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
-      <div class="flex flex-wrap gap-3 items-center">
-        <span class="text-xs font-semibold uppercase tracking-widest text-slate-400 mr-1">Browse by sport:</span>
-        {sports.map(sport => (
-          <a
-            href={sport.href}
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-200 bg-white hover:border-green-300 hover:bg-green-50 text-slate-700 hover:text-green-700 transition-colors text-sm font-medium"
-          >
-            <span class={`w-2 h-2 rounded-full ${sport.color}`} aria-hidden="true"></span>
-            {sport.name}
-            <span class="text-xs text-slate-400 font-normal">{sport.count} reviews</span>
-          </a>
-        ))}
       </div>
     </div>
   </section>
